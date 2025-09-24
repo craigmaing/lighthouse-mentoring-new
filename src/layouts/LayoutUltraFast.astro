@@ -1,0 +1,117 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Wellbeing audits 75% faster. From £2,950." } = Astro.props;
+
+// Inline critical CSS directly
+const criticalCSS = `
+  :root{--primary:#1E3A8A;--accent:#10B981;--white:#fff;--gray-50:#f9fafb;--gray-900:#111827}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{background:#fff;color:var(--gray-900)}
+  .container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+  .text-hero{font-size:clamp(2.5rem,6vw,5rem);line-height:1.1;font-weight:700}
+  .text-h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.2;font-weight:700}
+  .text-h2{font-size:clamp(1.75rem,4vw,3rem);line-height:1.2;font-weight:700}
+  .text-h3{font-size:clamp(1.5rem,3vw,2.25rem);line-height:1.3;font-weight:600}
+  .text-h4{font-size:clamp(1.25rem,2.5vw,1.75rem);line-height:1.4;font-weight:600}
+  .text-body-large{font-size:clamp(1.125rem,2vw,1.25rem);line-height:1.6}
+  .text-small{font-size:0.875rem;line-height:1.5}
+  .btn{display:inline-flex;align-items:center;padding:0.75rem 1.5rem;font-weight:600;border-radius:9999px;text-decoration:none;transition:all 0.2s}
+  .btn-primary{background:var(--accent);color:var(--white)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,0.2)}
+  .hero-section{min-height:85vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--primary),var(--primary))}
+  .py-12{padding-top:3rem;padding-bottom:3rem}
+  .py-20{padding-top:5rem;padding-bottom:5rem}
+  .py-24{padding-top:6rem;padding-bottom:6rem}
+  .mb-2{margin-bottom:0.5rem}
+  .mb-4{margin-bottom:1rem}
+  .mb-6{margin-bottom:1.5rem}
+  .mb-8{margin-bottom:2rem}
+  .mb-12{margin-bottom:3rem}
+  .gap-4{gap:1rem}
+  .gap-8{gap:2rem}
+  .gap-12{gap:3rem}
+  .grid{display:grid}
+  .flex{display:flex}
+  .items-center{align-items:center}
+  .justify-center{justify-content:center}
+  .text-center{text-align:center}
+  .text-white{color:var(--white)}
+  .bg-white{background:var(--white)}
+  .bg-gray-50{background:var(--gray-50)}
+  .bg-primary{background:var(--primary)}
+  .rounded-2xl{border-radius:1rem}
+  .shadow-card{box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+  .opacity-60{opacity:0.6}
+  .opacity-80{opacity:0.8}
+  .opacity-90{opacity:0.9}
+  .font-bold{font-weight:700}
+  .italic{font-style:italic}
+  .max-w-4xl{max-width:56rem}
+  .max-w-6xl{max-width:72rem}
+  .mx-auto{margin-left:auto;margin-right:auto}
+  .px-6{padding-left:1.5rem;padding-right:1.5rem}
+  .space-y-2>*+*{margin-top:0.5rem}
+  .space-y-3>*+*{margin-top:0.75rem}
+  @media(min-width:768px){
+    .md\\:grid-cols-2{grid-template-columns:repeat(2,1fr)}
+    .md\\:grid-cols-3{grid-template-columns:repeat(3,1fr)}
+  }
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+
+    <!-- Inline Critical CSS -->
+    <style set:html={criticalCSS}></style>
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Preload critical font -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-var.woff2" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Resource hints for faster subsequent navigation -->
+    <link rel="prefetch" href="/contact">
+    <link rel="prerender" href="/contact">
+
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+
+    <!-- Defer non-critical styles -->
+    <link rel="preload" href="/styles/global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles/global.css"></noscript>
+
+    <!-- Minimal async analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        'page_view': true,
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false
+      });
+    </script>
+  </body>
+</html>
