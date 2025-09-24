@@ -10,10 +10,10 @@ export interface Props {
 const { href, variant = 'primary', size = 'medium', class: className, onclick } = Astro.props;
 
 const variantClasses = {
-  primary: 'bg-brand-700 text-white hover:bg-brand-800 shadow-md hover:shadow-lg',
-  secondary: 'bg-brand-600 text-white hover:bg-brand-700 shadow-md hover:shadow-lg',
-  ghost: 'bg-white text-brand-700 hover:bg-brand-50 border-2 border-brand-700 font-semibold',
-  white: 'bg-white text-brand-900 hover:bg-gray-100 shadow-md hover:shadow-lg'
+  primary: 'bg-accent text-white hover:bg-accent/90 shadow-button hover:shadow-button-hover btn-scale',
+  secondary: 'bg-primary text-white hover:bg-primary/90 shadow-button hover:shadow-button-hover btn-scale',
+  ghost: 'bg-transparent text-primary hover:bg-primary/5 border-2 border-primary font-semibold hover-lift',
+  white: 'bg-white text-gray-900 hover:bg-gray-50 shadow-button hover:shadow-button-hover btn-scale'
 };
 
 const sizeClasses = {
@@ -28,7 +28,7 @@ const Component = href ? 'a' : 'button';
 <Component
   href={href}
   onclick={onclick}
-  class={`inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 cursor-pointer ${variantClasses[variant]} ${sizeClasses[size]} ${className || ''}`}
+  class={`inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 cursor-pointer ${variantClasses[variant]} ${sizeClasses[size]} ${className || ''}`}
 >
   <slot />
 </Component>

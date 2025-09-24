@@ -2,12 +2,12 @@
 import Button from './Button.astro';
 ---
 
-<section class="py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+<section class="section-padding bg-section-gradient">
   <div class="container max-w-7xl mx-auto px-6 lg:px-8">
     <!-- Section Header -->
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-4">Strategic Advisory Services</h2>
-      <p class="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+      <h2 class="text-h2 text-gray-900 mb-4">Strategic Advisory Services</h2>
+      <p class="text-body-large text-gray-600 max-w-2xl mx-auto">
         Evidence-based expertise from board level to operational transformation
       </p>
     </div>
@@ -16,12 +16,12 @@ import Button from './Button.astro';
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Board Advisory Card -->
-      <div class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+      <div class="group relative card-base shadow-card hover-lift">
         <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
         <div class="relative">
           <div class="mb-6">
             <span class="text-primary font-semibold text-sm uppercase tracking-wider">Strategic Leadership</span>
-            <h3 class="text-2xl font-bold text-dark mt-2">Board Advisory</h3>
+            <h3 class="text-h3 text-gray-900 mt-2">Board Advisory</h3>
           </div>
           <p class="text-gray-600 mb-6 leading-relaxed">
             Navigate governance challenges with proven expertise from a Dual Fellow and IoD Award Finalist who has advised 20+ boards.
@@ -42,7 +42,7 @@ import Button from './Button.astro';
           </div>
           <a href="/services#board-advisory" class="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors group">
             Learn more
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-1 arrow-move" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
@@ -50,12 +50,12 @@ import Button from './Button.astro';
       </div>
 
       <!-- Wellbeing Governance Card -->
-      <div class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+      <div class="group relative card-base shadow-card hover-lift">
         <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
         <div class="relative">
           <div class="mb-6">
             <span class="text-accent font-semibold text-sm uppercase tracking-wider">Cultural Excellence</span>
-            <h3 class="text-2xl font-bold text-dark mt-2">Wellbeing Governance</h3>
+            <h3 class="text-h3 text-gray-900 mt-2">Wellbeing Governance</h3>
           </div>
           <p class="text-gray-600 mb-6 leading-relaxed">
             Transform workplace culture with AI-powered audits and evidence-based strategies from a Fellow of the Royal Society of Public Health.
@@ -76,7 +76,7 @@ import Button from './Button.astro';
           </div>
           <a href="/services#wellbeing" class="inline-flex items-center text-accent font-semibold hover:text-accent/80 transition-colors group">
             Learn more
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-1 arrow-move" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
@@ -84,12 +84,12 @@ import Button from './Button.astro';
       </div>
 
       <!-- Executive Transformation Card -->
-      <div class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+      <div class="group relative card-base shadow-card hover-lift">
         <div class="absolute inset-0 bg-gradient-to-br from-warning/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
         <div class="relative">
           <div class="mb-6">
             <span class="text-warning font-semibold text-sm uppercase tracking-wider">Leadership Impact</span>
-            <h3 class="text-2xl font-bold text-dark mt-2">Executive Coaching</h3>
+            <h3 class="text-h3 text-gray-900 mt-2">Executive Coaching</h3>
           </div>
           <p class="text-gray-600 mb-6 leading-relaxed">
             Personal transformation for C-suite leaders ready to elevate their impact and create lasting organisational change.
@@ -110,7 +110,7 @@ import Button from './Button.astro';
           </div>
           <a href="/services#coaching" class="inline-flex items-center text-warning font-semibold hover:text-warning/80 transition-colors group">
             Learn more
-            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-1 arrow-move" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
@@ -121,7 +121,7 @@ import Button from './Button.astro';
     <!-- Bottom CTA -->
     <div class="text-center mt-16">
       <p class="text-gray-600 mb-6 text-lg">Ready to transform your organisation?</p>
-      <a href="/contact" class="inline-flex items-center px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors shadow-lg hover:shadow-xl">
+      <a href="/contact" class="inline-flex items-center px-8 py-4 bg-accent text-white font-semibold rounded-full hover:bg-accent/90 transition-all duration-300 shadow-button hover:shadow-button-hover btn-scale">
         Book Strategic Consultation
         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
