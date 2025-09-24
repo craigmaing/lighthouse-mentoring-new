@@ -4,7 +4,7 @@ import Button from '../../components/Button.astro';
 ---
 
 <Layout title="Pulse Monitoring Service">
-  <section class="relative py-16 md:py-24 px-4">
+  <section class="relative section-padding px-4">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
       <img
@@ -26,7 +26,7 @@ import Button from '../../components/Button.astro';
             <div class="w-8 h-8 bg-primary rounded-full"></div>
           </div>
         </div>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        <h1 class="text-h1 font-bold mb-4">
           Wellbeing <span class="text-primary">Pulse Monitoring</span>
         </h1>
         <p class="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -66,14 +66,14 @@ import Button from '../../components/Button.astro';
       <!-- How It Works -->
       <div class="mb-16">
         <h2 class="text-3xl font-bold text-center mb-8">How Pulse Monitoring Works</h2>
-        <div class="bg-white rounded-lg shadow-xl p-8">
+        <div class="bg-white rounded-lg shadow-card p-8">
           <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center">
               <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-2xl font-bold text-primary">1</span>
               </div>
               <h3 class="font-bold mb-2">Quick Survey</h3>
-              <p class="text-sm text-text-secondary">
+              <p class="text-small text-text-secondary">
                 5-minute targeted questionnaire sent quarterly
               </p>
             </div>
@@ -82,7 +82,7 @@ import Button from '../../components/Button.astro';
                 <span class="text-2xl font-bold text-primary">2</span>
               </div>
               <h3 class="font-bold mb-2">AI Analysis</h3>
-              <p class="text-sm text-text-secondary">
+              <p class="text-small text-text-secondary">
                 Pattern recognition identifies trends and risks
               </p>
             </div>
@@ -91,7 +91,7 @@ import Button from '../../components/Button.astro';
                 <span class="text-2xl font-bold text-primary">3</span>
               </div>
               <h3 class="font-bold mb-2">PDF Report</h3>
-              <p class="text-sm text-text-secondary">
+              <p class="text-small text-text-secondary">
                 Comprehensive report with metrics and insights
               </p>
             </div>
@@ -100,7 +100,7 @@ import Button from '../../components/Button.astro';
                 <span class="text-2xl font-bold text-primary">4</span>
               </div>
               <h3 class="font-bold mb-2">Action Guidance</h3>
-              <p class="text-sm text-text-secondary">
+              <p class="text-small text-text-secondary">
                 Specific recommendations based on findings
               </p>
             </div>
@@ -114,7 +114,7 @@ import Button from '../../components/Button.astro';
         <div class="grid md:grid-cols-3 gap-6">
           <div class="bg-background-alt p-6 rounded-lg">
             <h3 class="text-lg font-bold mb-4 text-primary">Wellbeing Indicators</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-small">
               <li>• Stress levels</li>
               <li>• Work-life balance</li>
               <li>• Job satisfaction</li>
@@ -124,7 +124,7 @@ import Button from '../../components/Button.astro';
           </div>
           <div class="bg-background-alt p-6 rounded-lg">
             <h3 class="text-lg font-bold mb-4 text-secondary">Performance Metrics</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-small">
               <li>• Engagement scores</li>
               <li>• Productivity indicators</li>
               <li>• Absenteeism trends</li>
@@ -134,7 +134,7 @@ import Button from '../../components/Button.astro';
           </div>
           <div class="bg-background-alt p-6 rounded-lg">
             <h3 class="text-lg font-bold mb-4 text-accent">Risk Factors</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-small">
               <li>• Cultural shifts</li>
               <li>• Leadership effectiveness</li>
               <li>• Communication breakdowns</li>
@@ -152,7 +152,7 @@ import Button from '../../components/Button.astro';
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h3 class="text-xl font-bold mb-2">Quarterly Pulse</h3>
             <p class="text-4xl font-bold text-primary mb-2">£495</p>
-            <p class="text-sm text-text-secondary mb-6">per quarter</p>
+            <p class="text-small text-text-secondary mb-6">per quarter</p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start gap-2">
                 <svg class="w-5 h-5 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -184,13 +184,13 @@ import Button from '../../components/Button.astro';
             </Button>
           </div>
 
-          <div class="bg-white rounded-lg shadow-xl p-8 transform scale-105 border-2 border-primary">
-            <div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
+          <div class="bg-white rounded-lg shadow-card p-8 transform scale-105 border-2 border-primary">
+            <div class="bg-primary text-white px-3 py-1 rounded-full text-small font-semibold inline-block mb-4">
               MOST POPULAR
             </div>
             <h3 class="text-xl font-bold mb-2">Annual Programme</h3>
             <p class="text-4xl font-bold text-primary mb-2">£1,695</p>
-            <p class="text-sm text-text-secondary mb-6">per year (save £285)</p>
+            <p class="text-small text-text-secondary mb-6">per year (save £285)</p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start gap-2">
                 <svg class="w-5 h-5 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -231,7 +231,7 @@ import Button from '../../components/Button.astro';
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h3 class="text-xl font-bold mb-2">Enterprise</h3>
             <p class="text-4xl font-bold text-primary mb-2">Custom</p>
-            <p class="text-sm text-text-secondary mb-6">Tailored solution</p>
+            <p class="text-small text-text-secondary mb-6">Tailored solution</p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start gap-2">
                 <svg class="w-5 h-5 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -272,7 +272,7 @@ import Button from '../../components/Button.astro';
       </div>
 
       <!-- Report Features -->
-      <div class="bg-white rounded-lg shadow-xl p-8 mb-16">
+      <div class="bg-white rounded-lg shadow-card p-8 mb-16">
         <h2 class="text-2xl font-bold text-center mb-8">What's in Your Quarterly Report</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div>

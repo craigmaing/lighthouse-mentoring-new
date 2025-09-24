@@ -91,7 +91,8 @@
       "Bash(git add:*)",
       "Bash(git branch:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(do sed -i 's/py-16 md:py-24/section-padding/g; s/py-20/section-padding/g; s/text-4xl md:text-5xl/text-h1/g; s/text-3xl md:text-4xl/text-h2/g; s/text-2xl md:text-3xl/text-h2/g; s/text-xl md:text-2xl/text-h3/g; s/text-lg md:text-xl/text-body-large/g; s/text-sm/text-small/g; s/shadow-xl/shadow-card/g; s/shadow-2xl/shadow-card-hover/g; s/hover:shadow-xl/hover:shadow-card-hover/g; s/brand-600/primary/g; s/brand-700/primary/g; s/brand-500/accent/g; s/brand-50/gray-50/g' \"$file\")"
     ],
     "deny": [],
     "ask": []
