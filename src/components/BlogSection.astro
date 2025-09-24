@@ -1,0 +1,39 @@
+---
+// Streaming blog section - child components load independently for parallel rendering
+import FeaturedArticle from './blog/FeaturedArticle.astro';
+import BlogArticles from './blog/BlogArticles.astro';
+import NewsletterSignup from './blog/NewsletterSignup.astro';
+---
+
+<!-- BLOG - Latest Insights & Thought Leadership -->
+<section class="py-20 lg:py-32 px-6 lg:px-8 bg-white">
+  <div class="container max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="max-w-4xl mx-auto text-center mb-20 animate-on-scroll">
+      <p class="text-sm font-bold text-[#00D4AA] uppercase tracking-wider mb-4">Latest Insights</p>
+      <h2 class="text-5xl lg:text-6xl font-bold text-[#1A202C] mb-8 leading-tight">
+        Proven Strategies for<br/>
+        <span class="text-[#0A4F63]">Board Excellence</span>
+      </h2>
+      <p class="text-2xl text-[#4A5568] leading-relaxed">
+        Real-world insights from 17+ years in boardrooms and 100+ organizational transformations
+      </p>
+    </div>
+
+    <!-- Streaming Components - Load in parallel -->
+    <FeaturedArticle />
+    <BlogArticles />
+    <NewsletterSignup />
+
+    <!-- Archive Link -->
+    <div class="text-center mt-12">
+      <a href="/contact"
+         class="inline-flex items-center gap-2 text-[#0A4F63] hover:text-[#00D4AA] font-semibold text-lg transition-colors">
+        Discuss These Insights
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

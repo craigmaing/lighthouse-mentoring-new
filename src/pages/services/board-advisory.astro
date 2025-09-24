@@ -1,0 +1,190 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout title="Board Advisory Services">
+  <section class="relative py-16 md:py-24 px-4 overflow-hidden">
+    <!-- Hero Banner -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/images/iod-conference-07.jpg"
+        alt="Board advisory setting"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/90"></div>
+    </div>
+
+    <div class="container max-w-6xl mx-auto relative z-10">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <img
+            src="/images/IoD-Ambassador-badge-web.png"
+            alt="IoD Ambassador"
+            class="h-16 w-auto"
+          />
+          <img
+            src="/images/RSPH-Fellow-Badge.jpg"
+            alt="FRSPH Badge"
+            class="h-16 w-auto"
+          />
+          <span class="text-2xl font-bold text-primary">Board Advisory</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Board-Level <span class="text-primary">Wellbeing Governance</span>
+        </h1>
+        <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+          Strategic wellbeing guidance from an IoD Ambassador with unique dual Fellow credentials
+        </p>
+      </div>
+
+      <!-- Service Overview -->
+      <div class="grid md:grid-cols-2 gap-12 mb-16">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-2xl font-bold mb-4">Strategic Advisory</h2>
+          <p class="text-text-secondary mb-6">
+            As an IoD Ambassador with FRSPH and FCMI credentials, I provide boards with the strategic wellbeing guidance needed to meet governance responsibilities and drive performance.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              <span>Board-level wellbeing strategy development</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              <span>ESG and wellbeing governance frameworks</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              <span>Risk assessment and mitigation strategies</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              <span>Director liability and compliance guidance</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-2xl font-bold mb-4">Board Responsibilities</h2>
+          <p class="text-text-secondary mb-6">
+            Directors have legal and fiduciary duties regarding employee wellbeing. Our advisory services ensure you meet these responsibilities while driving business performance.
+          </p>
+          <div class="space-y-4">
+            <div class="border-l-4 border-primary pl-4">
+              <h3 class="font-bold mb-1">Legal Compliance</h3>
+              <p class="text-sm text-text-secondary">Health & Safety at Work Act requirements</p>
+            </div>
+            <div class="border-l-4 border-primary pl-4">
+              <h3 class="font-bold mb-1">Fiduciary Duty</h3>
+              <p class="text-sm text-text-secondary">Protecting shareholder value through workforce health</p>
+            </div>
+            <div class="border-l-4 border-primary pl-4">
+              <h3 class="font-bold mb-1">ESG Reporting</h3>
+              <p class="text-sm text-text-secondary">Meeting investor expectations on social metrics</p>
+            </div>
+            <div class="border-l-4 border-primary pl-4">
+              <h3 class="font-bold mb-1">Risk Management</h3>
+              <p class="text-sm text-text-secondary">Identifying and mitigating wellbeing-related risks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Packages -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Advisory Packages</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary">
+            <h3 class="text-xl font-bold mb-3">Quarterly Advisory</h3>
+            <p class="text-3xl font-bold text-primary mb-4">£3,500<span class="text-sm text-text-secondary">/quarter</span></p>
+            <ul class="space-y-2 text-sm">
+              <li>• Quarterly board presentations</li>
+              <li>• Wellbeing KPI dashboard</li>
+              <li>• Risk assessment updates</li>
+              <li>• Compliance monitoring</li>
+              <li>• Email support</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-secondary transform scale-105">
+            <div class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-bold inline-block mb-3">
+              MOST POPULAR
+            </div>
+            <h3 class="text-xl font-bold mb-3">Annual Retainer</h3>
+            <p class="text-3xl font-bold text-primary mb-4">£12,000<span class="text-sm text-text-secondary">/year</span></p>
+            <ul class="space-y-2 text-sm">
+              <li>• Monthly board reports</li>
+              <li>• Quarterly presentations</li>
+              <li>• Annual strategy workshop</li>
+              <li>• Rapid response support</li>
+              <li>• Unlimited advisory calls</li>
+              <li>• Director training sessions</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-accent">
+            <h3 class="text-xl font-bold mb-3">Non-Exec Director</h3>
+            <p class="text-3xl font-bold text-primary mb-4">£POA</p>
+            <ul class="space-y-2 text-sm">
+              <li>• Full NED responsibilities</li>
+              <li>• Board meeting attendance</li>
+              <li>• Committee participation</li>
+              <li>• Strategic oversight</li>
+              <li>• Stakeholder engagement</li>
+              <li>• Bespoke arrangement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Credentials Section -->
+      <div class="bg-background-alt rounded-lg p-8 mb-16">
+        <h2 class="text-2xl font-bold text-center mb-6">The Value of Dual Fellow Governance</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <img src="/images/IoD-Ambassador-badge-web.png" alt="IoD Ambassador" class="h-20 mx-auto mb-3" />
+            <h3 class="font-bold mb-2">IoD Ambassador</h3>
+            <p class="text-sm text-text-secondary">Direct access to IoD networks and best practices</p>
+          </div>
+          <div class="text-center">
+            <img src="/images/Global (1).png" alt="Global Badge" class="h-20 mx-auto mb-3" />
+            <h3 class="font-bold mb-2">Global Perspective</h3>
+            <p class="text-sm text-text-secondary">International best practices and benchmarking</p>
+          </div>
+          <div class="text-center">
+            <img src="/images/iod-aspiring-badge.png" alt="Aspiring Badge" class="h-20 mx-auto mb-3" />
+            <h3 class="font-bold mb-2">Fellow Status</h3>
+            <p class="text-sm text-text-secondary">FRSPH + FCMI credentials for elite expertise</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Strengthen Your Board's Wellbeing Governance</h2>
+        <p class="text-xl text-text-secondary mb-8">
+          Join forward-thinking boards prioritizing employee wellbeing as a strategic imperative
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/contact" size="large" variant="primary">
+            Schedule Board Consultation
+          </Button>
+          <Button href="/services/wellbeing-audit" size="large" variant="ghost">
+            Start with an Audit
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+

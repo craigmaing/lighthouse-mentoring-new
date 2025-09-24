@@ -1,0 +1,78 @@
+---
+import Button from './Button.astro';
+---
+
+<section class="py-12 lg:py-16 px-6 lg:px-8 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 text-white relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+  </div>
+
+  <div class="container max-w-6xl mx-auto text-center relative z-10">
+    <!-- Credentials Badge -->
+    <div class="flex justify-center gap-3 mb-8">
+      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-sm font-bold rounded-full backdrop-blur">FCMI</span>
+      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-sm font-bold rounded-full backdrop-blur">IoD Ambassador</span>
+      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-sm font-bold rounded-full backdrop-blur">FRSPH</span>
+    </div>
+
+    <!-- Main Headline -->
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+      Ready to Elevate Your Leadership Performance?
+    </h2>
+
+    <!-- Subheadline -->
+    <p class="text-xl md:text-2xl mb-12 text-white/95 max-w-3xl mx-auto drop-shadow">
+      Join the ranks of HSBC, Brown-Forman, Cornish Lithium, and 100+ organizations that have elevated their governance with board-level advisory
+    </p>
+
+    <!-- Value Props Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
+      <div class="text-center">
+        <div class="text-3xl font-bold mb-2">Direct Access</div>
+        <p class="text-sm opacity-90">Principal-to-principal advisory from dual Fellow expertise</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold mb-2">Proven Experience</div>
+        <p class="text-sm opacity-90">17+ years of board and C-suite advisory</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold mb-2">Strategic Support</div>
+        <p class="text-sm opacity-90">Independent perspective for better decisions</p>
+      </div>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+      <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold bg-white text-brand-900 rounded-lg hover:bg-gray-100 transition-all shadow-lg">
+        Book Your Board Consultation
+      </a>
+      <a href="/board-advisory" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold border-2 border-white text-white rounded-lg hover:bg-white hover:text-brand-900 transition-all">
+        View Board Impact Results
+      </a>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a href="tel:+447738419446" class="flex items-center gap-2 text-white/90 hover:text-white transition-colors">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+        <span>+44 7738 419446</span>
+      </a>
+      <a href="mailto:craig.fearn@lighthousementoring.co.uk" class="flex items-center gap-2 text-white/90 hover:text-white transition-colors">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>craig.fearn@lighthousementoring.co.uk</span>
+      </a>
+    </div>
+
+    <!-- Urgency Message -->
+    <div class="mt-12 pt-8 border-t border-white/20">
+      <p class="text-lg text-white">
+        <strong class="text-yellow-300">Limited Availability:</strong> Currently accepting 2-3 new advisory engagements for 2025
+      </p>
+    </div>
+  </div>
+</section>

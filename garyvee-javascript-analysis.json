@@ -1,0 +1,92 @@
+{
+  "website": "Gary Vaynerchuk (GaryVee)",
+  "url": "https://garyvaynerchuk.com/",
+  "title": "Gary Vaynerchuk - Gary Vaynerchuk",
+  "javascript_analysis": {
+    "inline_scripts_count": 21,
+    "external_scripts_count": 39,
+    "total_scripts": 60,
+    "key_integrations": [
+      "Google Analytics (UA-70669-20)",
+      "Google Tag Manager",
+      "Facebook Pixel (380822665420224)",
+      "TikTok Pixel (CC39923C77U295EGHHRG)",
+      "Google Ads (AW-998150423)",
+      "Gravity Forms",
+      "WordPress (v6.8.2)",
+      "jQuery (v3.7.1)",
+      "Salient Theme (v16.2.0)"
+    ],
+    "external_script_sources": [
+      "analytics.tiktok.com",
+      "www.googletagmanager.com",
+      "www.google-analytics.com",
+      "connect.facebook.net",
+      "garyvaynerchuk.com/wp-content",
+      "garyvaynerchuk.com/wp-includes",
+      "googleads.g.doubleclick.net"
+    ],
+    "wordpress_plugins_detected": [
+      "gravityforms",
+      "loginpress-pro",
+      "salient-portfolio",
+      "salient-core",
+      "js_composer_salient"
+    ],
+    "javascript_libraries": [
+      "jQuery 3.7.1",
+      "jQuery Migrate 3.4.1",
+      "Anime.js 4.5.1",
+      "Flickity 2.3.1",
+      "Fancybox 3.3.9",
+      "Waypoints 4.0.2",
+      "Transit 0.9.9",
+      "jQuery Easing 1.3",
+      "Superfish 1.5.8",
+      "TouchSwipe 1.0",
+      "ImagesLoaded 4.1.4"
+    ],
+    "global_javascript_objects": [
+      "gform",
+      "_wpemojiSettings",
+      "jQuery",
+      "gtag",
+      "dataLayer",
+      "ttq",
+      "fbq",
+      "_fbq",
+      "loginpressScaleCaptcha",
+      "nectarLove",
+      "nectarOptions",
+      "nectar_front_i18n",
+      "gform_i18n",
+      "gform_theme_config"
+    ]
+  },
+  "page_structure": {
+    "main_navigation": [
+      "Gary Vaynerchuk (Builds Businesses, My Story, Press Kit, Events, Books, Contact)",
+      "GaryVee (About, Shows, Podcast, Blog, Social Highlights, Wallpapers, Team GaryVee, Search Engine)",
+      "VeeFriends (Series 1, Book Games, Series 2, VeeCon)",
+      "Contact"
+    ],
+    "social_links": [
+      "Twitter/X",
+      "Facebook",
+      "Pinterest",
+      "LinkedIn",
+      "YouTube",
+      "Instagram",
+      "Snapchat",
+      "Discord",
+      "TikTok",
+      "Threads"
+    ],
+    "key_elements": [
+      "Newsletter signup form",
+      "Video player integration",
+      "Social media integration",
+      "Gravity Forms for contact/lead generation"
+    ]
+  }
+}

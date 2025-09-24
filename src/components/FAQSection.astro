@@ -1,0 +1,113 @@
+---
+const faqs = [
+  {
+    question: "What is wellbeing governance and why do boards need it?",
+    answer: "Wellbeing governance is the board-level oversight of workplace mental health and culture as a strategic risk and opportunity. With 82% of UK boards lacking formal wellbeing governance structures, directors face regulatory exposure under ISO 45003 standards and ESG requirements. Effective wellbeing governance transforms people data into board-ready insights, helping directors make confident decisions that protect both workforce and shareholder value."
+  },
+  {
+    question: "How does executive coaching help board directors and senior leaders?",
+    answer: "Executive coaching provides confidential, one-to-one support for directors navigating complex leadership challenges. As an executive coach with Fellow status (FCMI, FRSPH) and IoD Ambassador experience, Craig Fearn helps leaders strengthen their strategic thinking, improve board presence, and maintain resilience under pressure. The coaching focuses on practical outcomes - from preparing for board appointments to managing transformation programmes without burning out your teams."
+  },
+  {
+    question: "What's the difference between a board advisor and non-executive director?",
+    answer: "A board advisor provides strategic counsel without formal directorial duties or voting rights, offering flexibility and specialist expertise when needed. A non-executive director (NED) holds legal responsibilities, attends board meetings, and votes on decisions. Craig Fearn operates as a board advisor, bringing non-executive perspective and governance expertise without the constraints of formal appointment - ideal for organisations wanting Fellow-level insight on demand."
+  },
+  {
+    question: "How can workplace wellbeing improve business performance?",
+    answer: "Research shows that companies with strong wellbeing strategies see 2.5x higher revenue per employee and 87% better retention rates. Workplace wellbeing directly impacts productivity, innovation, and risk management. Through our Lighthouse Wellbeing Audit™, we help boards quantify these benefits with hard data, showing exactly how investing in workplace health and wellbeing delivers measurable ROI through reduced absence, higher engagement, and improved talent acquisition."
+  },
+  {
+    question: "Who typically engages Craig Fearn for executive coaching and board advisory?",
+    answer: "Craig works with CEOs, CFOs, HRDs, and board directors across FTSE companies, scale-ups, and ambitious SMEs. Typical clients include directors preparing for their first NED role, leadership teams navigating transformation, and boards seeking independent expertise on wellbeing governance. With experience spanning technology, financial services, healthcare, and manufacturing, Craig brings cross-sector insight to every engagement."
+  }
+];
+---
+
+<section class="py-16 md:py-20 px-4 bg-white">
+  <div class="container max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+        Your Questions About Executive Coaching and Board Advisory, Answered
+      </h2>
+      <p class="text-lg text-slate-700 max-w-3xl mx-auto">
+        Get direct answers to common questions about wellbeing governance, executive coaching, and how board advisory can strengthen your leadership capability.
+      </p>
+    </div>
+
+    <div class="space-y-6">
+      {faqs.map((faq, index) => (
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-primary mb-3 flex items-start gap-3">
+            <span class="text-brand-600 font-bold">Q:</span>
+            {faq.question}
+          </h3>
+          <div class="text-slate-700 leading-relaxed pl-7">
+            <span class="text-brand-600 font-bold">A: </span>
+            {faq.answer}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-slate-600 mb-6">
+        Have a specific question about your board or leadership challenges?
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-primary hover:bg-primary-dark rounded-lg transition-colors"
+      >
+        Ask Craig Directly
+      </a>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is wellbeing governance and why do boards need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellbeing governance is the board-level oversight of workplace mental health and culture as a strategic risk and opportunity. With 82% of UK boards lacking formal wellbeing governance structures, directors face regulatory exposure under ISO 45003 standards and ESG requirements. Effective wellbeing governance transforms people data into board-ready insights, helping directors make confident decisions that protect both workforce and shareholder value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does executive coaching help board directors and senior leaders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Executive coaching provides confidential, one-to-one support for directors navigating complex leadership challenges. As an executive coach with Fellow status (FCMI, FRSPH) and IoD Ambassador experience, Craig Fearn helps leaders strengthen their strategic thinking, improve board presence, and maintain resilience under pressure. The coaching focuses on practical outcomes - from preparing for board appointments to managing transformation programmes without burning out your teams."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a board advisor and non-executive director?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A board advisor provides strategic counsel without formal directorial duties or voting rights, offering flexibility and specialist expertise when needed. A non-executive director (NED) holds legal responsibilities, attends board meetings, and votes on decisions. Craig Fearn operates as a board advisor, bringing non-executive perspective and governance expertise without the constraints of formal appointment - ideal for organisations wanting Fellow-level insight on demand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can workplace wellbeing improve business performance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research shows that companies with strong wellbeing strategies see 2.5x higher revenue per employee and 87% better retention rates. Workplace wellbeing directly impacts productivity, innovation, and risk management. Through our Lighthouse Wellbeing Audit™, we help boards quantify these benefits with hard data, showing exactly how investing in workplace health and wellbeing delivers measurable ROI through reduced absence, higher engagement, and improved talent acquisition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who typically engages Craig Fearn for executive coaching and board advisory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Craig works with CEOs, CFOs, HRDs, and board directors across FTSE companies, scale-ups, and ambitious SMEs. Typical clients include directors preparing for their first NED role, leadership teams navigating transformation, and boards seeking independent expertise on wellbeing governance. With experience spanning technology, financial services, healthcare, and manufacturing, Craig brings cross-sector insight to every engagement."
+      }
+    }
+  ]
+}
+</script>

@@ -1,0 +1,135 @@
+---
+interface Props {
+  variant?: 'inline' | 'popup' | 'sidebar';
+  heading?: string;
+  subheading?: string;
+  buttonText?: string;
+}
+
+const {
+  variant = 'inline',
+  heading = 'Get Strategic Insights Delivered',
+  subheading = 'Join 500+ executives receiving weekly insights on transformation, governance, and growth',
+  buttonText = 'Subscribe Free'
+} = Astro.props;
+---
+
+<div class={`newsletter-form newsletter-form--${variant}`}>
+  <form id="newsletter-form" class="newsletter-signup">
+    <div class="text-center mb-6">
+      <h3 class="text-2xl font-bold mb-2">{heading}</h3>
+      <p class="text-gray-600">{subheading}</p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
+        aria-label="Email address for newsletter"
+      />
+      <button
+        type="submit"
+        class="px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap"
+      >
+        {buttonText}
+      </button>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="text-xs text-gray-500">
+        No spam. Unsubscribe anytime.
+        <a href="/privacy" class="underline hover:text-primary">Privacy Policy</a>
+      </p>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div id="newsletter-success" class="hidden mt-4 p-4 bg-green-50 text-green-800 rounded-lg text-center">
+      <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+      </svg>
+      <span>Success! Check your inbox to confirm your subscription.</span>
+    </div>
+
+    <div id="newsletter-error" class="hidden mt-4 p-4 bg-red-50 text-red-800 rounded-lg text-center">
+      <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+      </svg>
+      <span>Something went wrong. Please try again later.</span>
+    </div>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('newsletter-form') as HTMLFormElement;
+  const successMsg = document.getElementById('newsletter-success');
+  const errorMsg = document.getElementById('newsletter-error');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Hide previous messages
+    successMsg?.classList.add('hidden');
+    errorMsg?.classList.add('hidden');
+
+    const formData = new FormData(form);
+    const email = formData.get('email');
+
+    try {
+      // Here you would integrate with your email service provider
+      // For now, we'll simulate a successful submission
+
+      // Store in localStorage to track submissions
+      const submissions = JSON.parse(localStorage.getItem('newsletter_submissions') || '[]');
+      submissions.push({
+        email: email,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('newsletter_submissions', JSON.stringify(submissions));
+
+      // Show success message
+      successMsg?.classList.remove('hidden');
+
+      // Clear form
+      form.reset();
+
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        successMsg?.classList.add('hidden');
+      }, 5000);
+
+      // Track event in analytics if available
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'newsletter_signup', {
+          'event_category': 'engagement',
+          'event_label': 'blog_page'
+        });
+      }
+
+    } catch (error) {
+      // Show error message
+      errorMsg?.classList.remove('hidden');
+
+      // Hide error message after 5 seconds
+      setTimeout(() => {
+        errorMsg?.classList.add('hidden');
+      }, 5000);
+    }
+  });
+</script>
+
+<style>
+  .newsletter-form--popup {
+    @apply fixed bottom-4 right-4 bg-white p-6 rounded-lg shadow-2xl border border-gray-200 z-50 max-w-md;
+  }
+
+  .newsletter-form--sidebar {
+    @apply bg-gray-50 p-6 rounded-lg;
+  }
+
+  .newsletter-form--inline {
+    @apply py-8;
+  }
+</style>

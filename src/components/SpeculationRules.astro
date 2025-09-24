@@ -1,0 +1,45 @@
+---
+// Speculation Rules API for Chrome 109+ prerendering
+---
+
+<script type="speculationrules">
+{
+  "prerender": [
+    {
+      "source": "list",
+      "urls": [
+        "/services",
+        "/about",
+        "/contact",
+        "/services/wellbeing-audit",
+        "/services/executive-coaching"
+      ]
+    },
+    {
+      "source": "document",
+      "where": {
+        "and": [
+          {"href_matches": "/*"},
+          {"not": {"href_matches": "/admin/*"}},
+          {"not": {"href_matches": "/*.pdf"}},
+          {"not": {"selector_matches": "[rel=nofollow]"}}
+        ]
+      },
+      "score": 0.5
+    }
+  ],
+  "prefetch": [
+    {
+      "source": "document",
+      "where": {
+        "and": [
+          {"href_matches": "/*"},
+          {"not": {"href_matches": "/admin/*"}},
+          {"not": {"selector_matches": "[rel=nofollow]"}}
+        ]
+      },
+      "eagerness": "moderate"
+    }
+  ]
+}
+</script>

@@ -1,0 +1,401 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import { getCollection } from 'astro:content';
+
+const services = [
+  {
+    title: 'Management & Strategy Consulting',
+    outcome: 'Deliver transformation programmes without losing people or momentum.',
+    investment: 'Bespoke project engagements',
+    benefits: [
+      'Operating model, culture, and leadership alignment',
+      'Change programmes anchored in measurable outcomes',
+      'Direct access to Fellow-level expertise throughout delivery'
+    ],
+    href: '/management-consultant'
+  },
+  {
+    title: 'Executive Coaching & Leadership Development',
+    outcome: 'Keep senior leaders resilient, focused, and ready for board scrutiny.',
+    investment: 'Programmes from £500 per session',
+    benefits: [
+      'Confidential support for CEOs, CFOs, and founders',
+      'Evidence-based wellbeing and performance strategies',
+      'Tailored plans for board readiness and succession'
+    ],
+    href: '/services/executive-coaching'
+  },
+  {
+    title: 'Business Coaching & Mentoring',
+    outcome: 'Accelerate growth and leadership confidence with principal-led executive coaching and mentoring.',
+    investment: 'Monthly or quarterly retainers',
+    benefits: [
+      'Strategic planning and accountability for founders and senior teams',
+      'Practical guidance informed by multi-sector transformation',
+      'Support accessing board networks through IoD Ambassador links'
+    ],
+    href: '/business-coaching'
+  },
+  {
+    title: 'Wellbeing Governance & Audits',
+    outcome: 'Build workplace wellbeing strategies backed by data and ROI.',
+    investment: 'Assessments from £2,950',
+    benefits: [
+      'AI-enhanced Lighthouse Wellbeing Audit™ reports in 8 weeks or less',
+      'Clear prioritised roadmap and actionable recommendations',
+      'Optional pulse monitoring for ongoing assurance'
+    ],
+    href: '/services/wellbeing-audit'
+  },
+  {
+    title: 'ISO 45003 Implementation',
+    outcome: 'Achieve compliance with psychological health and safety standards.',
+    investment: 'Implementation packages from £15,000',
+    benefits: [
+      'Gap analysis and readiness assessment against ISO 45003 requirements',
+      'Policy development and framework design for psychological safety',
+      'Training and certification support through to full compliance'
+    ],
+    href: '/services/iso-45003'
+  },
+  {
+    title: 'Thought Leadership & Speaking',
+    outcome: 'Inspire leaders to treat wellbeing and governance as strategic assets.',
+    investment: 'Keynotes, workshops, and panels',
+    benefits: [
+      'Executive sessions rooted in lived leadership experience',
+      'Tailored content for industry events and in-house retreats',
+      'Practical takeaways leaders can action immediately'
+    ],
+    href: '/thought-leadership'
+  }
+];
+
+const challenges = [
+  {
+    title: 'Transformation programmes stall at execution',
+    detail: 'Strategy looks perfect on paper but loses momentum when people and culture aren\'t aligned.'
+  },
+  {
+    title: 'Leadership teams operate in silos',
+    detail: 'Senior executives need coaching to break down barriers and create unified direction.'
+  },
+  {
+    title: 'Wellbeing initiatives lack strategic impact',
+    detail: 'HR programmes exist but aren\'t connected to business outcomes or ISO 45003 standards.'
+  },
+  {
+    title: 'Growth outpaces leadership capability',
+    detail: 'Founders and executives need rapid development to match business complexity.',
+  }
+];
+
+const methodology = [
+  {
+    step: '01',
+    name: 'Discovery & Fit',
+    detail: '30-minute consultation to clarify objectives, decision-makers, and success measures.'
+  },
+  {
+    step: '02',
+    name: 'Evidence & Diagnosis',
+    detail: 'Stakeholder interviews, AI-enhanced analysis, and Fellow-level review surface the real issues.'
+  },
+  {
+    step: '03',
+    name: 'Strategy Activation',
+    detail: 'Recommendations arrive with board-ready messaging, phased delivery, and accountability built in.'
+  },
+  {
+    step: '04',
+    name: 'Momentum & Assurance',
+    detail: 'Optional advisory retainers, coaching programs, or pulse monitoring keep improvements on track.',
+  }
+];
+
+const metrics = [
+  { value: '17+', label: 'years advising leadership teams' },
+  { value: '100+', label: 'organisations supported across sectors' },
+  { value: '20+', label: 'LinkedIn recommendations from directors and founders' }
+];
+
+const testimonials = await getCollection('testimonials');
+const serviceTestimonials = testimonials
+  .filter((item) => ['richard-sharpe', 'dianne-knight'].includes(item.slug))
+  .sort((a, b) => a.data.priority - b.data.priority);
+---
+
+<Layout
+  title="Management Consultant & Executive Coaching Services | Lighthouse Mentoring"
+  description="Transform your organisation with expert management consulting and executive coaching. Strategic advisory, ISO 45003 implementation, and leadership development from Craig Fearn FCMI FRSPH IoD Ambassador.">
+  <section class="py-16 md:py-24 px-4 bg-gradient-to-br from-white via-brand-50/10 to-white">
+    <div class="container max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+          Strategic Services That Transform Organisations
+        </h1>
+        <p class="text-lg md:text-xl text-slate-700 leading-relaxed mb-6">
+          When transformation programmes stall or leadership teams need development, organisations turn to Craig Fearn FCMI FRSPH. As a management consultant and executive coach, he delivers change that keeps people, performance, and purpose aligned.
+        </p>
+        <p class="text-base text-slate-600 leading-relaxed mb-8">
+          Whether you need CEO coaching in London or ISO 45003 implementation across the UK, every engagement is delivered principal-to-principal. No junior hand-offs, just 17+ years of Fellow-level expertise working directly with your leadership team.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/contact#book" size="large" variant="primary" class="shadow-lg">Schedule Consultation</Button>
+          <Button href="#services" size="large" variant="ghost">Explore Services</Button>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-brand-600 to-brand-700 text-white rounded-3xl p-8 md:p-10 shadow-2xl">
+        <h2 class="text-2xl font-bold mb-4">Why Leaders Choose Lighthouse</h2>
+        <p class="text-white/90 leading-relaxed mb-6">
+          Combining AI-enhanced diagnostics with Fellow-level expertise to deliver measurable transformation in weeks, not years.
+        </p>
+        <ul class="space-y-3 text-white/90 text-sm">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand-200 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+            <span>Dual Fellow: FCMI + FRSPH | IoD Ambassador</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand-200 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+            <span>100+ organisations transformed across sectors</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand-200 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+            <span>Direct principal-to-principal delivery always</span>
+          </li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <Button href="/about" variant="white" class="flex-1 shadow-md">About Craig</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Excellence Image Section -->
+  <section class="py-8 px-4">
+    <div class="container max-w-6xl mx-auto">
+      <div class="relative rounded-2xl overflow-hidden shadow-xl">
+        <img
+          src="/images/boardroom-7437.jpg"
+          alt="Executive coaching and leadership transformation"
+          class="w-full h-[300px] object-cover object-top"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-transparent to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h2 class="text-xl font-bold mb-1">Transform Leadership, Transform Results</h2>
+          <p class="text-sm text-white/90">From boardroom strategy to operational excellence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-background-alt">
+    <div class="container max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">Do These Challenges Sound Familiar?</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        {challenges.map((challenge) => (
+          <div class="bg-gradient-to-br from-white via-white to-brand-50/20 border border-brand-200/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">{challenge.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{challenge.detail}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-center text-slate-600 mt-10 max-w-3xl mx-auto">
+        Each challenge requires a different approach. Whether through management consulting, executive coaching, or strategic advisory, we help leadership teams find the right mix of support. Explore the portfolio below to see how we can help.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 px-4 bg-white">
+    <div class="container max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">Choose the Service Mix That Fits Your Leadership and Transformation Needs</h2>
+      <div class="grid md:grid-cols-2 gap-8 lg:grid-cols-3">
+        {services.map((service) => (
+          <article class="group bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col min-h-[440px]">
+            <h3 class="text-xl font-bold text-slate-900 mb-2">{service.title}</h3>
+            <p class="text-sm font-semibold text-brand-600 mb-3">{service.investment}</p>
+            <p class="text-slate-700 leading-relaxed mb-4 flex-grow">{service.outcome}</p>
+            <ul class="space-y-2 text-sm text-slate-700 mb-6">
+              {service.benefits.map((benefit) => (
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-brand-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"/></svg>
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+            <Button href={service.href} variant="primary" class="mt-auto shadow-md hover:shadow-lg">Learn More</Button>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Excellence Image -->
+  <section class="py-12 px-4 bg-white">
+    <div class="container max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative">
+          <img
+            src="/images/10 LIZ_7493.jpg"
+            alt="Craig Fearn - Fellow-level management consultant"
+            class="rounded-2xl shadow-2xl w-full h-[500px] object-cover object-top"
+            loading="lazy"
+          />
+          <div class="absolute -bottom-4 -left-4 bg-gradient-to-br from-brand-700 to-brand-800 text-white rounded-xl p-4 shadow-xl">
+            <p class="font-bold text-lg">17+ Years</p>
+            <p class="text-sm text-white/90">Board-Level Experience</p>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">Principal-to-Principal Delivery</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Unlike larger consultancies, every engagement is delivered directly by Craig Fearn FCMI FRSPH. You get Fellow-level expertise, IoD Ambassador insights, and the continuity of working with the same senior advisor throughout your transformation journey.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 p-4 rounded-xl shadow-md">
+              <h3 class="font-bold text-slate-900 mb-1">No Hand-offs</h3>
+              <p class="text-sm text-slate-600">Direct access from discovery to delivery</p>
+            </div>
+            <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 p-4 rounded-xl shadow-md">
+              <h3 class="font-bold text-slate-900 mb-1">Board Ready</h3>
+              <p class="text-sm text-slate-600">Recommendations that executives can action</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-background-alt">
+    <div class="container max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">How Engagements Run</h2>
+        <p class="text-slate-700 max-w-3xl mx-auto">
+          Every service follows the Lighthouse Mentoring methodology—AI-enhanced diagnostics backed by Fellow-level leadership experience. You always work directly with Craig from discovery through delivery.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+        {methodology.map((step) => (
+          <div class="bg-gradient-to-br from-white to-brand-50/20 border border-brand-200/30 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition-all duration-300">
+            <div class="text-sm font-bold mb-2 text-brand-700">Step {step.step}</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">{step.name}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{step.detail}</p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-10 grid sm:grid-cols-3 gap-6">
+        {metrics.map((metric) => (
+          <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl px-6 py-5 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+            <p class="text-3xl font-bold text-brand-600 mb-1">{metric.value}</p>
+            <p class="text-sm text-slate-600 leading-snug">{metric.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-slate-50">
+    <div class="container max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">Nationwide Reach, Local Presence</h2>
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4">Locations We Serve</h3>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            Our services reach organisations across the UK. Whether you need executive coaching in London or management consulting in Manchester, we deliver:
+          </p>
+          <ul class="grid grid-cols-2 gap-2 text-sm text-slate-600">
+            <li>• London</li>
+            <li>• Birmingham</li>
+            <li>• Manchester</li>
+            <li>• Edinburgh</li>
+            <li>• Bristol</li>
+            <li>• Leeds</li>
+            <li>• Plymouth</li>
+            <li>• Cornwall</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4">Industries & Expertise</h3>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            We specialise in workplace health, ISO 45003, and wellbeing governance across:
+          </p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li>• Financial Services & Banking</li>
+            <li>• Technology & Software</li>
+            <li>• Healthcare & NHS Trusts</li>
+            <li>• Manufacturing & Engineering</li>
+            <li>• Professional Services</li>
+            <li>• Charities & Social Enterprises</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-white">
+    <div class="container max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Leaders Rate Lighthouse for Transformational Impact</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Directors, founders, and senior leaders choose Craig as their strategic advisor when they need both empathy and evidence. Here are two of more than twenty recommendations from clients across the UK.
+          </p>
+        </div>
+        <div class="relative">
+          <img
+            src="/images/iod-conference-aerospace-7.jpg"
+            alt="Craig Fearn at IoD Conference - Management consulting and executive coaching"
+            class="rounded-2xl shadow-2xl w-full h-auto"
+            loading="lazy"
+          />
+          <div class="absolute -bottom-6 -right-6 bg-gradient-to-br from-brand-700 to-brand-800 text-white rounded-xl p-4 shadow-xl">
+            <p class="font-bold text-lg">20+ LinkedIn</p>
+            <p class="text-sm text-white/90">Recommendations</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        {serviceTestimonials.map((testimonial) => (
+          <blockquote class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div class="flex gap-1 mb-3">
+              {[...Array(5)].map(() => (
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
+            </div>
+            <p class="text-slate-700 leading-relaxed italic mb-4">"{testimonial.data.content}"</p>
+            <footer class="text-sm text-slate-600">
+              <strong class="text-slate-900">{testimonial.data.name}</strong>
+              <br />
+              <span class="text-xs">{testimonial.data.role} — {testimonial.data.company}</span>
+            </footer>
+          </blockquote>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-gradient-to-r from-brand-700 to-brand-800 text-white">
+    <div class="container max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Organisation?</h2>
+      <p class="text-lg md:text-xl text-white/90 mb-8">
+        Every organisation has different needs. Whether it's strategic consulting for transformation, executive coaching for your leadership team, or ISO 45003 compliance, we'll help you prioritise actions that create measurable impact.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact#book" size="large" variant="white" class="shadow-lg">
+          Schedule a Discovery Call
+        </Button>
+        <Button href="mailto:craig.fearn@lighthousementoring.co.uk" size="large" variant="ghost" class="!bg-transparent !border-2 !border-white !text-white hover:!bg-white hover:!text-brand-800">
+          Email Craig Directly
+        </Button>
+        <Button href="https://www.linkedin.com/in/craig-fearn1/" size="large" variant="ghost" class="!bg-transparent !border-2 !border-white !text-white hover:!bg-white hover:!text-brand-800">
+          Connect on LinkedIn
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>
+

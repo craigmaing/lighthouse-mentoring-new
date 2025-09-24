@@ -1,0 +1,285 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import SpeculationRules from '../components/SpeculationRules.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "AI-enhanced wellbeing audits from the only IoD Ambassador + FRSPH + FCMI consultant globally. Expert audits from £2,950 for SMEs." } = Astro.props;
+const pageTitle = `${title} | Lighthouse Mentoring - Craig Fearn IoD Ambassador, FRSPH, FCMI`;
+const pageDescription = description;
+const canonicalURL = new URL(Astro.url.pathname, 'https://lighthousementoring.co.uk');
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={pageDescription} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content="https://lighthousementoring.co.uk/images/craig-fearn-og.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content="https://lighthousementoring.co.uk/images/craig-fearn-og.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://lighthousementoring.co.uk/#organization",
+          "name": "Lighthouse Mentoring",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lighthousementoring.co.uk/images/lighthouse-logo.png"
+          },
+          "description": "Strategic board advisory and wellbeing governance consulting by Craig Fearn",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://lighthousementoring.co.uk/#craigfearn"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/craig-fearn/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://lighthousementoring.co.uk/#craigfearn",
+          "name": "Craig Fearn",
+          "jobTitle": "Strategic Wellbeing Director & Board Advisor",
+          "description": "Triple Fellow (FCMI, FRSPH, FIoD Ambassador), IoD Director of the Year 2025 Global Award Finalist",
+          "alumniOf": [
+            {
+              "@type": "Organization",
+              "name": "Institute of Directors"
+            },
+            {
+              "@type": "Organization",
+              "name": "Chartered Management Institute"
+            },
+            {
+              "@type": "Organization",
+              "name": "Royal Society of Public Health"
+            }
+          ],
+          "award": [
+            "IoD Director of the Year 2025 Global Award Finalist",
+            "IoD Aspiring Director Award Finalist"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/craig-fearn/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://lighthousementoring.co.uk/#website",
+          "url": "https://lighthousementoring.co.uk",
+          "name": "Lighthouse Mentoring",
+          "description": "Strategic board advisory and wellbeing governance consulting",
+          "publisher": {
+            "@id": "https://lighthousementoring.co.uk/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": canonicalURL.toString(),
+          "url": canonicalURL.toString(),
+          "name": pageTitle,
+          "description": pageDescription,
+          "isPartOf": {
+            "@id": "https://lighthousementoring.co.uk/#website"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring Strategic Advisory",
+          "provider": {
+            "@id": "https://lighthousementoring.co.uk/#organization"
+          },
+          "serviceType": ["Board Advisory", "Wellbeing Governance", "Strategic Consulting", "ISO 45003 Compliance"],
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££"
+        }
+      ]
+    })} />
+
+    <ViewTransitions />
+
+    <!-- Speculation Rules for prerendering -->
+    <SpeculationRules />
+
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    </noscript>
+
+    <!-- Critical CSS for above-the-fold -->
+    <style set:html={`@import url('/src/styles/critical.css?raw');`}></style>
+  </head>
+  <body class="bg-white text-text-primary min-h-screen flex flex-col">
+    <Navigation />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 18px; /* Base 18px for all devices - premium readability */
+    font-weight: 400;
+    line-height: 1.7; /* Better readability */
+    color: #1A202C; /* gray-900 */
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Typography System - Premium Weight Distribution */
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* 40px to 56px */
+    font-weight: 700; /* Bold for main headings */
+    line-height: 1.2;
+    color: #1A202C;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 2.625rem); /* 32px to 42px */
+    font-weight: 600; /* Semibold for authority */
+    line-height: 1.2;
+    color: #1A202C;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem); /* 24px to 28px */
+    font-weight: 600;
+    line-height: 1.3;
+    color: #1A202C;
+  }
+
+  h4 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1A202C;
+  }
+
+  p {
+    line-height: 1.7;
+    color: #4A5568; /* gray-700 for body text */
+  }
+
+  /* Lead paragraphs */
+  .lead {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* Hero typography */
+  .hero-title {
+    font-size: clamp(3rem, 6vw, 4.5rem); /* 48px to 72px */
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  /* Dark section styles */
+  .dark-section {
+    background-color: #0A1628;
+    color: #FFFFFF;
+  }
+
+  .dark-section h1,
+  .dark-section h2,
+  .dark-section h3,
+  .dark-section h4,
+  .dark-section p {
+    color: #FFFFFF;
+  }
+
+  .dark-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Premium button styling */
+  .btn {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<!-- Service Worker Registration -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(
+        registration => console.log('SW registered:', registration.scope),
+        err => console.log('SW registration failed:', err)
+      );
+    });
+  }
+</script>
+
+<!-- Optimized Script Loading -->
+<script>
+  import '../scripts/animations.js';
+</script>

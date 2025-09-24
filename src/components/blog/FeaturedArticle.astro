@@ -1,0 +1,46 @@
+---
+// Streaming component for featured article - loads independently
+const featuredArticle = {
+  title: "Why 82% of Wellbeing Programs Fail (And How AI Changes Everything)",
+  description: "After analyzing wellbeing data from 100+ organizations, I've identified the critical gap between good intentions and measurable outcomes. Here's what the data reveals—and how AI-enhanced auditing is transforming workplace wellbeing ROI.",
+  author: "Craig Fearn FCMI FRSPH",
+  readTime: "12 min read",
+  date: "September 2024",
+  statistic: "82%",
+  statisticLabel: "Programs Fail",
+  statisticDescription: "Without proper measurement"
+};
+---
+
+<div class="mb-20 animate-on-scroll">
+  <div class="bg-gradient-to-r from-[#0A1628] to-[#0A4F63] rounded-3xl overflow-hidden shadow-2xl">
+    <div class="grid lg:grid-cols-2 gap-0">
+      <div class="p-12 text-white">
+        <div class="mb-4">
+          <span class="bg-[#00D4AA] text-[#0A1628] px-3 py-1 rounded-full text-sm font-semibold">Featured Article</span>
+        </div>
+        <h3 class="text-4xl font-bold mb-6 leading-tight">{featuredArticle.title}</h3>
+        <p class="text-xl text-white/90 mb-8 leading-relaxed">{featuredArticle.description}</p>
+        <div class="flex items-center gap-6 mb-8">
+          <div class="text-sm text-white/80">
+            <span class="font-semibold">{featuredArticle.author}</span><br/>
+            {featuredArticle.readTime} • {featuredArticle.date}
+          </div>
+        </div>
+        <a href="/contact" class="inline-flex items-center gap-2 bg-[#00D4AA] text-[#0A1628] px-6 py-3 rounded-full font-semibold hover:bg-[#00C49C] transition-colors btn-hover-effect">
+          Discuss This Analysis
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="bg-gradient-to-br from-[#00D4AA]/20 to-[#0A4F63]/20 p-12 flex items-center justify-center">
+        <div class="text-center">
+          <div class="text-8xl font-light text-[#00D4AA] mb-4" data-counter="82">{featuredArticle.statistic}</div>
+          <p class="text-2xl font-semibold text-white mb-2">{featuredArticle.statisticLabel}</p>
+          <p class="text-white/80">{featuredArticle.statisticDescription}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+---
+import Button from './Button.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../../public/images/iod-conference-83.jpg';
+---
+
+<!-- FULLSCREEN HERO WITH CRAIG'S PHOTO - Premium Authority Brand -->
+<section class="relative min-h-screen flex items-center dark-section">
+  <!-- Background Image with Gradient Overlay -->
+  <div class="absolute inset-0 z-0">
+    <Image
+      src={heroImage}
+      alt="Craig Fearn FCMI FRSPH - Strategic Board Advisor & Executive Coach"
+      class="absolute inset-0 w-full h-full object-cover"
+      widths={[640, 768, 1024, 1280, 1920]}
+      sizes="100vw"
+      format="webp"
+      quality={85}
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/85 to-dark/60"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 container max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Column: Main Content -->
+      <div class="lg:col-span-7">
+        <!-- Credential Badge -->
+        <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <span class="text-sm font-semibold text-white">Dual Fellow</span>
+          <span class="text-white/60">•</span>
+          <span class="text-sm text-white/90">FCMI + FRSPH | IoD Ambassador</span>
+        </div>
+
+        <!-- Hero Headline - Massive Impact -->
+        <h1 class="hero-title text-white mb-6">
+          I've spent 17 years in boardrooms.<br/>
+          <span class="text-accent">Here's what actually works.</span>
+        </h1>
+
+        <p class="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl">
+          Transform workplace wellbeing into competitive advantage with board-level expertise that bridges strategy and humanity.
+        </p>
+
+        <!-- Key Points -->
+        <div class="space-y-3 mb-10">
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="text-white/90">100+ organisations transformed globally</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="text-white/90">IoD Director of the Year 2025 Global Finalist</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="text-white/90">AI-enhanced methodology for measurable results</span>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button
+            href="/contact"
+            size="large"
+            class="bg-accent hover:bg-accent/90 text-white font-bold px-8 py-4 text-lg btn-hover-effect shadow-lg hover:shadow-xl"
+          >
+            Book Strategic Assessment
+          </Button>
+          <Button
+            href="/services"
+            size="large"
+            variant="ghost"
+            class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark font-semibold btn-hover-effect"
+          >
+            View Services
+          </Button>
+        </div>
+      </div>
+
+      <!-- Right Column: Trust Badges -->
+      <div class="lg:col-span-5">
+        <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 card-hover-effect">
+            <img
+              src="/images/IoD-Ambassador-badge-web.png"
+              alt="IoD Ambassador"
+              class="h-16 w-auto"
+            />
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 card-hover-effect">
+            <img
+              src="/images/RSPH-Fellow-Badge.jpg"
+              alt="FRSPH"
+              class="h-16 w-auto"
+            />
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 card-hover-effect">
+            <img
+              src="/images/iod-global-award-badge.png"
+              alt="IoD Global Award Finalist"
+              class="h-16 w-auto"
+            />
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+            <img
+              src="/images/iod-aspiring-award-badge.png"
+              alt="IoD Aspiring Director Award"
+              class="h-16 w-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>

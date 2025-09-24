@@ -1,0 +1,340 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import Button from '../../components/Button.astro';
+import BlogSearch from '../../components/BlogSearch.astro';
+import CategoryFilter from '../../components/CategoryFilter.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Organize posts by category for better discovery
+const featuredPosts = posts.filter(post => post.data.featured).slice(0, 3);
+const recentPosts = posts.slice(0, 5);
+const popularPosts = posts.filter(post => post.data.popular).slice(0, 4);
+
+// Content pillars based on research consensus (40/25/20/10/5 split)
+const categories = [
+  {
+    name: 'Problem-Solving',
+    slug: 'problem-solving',
+    count: 0,
+    description: 'How-to guides, step-by-step solutions, and tactical tutorials'
+  },
+  {
+    name: 'Industry Insights',
+    slug: 'industry-insights',
+    count: 0,
+    description: 'Trend analysis, market commentary, and future predictions'
+  },
+  {
+    name: 'Thought Leadership',
+    slug: 'thought-leadership',
+    count: 0,
+    description: 'Opinion pieces, original research, and expert interviews'
+  },
+  {
+    name: 'Case Studies',
+    slug: 'case-studies',
+    count: 0,
+    description: 'Client success stories and problem-solution narratives'
+  }
+];
+
+// Count posts per category
+posts.forEach(post => {
+  const cat = categories.find(c => c.slug === post.data.category);
+  if (cat) cat.count++;
+});
+---
+
+<Layout title="Strategic Insights for Growing Businesses | Craig Fearn Blog">
+  <link rel="stylesheet" href="/src/styles/blog-mobile.css" />
+  <section class="py-16 md:py-24 px-4">
+    <div class="container max-w-7xl mx-auto">
+      <!-- Hero Section with Value Proposition -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Proven Strategies to <span class="text-primary">Transform Your Operations</span>
+        </h1>
+        <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+          Actionable insights on management consulting, board governance, and business transformation from a triple-credentialed expert
+        </p>
+
+        <!-- Search Bar (Essential for discovery) -->
+        <div class="max-w-xl mx-auto mb-8 relative">
+          <BlogSearch />
+        </div>
+
+        <!-- Category Navigation -->
+        <CategoryFilter categories={categories} />
+      </div>
+
+      <!-- Most Recent Posts Section (Shows activity) -->
+      <div class="mb-16">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold">Latest Insights</h2>
+          <span class="text-sm text-text-secondary">Updated weekly</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {recentPosts.slice(0, 3).map((post) => (
+            <article
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all group"
+              data-post
+              data-title={post.data.title}
+              data-description={post.data.description}
+              data-category={post.data.category}
+              data-url={`/blog/${post.slug}`}
+              data-date={post.data.pubDate.toLocaleDateString('en-GB', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+              })}
+            >
+              {post.data.heroImage ? (
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ) : (
+                <div class="h-48 bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
+                  <span class="text-white text-6xl font-bold opacity-20">CF</span>
+                </div>
+              )}
+              <div class="p-6">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-900 rounded-full text-xs font-semibold">
+                    {post.data.category}
+                  </span>
+                  <time class="text-xs text-text-secondary">
+                    {post.data.pubDate.toLocaleDateString('en-GB', {
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                  </time>
+                  <span class="text-xs text-text-secondary">
+                    {post.data.readingTime || '5 min read'}
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold mb-3 line-clamp-2">
+                  <a href={`/blog/${post.slug}`} class="hover:text-primary transition-colors">
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="text-text-secondary mb-4 line-clamp-2">
+                  {post.data.description}
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-text-secondary">
+                    By {post.data.author}
+                  </span>
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="text-primary font-semibold hover:underline text-sm flex items-center gap-1"
+                  >
+                    Read More
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <!-- Additional Recent Posts List -->
+        <div class="grid md:grid-cols-2 gap-4">
+          {recentPosts.slice(3, 5).map((post) => (
+            <div
+              class="bg-white p-4 rounded-lg border border-gray-200 hover:border-primary transition-colors"
+              data-post
+              data-title={post.data.title}
+              data-description={post.data.description}
+              data-category={post.data.category}
+              data-url={`/blog/${post.slug}`}
+              data-date={post.data.pubDate.toLocaleDateString('en-GB', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+              })}
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex-grow">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="text-xs font-semibold text-primary">
+                      {post.data.category}
+                    </span>
+                    <span class="text-xs text-text-secondary">•</span>
+                    <time class="text-xs text-text-secondary">
+                      {post.data.pubDate.toLocaleDateString('en-GB', {
+                        month: 'short',
+                        day: 'numeric'
+                      })}
+                    </time>
+                  </div>
+                  <h3 class="font-bold mb-2">
+                    <a href={`/blog/${post.slug}`} class="hover:text-primary transition-colors">
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-sm text-text-secondary line-clamp-2">
+                    {post.data.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Popular/Featured Posts Section -->
+      {popularPosts.length > 0 && (
+        <div class="mb-16">
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-3xl font-bold">Most Popular</h2>
+            <span class="text-sm text-text-secondary">Reader favorites</span>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            {popularPosts.slice(0, 2).map((post, index) => (
+              <article
+                class="bg-gradient-to-br from-blue-50 to-white rounded-lg p-8 border-2 border-blue-100"
+                data-post
+                data-title={post.data.title}
+                data-description={post.data.description}
+                data-category={post.data.category}
+                data-url={`/blog/${post.slug}`}
+                data-date={post.data.pubDate.toLocaleDateString('en-GB', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric'
+                })}
+              >
+                <div class="flex items-start gap-4">
+                  <span class="text-4xl font-bold text-primary opacity-20">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <div class="flex items-center gap-3 mb-3">
+                      <span class="px-3 py-1 bg-primary text-white rounded-full text-xs font-semibold">
+                        {post.data.category}
+                      </span>
+                      <span class="text-xs text-text-secondary">
+                        {post.data.readingTime || '7 min read'}
+                      </span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">
+                      <a href={`/blog/${post.slug}`} class="hover:text-primary transition-colors">
+                        {post.data.title}
+                      </a>
+                    </h3>
+                    <p class="text-text-secondary mb-4">
+                      {post.data.description}
+                    </p>
+                    <a
+                      href={`/blog/${post.slug}`}
+                      class="text-primary font-bold hover:underline inline-flex items-center gap-2"
+                    >
+                      Read Full Article
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Newsletter CTA (Above fold placement - research shows 2-5% conversion) -->
+      <div class="mb-16 bg-gradient-to-r from-primary to-blue-600 text-white p-12 rounded-2xl">
+        <div class="max-w-3xl mx-auto">
+          <NewsletterForm
+            variant="inline"
+            heading="Get Strategic Insights Delivered"
+            subheading="Join 500+ executives receiving weekly insights on transformation, governance, and growth"
+            buttonText="Subscribe Free"
+          />
+        </div>
+      </div>
+
+      <!-- Category Preview Sections -->
+      <div class="space-y-16">
+        {categories.filter(cat => cat.count > 0).map(category => {
+          const categoryPosts = posts.filter(p => p.data.category === category.slug).slice(0, 4);
+          return categoryPosts.length > 0 && (
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">{category.name}</h2>
+                <a href={`/blog/category/${category.slug}`} class="text-primary font-semibold hover:underline">
+                  View All ({category.count}) →
+                </a>
+              </div>
+
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {categoryPosts.map(post => (
+                  <article
+                    class="bg-white rounded-lg border border-gray-200 p-5 hover:border-primary hover:shadow-lg transition-all"
+                    data-post
+                    data-title={post.data.title}
+                    data-description={post.data.description}
+                    data-category={post.data.category}
+                    data-url={`/blog/${post.slug}`}
+                    data-date={post.data.pubDate.toLocaleDateString('en-GB', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric'
+                    })}
+                  >
+                    <time class="text-xs text-text-secondary">
+                      {post.data.pubDate.toLocaleDateString('en-GB', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                      })}
+                    </time>
+                    <h3 class="font-bold mt-2 mb-2 text-sm line-clamp-2">
+                      <a href={`/blog/${post.slug}`} class="hover:text-primary transition-colors">
+                        {post.data.title}
+                      </a>
+                    </h3>
+                    <p class="text-xs text-text-secondary line-clamp-3">
+                      {post.data.description}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="mt-16 text-center py-12 border-t">
+        <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Business?</h2>
+        <p class="text-lg text-text-secondary mb-8">
+          Apply these insights with expert guidance
+        </p>
+        <Button href="/contact" variant="primary" size="large">
+          Schedule Your Free Consultation
+        </Button>
+      </div>
+
+      <!-- Archive Link -->
+      <div class="mt-8 text-center">
+        <a href="/blog/archive" class="text-text-secondary hover:text-primary transition-colors text-sm">
+          Browse Full Archive →
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

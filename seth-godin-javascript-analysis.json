@@ -1,0 +1,38 @@
+{
+  "website": "Seth Godin's Blog",
+  "url": "https://seths.blog/",
+  "title": "Seth's Blog",
+  "javascript_analysis": {
+    "inline_scripts_count": 12,
+    "external_scripts_count": 24,
+    "total_scripts": 36,
+    "tracking_integrations": {
+      "googleAnalytics": false,
+      "facebookPixel": true,
+      "tiktokPixel": false,
+      "hubspot": false,
+      "googleTagManager": true
+    },
+    "wordpress_version": "WordPress",
+    "external_script_domains": [
+      "connect.facebook.net",
+      "secure.gaug.es",
+      "seths.blog",
+      "geniuslinkcdn.com",
+      "stats.wp.com",
+      "www.googletagmanager.com"
+    ],
+    "javascript_libraries": [
+      "jQuery 3.7.1",
+      "jQuery Migrate 3.4.1"
+    ],
+    "key_features": [
+      "Minimal tracking (Facebook Pixel, GTM)",
+      "WordPress-based blog",
+      "Gauge analytics",
+      "GeniusLink for affiliate management",
+      "WordPress.com stats",
+      "Simple, lightweight implementation"
+    ]
+  }
+}

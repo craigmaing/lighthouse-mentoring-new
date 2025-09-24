@@ -1,0 +1,160 @@
+{
+  "analysis_date": "2025-09-24",
+  "summary": {
+    "total_sites_analyzed": 5,
+    "sites": [
+      "Gary Vaynerchuk",
+      "Grant Cardone",
+      "Tim Ferriss",
+      "Seth Godin",
+      "Tony Robbins (partial)"
+    ],
+    "key_findings": {
+      "most_scripts": "Grant Cardone (113 total)",
+      "least_scripts": "Seth Godin (36 total)",
+      "most_common_tracking": ["Google Analytics", "Facebook Pixel", "Google Tag Manager"],
+      "most_common_cms": "WordPress",
+      "marketing_sophistication": {
+        "highest": "Grant Cardone (HubSpot, extensive tracking)",
+        "lowest": "Seth Godin (minimal tracking)"
+      }
+    }
+  },
+  "detailed_comparison": {
+    "gary_vaynerchuk": {
+      "url": "https://garyvaynerchuk.com/",
+      "total_scripts": 60,
+      "inline_scripts": 21,
+      "external_scripts": 39,
+      "cms": "WordPress 6.8.2",
+      "theme": "Salient Theme v16.2.0",
+      "tracking_tools": [
+        "Google Analytics (UA-70669-20)",
+        "Google Tag Manager",
+        "Facebook Pixel (380822665420224)",
+        "TikTok Pixel (CC39923C77U295EGHHRG)",
+        "Google Ads (AW-998150423)"
+      ],
+      "javascript_libraries": [
+        "jQuery 3.7.1",
+        "jQuery Migrate 3.4.1",
+        "Anime.js 4.5.1",
+        "Flickity 2.3.1",
+        "Fancybox 3.3.9"
+      ],
+      "notable_features": [
+        "Gravity Forms for lead generation",
+        "Heavy animation libraries",
+        "Comprehensive tracking setup",
+        "Premium theme implementation"
+      ]
+    },
+    "grant_cardone": {
+      "url": "https://grantcardone.com/",
+      "total_scripts": 113,
+      "inline_scripts": 49,
+      "external_scripts": 64,
+      "cms": "HubSpot CMS",
+      "tracking_tools": [
+        "Google Analytics",
+        "Google Tag Manager",
+        "Facebook Pixel",
+        "TikTok Pixel",
+        "HubSpot Analytics"
+      ],
+      "notable_features": [
+        "HubSpot full integration",
+        "Extensive marketing automation",
+        "Heavy script load",
+        "Multiple conversion tracking systems"
+      ]
+    },
+    "tim_ferriss": {
+      "url": "https://tim.blog/",
+      "total_scripts": 85,
+      "inline_scripts": 31,
+      "external_scripts": 54,
+      "cms": "WordPress",
+      "tracking_tools": [
+        "Google Analytics",
+        "Facebook Pixel",
+        "Minimal third-party tracking"
+      ],
+      "notable_features": [
+        "Content-focused implementation",
+        "Moderate script load",
+        "Standard WordPress setup",
+        "Less aggressive marketing tracking"
+      ]
+    },
+    "seth_godin": {
+      "url": "https://seths.blog/",
+      "total_scripts": 36,
+      "inline_scripts": 12,
+      "external_scripts": 24,
+      "cms": "WordPress",
+      "tracking_tools": [
+        "Facebook Pixel",
+        "Google Tag Manager",
+        "Gauge Analytics",
+        "WordPress.com Stats"
+      ],
+      "javascript_libraries": [
+        "jQuery 3.7.1",
+        "jQuery Migrate 3.4.1"
+      ],
+      "notable_features": [
+        "Minimal tracking approach",
+        "Lightweight implementation",
+        "Focus on content over marketing tech",
+        "GeniusLink for affiliate management",
+        "Simple, clean architecture"
+      ]
+    },
+    "tony_robbins": {
+      "url": "https://tonyrobbins.com/",
+      "status": "Partial data due to page size",
+      "cms": "WordPress (detected)",
+      "tracking_tools": [
+        "Google Analytics",
+        "Facebook Pixel",
+        "Additional tracking detected but not fully extracted"
+      ],
+      "notable_features": [
+        "Very large page size",
+        "Extensive content and scripts",
+        "Complex implementation"
+      ]
+    }
+  },
+  "insights": {
+    "tracking_patterns": {
+      "universal_tools": ["Google Analytics", "Facebook Pixel"],
+      "premium_tools": ["HubSpot (Grant Cardone)", "TikTok Pixel (Gary Vee, Grant Cardone)"],
+      "unique_tools": ["Gauge Analytics (Seth Godin)", "GeniusLink (Seth Godin)"]
+    },
+    "technical_approach": {
+      "heavy_marketers": [
+        "Grant Cardone - 113 scripts, full marketing automation",
+        "Gary Vaynerchuk - 60 scripts, comprehensive tracking"
+      ],
+      "balanced_approach": [
+        "Tim Ferriss - 85 scripts, moderate tracking"
+      ],
+      "minimalists": [
+        "Seth Godin - 36 scripts, minimal tracking, content-focused"
+      ]
+    },
+    "cms_preferences": {
+      "wordpress": ["Gary Vaynerchuk", "Tim Ferriss", "Seth Godin", "Tony Robbins"],
+      "hubspot": ["Grant Cardone"]
+    },
+    "marketing_sophistication_ranking": [
+      "1. Grant Cardone - Full HubSpot integration, extensive automation",
+      "2. Gary Vaynerchuk - Multi-channel tracking, premium tools",
+      "3. Tim Ferriss - Standard tracking setup",
+      "4. Tony Robbins - (Partial data, appears extensive)",
+      "5. Seth Godin - Minimal tracking, content-first approach"
+    ]
+  }
+}

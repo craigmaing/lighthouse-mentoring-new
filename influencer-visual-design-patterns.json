@@ -1,0 +1,442 @@
+{
+  "visual_design_patterns_analysis": {
+    "analysis_date": "2025-01-24",
+    "sites_analyzed": 20,
+    "methodology": "DOM structure and element analysis from JavaScript extraction",
+
+    "color_schemes_discovered": {
+      "1_primary_color_strategies": {
+        "monochromatic_with_accent": {
+          "pattern": "Black/white base with single bold accent color",
+          "examples": [
+            {
+              "site": "Neil Patel",
+              "colors": {
+                "base": "White (#FFFFFF)",
+                "text": "Dark gray (#26272C)",
+                "accent": "Orange (#FF5722)",
+                "cta_button": "Orange (#F16232)"
+              }
+            },
+            {
+              "site": "Pat Flynn",
+              "colors": {
+                "base": "White (#FFFFFF)",
+                "text": "Dark gray (#333333)",
+                "accent": "Green (#48B04B)",
+                "cta_button": "Green (#48B04B)"
+              }
+            },
+            {
+              "site": "Marie Forleo",
+              "colors": {
+                "base": "White (#FFFFFF)",
+                "text": "Dark gray (#2B2B2B)",
+                "accent": "Teal (#00C7BE)",
+                "cta_button": "Teal (#00C7BE)"
+              }
+            }
+          ],
+          "psychology": "Clean, professional with memorable brand color"
+        },
+
+        "bold_contrasts": {
+          "pattern": "High contrast black/white with power colors",
+          "examples": [
+            {
+              "site": "Tony Robbins",
+              "colors": {
+                "base": "Black (#000000)",
+                "text": "White (#FFFFFF)",
+                "accent": "Red (#FF0000)",
+                "energy": "Creates urgency and power"
+              }
+            },
+            {
+              "site": "Grant Cardone",
+              "colors": {
+                "base": "Black (#000000)",
+                "text": "White (#FFFFFF)",
+                "accent": "Red (#E31E24)",
+                "psychology": "Aggressive, urgent, action-oriented"
+              }
+            }
+          ]
+        },
+
+        "trust_building_blues": {
+          "pattern": "Blue-based schemes for trust and authority",
+          "examples": [
+            {
+              "site": "Dave Ramsey",
+              "colors": {
+                "primary": "Navy blue (#003D7A)",
+                "secondary": "Light blue (#4B9BFF)",
+                "trust_signal": "Financial stability and reliability"
+              }
+            },
+            {
+              "site": "Amy Porterfield",
+              "colors": {
+                "primary": "Navy (#1E3A5F)",
+                "accent": "Coral (#FF6B6B)",
+                "warmth": "Professional yet approachable"
+              }
+            }
+          ]
+        },
+
+        "premium_minimal": {
+          "pattern": "Minimal color use for luxury positioning",
+          "examples": [
+            {
+              "site": "James Clear",
+              "colors": {
+                "base": "White (#FFFFFF)",
+                "text": "Black (#000000)",
+                "accent": "Minimal - only hyperlink blue",
+                "philosophy": "Content-first, distraction-free"
+              }
+            },
+            {
+              "site": "Tim Ferriss",
+              "colors": {
+                "base": "White (#FFFFFF)",
+                "text": "Dark gray (#333333)",
+                "minimal_accent": "Occasional orange for CTAs",
+                "approach": "Intellectual, content-focused"
+              }
+            }
+          ]
+        }
+      },
+
+      "2_button_and_cta_colors": {
+        "high_contrast_ctas": {
+          "pattern": "CTAs that dramatically stand out from page",
+          "best_practices": [
+            "Orange on white (Neil Patel)",
+            "Green on white (Pat Flynn)",
+            "Red on black (Tony Robbins)",
+            "Yellow on dark (Russell Brunson)"
+          ],
+          "psychology": "Creates visual hierarchy and draws action"
+        },
+
+        "gradient_buttons": {
+          "trend": "Modern gradients for depth and energy",
+          "examples": [
+            "Linear gradients for premium feel",
+            "Hover effects with color shifts",
+            "Shadow effects for dimensionality"
+          ]
+        }
+      },
+
+      "3_background_strategies": {
+        "white_space_maximalist": {
+          "pattern": "Extensive white space for premium feel",
+          "practitioners": ["James Clear", "Seth Godin", "Tim Ferriss"],
+          "benefit": "Focus on content, reduces cognitive load"
+        },
+
+        "section_alternation": {
+          "pattern": "White/gray section alternation",
+          "practitioners": ["Amy Porterfield", "Marie Forleo", "Pat Flynn"],
+          "benefit": "Creates visual rhythm and content separation"
+        },
+
+        "dark_mode_power": {
+          "pattern": "Dark backgrounds for intensity",
+          "practitioners": ["Tony Robbins", "Grant Cardone", "Gary Vee"],
+          "psychology": "Creates urgency and premium feel"
+        }
+      }
+    },
+
+    "layout_patterns_discovered": {
+      "1_hero_section_layouts": {
+        "centered_single_focus": {
+          "pattern": "Centered headline, subheadline, single CTA",
+          "structure": {
+            "headline": "60-80px bold font",
+            "subheadline": "20-24px regular font",
+            "cta_button": "Prominent, contrasting color",
+            "spacing": "100-150px padding top/bottom"
+          },
+          "examples": ["Neil Patel", "Pat Flynn", "Amy Porterfield"],
+          "effectiveness": "Clear value prop, reduces decision fatigue"
+        },
+
+        "split_hero_with_image": {
+          "pattern": "50/50 split with text left, image/video right",
+          "structure": {
+            "left_column": "Headlines and CTA",
+            "right_column": "Personal photo or video",
+            "responsive": "Stacks on mobile"
+          },
+          "examples": ["Marie Forleo", "Brendon Burchard", "Lewis Howes"],
+          "psychology": "Personal connection + value proposition"
+        },
+
+        "full_width_video_background": {
+          "pattern": "Video background with overlay text",
+          "structure": {
+            "video": "Muted, looping background",
+            "overlay": "Semi-transparent dark layer",
+            "text": "White text on top"
+          },
+          "examples": ["Tony Robbins", "Grant Cardone"],
+          "impact": "High energy, immediate engagement"
+        },
+
+        "multi_option_hero": {
+          "pattern": "Multiple pathways from hero",
+          "structure": {
+            "primary_cta": "Main action button",
+            "secondary_options": "2-3 alternative paths",
+            "segmentation": "Different user types"
+          },
+          "examples": ["Russell Brunson", "Dave Ramsey"],
+          "strategy": "Serves different audience segments"
+        }
+      },
+
+      "2_navigation_patterns": {
+        "minimal_navigation": {
+          "pattern": "5-7 items maximum",
+          "typical_structure": [
+            "Start Here / About",
+            "Blog / Podcast",
+            "Products / Courses",
+            "Resources",
+            "Contact"
+          ],
+          "mobile": "Hamburger menu standard",
+          "sticky_behavior": "70% use sticky headers"
+        },
+
+        "mega_menu_approach": {
+          "pattern": "Dropdown mega menus for complex offerings",
+          "practitioners": ["Tony Robbins", "Dave Ramsey"],
+          "benefit": "Showcases full product ecosystem"
+        },
+
+        "cta_in_nav": {
+          "pattern": "CTA button in navigation bar",
+          "examples": [
+            "Get Started",
+            "Free Training",
+            "Work With Me"
+          ],
+          "placement": "Far right, contrasting color"
+        }
+      },
+
+      "3_content_block_layouts": {
+        "card_based_design": {
+          "pattern": "3-column card layouts",
+          "structure": {
+            "columns": "3 on desktop, 1 on mobile",
+            "cards": "Equal height, shadow/border",
+            "content": "Icon, headline, description, link"
+          },
+          "usage": "Services, features, blog posts"
+        },
+
+        "zigzag_features": {
+          "pattern": "Alternating left/right image placement",
+          "structure": {
+            "row_1": "Image left, text right",
+            "row_2": "Text left, image right",
+            "continues": "Alternating pattern"
+          },
+          "benefit": "Visual variety, maintains interest"
+        },
+
+        "testimonial_carousels": {
+          "pattern": "Rotating testimonial displays",
+          "features": [
+            "Auto-rotation with pause on hover",
+            "Dots or arrows for navigation",
+            "Photo + name + title format",
+            "Star ratings common"
+          ]
+        },
+
+        "logo_strips": {
+          "pattern": "Client/media logo horizontal strips",
+          "structure": {
+            "grayscale": "Logos in grayscale",
+            "spacing": "Even distribution",
+            "responsive": "Scrolling on mobile"
+          },
+          "placement": "Above or below fold"
+        }
+      },
+
+      "4_spacing_and_typography": {
+        "generous_spacing": {
+          "pattern": "Large padding and margins",
+          "measurements": {
+            "section_padding": "80-120px vertical",
+            "paragraph_spacing": "1.5-2x line height",
+            "element_margins": "40-60px between elements"
+          },
+          "benefit": "Premium feel, easy scanning"
+        },
+
+        "typography_hierarchy": {
+          "h1": {
+            "desktop": "48-72px",
+            "mobile": "32-48px",
+            "weight": "700-900"
+          },
+          "h2": {
+            "desktop": "36-48px",
+            "mobile": "24-32px",
+            "weight": "600-700"
+          },
+          "body": {
+            "size": "16-20px",
+            "line_height": "1.6-1.8",
+            "weight": "400"
+          },
+          "fonts": {
+            "headlines": "Sans-serif (Montserrat, Poppins, Inter)",
+            "body": "System fonts or readable sans-serif"
+          }
+        }
+      },
+
+      "5_mobile_responsiveness": {
+        "mobile_first_indicators": {
+          "stacking": "All columns stack vertically",
+          "touch_targets": "Minimum 44px height for buttons",
+          "font_scaling": "Readable without zooming",
+          "navigation": "Hamburger menu universal"
+        },
+
+        "breakpoints": {
+          "mobile": "< 768px",
+          "tablet": "768px - 1024px",
+          "desktop": "> 1024px"
+        }
+      },
+
+      "6_footer_patterns": {
+        "comprehensive_footer": {
+          "pattern": "Multi-column with extensive links",
+          "sections": [
+            "Company info and logo",
+            "Quick links/sitemap",
+            "Resources",
+            "Social media icons",
+            "Newsletter signup",
+            "Legal links"
+          ]
+        },
+
+        "minimal_footer": {
+          "pattern": "Simple copyright and essential links",
+          "content": [
+            "Copyright notice",
+            "Privacy/Terms",
+            "Social icons"
+          ]
+        }
+      }
+    },
+
+    "conversion_focused_design": {
+      "visual_hierarchy": {
+        "principle": "Guide eye to conversion points",
+        "techniques": [
+          "Size contrast for CTAs",
+          "Color contrast for buttons",
+          "White space to isolate CTAs",
+          "Directional cues (arrows, images looking at CTA)"
+        ]
+      },
+
+      "trust_signals_placement": {
+        "above_fold": [
+          "Media logos",
+          "Follower/customer counts",
+          "Credibility badges"
+        ],
+        "near_ctas": [
+          "Testimonials",
+          "Guarantees",
+          "Security badges"
+        ]
+      },
+
+      "friction_reduction": {
+        "design_choices": [
+          "Single column forms",
+          "Minimal required fields",
+          "Clear error messages",
+          "Progress indicators",
+          "Inline validation"
+        ]
+      }
+    },
+
+    "design_trends_observed": {
+      "current_trends": [
+        "Minimalist color palettes (2-3 colors max)",
+        "Bold, oversized typography",
+        "Extensive white space",
+        "Card-based layouts",
+        "Video backgrounds",
+        "Gradient accents",
+        "Micro-animations on scroll",
+        "Dark mode options"
+      ],
+
+      "outdated_elements_avoided": [
+        "Stock photo overuse",
+        "Busy backgrounds",
+        "Multiple fonts",
+        "Sidebar-heavy layouts",
+        "Flash-based elements",
+        "Auto-playing audio"
+      ]
+    },
+
+    "recommendations_for_lighthouse": {
+      "color_scheme": {
+        "recommended_palette": {
+          "primary": "Deep blue (#1E3A8A) - trust and professionalism",
+          "accent": "Bright teal (#10B981) - innovation and growth",
+          "base": "White (#FFFFFF) - clean and clear",
+          "text": "Dark gray (#1F2937) - readable",
+          "cta": "Teal (#10B981) - stands out"
+        },
+        "rationale": "Combines trust (blue) with innovation (teal) for B2B wellbeing"
+      },
+
+      "layout_recommendations": {
+        "hero": "Split layout with Craig's photo + clear value prop",
+        "navigation": "Minimal 5-item menu with 'Get Assessment' CTA",
+        "content_blocks": "3-column cards for services",
+        "testimonials": "Carousel with company logos",
+        "footer": "Comprehensive with resources and credentials"
+      },
+
+      "typography": {
+        "headlines": "Inter or Poppins - modern and professional",
+        "body": "System fonts for fast loading",
+        "sizes": "Follow established hierarchy patterns"
+      },
+
+      "conversion_elements": {
+        "primary_cta": "Get Your Free Wellbeing Score",
+        "color": "Contrasting teal button",
+        "placement": "Above fold and after each section",
+        "trust_signals": "Client logos immediately visible"
+      }
+    }
+  }
+}

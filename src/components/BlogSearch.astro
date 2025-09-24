@@ -1,0 +1,131 @@
+---
+// Blog search component with client-side functionality
+---
+
+<div class="blog-search-container">
+  <div class="relative">
+    <input
+      type="search"
+      id="blog-search"
+      placeholder="Search insights..."
+      class="w-full px-6 py-4 pr-12 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary text-lg transition-all"
+      aria-label="Search blog posts"
+    />
+    <button
+      type="button"
+      class="absolute right-3 top-1/2 transform -translate-y-1/2"
+      aria-label="Search"
+    >
+      <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Search results dropdown -->
+  <div id="search-results" class="hidden absolute z-10 mt-2 w-full bg-white rounded-lg shadow-lg border border-gray-200 max-h-96 overflow-y-auto">
+    <!-- Results will be populated here -->
+  </div>
+</div>
+
+<script>
+  // Client-side search implementation
+  const searchInput = document.getElementById('blog-search') as HTMLInputElement;
+  const searchResults = document.getElementById('search-results');
+
+  // Get all blog posts data from the page
+  const blogPosts = Array.from(document.querySelectorAll('[data-post]')).map(el => ({
+    title: el.getAttribute('data-title'),
+    description: el.getAttribute('data-description'),
+    category: el.getAttribute('data-category'),
+    url: el.getAttribute('data-url'),
+    date: el.getAttribute('data-date')
+  }));
+
+  // Debounce function for search
+  function debounce(func: Function, wait: number) {
+    let timeout: NodeJS.Timeout;
+    return function executedFunction(...args: any[]) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Search function
+  function performSearch(query: string) {
+    if (query.length < 2) {
+      searchResults?.classList.add('hidden');
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const results = blogPosts.filter(post =>
+      post.title?.toLowerCase().includes(lowerQuery) ||
+      post.description?.toLowerCase().includes(lowerQuery) ||
+      post.category?.toLowerCase().includes(lowerQuery)
+    );
+
+    if (results.length > 0 && searchResults) {
+      searchResults.innerHTML = results.slice(0, 5).map(post => `
+        <a href="${post.url}" class="block p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0">
+          <div class="flex items-start justify-between">
+            <div class="flex-grow">
+              <h3 class="font-semibold text-gray-900 mb-1">${post.title}</h3>
+              <p class="text-sm text-gray-600 line-clamp-2">${post.description}</p>
+              <div class="flex items-center gap-2 mt-2">
+                <span class="text-xs bg-brand-100 text-brand-900 px-2 py-1 rounded-full">${post.category}</span>
+                <span class="text-xs text-gray-500">${post.date}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      `).join('') + (results.length > 5 ? `
+        <div class="p-4 text-center text-sm text-gray-600">
+          Showing 5 of ${results.length} results
+        </div>
+      ` : '');
+
+      searchResults.classList.remove('hidden');
+    } else if (searchResults) {
+      searchResults.innerHTML = `
+        <div class="p-8 text-center text-gray-500">
+          <svg class="w-12 h-12 mx-auto mb-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <p class="text-sm">No results found for "${query}"</p>
+        </div>
+      `;
+      searchResults.classList.remove('hidden');
+    }
+  }
+
+  // Attach event listeners
+  const debouncedSearch = debounce(performSearch, 300);
+
+  searchInput?.addEventListener('input', (e) => {
+    const target = e.target as HTMLInputElement;
+    debouncedSearch(target.value);
+  });
+
+  // Close search results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput?.contains(e.target as Node) && !searchResults?.contains(e.target as Node)) {
+      searchResults?.classList.add('hidden');
+    }
+  });
+
+  // Handle Enter key for search
+  searchInput?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const firstResult = searchResults?.querySelector('a');
+      if (firstResult) {
+        window.location.href = firstResult.getAttribute('href') || '#';
+      }
+    }
+  });
+</script>

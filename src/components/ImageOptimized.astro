@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  loading?: 'eager' | 'lazy';
+  class?: string;
+  sizes?: string;
+  widths?: number[];
+  quality?: number;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  class: className,
+  sizes = '100vw',
+  widths = [640, 768, 1024, 1280, 1920],
+  quality = 85
+} = Astro.props;
+
+// Import the image dynamically
+const images = import.meta.glob('/public/images/**/*.{jpeg,jpg,png,gif,webp}');
+const imagePath = src.startsWith('/') ? `/public${src}` : `/public/${src}`;
+const imageImport = images[imagePath];
+
+if (!imageImport) {
+  console.warn(`Image not found: ${imagePath}`);
+}
+
+const resolvedImage = imageImport ? await imageImport() : { default: src };
+---
+
+{imageImport ? (
+  <Image
+    src={resolvedImage.default}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    class={className}
+    widths={widths}
+    sizes={sizes}
+    format="webp"
+    quality={quality}
+  />
+) : (
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    class={className}
+  />
+)}

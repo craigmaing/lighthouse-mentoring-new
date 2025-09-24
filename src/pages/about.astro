@@ -1,0 +1,276 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import { getCollection } from 'astro:content';
+
+const testimonials = await getCollection('testimonials');
+const aboutTestimonials = testimonials
+  .filter((testimonial) => ['luke-jenkinson', 'yana-james-mills'].includes(testimonial.id))
+  .sort((a, b) => a.data.priority - b.data.priority);
+
+const quickStats = [
+  { value: '17+', label: 'Years advising leadership teams' },
+  { value: '100+', label: 'Organisations supported across sectors' },
+  { value: '20+', label: 'LinkedIn recommendations from directors' }
+];
+---
+
+<Layout
+  title="About Craig Fearn | Executive Coach & Non-Executive Director Advisor"
+  description="Craig Fearn FCMI FRSPH - Executive coach with non-executive director perspective. IoD Ambassador, Fellow of CMI and RSPH, 17+ years leadership development. Supporting boards across UK with wellbeing governance and executive coaching.">
+  <!-- ABOUT HERO - Personal Authority Brand -->
+  <section class="py-20 lg:py-32 px-6 lg:px-8 bg-white">
+    <div class="container max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+      <div>
+        <!-- Credential Badge -->
+        <div class="inline-flex items-center gap-2 mb-8 px-4 py-2 bg-[#00D4AA]/10 backdrop-blur-sm rounded-full border border-[#00D4AA]/20">
+          <span class="text-sm font-semibold text-[#0A4F63]">The Fellow Who Gets It</span>
+          <span class="text-[#4A5568]">•</span>
+          <span class="text-sm text-[#4A5568]">FCMI + FRSPH | IoD Ambassador</span>
+        </div>
+
+        <h1 class="text-5xl lg:text-6xl font-bold text-[#1A202C] leading-tight mb-8">
+          From Factory Floor to<br/>
+          <span class="text-[#0A4F63]">Boardroom Impact</span>
+        </h1>
+
+        <p class="text-2xl text-[#4A5568] leading-relaxed mb-8 max-w-2xl">
+          I've spent 17 years learning what actually transforms organizations.
+          Here's my story and why it matters for your board.
+        </p>
+
+        <p class="text-lg text-[#4A5568] leading-relaxed mb-10 max-w-2xl">
+          As an IoD Ambassador and dual Fellow (FCMI + FRSPH), I bridge the gap between strategy and humanity.
+          Every engagement is principal-to-principal because directors deserve direct access to the insights that drive real change.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/contact" size="large" class="bg-[#00D4AA] hover:bg-[#00C49C] text-[#0A1628] font-bold px-8 py-4 text-lg">Schedule a Conversation</Button>
+          <Button href="/services" size="large" variant="ghost" class="bg-transparent border-2 border-[#0A4F63] text-[#0A4F63] hover:bg-[#0A4F63] hover:text-white font-semibold">Explore My Approach</Button>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            src="/images/craig-portrait-8372.jpg"
+            alt="Craig Fearn speaking with directors"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-white border border-slate-200 rounded-2xl shadow-lg px-5 py-4 text-sm font-semibold text-slate-700">
+          17+ years guiding boards across the UK and beyond
+        </div>
+      </div>
+    </div>
+    <div class="container max-w-7xl mx-auto mt-16">
+      <div class="grid gap-8 sm:grid-cols-3">
+        {quickStats.map((item) => (
+          <div class="bg-gradient-to-br from-[#F7FAFC] to-white border border-gray-100 rounded-3xl px-8 py-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300">
+            <p class="text-5xl font-light text-[#00D4AA] mb-3">{item.value}</p>
+            <p class="text-base font-medium text-[#1A202C] leading-snug">{item.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY SECTION - Dark for Visual Rhythm -->
+  <section class="py-20 lg:py-32 px-6 lg:px-8 dark-section">
+    <div class="container max-w-6xl mx-auto">
+      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
+        The Journey That Shaped<br/>
+        <span class="text-[#00D4AA]">My Philosophy</span>
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Left Timeline -->
+        <div class="space-y-10">
+          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
+            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Early Years: Education & Public Health</h3>
+            <p class="text-white/90 leading-relaxed">
+              My foundation in education and public health revealed something crucial: sustainable change requires both individual development and systemic accountability.
+              HR initiatives alone don't transform organizations—board-level commitment does.
+            </p>
+          </article>
+
+          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
+            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Building Expertise: 17+ Years of Practice</h3>
+            <p class="text-white/90 leading-relaxed">
+              From FTSE companies to ambitious scale-ups, I've supported 100+ organizations. Each engagement taught me that directors need evidence,
+              not optimism. My non-executive perspective keeps strategy grounded in reality.
+            </p>
+          </article>
+        </div>
+
+        <!-- Right Timeline -->
+        <div class="space-y-10">
+          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
+            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Recognition: Dual Fellow + IoD Ambassador</h3>
+            <p class="text-white/90 leading-relaxed">
+              Achieving Fellow status in both management (FCMI) and public health (FRSPH) while serving as IoD Ambassador
+              wasn't about credentials—it was about bridging two worlds that rarely talk to each other.
+            </p>
+          </article>
+
+          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
+            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Today: Closing the Strategy Gap</h3>
+            <p class="text-white/90 leading-relaxed">
+              82% of organizations still lack structured wellbeing governance. My mission is simple: help directors build capability they can sustain,
+              with evidence they can trust, long after the consultancy ends.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Philosophy Statement -->
+      <div class="mt-20 text-center">
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12 max-w-4xl mx-auto">
+          <h3 class="text-3xl font-bold text-white mb-6">
+            "Every engagement is principal-to-principal because<br/>
+            <span class="text-[#00D4AA]">directors deserve direct access to insights.</span>"
+          </h3>
+          <p class="text-xl text-white/90">
+            No junior consultants. No hand-offs. Just the experience you need to transform wellbeing into competitive advantage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-white">
+    <div class="container max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Credibility You Can Validate</h2>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Craig maintains Fellow status with the Royal Society for Public Health (FRSPH) and the Chartered Management Institute (FCMI), a combination rarely held by one consultant. Add his IoD Ambassador remit and you gain direct access to director networks, governance insight, and wellbeing leadership recognised at the highest professional levels.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div class="bg-gradient-to-br from-white to-brand-50/30 rounded-2xl border border-brand-200/50 p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Professional Distinctions</h3>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li>IoD Ambassador for the South West</li>
+                <li>Fellow, Royal Society for Public Health (FRSPH)</li>
+                <li>Fellow, Chartered Management Institute (FCMI)</li>
+                <li>IoD Awards Finalist 2025 (Aspiring & Global)</li>
+              </ul>
+            </div>
+            <div class="bg-gradient-to-br from-white to-brand-50/30 rounded-2xl border border-brand-200/50 p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Qualifications & Memberships</h3>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li>MEd, BSc (Hons), PGCE, QTLS</li>
+                <li>EMCC Professional Coach</li>
+                <li>Executive coaching specialist</li>
+                <li>Wellbeing governance expertise</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-brand-50/30 to-white border border-brand-200/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-brand-800 mb-4">Sectors & Leadership Impact</h3>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Craig has supported more than 100 organisations across technology, financial services, healthcare and the NHS, manufacturing, professional services, and the charity sector. Directors rely on him for:
+          </p>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span>
+              <span>Board advisory and NED-level wellbeing governance</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span>
+              <span>Strategic transformation and organisational development programmes</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span>
+              <span>Executive coaching that keeps leaders resilient and effective</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-background-alt">
+    <div class="container max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-1">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Values in Practice</h2>
+        <p class="text-slate-700 leading-relaxed">
+          These principles guide every engagement and determine whether Lighthouse Mentoring is the right fit for your organisation.
+        </p>
+      </div>
+      <div class="lg:col-span-2 grid sm:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[180px]">
+          <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Wellbeing Is Governance</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Craig positions wellbeing alongside risk, finance, and strategy so directors can evidence decisions, satisfy regulators, and protect people.
+          </p>
+        </div>
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[180px]">
+          <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Evidence Over Assumptions</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            AI-enhanced analysis, stakeholder interviews, and on-the-ground diagnostics combine to create insight leaders can trust.
+          </p>
+        </div>
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[180px]">
+          <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Principal-to-Principal Partnership</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Engagements are delivered without hand-offs to junior teams. Directors work directly with Craig from discovery to delivery.
+          </p>
+        </div>
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[180px]">
+          <h3 class="text-lg font-semibold bg-gradient-to-r from-brand-700 to-brand-800 bg-clip-text text-transparent mb-2">Action Before Optics</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Recommendations focus on practical shifts leaders can activate within current budget cycles while building long-term capability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-white">
+    <div class="container max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-[0.6fr_1.4fr] gap-10 items-start">
+        <div class="bg-gradient-to-br from-brand-700 to-brand-800 text-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h2 class="text-2xl font-bold mb-3">Beyond the Boardroom</h2>
+          <p class="text-white/90 leading-relaxed mb-4">
+            Craig invests time in the Institute of Directors community across Cornwall and the South West, convening directors to share learning and raise wellbeing standards. He remains active in national conversations about mental health at work.
+          </p>
+          <p class="text-sm text-white/75 leading-relaxed">
+            These commitments keep him close to the realities directors face every day — from scaling founders to experienced non-executives navigating rapid change.
+          </p>
+        </div>
+        <div class="space-y-8">
+          {aboutTestimonials.map((testimonial) => (
+            <blockquote class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <p class="text-slate-700 leading-relaxed italic mb-4">“{testimonial.data.content}”</p>
+              <footer class="text-sm text-slate-600">
+                <strong class="text-slate-900">{testimonial.data.name}</strong>, {testimonial.data.role} — {testimonial.data.company}
+              </footer>
+            </blockquote>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-gradient-to-r from-brand-700 to-brand-800 text-white">
+    <div class="container max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Bring Fellow-Level Wellbeing Leadership to Your Board</h2>
+      <p class="text-lg md:text-xl text-white/90 mb-8">
+        Whether you need an independent NED perspective, a focused strategic audit, or executive coaching, Craig ensures directors receive evidence, clarity, and momentum.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact" size="large" variant="white">
+          Book a Conversation
+        </Button>
+        <Button href="https://www.linkedin.com/in/craig-fearn1/" size="large" variant="ghost" class="!bg-transparent !border-2 !border-white !text-white hover:!bg-white hover:!text-brand-800">
+          Connect on LinkedIn
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

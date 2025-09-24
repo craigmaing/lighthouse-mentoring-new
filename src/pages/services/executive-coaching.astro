@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout title="Executive Coaching">
+  <section class="relative py-16 md:py-24 px-4 overflow-hidden">
+    <!-- Hero Banner with Professional Image -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/images/executive-coaching-7490.jpg"
+        alt="Executive coaching session"
+        class="w-full h-full object-cover opacity-15"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
+    </div>
+
+    <div class="container max-w-6xl mx-auto relative z-10">
+      <!-- Header with Badges -->
+      <div class="text-center mb-12">
+        <div class="flex justify-center gap-4 mb-6">
+          <img src="/images/iod-aspiring-badge.png" alt="Aspiring Leaders" class="h-14 w-auto" />
+          <img src="/images/iod-global-badge.png" alt="Global Reach" class="h-14 w-auto" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Executive <span class="text-primary">Wellbeing Coaching</span>
+        </h1>
+        <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+          1-on-1 coaching for leaders who refuse to sacrifice wellbeing for success
+        </p>
+      </div>
+
+      <!-- Craig's Photo and Introduction -->
+      <div class="bg-white rounded-lg shadow-xl p-8 mb-12">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div>
+            <img
+              src="/images/9 LIZ_7481 09.43.39.jpg"
+              alt="Craig Fearn"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold mb-4">Your Executive Coach</h2>
+            <p class="text-lg text-text-secondary mb-4">
+              With IoD Ambassador + FRSPH + FCMI credentials,
+              I bring a unique blend of board-level strategic thinking and deep wellbeing expertise
+              to every coaching engagement.
+            </p>
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p class="text-3xl font-bold text-primary">17+</p>
+                <p class="text-sm text-text-secondary">Years Experience</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-primary">Fellow</p>
+                <p class="text-sm text-text-secondary">Level Expertise</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-primary">AI</p>
+                <p class="text-sm text-text-secondary">Enhanced Insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coaching Focus Areas -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Coaching Focus Areas</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary">
+            <h3 class="text-xl font-bold mb-3">Burnout Prevention</h3>
+            <p class="text-text-secondary">
+              Identify early warning signs and build sustainable high-performance habits
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-secondary">
+            <h3 class="text-xl font-bold mb-3">Stress Mastery</h3>
+            <p class="text-text-secondary">
+              Transform pressure into performance with evidence-based techniques
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-accent">
+            <h3 class="text-xl font-bold mb-3">Leadership Resilience</h3>
+            <p class="text-text-secondary">
+              Build mental toughness while maintaining emotional intelligence
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-accent">
+            <h3 class="text-xl font-bold mb-3">Work-Life Integration</h3>
+            <p class="text-text-secondary">
+              Create boundaries that protect both performance and personal life
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary">
+            <h3 class="text-xl font-bold mb-3">Team Wellbeing</h3>
+            <p class="text-text-secondary">
+              Lead by example and create cultures of sustainable excellence
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-secondary">
+            <h3 class="text-xl font-bold mb-3">Leadership Under Pressure</h3>
+            <p class="text-text-secondary">
+              Navigate uncertainty while maintaining personal equilibrium
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coaching Packages -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Coaching Programmes</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="bg-primary text-white text-center py-2 rounded-t-lg -mx-6 -mt-6 mb-6">
+              <h3 class="text-xl font-bold">Executive Sprint</h3>
+            </div>
+            <p class="text-3xl font-bold text-primary mb-2">£2,500</p>
+            <p class="text-sm text-text-secondary mb-4">3-month programme</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>6 x 60-minute sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Personal wellbeing audit</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Custom action plan</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Email support between sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Resource library access</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 transform scale-105">
+            <div class="bg-secondary text-white text-center py-2 rounded-t-lg -mx-6 -mt-6 mb-6">
+              <h3 class="text-xl font-bold">Leadership Transform</h3>
+            </div>
+            <p class="text-3xl font-bold text-primary mb-2">£5,000</p>
+            <p class="text-sm text-text-secondary mb-4">6-month programme</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>12 x 60-minute sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>360-degree feedback process</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Team wellbeing workshop</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Unlimited email/WhatsApp support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Quarterly progress reviews</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Emergency call privileges</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="bg-accent text-white text-center py-2 rounded-t-lg -mx-6 -mt-6 mb-6">
+              <h3 class="text-xl font-bold">C-Suite Excellence</h3>
+            </div>
+            <p class="text-3xl font-bold text-primary mb-2">£10,000</p>
+            <p class="text-sm text-text-secondary mb-4">12-month partnership</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>24 x 60-minute sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Executive health assessment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Board presentation support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Family wellbeing consultation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>24/7 leadership support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span>Annual retreat planning</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success Stories -->
+      <div class="bg-background-alt rounded-lg p-8 mb-16">
+        <h2 class="text-2xl font-bold text-center mb-8">Executive Success Stories</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg">
+            <p class="text-lg italic mb-4">
+              "Craig's coaching saved my career and probably my marriage. I was heading for burnout at 100mph.
+              His unique blend of strategic thinking and wellbeing expertise helped me transform how I lead."
+            </p>
+            <p class="font-bold">CEO, Tech Scale-up</p>
+            <p class="text-sm text-text-secondary">6-month programme</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg">
+            <p class="text-lg italic mb-4">
+              "The ROI on executive coaching with Craig is immeasurable. Not only am I performing better,
+              but my entire team has benefited from my improved leadership style."
+            </p>
+            <p class="font-bold">CFO, Financial Services</p>
+            <p class="text-sm text-text-secondary">12-month partnership</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA with Image Banner -->
+      <div class="relative rounded-lg overflow-hidden shadow-xl">
+        <img
+          src="/images/18 LIZ_7498.jpg"
+          alt="Executive success"
+          class="w-full h-64 object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
+          <div class="text-center text-white px-4">
+            <h2 class="text-3xl font-bold mb-4">Ready to Elevate Your Leadership?</h2>
+            <p class="text-xl mb-8">Join executives who refuse to compromise on wellbeing</p>
+            <Button href="/contact#book" size="large" variant="ghost" class="bg-white hover:bg-gray-100">
+              Book Discovery Call
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+

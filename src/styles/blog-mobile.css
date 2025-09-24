@@ -1,0 +1,223 @@
+/* Mobile-optimized blog styles based on consensus research */
+
+/* Touch-friendly targets (44x44px minimum) */
+@media (max-width: 768px) {
+  /* Increase touch targets */
+  .category-btn,
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Optimize form inputs for mobile */
+  input[type="email"],
+  input[type="search"],
+  textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+
+  /* Single column layout for blog posts */
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Improve readability on mobile */
+  article p,
+  .blog-content {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  /* Optimize images for mobile */
+  article img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Stack category filters horizontally with scroll */
+  .category-filter {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .category-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-filter > div {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0 1rem;
+  }
+
+  /* Sticky search bar on mobile */
+  .blog-search-container {
+    position: sticky;
+    top: 60px;
+    z-index: 10;
+    background: white;
+    padding: 1rem 0;
+    margin: -1rem -1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Mobile-optimized cards */
+  .blog-card {
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Optimize newsletter form for mobile */
+  .newsletter-form form {
+    padding: 1.5rem;
+  }
+
+  .newsletter-form .flex-row {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  /* Table of contents as collapsible on mobile */
+  .table-of-contents {
+    position: relative;
+    margin: 1.5rem 0;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .table-of-contents-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    border: none;
+    background: none;
+  }
+
+  /* Social sharing - bottom bar on mobile */
+  .social-sharing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    z-index: 20;
+  }
+
+  /* Optimize reading experience */
+  .blog-article {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .blog-article h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .blog-article h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .blog-article h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Author bio optimization for mobile */
+  .author-bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-bio img {
+    margin: 0 auto 1rem;
+  }
+
+  /* Related posts - horizontal scroll on mobile */
+  .related-posts {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .related-posts article {
+    min-width: 280px;
+    flex-shrink: 0;
+  }
+
+  /* Optimize load more button */
+  .load-more-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .blog-search-container {
+    position: relative;
+    top: auto;
+  }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support for better readability */
+@media (prefers-color-scheme: dark) {
+  .blog-article {
+    background: #1f2937;
+    color: #f3f4f6;
+  }
+
+  .blog-card {
+    background: #374151;
+    color: #f3f4f6;
+  }
+
+  .category-btn {
+    background: #4b5563;
+    border-color: #6b7280;
+    color: #f3f4f6;
+  }
+}

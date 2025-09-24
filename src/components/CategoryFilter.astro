@@ -1,0 +1,111 @@
+---
+interface Props {
+  categories: Array<{
+    name: string;
+    slug: string;
+    count: number;
+    description?: string;
+  }>;
+  activeCategory?: string;
+}
+
+const { categories, activeCategory = 'all' } = Astro.props;
+---
+
+<div class="category-filter">
+  <div class="flex flex-wrap justify-center gap-3 mb-8">
+    <button
+      data-category="all"
+      class={`category-btn px-5 py-2 rounded-full font-semibold transition-all ${
+        activeCategory === 'all'
+          ? 'bg-primary text-white'
+          : 'bg-white border-2 border-gray-200 hover:border-primary hover:bg-primary hover:text-white'
+      }`}
+    >
+      All Posts
+    </button>
+    {categories.map(category => (
+      <button
+        data-category={category.slug}
+        class={`category-btn px-5 py-2 rounded-full font-semibold transition-all ${
+          activeCategory === category.slug
+            ? 'bg-primary text-white'
+            : 'bg-white border-2 border-gray-200 hover:border-primary hover:bg-primary hover:text-white'
+        }`}
+        title={category.description}
+      >
+        {category.name} ({category.count})
+      </button>
+    ))}
+  </div>
+</div>
+
+<script>
+  // Category filtering functionality
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  const allPosts = document.querySelectorAll('[data-post]');
+
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCategory = button.getAttribute('data-category');
+
+      // Update active button state
+      categoryButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-white');
+        btn.classList.add('bg-white', 'border-2', 'border-gray-200');
+      });
+
+      button.classList.add('bg-primary', 'text-white');
+      button.classList.remove('bg-white', 'border-2', 'border-gray-200');
+
+      // Filter posts
+      allPosts.forEach(post => {
+        const postElement = post as HTMLElement;
+        const postCategory = postElement.getAttribute('data-category');
+
+        if (selectedCategory === 'all' || postCategory === selectedCategory) {
+          postElement.style.display = '';
+          postElement.classList.remove('hidden');
+
+          // Add fade-in animation
+          postElement.style.opacity = '0';
+          postElement.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            postElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            postElement.style.opacity = '1';
+            postElement.style.transform = 'translateY(0)';
+          }, 50);
+        } else {
+          postElement.classList.add('hidden');
+        }
+      });
+
+      // Update URL without page reload
+      const url = new URL(window.location.href);
+      if (selectedCategory === 'all') {
+        url.searchParams.delete('category');
+      } else {
+        url.searchParams.set('category', selectedCategory);
+      }
+      window.history.pushState({}, '', url);
+
+      // Track analytics event
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'filter_category', {
+          'event_category': 'blog',
+          'event_label': selectedCategory
+        });
+      }
+    });
+  });
+
+  // Handle initial load with category in URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoryParam = urlParams.get('category');
+  if (categoryParam) {
+    const categoryBtn = document.querySelector(`[data-category="${categoryParam}"]`) as HTMLButtonElement;
+    if (categoryBtn) {
+      categoryBtn.click();
+    }
+  }
+</script>

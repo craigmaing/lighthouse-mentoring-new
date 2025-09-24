@@ -1,0 +1,373 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import Button from '../../components/Button.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+// Get related posts for the end of article
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(p => p.slug !== post.slug && p.data.category === post.data.category)
+  .slice(0, 6);
+
+// Calculate reading time if not provided
+const wordCount = post.body.split(' ').length;
+const readingTime = post.data.readingTime || Math.ceil(wordCount / 200) + ' min read';
+---
+
+<Layout title={`${post.data.title} | Craig Fearn Blog`} description={post.data.description}>
+  <link rel="stylesheet" href="/src/styles/blog-mobile.css" />
+  <article class="py-16 md:py-24 px-4 blog-article">
+    <div class="container max-w-4xl mx-auto">
+      <!-- Article Header with Trust Builders -->
+      <header class="mb-12">
+        <!-- Category, Date, Reading Time (Above the Fold) -->
+        <div class="flex items-center justify-center gap-4 mb-6 flex-wrap">
+          <span class="px-3 py-1 bg-primary text-white rounded-full text-sm font-semibold">
+            {post.data.category}
+          </span>
+          <time class="text-text-secondary text-sm" datetime={post.data.pubDate.toISOString()}>
+            {post.data.pubDate.toLocaleDateString('en-GB', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+          {post.data.updatedDate && (
+            <>
+              <span class="text-text-secondary">•</span>
+              <span class="text-text-secondary text-sm">
+                Updated {post.data.updatedDate.toLocaleDateString('en-GB', {
+                  month: 'short',
+                  year: 'numeric'
+                })}
+              </span>
+            </>
+          )}
+          <span class="text-text-secondary">•</span>
+          <span class="text-text-secondary text-sm">{readingTime}</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+          {post.data.title}
+        </h1>
+
+        <!-- Description/Summary -->
+        <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto text-center">
+          {post.data.description}
+        </p>
+
+        <!-- Author & Credentials (Trust Building) -->
+        <div class="flex items-center justify-center gap-4 flex-wrap">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+              CF
+            </div>
+            <div>
+              <p class="font-semibold">Craig Fearn</p>
+              <p class="text-sm text-text-secondary">MBA, CMgr FCMI, AC</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Quick Answer Box (For Featured Snippets) -->
+      {post.data.keyTakeaways && (
+        <div class="mb-12 p-6 bg-blue-50 border-l-4 border-primary rounded-r-lg">
+          <h2 class="font-bold mb-3 text-lg">Key Takeaways:</h2>
+          <ul class="space-y-2">
+            {post.data.keyTakeaways.map(takeaway => (
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>{takeaway}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <!-- Hero Image -->
+      {post.data.heroImage && (
+        <div class="mb-12 rounded-lg overflow-hidden shadow-xl">
+          <img
+            src={post.data.heroImage}
+            alt={post.data.heroImageAlt || post.data.title}
+            class="w-full"
+            loading="eager"
+          />
+          {post.data.heroImageCaption && (
+            <p class="text-sm text-text-secondary text-center mt-2 italic">
+              {post.data.heroImageCaption}
+            </p>
+          )}
+        </div>
+      )}
+
+      <!-- Table of Contents (For Long Posts) -->
+      <nav id="toc" class="mb-12 p-6 bg-gray-50 rounded-lg">
+        <h2 class="font-bold mb-4 text-lg">In This Article:</h2>
+        <ol class="space-y-2 list-decimal list-inside text-primary">
+          <!-- TOC will be generated via JavaScript based on h2 elements -->
+        </ol>
+      </nav>
+
+      <!-- Social Sharing (Sticky Sidebar on Desktop) -->
+      <div class="hidden lg:block fixed left-4 top-1/2 transform -translate-y-1/2 z-10">
+        <div class="flex flex-col gap-3">
+          <button
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(window.location.href), '_blank')"
+            class="w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            aria-label="Share on Twitter"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </button>
+          <button
+            onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')"
+            class="w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            aria-label="Share on LinkedIn"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </button>
+          <button
+            onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard!')"
+            class="w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+            aria-label="Copy link"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Article Content with Optimized Typography -->
+      <div class="prose prose-lg max-w-none
+        prose-headings:font-bold prose-headings:text-gray-900
+        prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+        prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+        prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
+        prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-gray-900
+        prose-ul:my-6 prose-ol:my-6
+        prose-li:my-2
+        prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:my-8
+        prose-img:rounded-lg prose-img:shadow-lg prose-img:my-8
+        prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+        ">
+        <Content />
+      </div>
+
+      <!-- Content Upgrade CTA (If Available) -->
+      {post.data.contentUpgrade && (
+        <div class="my-12 p-8 bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">{post.data.contentUpgrade.title}</h3>
+          <p class="text-text-secondary mb-6">{post.data.contentUpgrade.description}</p>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Your email"
+              required
+              class="flex-grow px-4 py-3 border rounded-lg focus:outline-none focus:border-primary"
+            />
+            <button
+              type="submit"
+              class="px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              {post.data.contentUpgrade.buttonText || 'Get Free Resource'}
+            </button>
+          </form>
+        </div>
+      )}
+
+      <!-- Tags/Topics -->
+      {post.data.tags && post.data.tags.length > 0 && (
+        <div class="mt-12 pt-8 border-t">
+          <h3 class="text-sm font-semibold text-text-secondary mb-4 uppercase tracking-wider">Related Topics</h3>
+          <div class="flex flex-wrap gap-2">
+            {post.data.tags.map((tag) => (
+              <a
+                href={`/blog/tag/${tag.toLowerCase().replace(' ', '-')}`}
+                class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white transition-colors"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Enhanced Author Bio -->
+      <div class="mt-12 p-8 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200">
+        <div class="flex flex-col sm:flex-row items-start gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              CF
+            </div>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold mb-2">About Craig Fearn</h3>
+            <p class="text-primary font-semibold mb-3">
+              MBA, CMgr FCMI, AC | Management Consultant & Board Advisor
+            </p>
+            <p class="text-text-secondary mb-4">
+              Craig brings 25+ years of experience transforming SMEs from startup to £100M+ enterprises.
+              As a triple-credentialed consultant, he specializes in strategic planning, operational excellence,
+              and board governance. His unique approach combines traditional consulting rigor with modern
+              AI-enhancement techniques.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="/about" class="text-primary font-semibold hover:underline">
+                Full Bio →
+              </a>
+              <a href="https://www.linkedin.com/in/craig-fearn1/" target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">
+                Connect on LinkedIn →
+              </a>
+              <a href="/contact" class="text-primary font-semibold hover:underline">
+                Work With Craig →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter CTA -->
+      <div class="mt-12 p-8 bg-primary text-white rounded-lg">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">Get More Strategic Insights</h2>
+          <p class="mb-6 opacity-90">
+            Join 500+ executives receiving weekly insights on transformation and growth
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              required
+              class="flex-grow px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500"
+            />
+            <button
+              type="submit"
+              class="px-6 py-3 bg-white text-primary font-bold rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Subscribe Free
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Related Articles (6 recommended by research) -->
+      {relatedPosts.length > 0 && (
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold mb-6">Related Insights</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relatedPosts.map((relPost) => (
+              <article class="bg-white rounded-lg border border-gray-200 p-5 hover:border-primary hover:shadow-lg transition-all">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="text-xs font-semibold text-primary">
+                    {relPost.data.category}
+                  </span>
+                  <span class="text-xs text-text-secondary">•</span>
+                  <time class="text-xs text-text-secondary">
+                    {relPost.data.pubDate.toLocaleDateString('en-GB', {
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                  </time>
+                </div>
+                <h3 class="font-bold mb-2 line-clamp-2">
+                  <a href={`/blog/${relPost.slug}`} class="hover:text-primary transition-colors">
+                    {relPost.data.title}
+                  </a>
+                </h3>
+                <p class="text-sm text-text-secondary line-clamp-2">
+                  {relPost.data.description}
+                </p>
+                <a
+                  href={`/blog/${relPost.slug}`}
+                  class="text-primary font-semibold text-sm hover:underline mt-3 inline-block"
+                >
+                  Read More →
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Bottom CTA -->
+      <div class="mt-12 p-8 bg-gradient-to-r from-blue-50 to-white rounded-lg border-2 border-blue-200 text-center">
+        <h2 class="text-2xl font-bold mb-4">Ready to Apply These Insights?</h2>
+        <p class="text-text-secondary mb-6">
+          Get personalized guidance on implementing these strategies in your business
+        </p>
+        <Button href="/contact" size="large" variant="primary">
+          Schedule Your Free Consultation
+        </Button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 flex justify-between items-center">
+        <Button href="/blog" variant="ghost">
+          ← Back to All Articles
+        </Button>
+        <div class="flex gap-2">
+          <!-- Mobile sharing buttons -->
+          <button
+            onclick="if(navigator.share) { navigator.share({title: document.title, url: window.location.href}) }"
+            class="lg:hidden px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.032 4.026a9.001 9.001 0 01-7.432 0m9.032-4.026A9.001 9.001 0 0112 3c-4.474 0-8.268 3.12-9.032 7.326m0 0A9.001 9.001 0 0012 21c4.474 0 8.268-3.12 9.032-7.326"></path>
+            </svg>
+            Share
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Generate Table of Contents -->
+  <script>
+    // Auto-generate table of contents from h2 elements
+    document.addEventListener('DOMContentLoaded', function() {
+      const tocContainer = document.querySelector('#toc ol');
+      const headings = document.querySelectorAll('.prose h2');
+
+      if (tocContainer && headings.length > 2) {
+        headings.forEach((heading, index) => {
+          // Create anchor for heading
+          const id = 'section-' + (index + 1);
+          heading.id = id;
+
+          // Create TOC item
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = '#' + id;
+          a.textContent = heading.textContent;
+          a.className = 'hover:underline';
+          li.appendChild(a);
+          tocContainer.appendChild(li);
+        });
+      } else if (tocContainer) {
+        // Hide TOC if not enough headings
+        document.querySelector('#toc').style.display = 'none';
+      }
+    });
+  </script>
+</Layout>
