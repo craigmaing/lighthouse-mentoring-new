@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import SpeculationRules from '../components/SpeculationRules.astro';
 import { ViewTransitions } from 'astro:transitions';
+import criticalCSS from '../styles/critical-inline.css?raw';
 
 export interface Props {
   title: string;
@@ -24,6 +25,14 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://lighthousementoring.co
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
+    <!-- Critical CSS for Performance -->
+    <style set:html={criticalCSS}></style>
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />

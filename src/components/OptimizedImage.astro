@@ -1,0 +1,59 @@
+---
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+  sizes?: string;
+  priority?: boolean;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  class: className = '',
+  sizes = '100vw',
+  priority = false
+} = Astro.props;
+
+// Generate WebP version path
+const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+const hasWebP = false; // For now, we'll need to generate WebP versions
+
+// Add aspect ratio for preventing layout shift
+const aspectRatio = width && height ? `${width}/${height}` : 'auto';
+---
+
+<picture>
+  {hasWebP && (
+    <source
+      type="image/webp"
+      srcset={webpSrc}
+      sizes={sizes}
+    />
+  )}
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : loading}
+    decoding={priority ? 'sync' : 'async'}
+    class={className}
+    style={`aspect-ratio: ${aspectRatio};`}
+    fetchpriority={priority ? 'high' : 'auto'}
+  />
+</picture>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
