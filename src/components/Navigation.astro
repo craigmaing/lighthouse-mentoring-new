@@ -1,0 +1,89 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="container">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <img
+          src="/images/logo-final.png"
+          alt="Lighthouse Mentoring"
+          class="h-12 w-auto"
+          width="150"
+          height="40"
+        />
+        <span class="text-xl font-bold text-gray-900 hidden sm:block">Lighthouse Mentoring</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center gap-8">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class={`text-gray-700 hover:text-primary transition-colors font-medium ${
+              currentPath === link.href ? 'text-primary' : ''
+            }`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a
+          href="/contact"
+          class="btn btn-primary"
+        >
+          Get Started
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden p-2 text-gray-700 hover:text-primary"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class={`block py-2 text-gray-700 hover:text-primary transition-colors ${
+            currentPath === link.href ? 'text-primary font-semibold' : ''
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a href="/contact" class="btn btn-primary w-full mt-4">
+        Get Started
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
