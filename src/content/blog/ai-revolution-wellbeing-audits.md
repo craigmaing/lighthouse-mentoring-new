@@ -5,7 +5,7 @@ author: "Craig Fearn"
 pubDate: 2025-01-10
 category: "Wellbeing"
 tags: ["AI", "Technology", "Wellbeing", "Innovation"]
-heroImage: "/images/Gemini_Generated_Image_ei9effei9effei9e.png"
+heroImage: "/images/executive-success-7516.jpg"
 ---
 
 ## The Transformation Is Here

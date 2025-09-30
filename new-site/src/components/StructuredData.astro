@@ -1,0 +1,159 @@
+---
+interface Props {
+  type?: 'homepage' | 'person' | 'service';
+  serviceName?: string;
+  serviceDescription?: string;
+}
+
+const { type = 'homepage', serviceName, serviceDescription } = Astro.props;
+
+// Organization Schema - appears on all pages
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lighthouse Mentoring",
+  "alternateName": "Craig Fearn Strategic Consulting",
+  "url": "https://lighthousementoring.co.uk",
+  "logo": "https://lighthousementoring.co.uk/images/logo-final.png",
+  "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Cornwall",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "addressRegion": "South West England"
+  },
+  "email": "craig@lighthousementoring.co.uk",
+  "founder": {
+    "@type": "Person",
+    "name": "Craig Fearn",
+    "jobTitle": "Strategic Consultant & Board Advisor",
+    "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - 17 years of board-level experience",
+    "url": "https://lighthousementoring.co.uk/about",
+    "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/craig-fearn1/"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Fellowship",
+        "name": "FCMI Fellow - Chartered Management Institute"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Fellowship",
+        "name": "FRSPH Fellow - Royal Society for Public Health"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Recognition",
+        "name": "IoD Ambassador - Institute of Directors South West"
+      }
+    ]
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Kingdom"
+  },
+  "priceRange": "£££",
+  "serviceType": [
+    "Board Advisory",
+    "Executive Coaching",
+    "Non-Executive Director Services",
+    "Organizational Wellbeing Audits",
+    "Strategic Consulting"
+  ]
+};
+
+// Person Schema for About page
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Craig Fearn",
+  "jobTitle": "Strategic Consultant & Board Advisor",
+  "description": "Board-level strategic advisor with 17 years of director experience. FCMI Fellow, FRSPH Fellow, and IoD Ambassador specializing in board advisory, executive coaching, and organizational wellbeing.",
+  "url": "https://lighthousementoring.co.uk",
+  "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+  "email": "craig@lighthousementoring.co.uk",
+  "sameAs": [
+    "https://www.linkedin.com/in/craig-fearn1/"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Lighthouse Mentoring"
+  },
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Chartered Management Institute"
+    },
+    {
+      "@type": "Organization",
+      "name": "Royal Society for Public Health"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Fellowship",
+      "name": "FCMI - Chartered Management Institute"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Fellowship",
+      "name": "FRSPH - Royal Society for Public Health"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Ambassador",
+      "name": "IoD Ambassador - Institute of Directors"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "EMCC Professional Coach"
+    }
+  ],
+  "knowsAbout": [
+    "Board Governance",
+    "Executive Coaching",
+    "Strategic Advisory",
+    "Organizational Wellbeing",
+    "Non-Executive Director Services",
+    "Leadership Development"
+  ]
+};
+
+// Service Schema
+const serviceSchema = serviceName ? {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": serviceName,
+  "description": serviceDescription,
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Lighthouse Mentoring",
+    "founder": {
+      "@type": "Person",
+      "name": "Craig Fearn"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Kingdom"
+  },
+  "serviceType": "Professional Consulting"
+} : null;
+
+const schemas = type === 'person'
+  ? [organizationSchema, personSchema]
+  : type === 'service' && serviceSchema
+  ? [organizationSchema, serviceSchema]
+  : [organizationSchema];
+---
+
+{schemas.map((schema) => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}

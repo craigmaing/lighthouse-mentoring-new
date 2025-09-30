@@ -2,77 +2,153 @@
 import Button from './Button.astro';
 ---
 
-<section class="section-padding bg-gradient-to-br from-primary via-primary/90 to-primary text-white relative overflow-hidden">
-  <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-10">
-    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+<section class="section-padding bg-gradient-to-br from-gray-900 via-slate-900 to-black text-white relative overflow-hidden">
+  <!-- Premium Background Elements -->
+  <div class="absolute inset-0">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-accent/20 via-primary/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-primary/20 via-accent/10 to-transparent rounded-full blur-2xl translate-y-1/2 -translate-x-1/4"></div>
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
   </div>
 
   <div class="container max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
-    <!-- Credentials Badge -->
-    <div class="flex justify-center gap-3 mb-8">
-      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-small font-bold rounded-full backdrop-blur uppercase tracking-wider">FCMI</span>
-      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-small font-bold rounded-full backdrop-blur uppercase tracking-wider">IoD Ambassador</span>
-      <span class="inline-flex px-4 py-2 bg-white/20 text-white text-small font-bold rounded-full backdrop-blur uppercase tracking-wider">FRSPH</span>
+    <!-- Premium Credentials Display -->
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4 shadow-2xl">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+          <span class="text-white/90 font-semibold text-sm uppercase tracking-widest">FCMI Fellow</span>
+        </div>
+        <div class="w-px h-6 bg-white/20"></div>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+          <span class="text-white/90 font-semibold text-sm uppercase tracking-widest">FRSPH Fellow</span>
+        </div>
+        <div class="w-px h-6 bg-white/20"></div>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+          <span class="text-white/90 font-semibold text-sm uppercase tracking-widest">Director of the Year Finalist</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Main Headline -->
-    <h2 class="text-h1 font-bold mb-6 leading-tight text-white drop-shadow-lg">
-      Ready to Elevate Your Leadership Performance?
-    </h2>
+    <!-- Premium Headline -->
+    <div class="mb-12">
+      <h2 class="text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-gray-100 to-accent bg-clip-text text-transparent">
+        Transform Your
+        <br/>
+        <span class="text-accent">Leadership Impact</span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full mb-8"></div>
+    </div>
 
-    <!-- Subheadline -->
-    <p class="text-body-large mb-12 text-white/95 max-w-3xl mx-auto drop-shadow leading-relaxed">
-      Join the ranks of HSBC, Brown-Forman, Cornish Lithium, and 100+ organizations that have elevated their governance with board-level advisory
+    <!-- Elite Client Showcase -->
+    <p class="text-xl lg:text-2xl mb-16 text-gray-300 max-w-4xl mx-auto leading-relaxed">
+      Join <span class="text-accent font-bold">HSBC</span>, <span class="text-accent font-bold">Brown-Forman</span>, <span class="text-accent font-bold">Cornish Lithium</span>, and <span class="text-accent font-bold">100+ elite organizations</span> that have revolutionized their governance with strategic board advisory
     </p>
 
-    <!-- Value Props Grid -->
-    <div class="grid md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
-      <div class="text-center">
-        <div class="text-h3 font-bold mb-3">Direct Access</div>
-        <p class="text-small opacity-90">Principal-to-principal advisory from dual Fellow expertise</p>
+    <!-- Premium Value Proposition Cards -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
+      <div class="group bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 shadow-2xl">
+        <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Direct Access</h3>
+        <p class="text-gray-300 leading-relaxed">Principal-to-principal advisory from dual Fellow expertise. No intermediaries, no diluted insights.</p>
       </div>
-      <div class="text-center">
-        <div class="text-h3 font-bold mb-3">Proven Experience</div>
-        <p class="text-small opacity-90">17+ years of board and C-suite advisory</p>
+
+      <div class="group bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 shadow-2xl">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Proven Excellence</h3>
+        <p class="text-gray-300 leading-relaxed">17+ years transforming boards and C-suites. Global finalist recognition for directorial excellence.</p>
       </div>
-      <div class="text-center">
-        <div class="text-h3 font-bold mb-3">Strategic Support</div>
-        <p class="text-small opacity-90">Independent perspective for better decisions</p>
+
+      <div class="group bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 shadow-2xl">
+        <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Strategic Impact</h3>
+        <p class="text-gray-300 leading-relaxed">Independent perspective that drives better decisions. Transform governance into competitive advantage.</p>
       </div>
     </div>
 
-    <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-      <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold bg-white text-primary rounded-full hover:bg-gray-50 transition-all duration-300 shadow-button hover:shadow-button-hover btn-scale">
-        Book Your Board Consultation
-      </a>
-      <a href="/board-advisory" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold border-2 border-white text-white rounded-full hover:bg-white hover:text-primary transition-all duration-300 hover-lift">
-        View Board Impact Results
-      </a>
+    <!-- Premium CTA Section -->
+    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-12 mb-12 shadow-2xl">
+      <div class="flex flex-col lg:flex-row gap-6 items-center justify-center">
+        <a href="/contact" class="group relative inline-flex items-center justify-center px-12 py-5 text-xl font-bold bg-gradient-to-r from-accent to-primary text-white rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-accent/25">
+          <span class="relative z-10 flex items-center gap-3">
+            <svg class="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            Secure Your Strategic Session
+          </span>
+          <div class="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <div class="text-gray-400 hidden lg:block">or</div>
+
+        <a href="/board-advisory" class="group inline-flex items-center justify-center px-12 py-5 text-xl font-bold border-2 border-white/30 text-white rounded-2xl hover:border-accent hover:bg-accent/10 transition-all duration-300 hover:scale-105">
+          <span class="flex items-center gap-3">
+            <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+            View Impact Portfolio
+          </span>
+        </a>
+      </div>
     </div>
 
-    <!-- Contact Options -->
-    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-      <a href="tel:+447738419446" class="flex items-center gap-2 text-white/90 hover:text-accent transition-all duration-300 group">
-        <svg class="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-        </svg>
-        <span>+44 7738 419446</span>
-      </a>
-      <a href="mailto:craig.fearn@lighthousementoring.co.uk" class="flex items-center gap-2 text-white/90 hover:text-accent transition-all duration-300 group">
-        <svg class="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-        </svg>
-        <span>craig.fearn@lighthousementoring.co.uk</span>
-      </a>
+    <!-- Premium Contact Options -->
+    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 mb-8">
+      <h4 class="text-xl font-bold text-white mb-6 text-center">Direct Access Guaranteed</h4>
+      <div class="flex flex-col lg:flex-row gap-6 justify-center items-center">
+        <a href="tel:+447738419446" class="group flex items-center gap-4 px-6 py-3 bg-white/10 hover:bg-accent/20 rounded-xl transition-all duration-300 hover:scale-105 border border-white/20">
+          <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-white font-semibold">Direct Line</div>
+            <div class="text-accent text-lg font-bold">+44 7738 419446</div>
+          </div>
+        </a>
+
+        <a href="mailto:craig.fearn@lighthousementoring.co.uk" class="group flex items-center gap-4 px-6 py-3 bg-white/10 hover:bg-primary/20 rounded-xl transition-all duration-300 hover:scale-105 border border-white/20">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-white font-semibold">Strategic Inquiry</div>
+            <div class="text-primary text-lg font-bold">craig.fearn@lighthousementoring.co.uk</div>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <!-- Urgency Message -->
-    <div class="mt-12 pt-8 border-t border-white/20">
-      <p class="text-lg text-white">
-        <strong class="text-accent">Limited Availability:</strong> Currently accepting 2-3 new advisory engagements for 2025
-      </p>
+    <!-- Premium Scarcity Message -->
+    <div class="relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-red-500/20 via-orange-500/20 to-yellow-500/20 rounded-2xl blur-xl"></div>
+      <div class="relative bg-gradient-to-r from-red-500/10 via-orange-500/10 to-yellow-500/10 backdrop-blur-md border border-orange-300/20 rounded-2xl p-8 text-center">
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+          <span class="text-orange-300 font-bold text-lg uppercase tracking-widest">Exclusive Access</span>
+          <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+        </div>
+        <p class="text-xl text-white font-semibold">
+          <span class="text-yellow-400 font-bold">Only 2-3 Strategic Advisory Positions</span> Available for 2025
+        </p>
+        <p class="text-gray-300 mt-2">Elite organizations secure their strategic advantage early</p>
+      </div>
     </div>
   </div>
 </section>

@@ -1,34 +1,446 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import PositioningSection from '../components/PositioningSection.astro';
-import SocialProofBar from '../components/SocialProofBar.astro';
-import ProblemSection from '../components/ProblemSection.astro';
-import MainOfferingSection from '../components/MainOfferingSection.astro';
-import ProcessSection from '../components/ProcessSection.astro';
-import ThoughtLeadershipSection from '../components/ThoughtLeadershipSection.astro';
-import CaseStudiesSection from '../components/CaseStudiesSection.astro';
-import MethodologySection from '../components/MethodologySection.astro';
-import TestimonialsSection from '../components/TestimonialsSection.astro';
-import FAQSection from '../components/FAQSection.astro';
-import BlogSection from '../components/BlogSection.astro';
-import BoardCTA from '../components/BoardCTA.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../../public/images/iod-conference-83.jpg';
 ---
 
 <Layout
-  title="Executive Coaching & Board Advisory | Craig Fearn FCMI FRSPH"
-  description="Executive coaching and board advisory from Craig Fearn FCMI FRSPH. IoD Ambassador, non-executive director expertise, wellbeing governance specialist. Transform workplace wellbeing into competitive advantage. 17+ years, 100+ organisations.">
-  <Hero />
-  <PositioningSection />
-  <SocialProofBar />
-  <ProblemSection />
-  <MainOfferingSection />
-  <MethodologySection />
-  <CaseStudiesSection />
-  <ProcessSection />
-  <ThoughtLeadershipSection />
-  <TestimonialsSection />
-  <BlogSection />
-  <FAQSection />
-  <BoardCTA />
+  title="Strategic Management Consultant & Board Advisor | FCMI Fellow | Craig Fearn"
+  description="Board-level leadership combining IoD governance, FRSPH wellbeing expertise, and FCMI strategic leadership. Currently seeking 2-3 board advisory positions for 2025.">
+
+  <!-- HERO SECTION - Typography-Driven Premium Design -->
+  <section class="relative bg-white py-20 lg:py-32">
+    <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Column: Content -->
+        <div class="lg:col-span-7">
+          <!-- Category Label -->
+          <p class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
+            Strategic Management Consulting
+          </p>
+
+          <!-- Main Headline -->
+          <h1 class="text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            Board-Level Leadership That Drives Sustainable Performance
+          </h1>
+
+          <!-- Supporting Copy -->
+          <p class="text-xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
+            FCMI Fellow | FRSPH Fellow | IoD Ambassador — The only consultant globally with this credential combination, specializing in strategic governance and AI-enhanced decision-making.
+          </p>
+
+          <!-- Secondary Info -->
+          <p class="text-lg text-gray-700 mb-10 max-w-2xl">
+            Currently seeking 2-3 additional board advisory positions for 2025. 17 years board-level experience across multiple sectors.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact"
+               class="inline-block bg-gray-900 text-white px-8 py-4 text-lg font-semibold hover:bg-gray-800 transition-colors text-center">
+              Discuss Board Advisory
+            </a>
+            <a href="/services/wellbeing-audit"
+               class="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 text-lg font-semibold hover:bg-gray-900 hover:text-white transition-all text-center">
+              Wellbeing Governance Framework
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Trust Badges -->
+        <div class="lg:col-span-5">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <img
+                src="/images/IoD-Ambassador-badge-web.png"
+                alt="IoD Ambassador"
+                class="h-20 w-auto"
+                loading="eager"
+              />
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <img
+                src="/images/RSPH-Fellow-Badge.jpg"
+                alt="FRSPH Fellow"
+                class="h-20 w-auto"
+                loading="eager"
+              />
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <img
+                src="/images/iod-global-award-badge.png"
+                alt="IoD Director of the Year 2025 Global Finalist"
+                class="h-20 w-auto"
+                loading="eager"
+              />
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <img
+                src="/images/iod-aspiring-award-badge.png"
+                alt="IoD Aspiring Director Award"
+                class="h-20 w-auto"
+                loading="eager"
+              />
+            </div>
+          </div>
+          <p class="text-center text-gray-600 text-sm mt-6 italic">
+            The only consultant globally with this credential combination
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF BAR - Minimal Stats -->
+  <section class="bg-gray-900 text-white py-12">
+    <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold mb-2">100+</p>
+          <p class="text-gray-400">Organizations Transformed</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold mb-2">17</p>
+          <p class="text-gray-400">Years Board Experience</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold mb-2">3</p>
+          <p class="text-gray-400">Fellowships (FCMI, FRSPH, IoD)</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold mb-2">2025</p>
+          <p class="text-gray-400">Director of the Year Finalist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CRAIG SECTION - Personal Story -->
+  <section class="bg-white py-20 lg:py-32">
+    <div class="container max-w-4xl mx-auto px-6 lg:px-8">
+
+      <p class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 text-center">
+        The Origin Story
+      </p>
+
+      <h2 class="text-5xl font-bold text-gray-900 mb-12 text-center leading-tight">
+        Why I Do This
+      </h2>
+
+      <div class="prose prose-lg max-w-none">
+        <p class="text-2xl text-gray-700 leading-relaxed mb-8 text-center">
+          In 2018, I sat in a board meeting and couldn't answer a simple question:
+          <span class="font-semibold text-gray-900">"Is our wellbeing strategy actually working?"</span>
+        </p>
+
+        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+          That embarrassing moment changed everything. I spent the next 5 years building the frameworks I wish I'd had—frameworks now used by FTSE companies and NHS Trusts across the UK.
+        </p>
+
+        <p class="text-xl text-gray-900 font-semibold leading-relaxed text-center">
+          I help boards because I've been the director who didn't have answers. Now I make sure you do.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UNIQUE POSITIONING - Triple Credential Explanation -->
+  <section class="bg-gray-50 py-20 lg:py-32">
+    <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Most Wellbeing Consultants Speak to HR.<br/>
+          <span class="text-gray-600">I Speak to Boards.</span>
+        </h2>
+        <p class="text-xl text-gray-600">
+          Because wellbeing strategy belongs in the boardroom, not just the employee handbook.
+        </p>
+      </div>
+
+      <!-- Triple Credential Cards -->
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+
+        <!-- IoD Ambassador -->
+        <div class="bg-white rounded-lg p-8 hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">IoD Ambassador</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Board-level governance authority. I understand boardroom dynamics, strategic decision-making, and what directors actually need.
+          </p>
+        </div>
+
+        <!-- FRSPH Fellow -->
+        <div class="bg-white rounded-lg p-8 hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">FRSPH Fellow</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Strategic wellbeing & public health expertise. Evidence-based methodology that moves beyond HR initiatives to strategic governance.
+          </p>
+        </div>
+
+        <!-- FCMI Fellow -->
+        <div class="bg-white rounded-lg p-8 hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">FCMI Fellow</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Management systems & organizational excellence. Business credibility that goes beyond psychology or coaching certifications.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Unique Claim -->
+      <div class="text-center">
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+          That's why I'm <span class="font-bold text-gray-900">the only IoD Wellbeing Ambassador with dual fellowships (FRSPH + FCMI)</span>—the rare combination of governance authority, public health strategy, and management expertise.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION - Article Card Style -->
+  <section class="bg-white py-20 lg:py-32">
+    <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <p class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
+          Services
+        </p>
+        <h2 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          How I Can Help Your Organization
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Board Advisory Card -->
+        <article class="group bg-gray-50 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="p-8">
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Primary Service
+            </p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">
+              Board Advisory
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Strategic governance counsel for boards seeking to integrate wellbeing, sustainability, and performance metrics into decision-making.
+            </p>
+            <a href="/services/board-advisory" class="inline-flex items-center text-gray-900 font-semibold hover:underline">
+              Learn more
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Strategic Consulting Card -->
+        <article class="group bg-gray-50 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="p-8">
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Primary Service
+            </p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">
+              Strategic Consulting
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Pattern recognition expertise to identify systemic issues and implement evidence-based solutions that drive measurable results.
+            </p>
+            <a href="/services/strategic-consulting" class="inline-flex items-center text-gray-900 font-semibold hover:underline">
+              Learn more
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Executive Coaching Card -->
+        <article class="group bg-gray-50 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="p-8">
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Development
+            </p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">
+              Executive Coaching
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Board-level leadership development focusing on strategic thinking, governance skills, and navigating complex organizational dynamics.
+            </p>
+            <a href="/services/executive-coaching" class="inline-flex items-center text-gray-900 font-semibold hover:underline">
+              Learn more
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Wellbeing Governance Card -->
+        <article class="group bg-gray-50 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="p-8">
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Differentiator
+            </p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">
+              Wellbeing Governance
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              AI-enhanced wellbeing audits that provide board-level insights into organizational health, risk, and strategic opportunities.
+            </p>
+            <a href="/services/wellbeing-audit" class="inline-flex items-center text-gray-900 font-semibold hover:underline">
+              Learn more
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- METHODOLOGY SECTION - Pattern Recognition -->
+  <section class="bg-gray-900 text-white py-20 lg:py-32">
+    <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Content -->
+        <div>
+          <p class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
+            Methodology
+          </p>
+          <h2 class="text-5xl font-bold mb-8 leading-tight">
+            Pattern Recognition + AI Enhancement
+          </h2>
+          <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+            <p>
+              Most consultants provide recommendations. I provide <span class="text-white font-semibold">pattern recognition</span>—identifying systemic issues across your organization that traditional approaches miss.
+            </p>
+            <p>
+              Enhanced by AI analysis, my methodology combines 17 years of board-level experience with data-driven insights to surface the hidden patterns affecting performance.
+            </p>
+            <p>
+              The result? Strategic clarity, measurable outcomes, and governance frameworks that actually work.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Process -->
+        <div class="space-y-6">
+
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3">1. Discovery</h3>
+            <p class="text-gray-300">
+              Comprehensive organizational assessment using AI-enhanced analysis to identify patterns and systemic issues.
+            </p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3">2. Strategic Analysis</h3>
+            <p class="text-gray-300">
+              Pattern recognition across governance, culture, performance, and wellbeing to surface root causes.
+            </p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3">3. Implementation</h3>
+            <p class="text-gray-300">
+              Evidence-based frameworks with clear metrics, board-level reporting, and ongoing strategic support.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="bg-white py-20 lg:py-32">
+    <div class="container max-w-4xl mx-auto px-6 lg:px-8 text-center">
+
+      <h2 class="text-5xl font-bold text-gray-900 mb-8 leading-tight">
+        Ready to Transform Your Board's Impact?
+      </h2>
+
+      <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+        Currently accepting 2-3 new board advisory engagements for 2025. Let's discuss how strategic governance can drive sustainable performance for your organization.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact"
+           class="inline-block bg-gray-900 text-white px-10 py-5 text-lg font-semibold hover:bg-gray-800 transition-colors">
+          Book Strategic Conversation
+        </a>
+        <a href="/services/wellbeing-audit"
+           class="inline-block border-2 border-gray-900 text-gray-900 px-10 py-5 text-lg font-semibold hover:bg-gray-900 hover:text-white transition-all">
+          Download Wellbeing Framework
+        </a>
+      </div>
+
+      <p class="text-sm text-gray-500 mt-8">
+        Director of the Year 2025 Global Finalist | FCMI Fellow | FRSPH Fellow | IoD Ambassador
+      </p>
+
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  /* Fade-in animation on scroll */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  // Intersection Observer for fade-in animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  // Apply fade-in to sections
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.add('fade-in');
+    observer.observe(section);
+  });
+</script>

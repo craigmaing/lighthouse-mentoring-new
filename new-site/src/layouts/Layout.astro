@@ -1,0 +1,61 @@
+---
+import Navigation from '../components/Navigation.astro';
+import StructuredData from '../components/StructuredData.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  keywords?: string;
+  schemaType?: 'homepage' | 'person' | 'service';
+  serviceName?: string;
+  serviceDescription?: string;
+}
+
+
+const {  title,  description,  ogImage = '/images/craig-headshot.jpg',  keywords = 'board advisory, executive coaching, non-executive director, strategic consultant, board governance, organizational wellbeing, NED services, leadership development',  schemaType = 'homepage',  serviceName,  serviceDescription} = Astro.props;const ogImageURL = new URL(ogImage, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />    <meta name="author" content="Craig Fearn" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImageURL} />
+
+    <meta name="generator" content={Astro.generator} />
+    <StructuredData type={schemaType} serviceName={serviceName} serviceDescription={serviceDescription} />
+  </head>
+  <body>
+    <Navigation />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

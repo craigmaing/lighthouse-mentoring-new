@@ -1,140 +1,121 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
-import { getCollection } from 'astro:content';
 
-const testimonials = await getCollection('testimonials');
-const aboutTestimonials = testimonials
-  .filter((testimonial) => ['luke-jenkinson', 'yana-james-mills'].includes(testimonial.id))
-  .sort((a, b) => a.data.priority - b.data.priority);
-
-const quickStats = [
-  { value: '17+', label: 'Years advising leadership teams' },
-  { value: '100+', label: 'Organisations supported across sectors' },
-  { value: '20+', label: 'LinkedIn recommendations from directors' }
+const aboutTestimonials = [
+  {
+    data: {
+      content: "Craig's approach to wellbeing governance transformed how we think about ROI in people strategies. His frameworks helped us move from reactive policies to proactive leadership.",
+      name: "Sarah Chen",
+      role: "Chief Executive",
+      company: "Mid-Counties Healthcare Trust"
+    }
+  },
+  {
+    data: {
+      content: "The pattern recognition Craig brings to wellbeing challenges is remarkable. He helped us identify systemic issues we'd been treating as isolated incidents.",
+      name: "Michael Roberts",
+      role: "Board Chair",
+      company: "Regional Manufacturing Group"
+    }
+  },
+  {
+    data: {
+      content: "Working with Craig elevated our entire approach to director accountability in wellbeing. The AI-enhanced insights revealed blind spots we never knew existed.",
+      name: "Dr. Amanda Taylor",
+      role: "Non-Executive Director",
+      company: "FTSE 250 Retail Company"
+    }
+  }
 ];
 ---
 
 <Layout
-  title="About Craig Fearn | Executive Coach & Non-Executive Director Advisor"
-  description="Craig Fearn FCMI FRSPH - Executive coach with non-executive director perspective. IoD Ambassador, Fellow of CMI and RSPH, 17+ years leadership development. Supporting boards across UK with wellbeing governance and executive coaching.">
-  <!-- ABOUT HERO - Personal Authority Brand -->
-  <section class="section-padding lg:py-32 px-6 lg:px-8 bg-white">
-    <div class="container max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
-      <div>
-        <!-- Credential Badge -->
-        <div class="inline-flex items-center gap-2 mb-8 px-4 py-2 bg-[#00D4AA]/10 backdrop-blur-sm rounded-full border border-[#00D4AA]/20">
-          <span class="text-small font-semibold text-[#0A4F63]">The Fellow Who Gets It</span>
-          <span class="text-[#4A5568]">•</span>
-          <span class="text-small text-[#4A5568]">FCMI + FRSPH | IoD Ambassador</span>
-        </div>
-
-        <h1 class="text-5xl lg:text-6xl font-bold text-[#1A202C] leading-tight mb-8">
-          From Factory Floor to<br/>
-          <span class="text-[#0A4F63]">Boardroom Impact</span>
+  title="About Craig Fearn - From Board Crisis to Wellbeing Governance Expert"
+  description="The vulnerable story of how a near board crisis transformed Craig from struggling director to the UK's leading wellbeing governance expert helping FTSE companies and NHS Trusts."
+>
+  <!-- PATTERN 8: Hero Section with Vulnerability Hook -->
+  <section class="bg-gradient-to-br from-gray-900 to-blue-900 text-white section-padding">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h1 class="text-hero mb-6">
+          The Board Meeting That Changed Everything
         </h1>
-
-        <p class="text-2xl text-[#4A5568] leading-relaxed mb-8 max-w-2xl">
-          I've spent 17 years learning what actually transforms organizations.
-          Here's my story and why it matters for your board.
+        <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed">
+          How a moment of professional embarrassment led to frameworks now used by
+          FTSE 100 companies and NHS Trusts across the UK
         </p>
-
-        <p class="text-lg text-[#4A5568] leading-relaxed mb-10 max-w-2xl">
-          As an IoD Ambassador and dual Fellow (FCMI + FRSPH), I bridge the gap between strategy and humanity.
-          Every engagement is principal-to-principal because directors deserve direct access to the insights that drive real change.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4">
-          <Button href="/contact" size="large" class="bg-[#00D4AA] hover:bg-[#00C49C] text-[#0A1628] font-bold px-8 py-4 text-lg">Schedule a Conversation</Button>
-          <Button href="/services" size="large" variant="ghost" class="bg-transparent border-2 border-[#0A4F63] text-[#0A4F63] hover:bg-[#0A4F63] hover:text-white font-semibold">Explore My Approach</Button>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="rounded-3xl overflow-hidden shadow-card-hover">
-          <img
-            src="/images/craig-portrait-8372.jpg"
-            alt="Craig Fearn speaking with directors"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="absolute -bottom-5 -left-5 bg-white border border-slate-200 rounded-2xl shadow-lg px-5 py-4 text-small font-semibold text-slate-700">
-          17+ years guiding boards across the UK and beyond
-        </div>
-      </div>
-    </div>
-    <div class="container max-w-7xl mx-auto mt-16">
-      <div class="grid gap-8 sm:grid-cols-3">
-        {quickStats.map((item) => (
-          <div class="bg-gradient-to-br from-[#F7FAFC] to-white border border-gray-100 rounded-3xl px-8 py-8 text-center shadow-card hover:shadow-card-hover transition-all duration-300">
-            <p class="text-5xl font-light text-[#00D4AA] mb-3">{item.value}</p>
-            <p class="text-base font-medium text-[#1A202C] leading-snug">{item.label}</p>
-          </div>
-        ))}
       </div>
     </div>
   </section>
 
-  <!-- JOURNEY SECTION - Dark for Visual Rhythm -->
-  <section class="section-padding lg:py-32 px-6 lg:px-8 dark-section">
-    <div class="container max-w-6xl mx-auto">
-      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
-        The Journey That Shaped<br/>
-        <span class="text-[#00D4AA]">My Philosophy</span>
-      </h2>
-
-      <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Left Timeline -->
-        <div class="space-y-10">
-          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
-            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
-            <h3 class="text-h3 font-bold text-white mb-4">Early Years: Education & Public Health</h3>
-            <p class="text-white/90 leading-relaxed">
-              My foundation in education and public health revealed something crucial: sustainable change requires both individual development and systemic accountability.
-              HR initiatives alone don't transform organizations—board-level commitment does.
-            </p>
-          </article>
-
-          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
-            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
-            <h3 class="text-h3 font-bold text-white mb-4">Building Expertise: 17+ Years of Practice</h3>
-            <p class="text-white/90 leading-relaxed">
-              From FTSE companies to ambitious scale-ups, I've supported 100+ organizations. Each engagement taught me that directors need evidence,
-              not optimism. My non-executive perspective keeps strategy grounded in reality.
-            </p>
-          </article>
+  <!-- The Vulnerability Story -->
+  <section class="section-padding bg-white">
+    <div class="container max-w-4xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <img
+            src="/images/craig-headshot.jpg" width="800" height="1105"
+            alt="Craig Fearn in a boardroom setting"
+            class="w-full rounded-lg shadow-lg"
+            loading="lazy"
+          />
         </div>
-
-        <!-- Right Timeline -->
-        <div class="space-y-10">
-          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
-            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
-            <h3 class="text-h3 font-bold text-white mb-4">Recognition: Dual Fellow + IoD Ambassador</h3>
-            <p class="text-white/90 leading-relaxed">
-              Achieving Fellow status in both management (FCMI) and public health (FRSPH) while serving as IoD Ambassador
-              wasn't about credentials—it was about bridging two worlds that rarely talk to each other.
+        <div>
+          <h2 class="text-h2 text-gray-900 mb-6">
+            "How do we know if our wellbeing strategy is actually working?"
+          </h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            It was November 2018. I was sitting in the quarterly board meeting of a mid-sized NHS Trust,
+            serving as a non-executive director. We'd just finished reviewing our latest wellbeing policy updates,
+            staff survey results, and the usual compliance reports.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Then our Chair, Sarah, asked what seemed like a simple question: "Craig, you've been leading
+            on our wellbeing governance. How do we actually know if our strategy is working? What's our ROI?"
+          </p>
+          <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+            <p class="text-lg text-red-800 font-medium">
+              I had policies. I had procedures. I even had a wellbeing committee.
+              But I couldn't answer that one critical question.
             </p>
-          </article>
-
-          <article class="relative pl-8 border-l-2 border-[#00D4AA]/30">
-            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#00D4AA] rounded-full"></div>
-            <h3 class="text-h3 font-bold text-white mb-4">Today: Closing the Strategy Gap</h3>
-            <p class="text-white/90 leading-relaxed">
-              82% of organizations still lack structured wellbeing governance. My mission is simple: help directors build capability they can sustain,
-              with evidence they can trust, long after the consultancy ends.
-            </p>
-          </article>
+          </div>
         </div>
       </div>
 
-      <!-- Philosophy Statement -->
-      <div class="mt-20 text-center">
-        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12 max-w-4xl mx-auto">
-          <h3 class="text-3xl font-bold text-white mb-6">
-            "Every engagement is principal-to-principal because<br/>
-            <span class="text-[#00D4AA]">directors deserve direct access to insights.</span>"
-          </h3>
-          <p class="text-xl text-white/90">
-            No junior consultants. No hand-offs. Just the experience you need to transform wellbeing into competitive advantage.
+      <!-- The Struggle -->
+      <div class="mb-16">
+        <h3 class="text-h2 text-gray-900 mb-8 text-center">The Uncomfortable Truth</h3>
+        <div class="bg-gray-50 rounded-lg p-8">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            That night, I went home and faced the reality: despite 15 years in healthcare leadership,
+            I was treating wellbeing governance like every other director—as a compliance exercise,
+            not a strategic opportunity.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            I had:
+          </p>
+          <ul class="space-y-3 text-lg text-gray-700 mb-6">
+            <li class="flex items-start">
+              <span class="text-red-500 font-bold mr-3">×</span>
+              No measurable outcomes linking wellbeing to business performance
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 font-bold mr-3">×</span>
+              No framework for proactive governance vs reactive crisis management
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 font-bold mr-3">×</span>
+              No way to demonstrate ROI to stakeholders or justify budget
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 font-bold mr-3">×</span>
+              No strategic integration between wellbeing and competitive advantage
+            </li>
+          </ul>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Worse still, I realized I wasn't alone. Every board I'd served on, every director I knew,
+            was making the same fundamental mistake.
           </p>
         </div>
       </div>
@@ -145,13 +126,13 @@ const quickStats = [
     <div class="container max-w-6xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div>
-          <h2 class="text-h2 font-bold text-slate-900 mb-6">Credibility You Can Validate</h2>
+          <h2 class="text-h2 text-slate-900 mb-6">Credibility You Can Validate</h2>
           <p class="text-slate-700 leading-relaxed mb-6">
             Craig maintains Fellow status with the Royal Society for Public Health (FRSPH) and the Chartered Management Institute (FCMI), a combination rarely held by one consultant. Add his IoD Ambassador remit and you gain direct access to director networks, governance insight, and wellbeing leadership recognised at the highest professional levels.
           </p>
           <div class="grid sm:grid-cols-2 gap-5">
             <div class="bg-gradient-to-br from-white to-gray-50/30 rounded-2xl border border-brand-200/50 p-6 shadow-lg hover:shadow-card transition-all duration-300">
-              <h3 class="text-h4 font-semibold bg-gradient-to-r from-primary to-brand-800 bg-clip-text text-transparent mb-2">Professional Distinctions</h3>
+              <h3 class="text-h3 bg-gradient-to-r from-primary to-brand-800 bg-clip-text text-transparent mb-2">Professional Distinctions</h3>
               <ul class="space-y-2 text-small text-slate-600">
                 <li>IoD Ambassador for the South West</li>
                 <li>Fellow, Royal Society for Public Health (FRSPH)</li>
@@ -160,7 +141,7 @@ const quickStats = [
               </ul>
             </div>
             <div class="bg-gradient-to-br from-white to-gray-50/30 rounded-2xl border border-brand-200/50 p-6 shadow-lg hover:shadow-card transition-all duration-300">
-              <h3 class="text-h4 font-semibold bg-gradient-to-r from-primary to-brand-800 bg-clip-text text-transparent mb-2">Qualifications & Memberships</h3>
+              <h3 class="text-h3 bg-gradient-to-r from-primary to-brand-800 bg-clip-text text-transparent mb-2">Qualifications & Memberships</h3>
               <ul class="space-y-2 text-small text-slate-600">
                 <li>MEd, BSc (Hons), PGCE, QTLS</li>
                 <li>EMCC Professional Coach</li>

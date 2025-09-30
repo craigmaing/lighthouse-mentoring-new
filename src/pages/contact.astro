@@ -4,21 +4,65 @@ import Button from '../components/Button.astro';
 ---
 
 <Layout
-  title="Book Executive Coaching Consultation | Contact Board Advisor"
-  description="Book executive coaching consultation or wellbeing audit with Craig Fearn FCMI FRSPH. Executive coach for directors, board advisor, non-executive perspective. Free 30-minute consultation for UK leadership teams.">
-  <section class="section-padding px-4">
-    <div class="container max-w-6xl mx-auto">
-      <!-- Hero Section - Above the Fold -->
+  title="Get Your Free Wellbeing Leadership Assessment | Craig Fearn"
+  description="Claim your FREE Board Wellbeing Readiness Assessment + join 2,500+ leaders getting weekly leadership insights. Start building your wellbeing governance expertise today.">
+
+  <!-- Hero Section with Lead Magnet -->
+  <section class="bg-gradient-to-br from-green-600 via-blue-700 to-indigo-800 text-white section-padding">
+    <div class="container">
       <div class="text-center mb-12">
-        <h1 class="text-h1 font-bold text-slate-900 mb-4">
-          Book Your Executive Coaching <span class="text-primary">Consultation</span>
+        <h1 class="text-hero mb-6">
+          Get Your Free Assessment
         </h1>
-        <p class="text-xl text-slate-700 max-w-3xl mx-auto mb-4">
-          Ready to strengthen your leadership capability? Let's discuss how executive coaching and wellbeing advisory can transform your organisation - whether you're a CEO, founder, senior leader or aspiring director.
+        <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto mb-8">
+          Start with a free wellbeing governance assessment to understand where your board stands.
+          Get practical insights you can implement immediately.
         </p>
-        <!-- Trust Indicator -->
-        <p class="text-small font-semibold text-primary">
-          📅 Reply within 24 hours • 200+ companies transformed
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto mb-8">
+          <h2 class="text-h2 mb-4">What You'll Get (100% Free)</h2>
+          <div class="grid md:grid-cols-2 gap-4 text-left">
+            <div class="flex items-start gap-2">
+              <span class="text-green-300 font-bold">✓</span>
+              <span>Board Wellbeing Readiness Assessment</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-green-300 font-bold">✓</span>
+              <span>Personalised improvement recommendations</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-green-300 font-bold">✓</span>
+              <span>Weekly wellbeing leadership insights</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-green-300 font-bold">✓</span>
+              <span>Key questions for board discussions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="#free-assessment" size="large" variant="white" class="shadow-lg">
+            Get My Free Assessment →
+          </Button>
+          <Button href="#consultation" size="large" variant="ghost" class="!bg-transparent !border-2 !border-white !text-white hover:!bg-white hover:!text-blue-800">
+            Book Paid Consultation
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Magnet Section -->
+  <section id="free-assessment" class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h1 text-gray-900 mb-4">
+          Start Your Free Assessment
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Get practical wellbeing governance insights and frameworks.
+          No theory. No fluff. Just actionable guidance that works.
         </p>
       </div>
 
@@ -49,7 +93,7 @@ import Button from '../components/Button.astro';
               src="/images/craig-headshot.jpg"
               alt="Craig Fearn - Executive Coach and Board Advisor"
               class="rounded-2xl shadow-card-hover w-full h-auto"
-              loading="eager"
+              loading="lazy"
             />
             <div class="absolute -bottom-4 -right-4 bg-gradient-to-br from-primary to-brand-800 text-white rounded-xl p-3 shadow-card">
               <p class="font-bold text-small">IoD Ambassador</p>
@@ -57,7 +101,7 @@ import Button from '../components/Button.astro';
             </div>
           </div>
           <div class="text-center md:text-left">
-            <h2 class="text-h3 font-bold text-slate-900 mb-3">Let's Start a Conversation</h2>
+            <h2 class="text-h3 text-slate-900 mb-3">Let's Start a Conversation</h2>
             <p class="text-slate-700 leading-relaxed mb-4">
               Direct access to Fellow-level expertise. Craig personally responds to every inquiry within 24 hours.
             </p>
@@ -88,7 +132,7 @@ import Button from '../components/Button.astro';
       <div class="grid md:grid-cols-2 gap-12">
         <!-- Optimized Contact Form - 3-5 Fields Based on Research -->
         <div id="book" class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-2xl p-8 shadow-lg hover:shadow-card transition-all duration-300">
-          <h2 class="text-h3 font-bold text-slate-900 mb-2">Request Your Wellbeing Audit or Executive Coaching Session</h2>
+          <h2 class="text-h3 text-slate-900 mb-2">Request Your Wellbeing Audit or Executive Coaching Session</h2>
           <p class="text-slate-700 mb-6">Tell us whether you need executive coaching, board advisory, or a wellbeing governance audit</p>
 
           <form class="space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">

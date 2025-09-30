@@ -26,15 +26,15 @@
   --color-gray-800: #1F2937;
   --color-gray-900: #111827;
 
-  /* Typography Scale - From Research: 60-80px hero, 48-56px sections */
+  /* Typography Scale - Fixed and standardized */
   --font-size-hero: clamp(2.5rem, 6vw, 5rem);
   --font-size-h1: clamp(2rem, 5vw, 3.5rem);
-  --font-size-h2: clamp(1.75rem, 4vw, 3rem);
+  --font-size-h2: clamp(1.875rem, 4vw, 3rem);
   --font-size-h3: clamp(1.5rem, 3vw, 2.25rem);
   --font-size-h4: clamp(1.25rem, 2.5vw, 1.875rem);
-  --font-size-body: 1.125rem;
-  --font-size-body-large: 1.25rem;
-  --font-size-small: 0.875rem;
+  --font-size-body: clamp(1rem, 2vw, 1.125rem);
+  --font-size-body-large: clamp(1.125rem, 2.5vw, 1.25rem);
+  --font-size-small: clamp(0.875rem, 1.5vw, 1rem);
 
   /* Spacing System */
   --space-xs: 0.5rem;
@@ -85,7 +85,7 @@
   padding: 0;
 }
 
-/* Critical Layout */
+/* Critical Layout - Fix mobile overflow */
 html {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 18px;
@@ -93,6 +93,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -100,6 +101,39 @@ body {
   background: white;
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Fix all potential overflow sources */
+*, *::before, *::after {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile overflow prevention - more aggressive */
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  * {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Prevent any element from causing horizontal scroll */
+  img, video, iframe, canvas, svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix flex and grid potential overflows */
+  .flex, .grid, [style*="display: flex"], [style*="display: grid"] {
+    min-width: 0 !important;
+  }
 }
 
 /* Critical Typography - Based on Influencer Pattern Research */
@@ -118,34 +152,81 @@ body {
   line-height: 1.6;
 }
 
-/* Critical Container */
-.container {
+/* Critical Container - Standardized widths */
+.container,
+.max-w-7xl,
+.max-w-6xl,
+.max-w-5xl,
+.max-w-4xl,
+.max-w-3xl {
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   max-width: 80rem;
 }
 
-/* Critical Button Styles */
-.btn-primary {
+/* Allow smaller specific containers */
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+/* Mobile-first responsive containers */
+@media (min-width: 640px) {
+  .container,
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl,
+  .max-w-4xl,
+  .max-w-3xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Critical Button Styles - Mobile-optimized touch targets */
+.btn-primary,
+button,
+[role="button"],
+a[href*="contact"],
+a[href*="book"],
+a[href*="assessment"] {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
+  min-height: 44px;
+  min-width: 44px;
   background: var(--color-accent);
   color: white;
   font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: all var(--transition-normal);
   cursor: pointer;
   box-shadow: var(--shadow-button);
+  border: none;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+button:hover,
+[role="button"]:hover {
   background: var(--color-accent-dark);
   transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-button-hover);
+}
+
+/* Secondary button styling */
+.btn-secondary,
+a[href="/services"] {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 /* Critical Navigation */
@@ -282,6 +363,34 @@ body {
   background: linear-gradient(to bottom, var(--color-gray-50), white);
 }
 
+/* Dark Sections - Fix contrast issues */
+.dark-section {
+  background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+  color: white;
+}
+
+/* Specific Tailwind gradient backgrounds for services page */
+.bg-gradient-to-br.from-slate-900.via-blue-900.to-indigo-900 {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3730a3 100%) !important;
+}
+
+.bg-gradient-to-br.from-blue-900.via-indigo-900.to-purple-900 {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%) !important;
+}
+
+/* Contact page gradient backgrounds */
+.bg-gradient-to-br.from-green-600.via-blue-700.to-indigo-800 {
+  background: linear-gradient(135deg, #059669 0%, #1d4ed8 50%, #3730a3 100%) !important;
+}
+
+.bg-gradient-to-br.from-white.to-slate-50 {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+}
+
+.bg-gradient-to-br.from-white.to-gray-50 {
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%) !important;
+}
+
 /* Card Base Styles */
 .card-base {
   background: white;
@@ -304,4 +413,161 @@ body {
 
 .group:hover .arrow-move {
   transform: translateX(4px);
+}
+
+/* Alignment Fixes for Readability - Higher Specificity */
+/* Fix center-aligned paragraphs that are too long for good readability */
+body .text-center p,
+html body section .text-center p,
+html body div.text-center p,
+html body .max-w-3xl.text-center p,
+html body .max-w-4xl.text-center p {
+  /* For paragraphs longer than 80 characters, use left alignment for better readability */
+  text-align: left !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 65ch !important; /* Optimal line length */
+}
+
+/* Allow short paragraphs and specific classes to remain center-aligned */
+body .text-center p.short,
+body .text-center p.tagline,
+body .text-center .text-small,
+body .text-center .text-xs,
+body .text-center p.text-small {
+  text-align: center !important;
+  max-width: none !important;
+}
+
+/* Readability utility class */
+.readable-paragraph {
+  text-align: left !important;
+  max-width: 65ch !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Color Consolidation - Replacing all variations with design system colors */
+.text-brand-600,
+.text-slate-900,
+.text-gray-900 {
+  color: var(--color-gray-900) !important;
+}
+
+.text-brand-100,
+.text-slate-600,
+.text-gray-600 {
+  color: var(--color-gray-600) !important;
+}
+
+.text-slate-700,
+.text-gray-700 {
+  color: var(--color-gray-700) !important;
+}
+
+.bg-brand-600 {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-gray-50,
+.bg-slate-50 {
+  background-color: var(--color-gray-50) !important;
+}
+
+.bg-gray-100,
+.bg-slate-100 {
+  background-color: var(--color-gray-100) !important;
+}
+
+/* Standardize success/accent colors */
+.text-green-500 {
+  color: var(--color-accent) !important;
+}
+
+.bg-green-500,
+.bg-green-600,
+.bg-green-700 {
+  background-color: var(--color-accent) !important;
+}
+
+/* Mobile Text Size Fixes - Ensure 16px minimum */
+@media (max-width: 768px) {
+  p, li, span, div {
+    font-size: clamp(1rem, 2vw, 1.125rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Force minimum sizes for small text */
+  .text-sm,
+  .text-small,
+  .text-xs {
+    font-size: 1rem !important;
+  }
+
+  /* Ensure headings scale properly */
+  h1 {
+    font-size: var(--font-size-h1) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: var(--font-size-h2) !important;
+    line-height: 1.25 !important;
+  }
+
+  h3 {
+    font-size: var(--font-size-h3) !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Standardize all H2 elements to fix inconsistencies */
+h2,
+.text-h2,
+.text-4xl,
+.text-5xl {
+  font-size: var(--font-size-h2) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+}
+
+/* Standardize all paragraph variations */
+p {
+  font-size: var(--font-size-body) !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1rem;
+}
+
+/* Large body text standardization */
+.text-lg,
+.text-xl,
+.lead {
+  font-size: var(--font-size-body-large) !important;
+  line-height: 1.6 !important;
+}
+
+/* Mobile overflow prevention */
+@media (max-width: 768px) {
+  * {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  img, video, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix potential grid/flex overflow */
+  .grid,
+  .flex {
+    min-width: 0;
+  }
+
+  /* Ensure no negative margins on mobile */
+  * {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

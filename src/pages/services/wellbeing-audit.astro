@@ -31,8 +31,8 @@ import PricingSection from '../../components/PricingSection.astro';
           <p class="font-semibold">Enhanced Analysis</p>
         </div>
         <div class="text-center">
-          <div class="text-4xl font-bold text-primary mb-2">£50</div>
-          <p class="font-semibold">Per Employee</p>
+          <div class="text-4xl font-bold text-primary mb-2">100%</div>
+          <p class="font-semibold">Tailored Approach</p>
         </div>
         <div class="text-center">
           <div class="text-4xl font-bold text-primary mb-2">4.7:1</div>
@@ -207,8 +207,38 @@ import PricingSection from '../../components/PricingSection.astro';
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <PricingSection />
+  <!-- Service Investment -->
+  <section class="section-padding bg-background-alt">
+    <div class="container max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Your Investment</h2>
+      <p class="text-xl text-text-secondary mb-8">
+        Tailored pricing based on organization size and complexity.
+        Every audit is crafted specifically for your unique context.
+      </p>
+      <div class="bg-white rounded-lg shadow-card p-8">
+        <p class="text-lg mb-6">
+          Investment varies based on:
+        </p>
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div>
+            <h3 class="font-bold mb-2">Organization Size</h3>
+            <p class="text-text-secondary text-sm">Employee count and complexity</p>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Scope Depth</h3>
+            <p class="text-text-secondary text-sm">Assessment complexity and deliverables</p>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Timeline Requirements</h3>
+            <p class="text-text-secondary text-sm">Standard or expedited delivery</p>
+          </div>
+        </div>
+        <Button href="/contact" size="large" variant="primary">
+          Get Custom Quote
+        </Button>
+      </div>
+    </div>
+  </section>
 
   <!-- CTA -->
   <section class="py-16 px-4 bg-primary text-white">

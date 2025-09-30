@@ -6,7 +6,7 @@ pubDate: 2025-01-15
 category: "Research"
 tags: ["SME", "Wellbeing Strategy", "AI", "Statistics"]
 featured: true
-heroImage: "/images/Gemini_Generated_Image_8egcmm8egcmm8egc.png"
+heroImage: "/images/executive-coaching-7490.jpg"
 ---
 
 ## The Hidden Challenge in UK Business

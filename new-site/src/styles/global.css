@@ -1,0 +1,55 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 antialiased;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-brand-800 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+}
