@@ -1,0 +1,21 @@
+{
+  "name": "Lighthouse Mentoring - Craig Fearn",
+  "short_name": "Lighthouse",
+  "description": "Strategic consulting and board advisory services. FCMI Fellow, FRSPH Fellow, IoD Ambassador.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D2D2D",
+  "theme_color": "#2D2D2D",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "consulting", "professional"],
+  "lang": "en-GB",
+  "dir": "ltr",
+  "orientation": "portrait-primary"
+}

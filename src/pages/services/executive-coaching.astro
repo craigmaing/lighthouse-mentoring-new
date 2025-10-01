@@ -1,0 +1,676 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/Button.astro';
+import { Picture } from 'astro:assets';
+import iodConference07 from '../../images/iod-conference-07.jpg';
+---
+
+<Layout
+  title="Executive Coaching Services | Lighthouse Mentoring"
+  description="Executive coaching combining EMCC Professional Coach accreditation with 17 years board experience. Performance-focused leadership development. UK & Cornwall."
+  keywords="executive coaching UK, executive coaching Cornwall, board-level executive coach, leadership coaching for executives, executive leadership development"
+>
+  <!-- Hero Section -->
+  <section class="hero section-padding bg-primary text-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="inline-block bg-accent/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            EMCC Professional Coach | 17 Years Board Experience
+          </div>
+          <h1 class="mb-6">
+            Executive Coaching That Understands Board-Level Pressure
+          </h1>
+          <p class="text-gray-100 leading-relaxed mb-8">
+            Coaching that combines psychological insight with board-level experience. Performance-focused approach supporting measurable leadership growth and strategic capability development.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <Button href="/contact" variant="secondary">
+              Explore Executive Coaching
+            </Button>
+            <Button href="#what-included" variant="ghost" class="text-white hover:text-gray-100">
+              Learn More
+            </Button>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <Picture
+            src={iodConference07}
+            alt="Craig Fearn - Executive Coach"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+            widths={[400, 600, 800]}
+            sizes="(max-width: 768px) 100vw, 800px"
+            formats={['avif', 'webp']}
+            loading="eager"
+            fetchpriority="high"
+            quality={85}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section id="what-included" class="section-padding bg-white">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What Executive Coaching Includes</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Professional coaching methodology combined with real-world board experience
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Leadership Effectiveness</h3>
+          <p class="text-gray-700">Leadership effectiveness and executive presence development</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Strategic Decision-Making</h3>
+          <p class="text-gray-700">Strategic decision-making and critical thinking enhancement</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Stakeholder Navigation</h3>
+          <p class="text-gray-700">Stakeholder dynamics and organizational politics navigation</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">C-Suite Transition</h3>
+          <p class="text-gray-700">Transition preparation for C-suite or board-level roles</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Career Direction</h3>
+          <p class="text-gray-700">Career direction clarity and leadership challenge resolution</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Executive Resilience</h3>
+          <p class="text-gray-700">Executive resilience and pressure management</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Board Readiness</h3>
+          <p class="text-gray-700">Board readiness coaching for aspiring NEDs</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Team Effectiveness</h3>
+          <p class="text-gray-700">Leadership team effectiveness coaching</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Executive Coaching Is Right For You If...</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Whether you're navigating increased complexity or preparing for the next level
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Senior Leaders & Executives</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're navigating increased complexity and pressure</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to elevate your strategic thinking</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're preparing for a C-suite transition</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need a trusted thinking partner</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">High-Potential Directors</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're being groomed for executive roles</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to accelerate your leadership development</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need to develop board-level capability</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're managing complex stakeholder relationships</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Aspiring Non-Executive Directors</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're preparing for your first NED role</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to understand board dynamics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need to develop governance expertise</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're building your board portfolio</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Experienced Leaders Facing Change</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're navigating organizational transformation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're dealing with increased stakeholder pressure</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need to rebuild resilience and clarity</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're redefining your leadership approach</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-padding bg-white">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">The Executive Coaching Process</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              1
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Discovery & Goal Setting</h3>
+            
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Initial consultation to understand objectives</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Leadership assessment and context</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Define specific development goals</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Agree coaching approach and schedule</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              2
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Development Journey</h3>
+            
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Regular coaching sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Action-focused conversations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Real-time challenge support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Leadership experiments and reflections</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Progress measurement</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              3
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Integration & Sustainability</h3>
+            
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Consolidate learning and growth</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Develop ongoing development plan</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Measure progress against original goals</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Option to continue with reduced frequency</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 card p-8 bg-gray-50">
+        <h3 class="text-h3 text-gray-900 mb-6">Coaching Approach</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-3">What You Bring:</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Openness to challenge and growth</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Commitment to action between sessions</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Real leadership challenges to work on</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Honesty about struggles and aspirations</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-3">What Craig Provides:</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>EMCC Professional Coach accreditation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Evidence-based coaching frameworks</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Board-level context understanding</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary mt-1">•</span>
+                <span>Psychological insight + strategic thinking</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Craig Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Why Craig for Executive Coaching?</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Professional coaching methodology combined with 17 years of board-level experience.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">EMCC Professional Coach</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Accredited by European Mentoring & Coaching Council</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Evidence-based coaching methodologies</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Psychological insight and frameworks</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Professional supervision and ethics</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">17 Years Board Experience</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Understands executive pressure firsthand</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Has navigated the challenges you face</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Knows board dynamics and stakeholder complexity</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Combines coaching with strategic wisdom</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Fellowship-Level Business Acumen</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>FCMI Fellow: Deep management expertise</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>FRSPH Fellow: Wellbeing and resilience insight</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Strategic thinking at highest level</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Organizational dynamics understanding</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Not Generic Life Coaching</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Focused on leadership performance</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Rooted in business reality</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Understands organizational context</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Measurable outcomes</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding bg-white">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What Leaders Say</h2>
+      </div>
+
+      <div class="space-y-8">
+        <div class="card p-8">
+          <p class="text-gray-700 leading-relaxed mb-6">
+            "What truly sets Craig apart is his extensive knowledge, continued deep empathy and practical results-driven approach. His integrity makes him an invaluable asset to any individual or organization he supports."
+          </p>
+          <div class="border-t border-gray-200 pt-4">
+            <p class="font-semibold text-gray-900">Richard Sharpe</p>
+            <p class="text-sm text-gray-600">C-Suite Operational Board Leader</p>
+          </div>
+        </div>
+
+        <div class="card p-8">
+          <p class="text-gray-700 leading-relaxed mb-6">
+            "Craig is an absolute workhorse, with a mission to change lives through better governance and a real understanding of what wellbeing means. Craig helps Directors improve overall business performance by making people matter."
+          </p>
+          <div class="border-t border-gray-200 pt-4">
+            <p class="font-semibold text-gray-900">Andrew Honey CDir FIoD</p>
+            <p class="text-sm text-gray-600">NED / Consultant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">How is executive coaching different from mentoring?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Coaching focuses on helping you find your own answers through structured exploration and challenge. Mentoring is more directive—sharing experience and advice. Craig combines both: professional coaching methodology with the ability to share board-level insight when valuable.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">How long does executive coaching take?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Engagement length depends on your development goals. Some focus on specific transitions, while others are ongoing development relationships. We review regularly and adjust as needed based on your progress.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">What happens in a coaching session?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Sessions are confidential, challenging conversations about your real leadership challenges. We explore what's working, what's not, what you want to achieve, and what's holding you back. Between sessions, you experiment with new approaches. It's action-focused, not theoretical.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">Is coaching confidential?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Absolutely. What you discuss remains confidential (except in exceptional circumstances required by law). Craig is bound by EMCC code of ethics. Many clients don't tell their organizations they're being coached—it's entirely your choice.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">Do you offer group or team coaching?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Yes. Craig works with executive teams on collective effectiveness. This is different from 1:1 coaching but equally powerful for leadership team alignment and performance.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">What's the investment in executive coaching?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Executive coaching is a professional development investment. Fees are discussed during the initial consultation, and Craig provides a clear proposal. Many organizations sponsor coaching for their senior leaders.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">How do we measure coaching success?</h3>
+          <p class="text-gray-700 leading-relaxed">
+            We define specific, measurable goals at the start. Progress is reviewed regularly through self-assessment, feedback from stakeholders, and tangible outcomes (promotions, successful projects, improved relationships). Most clients report significant leadership growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container max-w-3xl text-center">
+      <h2 class="text-h2 mb-6">Start Your Executive Development Journey</h2>
+      <p class="text-gray-100 leading-relaxed mb-8">
+        The best time to invest in your leadership is before you're overwhelmed by it. Book a 45-minute exploratory call to discuss your development goals and explore whether executive coaching with Craig is right for you.
+      </p>
+      <p class="text-gray-100 leading-relaxed mb-8">
+        No pressure to commit. Just a professional conversation about your leadership journey.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact" variant="secondary">
+          Book an Exploratory Call
+        </Button>
+        <Button href="mailto:craig.fearn@lighthousementoring.co.uk" variant="ghost" class="text-white hover:text-gray-100">
+          Email Craig
+        </Button>
+      </div>
+      <p class="text-sm text-gray-100 mt-8">
+        Confidential conversation. No obligation. Typical response time: 24 hours.
+      </p>
+    </div>
+  </section>
+</Layout>

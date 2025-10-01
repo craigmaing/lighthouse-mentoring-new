@@ -1,27 +1,23 @@
 ---
 interface Props {
   href: string;
-  variant?: 'primary' | 'secondary';
-  size?: 'medium' | 'large';
+  variant?: 'primary' | 'secondary' | 'ghost';
+  size?: 'default' | 'large';
   class?: string;
 }
 
-const { href, variant = 'primary', size = 'medium', class: className = '' } = Astro.props;
-
-const sizeClasses = {
-  medium: 'px-6 py-3 text-base',
-  large: 'px-8 py-4 text-lg',
-};
+const { href, variant = 'primary', size = 'default', class: className = '' } = Astro.props;
 
 const variantClasses = {
   primary: 'btn-primary',
   secondary: 'btn-secondary',
+  ghost: 'btn-ghost',
 };
 ---
 
 <a
   href={href}
-  class={`btn ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+  class={`${variantClasses[variant]} ${className}`}
 >
   <slot />
 </a>

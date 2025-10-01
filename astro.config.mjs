@@ -14,5 +14,16 @@ export default defineConfig({
   ],
   image: {
     domains: ['lighthousementoring.co.uk'],
+    experimentalResponsiveImages: true,
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+      config: {
+        limitInputPixels: false,
+      },
+    },
   },
+  build: {
+    inlineStylesheets: 'auto',
+  },
+  compressHTML: true,
 });
