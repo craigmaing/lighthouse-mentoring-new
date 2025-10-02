@@ -1,0 +1,293 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const insights = await getCollection('insights');
+  return insights.map((insight) => ({
+    params: { slug: insight.slug },
+    props: { insight },
+  }));
+}
+
+const { insight } = Astro.props;
+const { Content } = await insight.render();
+
+// Get related articles (same category, different article, max 3)
+const allInsights = await getCollection('insights');
+const relatedInsights = allInsights
+  .filter(item =>
+    item.slug !== insight.slug &&
+    item.data.category === insight.data.category
+  )
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+// Fallback: if not enough related by category, get latest articles
+if (relatedInsights.length < 3) {
+  const additionalInsights = allInsights
+    .filter(item =>
+      item.slug !== insight.slug &&
+      !relatedInsights.includes(item)
+    )
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 3 - relatedInsights.length);
+  relatedInsights.push(...additionalInsights);
+}
+
+// Current page URL for sharing
+const currentUrl = `${Astro.site}insights/${insight.slug}`;
+const shareTitle = encodeURIComponent(insight.data.title);
+const shareUrl = encodeURIComponent(currentUrl);
+
+const categoryColors = {
+  'board-advisory': 'bg-blue-100 text-blue-800',
+  'executive-coaching': 'bg-green-100 text-green-800',
+  'wellbeing': 'bg-purple-100 text-purple-800',
+  'leadership': 'bg-orange-100 text-orange-800',
+  'governance': 'bg-gray-100 text-gray-800',
+};
+
+// Article Schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": insight.data.title,
+  "description": insight.data.description,
+  "author": {
+    "@type": "Person",
+    "name": insight.data.author,
+    "jobTitle": "Founder & Principal Consultant",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FCMI Fellow"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FRSPH Fellow"
+      }
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lighthouse Mentoring",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${Astro.site}logo.png`
+    }
+  },
+  "datePublished": insight.data.pubDate.toISOString(),
+  "dateModified": insight.data.pubDate.toISOString(),
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `${Astro.site}insights/${insight.slug}`
+  }
+};
+---
+
+<Layout
+  title={`${insight.data.title} | Lighthouse Mentoring`}
+  description={insight.data.description}
+>
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <!-- Article Header -->
+  <article class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="mb-8">
+        <span class={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${categoryColors[insight.data.category]}`}>
+          {insight.data.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+        </span>
+
+        <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+          {insight.data.title}
+        </h1>
+
+        <p class="text-xl text-gray-600 mb-6">
+          {insight.data.description}
+        </p>
+
+        <div class="flex items-center gap-4 text-sm text-gray-600 pt-4 border-t border-gray-200">
+          <span>By {insight.data.author}</span>
+          <span>•</span>
+          <time datetime={insight.data.pubDate.toISOString()}>
+            {insight.data.pubDate.toLocaleDateString('en-GB', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+        </div>
+      </div>
+
+      <!-- Article Content -->
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+
+      <!-- Share Buttons -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+          <p class="text-gray-600 font-semibold">Share this article:</p>
+          <div class="flex gap-3">
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white rounded-lg hover:bg-[#006399] transition-colors"
+              aria-label="Share on LinkedIn"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-[#1DA1F2] text-white rounded-lg hover:bg-[#1a8cd8] transition-colors"
+              aria-label="Share on Twitter"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+              </svg>
+              Twitter
+            </a>
+            <a
+              href={`mailto:?subject=${shareTitle}&body=I thought you might find this article interesting: ${currentUrl}`}
+              class="inline-flex items-center gap-2 px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+              aria-label="Share via email"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Author Bio -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <div class="card p-8 bg-gray-50">
+          <h3 class="text-h3 text-gray-900 mb-3">About the Author</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            <strong>Craig Fearn</strong> is the founder of Lighthouse Mentoring. He holds two Fellowships (FCMI and FRSPH) and serves as an IoD Ambassador. With 17 years of board-level experience across NHS, technology, financial services, and manufacturing, Craig provides strategic guidance on board governance, executive coaching, and organizational wellbeing.
+          </p>
+          <a href="/about" class="text-accent hover:underline font-semibold">
+            Learn more about Craig →
+          </a>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      {relatedInsights.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <h3 class="text-h2 text-gray-900 mb-8">Related Articles</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            {relatedInsights.map((related) => (
+              <article class="card p-6 hover:shadow-lg transition-shadow duration-200">
+                <span class={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${categoryColors[related.data.category]}`}>
+                  {related.data.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                </span>
+                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2 leading-tight">
+                  <a href={`/insights/${related.slug}`} class="hover:text-accent transition-colors">
+                    {related.data.title}
+                  </a>
+                </h4>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                  {related.data.description}
+                </p>
+                <a
+                  href={`/insights/${related.slug}`}
+                  class="text-accent hover:underline text-sm font-semibold inline-flex items-center py-2.5 min-h-11"
+                >
+                  Read article →
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a href="/insights" class="text-accent hover:underline font-semibold">
+          ← Back to all insights
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .prose {
+    @apply text-gray-700;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-serif font-bold text-gray-900 mt-12 mb-6;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-serif font-bold text-gray-900 mt-8 mb-4;
+  }
+
+  .prose h4 {
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply mb-6 leading-relaxed;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-6 pl-6 space-y-2;
+  }
+
+  .prose ul {
+    @apply list-disc;
+  }
+
+  .prose ol {
+    @apply list-decimal;
+  }
+
+  .prose li {
+    @apply leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-accent hover:underline;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-accent pl-6 italic text-gray-600 my-6;
+  }
+
+  .prose code {
+    @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
+  }
+
+  .prose table {
+    @apply w-full border-collapse mb-6;
+  }
+
+  .prose th {
+    @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold;
+  }
+
+  .prose td {
+    @apply border border-gray-300 px-4 py-2;
+  }
+</style>
