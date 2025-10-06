@@ -131,47 +131,103 @@ export class DataForSEOTools {
   /**
    * Get search intent for keywords
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_search_intent
+   * Calls: /v3/dataforseo_labs/google/search_intent/live
    */
   async getSearchIntent(keywords: string[]): Promise<Map<string, string>> {
     console.log(`    🎯 Analyzing search intent for ${keywords.length} keywords...`);
 
-    // TODO: Integrate with MCP tool
-    const intentMap = new Map<string, string>();
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/search_intent/live', [{
+        keywords: keywords,
+        language_code: this.languageCode
+      }]);
 
-    // Placeholder
-    keywords.forEach(kw => {
-      intentMap.set(kw, 'informational');
-    });
+      const intentMap = new Map<string, string>();
 
-    return intentMap;
+      const items = result.tasks?.[0]?.result || [];
+
+      for (const item of items) {
+        if (item.keyword && item.keyword_intent) {
+          // Get the primary intent (highest probability)
+          const primaryIntent = item.keyword_intent.primary_intent || 'informational';
+          intentMap.set(item.keyword, primaryIntent);
+        }
+      }
+
+      return intentMap;
+    } catch (error) {
+      console.error(`    ❌ Search intent analysis failed:`, error);
+      const intentMap = new Map<string, string>();
+      keywords.forEach(kw => intentMap.set(kw, 'informational'));
+      return intentMap;
+    }
   }
 
   /**
    * Get keyword ideas/suggestions
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_google_keyword_ideas
+   * Calls: /v3/dataforseo_labs/google/keyword_ideas/live
    */
-  async getKeywordIdeas(seedKeywords: string[]): Promise<string[]> {
+  async getKeywordIdeas(seedKeywords: string[], limit: number = 100): Promise<string[]> {
     console.log(`    💡 Generating keyword ideas from ${seedKeywords.length} seed keywords...`);
 
-    // TODO: Integrate with MCP tool
-    // This will provide related keywords and variations
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/keyword_ideas/live', [{
+        keywords: seedKeywords,
+        location_name: this.location,
+        language_code: this.languageCode,
+        include_clickstream_data: false,
+        limit: limit
+      }]);
 
-    return [];
+      const ideas: string[] = [];
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
+
+      for (const item of items) {
+        if (item.keyword) {
+          ideas.push(item.keyword);
+        }
+      }
+
+      return ideas;
+    } catch (error) {
+      console.error(`    ❌ Keyword ideas failed:`, error);
+      return [];
+    }
   }
 
   /**
    * Get related keywords
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_google_related_keywords
+   * Calls: /v3/dataforseo_labs/google/related_keywords/live
    */
-  async getRelatedKeywords(keyword: string, depth: number = 1): Promise<string[]> {
+  async getRelatedKeywords(keyword: string, depth: number = 1, limit: number = 100): Promise<string[]> {
     console.log(`    🔗 Finding related keywords for "${keyword}" (depth: ${depth})...`);
 
-    // TODO: Integrate with MCP tool
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/related_keywords/live', [{
+        keyword: keyword,
+        location_name: this.location,
+        language_code: this.languageCode,
+        depth: depth,
+        limit: limit,
+        include_clickstream_data: false
+      }]);
 
-    return [];
+      const related: string[] = [];
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
+
+      for (const item of items) {
+        if (item.keyword_data?.keyword) {
+          related.push(item.keyword_data.keyword);
+        }
+      }
+
+      return related;
+    } catch (error) {
+      console.error(`    ❌ Related keywords failed:`, error);
+      return [];
+    }
   }
 
   /**
@@ -220,27 +276,78 @@ export class DataForSEOTools {
   /**
    * Get ranked keywords for a domain
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_google_ranked_keywords
+   * Calls: /v3/dataforseo_labs/google/ranked_keywords/live
    */
-  async getRankedKeywords(domain: string): Promise<KeywordData[]> {
+  async getRankedKeywords(domain: string, limit: number = 100): Promise<KeywordData[]> {
     console.log(`    📈 Fetching ranked keywords for ${domain}...`);
 
-    // TODO: Integrate with MCP tool
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/ranked_keywords/live', [{
+        target: domain,
+        location_name: this.location,
+        language_code: this.languageCode,
+        limit: limit,
+        include_clickstream_data: false
+      }]);
 
-    return [];
+      const keywords: KeywordData[] = [];
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
+
+      for (const item of items) {
+        if (item.keyword_data?.keyword_info) {
+          const kwInfo = item.keyword_data.keyword_info;
+          keywords.push({
+            keyword: item.keyword_data.keyword || '',
+            searchVolume: kwInfo.search_volume || 0,
+            cpc: kwInfo.cpc || 0,
+            competition: kwInfo.competition || 'UNKNOWN',
+            competitionLevel: kwInfo.competition_level || 'LOW',
+            intent: item.keyword_data.search_intent_info?.main_intent || 'informational',
+            difficulty: item.keyword_data.keyword_properties?.keyword_difficulty || 0
+          });
+        }
+      }
+
+      return keywords;
+    } catch (error) {
+      console.error(`    ❌ Ranked keywords failed:`, error);
+      return [];
+    }
   }
 
   /**
    * Get domain competitors
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_google_competitors_domain
+   * Calls: /v3/dataforseo_labs/google/competitors_domain/live
    */
-  async getDomainCompetitors(domain: string): Promise<string[]> {
+  async getDomainCompetitors(domain: string, limit: number = 20): Promise<string[]> {
     console.log(`    🏢 Finding competitors for ${domain}...`);
 
-    // TODO: Integrate with MCP tool
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/competitors_domain/live', [{
+        target: domain,
+        location_name: this.location,
+        language_code: this.languageCode,
+        limit: limit,
+        exclude_top_domains: true,
+        ignore_synonyms: true,
+        include_clickstream_data: false
+      }]);
 
-    return [];
+      const competitors: string[] = [];
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
+
+      for (const item of items) {
+        if (item.domain) {
+          competitors.push(item.domain);
+        }
+      }
+
+      return competitors;
+    } catch (error) {
+      console.error(`    ❌ Domain competitors failed:`, error);
+      return [];
+    }
   }
 
   /**
@@ -272,32 +379,80 @@ export class DataForSEOTools {
   /**
    * Get keyword difficulty scores
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_bulk_keyword_difficulty
+   * Calls: /v3/dataforseo_labs/google/bulk_keyword_difficulty/live
    */
   async getKeywordDifficulty(keywords: string[]): Promise<Map<string, number>> {
     console.log(`    💪 Calculating keyword difficulty for ${keywords.length} keywords...`);
 
-    // TODO: Integrate with MCP tool
-    const difficultyMap = new Map<string, number>();
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/bulk_keyword_difficulty/live', [{
+        keywords: keywords,
+        location_name: this.location,
+        language_code: this.languageCode
+      }]);
 
-    keywords.forEach(kw => {
-      difficultyMap.set(kw, 0);
-    });
+      const difficultyMap = new Map<string, number>();
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
 
-    return difficultyMap;
+      for (const item of items) {
+        if (item.keyword && typeof item.keyword_difficulty === 'number') {
+          difficultyMap.set(item.keyword, item.keyword_difficulty);
+        }
+      }
+
+      return difficultyMap;
+    } catch (error) {
+      console.error(`    ❌ Keyword difficulty failed:`, error);
+      const difficultyMap = new Map<string, number>();
+      keywords.forEach(kw => difficultyMap.set(kw, 0));
+      return difficultyMap;
+    }
   }
 
   /**
    * Get historical keyword data
    *
-   * Uses: mcp__dataforseo__dataforseo_labs_google_historical_keyword_data
+   * Calls: /v3/dataforseo_labs/google/historical_keyword_data/live
    */
   async getHistoricalData(keywords: string[]): Promise<KeywordData[]> {
     console.log(`    📊 Fetching historical data for ${keywords.length} keywords...`);
 
-    // TODO: Integrate with MCP tool
+    try {
+      const result = await this.makeRequest('/dataforseo_labs/google/historical_keyword_data/live', [{
+        keywords: keywords,
+        location_name: this.location,
+        language_code: this.languageCode
+      }]);
 
-    return [];
+      const historicalData: KeywordData[] = [];
+      const items = result.tasks?.[0]?.result?.[0]?.items || [];
+
+      for (const item of items) {
+        if (item.keyword && item.keyword_info) {
+          const kwInfo = item.keyword_info;
+          historicalData.push({
+            keyword: item.keyword,
+            searchVolume: kwInfo.search_volume || 0,
+            cpc: kwInfo.cpc || 0,
+            competition: kwInfo.competition || 'UNKNOWN',
+            competitionLevel: kwInfo.competition_level || 'LOW',
+            intent: item.search_intent_info?.main_intent || 'informational',
+            difficulty: item.keyword_properties?.keyword_difficulty || 0,
+            trends: kwInfo.monthly_searches
+              ? Object.entries(kwInfo.monthly_searches).map(([month, volume]) => ({
+                  month,
+                  searchVolume: volume as number
+                }))
+              : undefined
+          });
+        }
+      }
+
+      return historicalData;
+    } catch (error) {
+      console.error(`    ❌ Historical data failed:`, error);
+      return [];
+    }
   }
 }
 
