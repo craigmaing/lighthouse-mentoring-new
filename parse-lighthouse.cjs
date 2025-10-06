@@ -1,55 +1,48 @@
 const fs = require('fs');
+const data = JSON.parse(fs.readFileSync('lighthouse-report-current.json', 'utf8'));
+const audits = data.audits;
 
-const data = JSON.parse(fs.readFileSync('lighthouse-report.json', 'utf8'));
-
-console.log('\n🔍 LIGHTHOUSE AUDIT SCORES:\n');
-console.log('='.repeat(50));
-
-Object.entries(data.categories).forEach(([key, cat]) => {
-  const score = Math.round(cat.score * 100);
-  const emoji = score >= 90 ? '✅' : score >= 50 ? '⚠️' : '❌';
-  console.log(`${emoji} ${cat.title}: ${score}/100`);
-});
-
-console.log('\n' + '='.repeat(50));
-console.log('\n📊 PERFORMANCE METRICS:\n');
-
-const metrics = [
-  ['first-contentful-paint', 'First Contentful Paint', '< 1.8s'],
-  ['largest-contentful-paint', 'Largest Contentful Paint', '< 2.5s'],
-  ['speed-index', 'Speed Index', '< 3.4s'],
-  ['total-blocking-time', 'Total Blocking Time', '< 200ms'],
-  ['cumulative-layout-shift', 'Cumulative Layout Shift', '< 0.1']
+console.log('=== PERFORMANCE OPPORTUNITIES ===');
+const perfOpps = [
+  'render-blocking-resources',
+  'unused-css-rules',
+  'unused-javascript',
+  'modern-image-formats',
+  'uses-optimized-images',
+  'efficient-animated-content'
 ];
 
-metrics.forEach(([id, name, target]) => {
-  const audit = data.audits[id];
-  if (audit && audit.displayValue) {
-    console.log(`  ${name}: ${audit.displayValue} (target: ${target})`);
+perfOpps.forEach(id => {
+  if (audits[id] && audits[id].score !== null && audits[id].score < 1) {
+    console.log(`${audits[id].title}: ${audits[id].displayValue || 'See details'}`);
+    if (audits[id].details && audits[id].details.overallSavingsMs) {
+      console.log(`  Potential savings: ${Math.round(audits[id].details.overallSavingsMs)}ms`);
+    }
   }
 });
 
-console.log('\n' + '='.repeat(50));
-console.log('\n⚠️  TOP ISSUES TO FIX:\n');
+console.log('\n=== ACCESSIBILITY ISSUES ===');
+const a11yKeys = Object.keys(audits).filter(k =>
+  audits[k].score !== null &&
+  audits[k].score < 1 &&
+  data.categories.accessibility.auditRefs.some(ref => ref.id === k)
+);
 
-const issues = [];
-
-// Find failing audits
-Object.values(data.audits).forEach(audit => {
-  if (audit.score !== null && audit.score < 0.9 && audit.details && audit.details.items) {
-    issues.push({
-      title: audit.title,
-      score: audit.score,
-      description: audit.description
-    });
-  }
+a11yKeys.forEach(id => {
+  console.log(`${audits[id].title}: Score ${audits[id].score}`);
 });
 
-// Sort by score and show top 5
-issues.sort((a, b) => a.score - b.score)
-  .slice(0, 5)
-  .forEach((issue, i) => {
-    console.log(`${i + 1}. ${issue.title} (score: ${Math.round(issue.score * 100)}/100)`);
-  });
+console.log('\n=== SEO ISSUES ===');
+const seoKeys = Object.keys(audits).filter(k =>
+  audits[k].score !== null &&
+  audits[k].score < 1 &&
+  data.categories.seo.auditRefs.some(ref => ref.id === k)
+);
 
-console.log('\n');
+seoKeys.forEach(id => {
+  console.log(`${audits[id].title}: Score ${audits[id].score}`);
+});
+
+console.log('\n=== KEY METRICS DETAILS ===');
+console.log(`Time to Interactive: ${audits.interactive.displayValue}`);
+console.log(`Max Potential FID: ${audits['max-potential-fid'].displayValue}`);

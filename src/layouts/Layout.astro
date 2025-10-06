@@ -34,12 +34,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonicalURL} />
 
-    <!-- DNS Prefetch for external resources -->
-    <link rel="dns-prefetch" href="https://lighthousementoring.co.uk" />
+    <!-- Resource hints for external resources -->
+    <link rel="preconnect" href="https://lighthousementoring.co.uk" />
+    <link rel="preconnect" href="https://www.linkedin.com" crossorigin />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Lighthouse Mentoring Insights" href="/rss.xml" />
 
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#2D2D2D" />
@@ -82,4 +90,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 <style is:global>
   @import '../styles/global.css';
+</style>
+<!-- Accessibility: Respect prefers-reduced-motion -->
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation-duration: 0.01ms !important;
+    }
+  }
 </style>

@@ -14,6 +14,7 @@ export default {
           dark: '#8B4513',
           light: '#B8732C',
         },
+        eggshell: '#F4F1EA', // Warm cream background
         gray: {
           50: '#F9FAFB',
           100: '#F3F4F6',

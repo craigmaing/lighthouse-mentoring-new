@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-10-06T07:57:37.140Z",
+  "testPrompt": "You have access to DataForSEO MCP tools. Please use the mcp__dataforseo__dataforseo_labs_google_keyword_overview tool to research these keywords:\n\nKeywords: [\"board advisory\", \"executive coaching\"]\nLocation: United Kingdom (location_name parameter)\nLanguage: en (language_code parameter)\n\nCall the tool and then provide me with:\n1. Search volume (monthly searches)\n2. CPC (cost per click)\n3. Competition level\n4. Search intent\n\nFormat the results in a clear table.",
+  "toolCalls": 0,
+  "response": ""
+}

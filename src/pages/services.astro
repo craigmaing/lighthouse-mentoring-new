@@ -4,7 +4,7 @@ import Button from '../components/Button.astro';
 import { Image, Picture } from 'astro:assets';
 
 // Import images for optimization
-import iodConference83 from '../images/iod-conference-83.jpg';
+import executiveSuccess from '../images/executive-success-7516.jpg';
 ---
 
 <Layout
@@ -24,7 +24,7 @@ import iodConference83 from '../images/iod-conference-83.jpg';
           Board advisory, executive coaching, and strategic consulting—specialized guidance that draws on both deep experience and evidence-based methodology.
         </p>
         <p class="text-gray-100 leading-relaxed mb-8">
-          17 years at board level across NHS, technology, financial services, and professional services. IoD Ambassador, FRSPH Fellow, FCMI Fellow—support for 100+ organizations navigating complex challenges.
+          Extensive board-level experience across NHS, technology, financial services, and professional services. IoD Ambassador, FRSPH Fellow, FCMI Fellow—supporting organizations navigating complex challenges.
         </p>
 
         <!-- CTA Buttons -->
@@ -40,11 +40,11 @@ import iodConference83 from '../images/iod-conference-83.jpg';
         <!-- Conference Image -->
         <div class="hidden lg:block">
           <Picture
-            src={iodConference83}
-            alt="Craig Fearn at IoD Conference"
+            src={executiveSuccess}
+            alt="Craig Fearn - Professional Executive Consultant"
             class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-            widths={[400, 600, 800]}
-            sizes="(max-width: 768px) 100vw, 800px"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
             formats={['avif', 'webp']}
             loading="eager"
             fetchpriority="high"
@@ -56,12 +56,12 @@ import iodConference83 from '../images/iod-conference-83.jpg';
   </section>
 
   <!-- Board Advisory Service -->
-  <section id="board-advisory" class="section-padding bg-white">
+  <section id="board-advisory" class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <div class="card p-8 md:p-12">
         <h2 class="text-h2 text-gray-900 mb-6">Board Advisory & Governance</h2>
         <p class="text-gray-700 leading-relaxed mb-6">
-          Navigate complex board dynamics, governance challenges, and strategic decisions. Objective perspective from someone who's sat where you sit—17 years navigating stakeholder conflict, strategic uncertainty, and fiduciary responsibility.
+          Navigate complex board dynamics, governance challenges, and strategic decisions. Objective perspective from someone who's sat where you sit—extensive experience navigating stakeholder conflict, strategic uncertainty, and fiduciary responsibility.
         </p>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
@@ -164,7 +164,7 @@ import iodConference83 from '../images/iod-conference-83.jpg';
   </section>
 
   <!-- Organizational Wellbeing Service -->
-  <section id="wellbeing-audit" class="section-padding bg-white">
+  <section id="wellbeing-audit" class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <div class="card p-8 md:p-12">
         <h2 class="text-h2 text-gray-900 mb-6">Organizational Wellbeing Audits</h2>
