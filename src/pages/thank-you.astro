@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout
+  title="Thank You | Message Received"
+  description="Thank you for contacting Lighthouse Mentoring. Craig will be in touch within 24 hours."
+>
+  <section class="section-padding bg-eggshell min-h-screen flex items-center">
+    <div class="container max-w-3xl">
+      <div class="card p-12 text-center">
+        <!-- Success Icon -->
+        <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+
+        <h1 class="text-h1 text-gray-900 mb-4">Thank You!</h1>
+        <p class="text-xl text-gray-700 mb-6">
+          Your message has been received.
+        </p>
+
+        <div class="bg-gray-50 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+          <h2 class="text-h3 text-gray-900 mb-4">What Happens Next?</h2>
+          <div class="space-y-4 text-left">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <strong class="text-gray-900">Within 24 hours</strong>
+                <p class="text-gray-600">Craig will personally review your message and respond</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <strong class="text-gray-900">No sales pitch</strong>
+                <p class="text-gray-600">Just a professional conversation about your needs</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <strong class="text-gray-900">Completely confidential</strong>
+                <p class="text-gray-600">Your information remains strictly private</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-gray-600 mb-8">
+          Check your email (including spam folder) for a confirmation.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/" variant="primary">
+            Return to Homepage
+          </Button>
+          <Button href="/services/executive-coaching" variant="secondary">
+            Learn About Services
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

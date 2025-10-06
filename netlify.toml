@@ -1,0 +1,22 @@
+# Netlify Configuration for Lighthouse Mentoring
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Form settings
+[build.environment]
+  NODE_VERSION = "22"
+
+# Redirect rules
+[[redirects]]
+  from = "/contact-success"
+  to = "/contact?success=true"
+  status = 200
+  force = false
+
+# Headers (additional to public/_headers)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
