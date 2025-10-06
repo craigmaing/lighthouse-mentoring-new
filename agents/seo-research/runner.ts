@@ -3,20 +3,24 @@
  * SEO Research Agent Runner
  *
  * Executes the SEO research agent with DataForSEO MCP integration
+ * Automatically triggers Data Analyst agent for strategic analysis
  *
  * Usage:
- *   npm run agent:seo                    # Analyze all services
+ *   npm run agent:seo                    # Analyze all services + auto-analyze
  *   npm run agent:seo -- --service="board advisory"  # Single service
  *   npm run agent:seo -- --output=results.json      # Custom output file
+ *   npm run agent:seo -- --no-analyze    # Skip automatic analysis
  */
 
 import { SEOResearchAgent } from './index';
+import { DataAnalystAgent } from '../data-analyst/index';
 import * as path from 'path';
 
 interface RunnerOptions {
   service?: string;
   output?: string;
   verbose?: boolean;
+  noAnalyze?: boolean;
 }
 
 async function main() {
@@ -31,6 +35,8 @@ async function main() {
       options.output = arg.split('=')[1];
     } else if (arg === '--verbose') {
       options.verbose = true;
+    } else if (arg === '--no-analyze') {
+      options.noAnalyze = true;
     }
   });
 
@@ -79,6 +85,38 @@ async function main() {
       const topOpp = results[0].opportunities[0];
       console.log(`   "${topOpp.keyword}"`);
       console.log(`   ${topOpp.reason}`);
+    }
+
+    // Automatically trigger Data Analyst Agent
+    if (!options.noAnalyze) {
+      console.log('\n' + '━'.repeat(60));
+      console.log('🤖 Auto-triggering Data Analyst Agent...');
+      console.log('━'.repeat(60) + '\n');
+
+      const analyst = new DataAnalystAgent();
+
+      // Load the data we just generated
+      await analyst.loadData(outputPath);
+
+      // Run analysis
+      await analyst.analyze();
+
+      // Export markdown report
+      const reportPath = path.join(
+        process.cwd(),
+        'agents',
+        'data-analyst',
+        'output',
+        `seo-strategic-analysis-${Date.now()}.md`
+      );
+
+      await analyst.exportMarkdown(reportPath);
+
+      console.log('\n' + '━'.repeat(60));
+      console.log('✅ Complete Pipeline Finished!');
+      console.log('━'.repeat(60));
+      console.log(`\n📊 SEO Research: ${outputPath}`);
+      console.log(`📄 Strategic Report: ${reportPath}`);
     }
 
   } catch (error) {
