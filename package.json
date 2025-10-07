@@ -12,7 +12,8 @@
     "agent:test-mcp": "tsx agents/seo-research/test-mcp.ts",
     "agent:analyze": "tsx agents/data-analyst/runner.ts",
     "agent:publish": "tsx agents/publishing-agent/runner.ts",
-    "agent:ai-optimize": "tsx agents/ai-search-optimizer/runner.ts"
+    "agent:ai-optimize": "tsx agents/ai-search-optimizer/runner.ts",
+    "agent:orchestrator": "tsx agents/orchestrator/runner.ts"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.1.8",

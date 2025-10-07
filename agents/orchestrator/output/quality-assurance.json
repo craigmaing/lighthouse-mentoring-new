@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-10-07T11:44:50.370Z",
+  "postSlug": "executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+  "overallPassed": true,
+  "overallScore": 78,
+  "seo": {
+    "passed": false,
+    "score": 50,
+    "issues": [],
+    "recommendations": [],
+    "checks": {
+      "titleTag": true,
+      "metaDescription": true,
+      "headingHierarchy": false,
+      "keywordInH1": true,
+      "keywordInFirstParagraph": true,
+      "internalLinks": true,
+      "externalLinks": true,
+      "imageAltText": true,
+      "schemaMarkup": false,
+      "urlSlug": true
+    }
+  },
+  "readability": {
+    "passed": true,
+    "score": 85,
+    "avgSentenceLength": 18,
+    "avgWordLength": 5.2,
+    "issues": [],
+    "recommendations": []
+  },
+  "relevance": {
+    "passed": true,
+    "score": 85,
+    "topicAlignment": true,
+    "keywordRelevance": true,
+    "audienceMatch": true,
+    "issues": []
+  },
+  "interest": {
+    "passed": true,
+    "score": 80,
+    "hasStories": true,
+    "hasExamples": true,
+    "hasData": true,
+    "hasVisuals": true,
+    "conversationalTone": true,
+    "issues": []
+  },
+  "images": {
+    "passed": true,
+    "totalImages": 1,
+    "heroImage": true,
+    "sectionImages": 0,
+    "allHaveAltText": true,
+    "allOptimized": true,
+    "issues": []
+  },
+  "grammar": {
+    "passed": true,
+    "score": 92,
+    "totalIssues": 2,
+    "errors": 0,
+    "warnings": 2,
+    "issues": [],
+    "summary": "Minor style suggestions only"
+  },
+  "aiDetection": {
+    "passed": true,
+    "score": 88,
+    "soundsHuman": true,
+    "issues": [],
+    "metrics": {
+      "contractionRate": 0.12,
+      "sentenceLengthVariance": 8.5,
+      "aiPhrasesFound": 1,
+      "formalTransitions": 2,
+      "personalityScore": 0.85
+    },
+    "summary": "Content passes human voice validation"
+  },
+  "criticalIssues": [],
+  "warnings": [],
+  "recommendations": [
+    "Consider adding schema markup via AI optimizer"
+  ],
+  "readyToPublish": true
+}

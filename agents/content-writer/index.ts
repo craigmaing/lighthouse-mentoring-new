@@ -11,6 +11,7 @@
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { ClaudeContentService } from './claude-service';
+import { ClaudeCodeContentService } from './claude-code-service';
 import type { BlogPost, BlogPostBrief, ImageRequirement } from './types';
 
 interface Testimonial {
@@ -30,10 +31,21 @@ export class ContentWriterAgent {
   private seoGuidelines: string = '';
   private blogPosts: BlogPost[] = [];
   private testimonials: Testimonial[] = [];
-  private claudeService: ClaudeContentService;
+  private claudeService: ClaudeContentService | ClaudeCodeContentService;
+  private useClaudeCode: boolean;
 
   constructor() {
-    this.claudeService = new ClaudeContentService();
+    // Check if ANTHROPIC_API_KEY is available
+    const hasApiKey = !!process.env.ANTHROPIC_API_KEY;
+    this.useClaudeCode = !hasApiKey;
+
+    if (this.useClaudeCode) {
+      console.log('ℹ️  Using Claude Code native service (no API key required)');
+      this.claudeService = new ClaudeCodeContentService();
+    } else {
+      console.log('ℹ️  Using Anthropic API with key from environment');
+      this.claudeService = new ClaudeContentService();
+    }
   }
 
   /**

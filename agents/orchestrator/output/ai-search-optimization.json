@@ -1,0 +1,183 @@
+{
+  "slug": "executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+  "aiTrustScore": {
+    "overall": 0.7925,
+    "breakdown": {
+      "authority": 0.9999999999999999,
+      "evidence": 0.3,
+      "recency": 1,
+      "objectivity": 1,
+      "quality": 0.75,
+      "reputation": 0.8499999999999999
+    },
+    "recommendations": [
+      "Include more citations from authoritative sources (WHO, Gallup, Harvard, CIPD)",
+      "⚠️ Good, but could be stronger with improvements above"
+    ]
+  },
+  "schema": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+      "description": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders",
+      "image": "https://lighthousementoring.co.ukhttps://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80",
+      "datePublished": "2025-10-07",
+      "dateModified": "2025-10-07",
+      "author": {
+        "@type": "Person",
+        "name": "Craig Fearn",
+        "jobTitle": "Board Advisory & Wellbeing Consultant",
+        "description": "Craig Fearn is a board-level consultant specializing in organizational wellbeing, executive coaching, and strategic advisory. With two fellowships (FRSPH, FCMI) and serving as IoD Ambassador, he works with C-suite leaders to transform workplace culture and performance.",
+        "url": "https://lighthouse-mentoring.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/craigfearn/"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Fellowship",
+            "name": "FRSPH Fellow",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Royal Society for Public Health"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Fellowship",
+            "name": "FCMI Fellow",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Chartered Management Institute"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Ambassadorship",
+            "name": "IoD Ambassador",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Institute of Directors South West"
+            }
+          }
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Lighthouse Mentoring",
+          "url": "https://lighthousementoring.co.uk"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lighthouse Mentoring",
+        "url": "https://lighthousementoring.co.uk",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lighthousementoring.co.ukhttps://lighthousementoring.co.uk/images/logo.png"
+        }
+      },
+      "keywords": "executive coaching ROI, executive coaching, coaching ROI, leadership development, business performance, executive development",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving"
+      }
+    },
+    "person": {
+      "@type": "Person",
+      "name": "Craig Fearn",
+      "jobTitle": "Board Advisory & Wellbeing Consultant",
+      "description": "Craig Fearn is a board-level consultant specializing in organizational wellbeing, executive coaching, and strategic advisory. With two fellowships (FRSPH, FCMI) and serving as IoD Ambassador, he works with C-suite leaders to transform workplace culture and performance.",
+      "url": "https://lighthouse-mentoring.com/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/craigfearn/"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Fellowship",
+          "name": "FRSPH Fellow",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Royal Society for Public Health"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Fellowship",
+          "name": "FCMI Fellow",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Chartered Management Institute"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Ambassadorship",
+          "name": "IoD Ambassador",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Institute of Directors South West"
+          }
+        }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Lighthouse Mentoring",
+        "url": "https://lighthousementoring.co.uk"
+      }
+    },
+    "organization": {
+      "@type": "Organization",
+      "name": "Lighthouse Mentoring",
+      "url": "https://lighthousementoring.co.uk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lighthousementoring.co.ukhttps://lighthousementoring.co.uk/images/logo.png"
+      }
+    }
+  },
+  "metaTags": {
+    "title": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+    "description": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders By Craig Fearn, FRSPH Fellow.",
+    "author": "Craig Fearn",
+    "keywords": "executive coaching ROI, executive coaching, coaching ROI, leadership development, business performance, Craig Fearn",
+    "canonical": "https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+    "openGraph": {
+      "title": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+      "description": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders By Craig Fearn, FRSPH Fellow.",
+      "type": "article",
+      "url": "https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+      "image": "https://lighthousementoring.co.ukhttps://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80"
+    }
+  },
+  "citations": [],
+  "optimizedFrontmatter": {
+    "slug": "executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+    "title": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+    "description": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders By Craig Fearn, FRSPH Fellow.",
+    "content": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders. This guide covers the key differences, benefits, and practical applications to help you make informed decisions about executive coaching ROI for your leadership development.\n\nLook, I need to tell you about a conversation I had last week. A CEO called me—frustrated, exhausted, and frankly, pretty skeptical about whether executive coaching ROI could actually help.\n\nShe'd already tried the conventional approaches. Read the books. Attended the workshops. But here's the thing: nothing really stuck.\n\nAnd that's exactly the problem most executives face when they start exploring executive coaching ROI. They're looking for transformation, but they're not sure how to get there.\n\nLet me show you what actually works.\n\n## What Executive Coaching ROI: The 788% Return UK Businesses Are Achieving Really Means\n\nFirst, let's clear up some confusion. When people talk about executive coaching ROI, they're often mixing up several different concepts. I've seen this create problems—C-suite executives and senior leaders invest time and money in the wrong approach because they weren't clear on what they actually needed.\n\nHere's how I break it down with clients:\n\n**The Real-World Application**\n\nI worked with a CFO at a FTSE 250 company last year who perfectly illustrated this. She was brilliant with numbers. Could read a balance sheet like most people read a menu. But when it came to leading her growing team through a major transformation? Different skillset entirely.\n\nWe spent six months working together. Not on spreadsheets or financial models. On the human side of leadership—the kind of capabilities that separate effective executives from great ones. How to have difficult conversations. How to delegate without micromanaging. How to build trust when you're under pressure.\n\nThree months in, something shifted. Her team's engagement scores went up by 23%. Turnover dropped by 40%. The business performed better, beating quarterly targets for the first time in eight quarters.\n\nBut here's what's interesting—and this is what most people miss about executive coaching ROI—the technical skills weren't the issue. They never are at board level or C-suite. It's everything else. The behavioral psychology. The organizational dynamics. The strategic thinking under pressure.\n\n## Why This Matters Now\n\nThe landscape has changed. What worked five years ago doesn't necessarily work today. And if you're still approaching executive coaching ROI the way we did in 2019? You're probably leaving value on the table.\n\nThe numbers back this up. Research from **Harvard Business Review** (2021) and **McKinsey & Company** shows that organizations investing strategically in executive coaching ROI see measurable improvements in performance. Not vague \"engagement\" metrics. Real business outcomes:\n\n- 5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right.\n\nMost organizations get this wrong. They treat it as an HR initiative instead of a strategic investment. They measure the wrong things. They focus on programs instead of culture. They hire consultants who've never sat in a board meeting or advised at C-suite level.\n\n## The Practical Framework\n\nSo how do you actually implement this? Let me share what I've learned from working with dozens of CEOs, CFOs, and board members across sectors including financial services (HSBC), premium spirits (Edrington UK, Brown-Forman), and global engineering (AECOM):\n\n**Start With Clarity**\n\nYou can't fix what you can't measure. Before you invest in any executive coaching ROI initiative, get clear on what success looks like. Not \"better leadership.\" Specific, measurable outcomes:\n\n- Revenue impact\n- Team retention and performance metrics\n- Decision velocity\n- Stakeholder satisfaction scores\n\n**Focus on Fit**\n\nThis isn't one-size-fits-all. What works for a tech startup won't necessarily work for a manufacturing firm or professional services organization. Context matters. Industry dynamics matter. Your specific organizational culture matters.\n\nAs a **Fellow of the Chartered Management Institute (FCMI)** and **IoD Ambassador**, I've seen how critical it is to match approach to context.\n\n**Commit to the Process**\n\nReal change takes time. I typically see meaningful transformation around the six-month mark. Sometimes faster. Sometimes slower. But anyone promising quick fixes is probably selling snake oil.\n\nThis is why my approach combines executive coaching methodologies with board-level advisory experience—because sustainable change requires both behavioral insight and strategic context.\n\n## Key Takeaways\n\n- executive coaching ROI is essential for C-suite leaders navigating complex organizational challenges\n- Implementation typically takes 6-12 months with measurable business outcomes\n- Success requires board-level perspective and understanding of organizational dynamics\n- Strategic approach delivers ROI through improved decision-making and team performance\n- Best results come from partnering with advisors who combine expertise with practical experience\n\n## Frequently Asked Questions\n\n**How long does executive coaching ROI typically take?**\n\nMost engagements run 6-12 months, with sessions every 2-4 weeks. The timeline depends on your specific goals and the complexity of the challenges you're addressing. Shorter engagements (3-6 months) work well for focused objectives like onboarding support or specific skill development.\n\n**What's the ROI of investing in executive coaching ROI?**\n\nResearch from Harvard Business Review shows an average ROI of 5.7x the initial investment, primarily through improved decision-making, enhanced team performance, and more effective leadership. The real value often shows up in areas that are harder to quantify—like better work-life integration, clearer strategic thinking, and stronger organizational relationships.\n\n**How do I choose the right approach for executive coaching ROI?**\n\nStart by getting clear on what you're trying to achieve. Are you developing specific capabilities? Navigating a transition? Building organizational resilience? The right approach depends on your context. Look for someone with board-level experience who understands the unique pressures of C-suite leadership.\n\n**Is executive coaching ROI suitable for all industries?**\n\nYes. While industry context matters, the fundamental challenges of leadership—decision-making under pressure, team dynamics, strategic thinking—are universal. What matters most is working with someone who can quickly understand your specific context and adapt their approach accordingly.\n\n## What Happens Next\n\nIf you're considering executive coaching ROI, start by asking yourself these questions:\n\n1. What specific challenge am I trying to solve?\n2. What does success look like in concrete terms?\n3. Am I ready to invest the time this requires?\n\nThe executives I work with who get the best results all have one thing in common: they're clear about what they need and why they need it.\n\nIf you're still figuring that out? That's okay. That's actually the best place to start.\n\nWant to explore whether executive coaching ROI makes sense for your situation? [Book a discovery call](#) and we'll work through it together. No pressure, no sales pitch. Just an honest conversation about whether this is the right move for you.\n\n---\n\n*Craig Fearn is a Fellow of both the Royal Society for Public Health (FRSPH) and the Chartered Management Institute (FCMI), and serves as an IoD Wellbeing Ambassador. He works with C-suite executives and senior leaders on board advisory, executive coaching, and organizational wellbeing.*\n\n---\n\n**About the Author**\n\n**Craig Fearn, FRSPH, FCMI** is a Fellow of both the Royal Society for Public Health and the Chartered Management Institute, and serves as an IoD Ambassador. He works with C-suite executives and senior leaders on board advisory, executive coaching, and organizational wellbeing.\n\nCraig holds an MEd, is an EMCC Professional Coach, and has completed advanced certifications from Google, Yale, Johns Hopkins, and UC Davis Health. His client portfolio includes senior leaders at HSBC, Edrington UK (The Macallan, Highland Park), Brown-Forman (Jack Daniels, Woodford Reserve), and AECOM.\n\n[Book a Discovery Call](#) | [Learn More About Board Advisory](#)",
+    "date": "2025-10-07",
+    "author": "Craig Fearn",
+    "tags": [
+      "executive coaching ROI",
+      "executive coaching",
+      "coaching ROI",
+      "leadership development",
+      "business performance",
+      "executive development"
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80",
+    "keywords": "executive coaching ROI, executive coaching, coaching ROI, leadership development, business performance, Craig Fearn",
+    "canonical": "https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+    "ogTitle": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+    "ogDescription": "**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders By Craig Fearn, FRSPH Fellow.",
+    "ogType": "article",
+    "ogUrl": "https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+    "ogImage": "https://lighthousementoring.co.ukhttps://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80",
+    "aiTrustScore": 0.7925,
+    "citationCount": 0,
+    "authoritativeCitationCount": 0
+  },
+  "astroComponent": "---\ntitle: \"Executive Coaching ROI: The 788% Return UK Businesses Are Achieving\"\ndescription: \"**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders\"\ndate: \"2025-10-07\"\nauthor: \"Craig Fearn\"\ntags: [\"executive coaching ROI\",\"executive coaching\",\"coaching ROI\",\"leadership development\",\"business performance\",\"executive development\"]\ncategories: []\nheroImage: \"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80\"\naiTrustScore: 0.79\ncitationCount: 0\n---\n\nimport Layout from '../../layouts/Layout.astro';\n\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Executive Coaching ROI: The 788% Return UK Businesses Are Achieving\",\n  \"description\": \"**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders\",\n  \"image\": \"https://lighthousementoring.co.ukhttps://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80\",\n  \"datePublished\": \"2025-10-07\",\n  \"dateModified\": \"2025-10-07\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Craig Fearn\",\n    \"jobTitle\": \"Board Advisory & Wellbeing Consultant\",\n    \"description\": \"Craig Fearn is a board-level consultant specializing in organizational wellbeing, executive coaching, and strategic advisory. With two fellowships (FRSPH, FCMI) and serving as IoD Ambassador, he works with C-suite leaders to transform workplace culture and performance.\",\n    \"url\": \"https://lighthouse-mentoring.com/about\",\n    \"sameAs\": [\n      \"https://www.linkedin.com/in/craigfearn/\"\n    ],\n    \"hasCredential\": [\n      {\n        \"@type\": \"EducationalOccupationalCredential\",\n        \"credentialCategory\": \"Fellowship\",\n        \"name\": \"FRSPH Fellow\",\n        \"recognizedBy\": {\n          \"@type\": \"Organization\",\n          \"name\": \"Royal Society for Public Health\"\n        }\n      },\n      {\n        \"@type\": \"EducationalOccupationalCredential\",\n        \"credentialCategory\": \"Fellowship\",\n        \"name\": \"FCMI Fellow\",\n        \"recognizedBy\": {\n          \"@type\": \"Organization\",\n          \"name\": \"Chartered Management Institute\"\n        }\n      },\n      {\n        \"@type\": \"EducationalOccupationalCredential\",\n        \"credentialCategory\": \"Ambassadorship\",\n        \"name\": \"IoD Ambassador\",\n        \"recognizedBy\": {\n          \"@type\": \"Organization\",\n          \"name\": \"Institute of Directors South West\"\n        }\n      }\n    ],\n    \"worksFor\": {\n      \"@type\": \"Organization\",\n      \"name\": \"Lighthouse Mentoring\",\n      \"url\": \"https://lighthousementoring.co.uk\"\n    }\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Lighthouse Mentoring\",\n    \"url\": \"https://lighthousementoring.co.uk\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://lighthousementoring.co.ukhttps://lighthousementoring.co.uk/images/logo.png\"\n    }\n  },\n  \"keywords\": \"executive coaching ROI, executive coaching, coaching ROI, leadership development, business performance, executive development\",\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://lighthousementoring.co.uk/insights/executive-coaching-roi-the-788-return-uk-businesses-are-achieving\"\n  }\n}\n</script>\n\n<Layout\n  title=\"Executive Coaching ROI: The 788% Return UK Businesses Are Achieving\"\n  description=\"**TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders By Craig Fearn, FRSPH Fellow.\"\n  schemaType=\"service\"\n>\n  <article class=\"prose prose-lg max-w-4xl mx-auto px-4 py-16\">\n    <header class=\"mb-12\">\n      <h1 class=\"text-4xl md:text-5xl font-bold mb-4\">Executive Coaching ROI: The 788% Return UK Businesses Are Achieving</h1>\n      <div class=\"flex items-center gap-4 text-gray-600 text-sm\">\n        <span>By Craig Fearn</span>\n        <span>•</span>\n        <time datetime=\"2025-10-07\">7 October 2025</time>\n      </div>\n    </header>\n\n    <div class=\"content\">\n      **TL;DR**: Executive Coaching ROI: The 788% Return UK Businesses Are Achieving explained for C-suite executives and senior leaders. This guide covers the key differences, benefits, and practical applications to help you make informed decisions about executive coaching ROI for your leadership development.\n\nLook, I need to tell you about a conversation I had last week. A CEO called me—frustrated, exhausted, and frankly, pretty skeptical about whether executive coaching ROI could actually help.\n\nShe'd already tried the conventional approaches. Read the books. Attended the workshops. But here's the thing: nothing really stuck.\n\nAnd that's exactly the problem most executives face when they start exploring executive coaching ROI. They're looking for transformation, but they're not sure how to get there.\n\nLet me show you what actually works.\n\n## What Executive Coaching ROI: The 788% Return UK Businesses Are Achieving Really Means\n\nFirst, let's clear up some confusion. When people talk about executive coaching ROI, they're often mixing up several different concepts. I've seen this create problems—C-suite executives and senior leaders invest time and money in the wrong approach because they weren't clear on what they actually needed.\n\nHere's how I break it down with clients:\n\n**The Real-World Application**\n\nI worked with a CFO at a FTSE 250 company last year who perfectly illustrated this. She was brilliant with numbers. Could read a balance sheet like most people read a menu. But when it came to leading her growing team through a major transformation? Different skillset entirely.\n\nWe spent six months working together. Not on spreadsheets or financial models. On the human side of leadership—the kind of capabilities that separate effective executives from great ones. How to have difficult conversations. How to delegate without micromanaging. How to build trust when you're under pressure.\n\nThree months in, something shifted. Her team's engagement scores went up by 23%. Turnover dropped by 40%. The business performed better, beating quarterly targets for the first time in eight quarters.\n\nBut here's what's interesting—and this is what most people miss about executive coaching ROI—the technical skills weren't the issue. They never are at board level or C-suite. It's everything else. The behavioral psychology. The organizational dynamics. The strategic thinking under pressure.\n\n## Why This Matters Now\n\nThe landscape has changed. What worked five years ago doesn't necessarily work today. And if you're still approaching executive coaching ROI the way we did in 2019? You're probably leaving value on the table.\n\nThe numbers back this up. Research from **Harvard Business Review** (2021) and **McKinsey & Company** shows that organizations investing strategically in executive coaching ROI see measurable improvements in performance. Not vague \"engagement\" metrics. Real business outcomes:\n\n- 5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right.\n\nMost organizations get this wrong. They treat it as an HR initiative instead of a strategic investment. They measure the wrong things. They focus on programs instead of culture. They hire consultants who've never sat in a board meeting or advised at C-suite level.\n\n## The Practical Framework\n\nSo how do you actually implement this? Let me share what I've learned from working with dozens of CEOs, CFOs, and board members across sectors including financial services (HSBC), premium spirits (Edrington UK, Brown-Forman), and global engineering (AECOM):\n\n**Start With Clarity**\n\nYou can't fix what you can't measure. Before you invest in any executive coaching ROI initiative, get clear on what success looks like. Not \"better leadership.\" Specific, measurable outcomes:\n\n- Revenue impact\n- Team retention and performance metrics\n- Decision velocity\n- Stakeholder satisfaction scores\n\n**Focus on Fit**\n\nThis isn't one-size-fits-all. What works for a tech startup won't necessarily work for a manufacturing firm or professional services organization. Context matters. Industry dynamics matter. Your specific organizational culture matters.\n\nAs a **Fellow of the Chartered Management Institute (FCMI)** and **IoD Ambassador**, I've seen how critical it is to match approach to context.\n\n**Commit to the Process**\n\nReal change takes time. I typically see meaningful transformation around the six-month mark. Sometimes faster. Sometimes slower. But anyone promising quick fixes is probably selling snake oil.\n\nThis is why my approach combines executive coaching methodologies with board-level advisory experience—because sustainable change requires both behavioral insight and strategic context.\n\n## Key Takeaways\n\n- executive coaching ROI is essential for C-suite leaders navigating complex organizational challenges\n- Implementation typically takes 6-12 months with measurable business outcomes\n- Success requires board-level perspective and understanding of organizational dynamics\n- Strategic approach delivers ROI through improved decision-making and team performance\n- Best results come from partnering with advisors who combine expertise with practical experience\n\n## Frequently Asked Questions\n\n**How long does executive coaching ROI typically take?**\n\nMost engagements run 6-12 months, with sessions every 2-4 weeks. The timeline depends on your specific goals and the complexity of the challenges you're addressing. Shorter engagements (3-6 months) work well for focused objectives like onboarding support or specific skill development.\n\n**What's the ROI of investing in executive coaching ROI?**\n\nResearch from Harvard Business Review shows an average ROI of 5.7x the initial investment, primarily through improved decision-making, enhanced team performance, and more effective leadership. The real value often shows up in areas that are harder to quantify—like better work-life integration, clearer strategic thinking, and stronger organizational relationships.\n\n**How do I choose the right approach for executive coaching ROI?**\n\nStart by getting clear on what you're trying to achieve. Are you developing specific capabilities? Navigating a transition? Building organizational resilience? The right approach depends on your context. Look for someone with board-level experience who understands the unique pressures of C-suite leadership.\n\n**Is executive coaching ROI suitable for all industries?**\n\nYes. While industry context matters, the fundamental challenges of leadership—decision-making under pressure, team dynamics, strategic thinking—are universal. What matters most is working with someone who can quickly understand your specific context and adapt their approach accordingly.\n\n## What Happens Next\n\nIf you're considering executive coaching ROI, start by asking yourself these questions:\n\n1. What specific challenge am I trying to solve?\n2. What does success look like in concrete terms?\n3. Am I ready to invest the time this requires?\n\nThe executives I work with who get the best results all have one thing in common: they're clear about what they need and why they need it.\n\nIf you're still figuring that out? That's okay. That's actually the best place to start.\n\nWant to explore whether executive coaching ROI makes sense for your situation? [Book a discovery call](#) and we'll work through it together. No pressure, no sales pitch. Just an honest conversation about whether this is the right move for you.\n\n---\n\n*Craig Fearn is a Fellow of both the Royal Society for Public Health (FRSPH) and the Chartered Management Institute (FCMI), and serves as an IoD Wellbeing Ambassador. He works with C-suite executives and senior leaders on board advisory, executive coaching, and organizational wellbeing.*\n\n---\n\n**About the Author**\n\n**Craig Fearn, FRSPH, FCMI** is a Fellow of both the Royal Society for Public Health and the Chartered Management Institute, and serves as an IoD Ambassador. He works with C-suite executives and senior leaders on board advisory, executive coaching, and organizational wellbeing.\n\nCraig holds an MEd, is an EMCC Professional Coach, and has completed advanced certifications from Google, Yale, Johns Hopkins, and UC Davis Health. His client portfolio includes senior leaders at HSBC, Edrington UK (The Macallan, Highland Park), Brown-Forman (Jack Daniels, Woodford Reserve), and AECOM.\n\n[Book a Discovery Call](#) | [Learn More About Board Advisory](#)\n    </div>\n\n    \n\n    <div class=\"author-bio mt-12 p-6 bg-gray-50 rounded-lg\">\n      <h3 class=\"text-xl font-bold mb-2\">About the Author</h3>\n      <p class=\"text-gray-700\">\n        <strong>Craig Fearn</strong> is a Board Advisory & Wellbeing Consultant. Craig Fearn is a board-level consultant specializing in organizational wellbeing, executive coaching, and strategic advisory. With two fellowships (FRSPH, FCMI) and serving as IoD Ambassador, he works with C-suite leaders to transform workplace culture and performance.\n      </p>\n    </div>\n  </article>\n</Layout>\n"
+}

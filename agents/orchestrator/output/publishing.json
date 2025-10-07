@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "slug": "executive-coaching-roi-the-788-return-uk-businesses-are-achieving",
+  "filePath": "C:\\Users\\Fearn\\New folder (4)\\new-site\\src\\content\\insights\\executive-coaching-roi-the-788-return-uk-businesses-are-achieving.md",
+  "committed": false,
+  "pushed": false,
+  "warnings": [
+    "Blog post already exists - updating instead of creating"
+  ],
+  "taxonomy": {
+    "tags": [
+      "executive coaching",
+      "coaching ROI",
+      "leadership development",
+      "business performance",
+      "executive development"
+    ],
+    "category": "executive-coaching",
+    "secondaryCategories": [
+      "performance",
+      "leadership"
+    ]
+  }
+}
