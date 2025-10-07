@@ -3,7 +3,7 @@ title: "Insights Coming Soon"
 description: "New insights on executive coaching, board advisory, and organizational wellbeing are being developed."
 pubDate: 2025-10-07
 author: "Craig Fearn"
-category: "updates"
+category: "leadership"
 tags: ["updates"]
 image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&q=80"
 ---
