@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import { Image, Picture } from 'astro:assets';
+
+// Import images for optimization
+import executiveSuccess from '../images/executive-success-7516.jpg';
 ---
 
 <Layout
@@ -9,29 +13,42 @@ import Button from '../components/Button.astro';
   description="Board advisory, executive coaching, and organizational wellbeing services. Evidence-based strategic consulting from an FCMI Fellow, FRSPH Fellow, and IoD Ambassador."
 >
   <!-- Page Hero -->
-  <section class="section-padding bg-gradient-to-br from-gray-900 to-brand-800 text-white">
+  <section class="hero section-padding bg-primary text-white">
     <div class="container">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
       <div>
-        <h1 class="text-hero mb-6">
+        <h1 class="mb-6">
           Strategic Advisory When Stakes Are High
         </h1>
-        <p class="text-xl text-primary leading-relaxed mb-6">
+        <p class="text-gray-100 leading-relaxed mb-6">
           Board advisory, executive coaching, and strategic consulting—specialized guidance that draws on both deep experience and evidence-based methodology.
         </p>
-        <p class="text-lg text-primary leading-relaxed">
-          17 years at board level across NHS, technology, financial services, and professional services. IoD Ambassador, FRSPH Fellow, FCMI Fellow—support for 100+ organizations navigating complex challenges.
+        <p class="text-gray-100 leading-relaxed mb-8">
+          Extensive board-level experience across NHS, technology, financial services, and professional services. IoD Ambassador, FRSPH Fellow, FCMI Fellow—supporting organizations navigating complex challenges.
         </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/contact" variant="secondary">
+            Discuss Your Challenge
+          </Button>
+          <Button href="#board-advisory" variant="ghost" class="text-white hover:text-gray-100">
+            Explore Services Below
+          </Button>
+        </div>
         </div>
         <!-- Conference Image -->
         <div class="hidden lg:block">
-          <img
-            src="/images/iod-conference-83.jpg"
-            alt="Craig Fearn at IoD Conference"
+          <Picture
+            src={executiveSuccess}
+            alt="Craig Fearn - Professional Executive Consultant"
             class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-            width="800"
-            height="600"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
             loading="eager"
+            fetchpriority="high"
+            quality={85}
           />
         </div>
       </div>
@@ -39,12 +56,12 @@ import Button from '../components/Button.astro';
   </section>
 
   <!-- Board Advisory Service -->
-  <section class="section-padding bg-white">
+  <section id="board-advisory" class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <div class="card p-8 md:p-12">
         <h2 class="text-h2 text-gray-900 mb-6">Board Advisory & Governance</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          Navigate complex board dynamics, governance challenges, and strategic decisions. Objective perspective from someone who's sat where you sit—17 years navigating stakeholder conflict, strategic uncertainty, and fiduciary responsibility.
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Navigate complex board dynamics, governance challenges, and strategic decisions. Objective perspective from someone who's sat where you sit—extensive experience navigating stakeholder conflict, strategic uncertainty, and fiduciary responsibility.
         </p>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
@@ -84,68 +101,74 @@ import Button from '../components/Button.astro';
             <span class="text-gray-700">Board succession planning and director recruitment support</span>
           </li>
         </ul>
-        <Button href="/contact">Discuss Your Board Challenge</Button>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/board-advisory" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Discuss Your Challenge</Button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Executive Coaching Service -->
-  <section class="section-padding bg-gray-50">
+  <section id="executive-coaching" class="section-padding bg-gray-50">
     <div class="container max-w-4xl">
       <div class="card p-8 md:p-12">
         <h2 class="text-h2 text-gray-900 mb-6">Executive Coaching</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        <p class="text-gray-700 leading-relaxed mb-6">
           Develop leadership capability with coaching that combines psychological insight, strategic thinking, and real-world board-level experience. This isn't feel-good coaching—it's focused on performance, decision-making, and measurable leadership growth.
         </p>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">Leadership effectiveness and executive presence development</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">Navigating stakeholder dynamics and organizational politics</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">Transition preparation for C-suite or board-level roles</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">Strategic clarity on career direction and leadership challenges</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">Building resilience and managing executive pressure</span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="text-gray-700">EMCC Professional Coach accreditation with practical business focus</span>
           </li>
         </ul>
-        <Button href="/contact">Explore Executive Coaching</Button>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/executive-coaching" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Explore Coaching Options</Button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Organizational Wellbeing Service -->
-  <section class="section-padding bg-white">
+  <section id="wellbeing-audit" class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <div class="card p-8 md:p-12">
         <h2 class="text-h2 text-gray-900 mb-6">Organizational Wellbeing Audits</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        <p class="text-gray-700 leading-relaxed mb-6">
           Understand the true state of organizational wellbeing with human-AI analysis that surfaces patterns invisible to traditional surveys. Get strategic insights that connect wellbeing, culture, and performance.
         </p>
         <ul class="space-y-4 mb-8">
@@ -186,25 +209,28 @@ import Button from '../components/Button.astro';
             <span class="text-gray-700">Evidence-based analysis rooted in FRSPH public health methodology</span>
           </li>
         </ul>
-        <Button href="/contact">Discuss a Wellbeing Audit</Button>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/organizational-wellbeing" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Discuss a Wellbeing Audit</Button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="section-padding bg-gradient-to-r from-primary to-brand-800 text-white">
+  <section class="section-padding bg-gradient-to-r from-primary to-primary-dark text-white">
     <div class="container">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-h2 font-bold mb-6">
           Start with a Conversation
         </h2>
-        <p class="text-xl text-primary mb-8 leading-relaxed">
+        <p class="text-gray-100 mb-8 leading-relaxed">
           No pressure. No sales pitch. Just a strategic conversation about your challenge and whether Craig's experience and approach are the right fit.
         </p>
-        <Button href="/contact" size="large" variant="secondary">
+        <Button href="/contact" variant="secondary">
           Book a Strategy Call
         </Button>
-        <p class="text-sm text-primary mt-4">
+        <p class="text-sm text-gray-100 mt-4">
           All conversations are confidential and obligation-free.
         </p>
       </div>

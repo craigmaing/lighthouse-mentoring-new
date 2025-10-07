@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "slug": "executive-coaching-vs-leadership-coaching-what-is-the-difference",
+      "images": [
+        {
+          "position": "hero",
+          "searchQuery": "professional executive coaching business executive",
+          "altText": "Professional executive coaching session with business executive",
+          "context": "Hero image for blog post"
+        },
+        {
+          "position": "section",
+          "searchQuery": "business meeting leadership discussion",
+          "altText": "Leadership team in strategic discussion",
+          "context": "Section break - main content"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders",
+      "images": [
+        {
+          "position": "hero",
+          "searchQuery": "professional best executive coaching business executive",
+          "altText": "Professional best executive coaching session with business executive",
+          "context": "Hero image for blog post"
+        },
+        {
+          "position": "section",
+          "searchQuery": "business meeting leadership discussion",
+          "altText": "Leadership team in strategic discussion",
+          "context": "Section break - main content"
+        }
+      ]
+    }
+  ]
+}

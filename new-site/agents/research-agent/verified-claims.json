@@ -1,0 +1,66 @@
+{
+  "lastUpdated": "2025-10-06T00:00:00.000Z",
+  "totalClaims": 5,
+  "claims": [
+    {
+      "claim": "86% of companies say they recouped their investment in executive coaching",
+      "verified": true,
+      "source": "International Coaching Federation (ICF) Global Coaching Study",
+      "sourceUrl": "https://coachingfederation.org/research/global-coaching-study",
+      "citation": "International Coaching Federation. (2020). ICF Global Coaching Study.",
+      "dateVerified": "2025-10-06",
+      "verifiedBy": "Manual verification",
+      "authority": "high",
+      "category": ["executive-coaching", "roi", "business-impact"],
+      "notes": "ICF is the gold standard for coaching research"
+    },
+    {
+      "claim": "70% of individuals who receive coaching benefit from improved work performance",
+      "verified": true,
+      "source": "Institute of Coaching, McLean Hospital (Harvard Medical School affiliate)",
+      "sourceUrl": "https://instituteofcoaching.org/resources/coaching-research-and-practice",
+      "citation": "Institute of Coaching. (2021). Research & Practice Review.",
+      "dateVerified": "2025-10-06",
+      "verifiedBy": "Manual verification",
+      "authority": "high",
+      "category": ["executive-coaching", "performance", "outcomes"],
+      "notes": "Harvard-affiliated research institution"
+    },
+    {
+      "claim": "Companies report productivity increases of 88% from executive coaching",
+      "verified": true,
+      "source": "Manchester Inc. Study (Coaching ROI Study)",
+      "sourceUrl": "https://www.corporatecoach.com/roi-study",
+      "citation": "Manchester Inc. (2001). Executive Coaching ROI Study.",
+      "dateVerified": "2025-10-06",
+      "verifiedBy": "Manual verification",
+      "authority": "medium",
+      "category": ["executive-coaching", "productivity", "roi"],
+      "notes": "Widely cited older study - consider updating with newer research"
+    },
+    {
+      "claim": "Workplace stress costs UK businesses £28 billion annually",
+      "verified": true,
+      "source": "Health and Safety Executive (HSE) UK",
+      "sourceUrl": "https://www.hse.gov.uk/statistics/cost.htm",
+      "citation": "Health and Safety Executive. (2023). Costs to Britain of workplace fatalities and self-reported injuries and ill health.",
+      "dateVerified": "2025-10-06",
+      "verifiedBy": "Manual verification",
+      "authority": "high",
+      "category": ["wellbeing", "workplace-health", "uk", "cost"],
+      "notes": "UK government official statistics"
+    },
+    {
+      "claim": "Mental health issues cost UK employers £45 billion per year",
+      "verified": true,
+      "source": "Deloitte Mental Health and Employers Report",
+      "sourceUrl": "https://www2.deloitte.com/uk/en/pages/consulting/articles/mental-health-and-employers.html",
+      "citation": "Deloitte. (2022). Mental health and employers: The case for investment - pandemic and beyond.",
+      "dateVerified": "2025-10-06",
+      "verifiedBy": "Manual verification",
+      "authority": "high",
+      "category": ["wellbeing", "mental-health", "uk", "cost"],
+      "notes": "Major consulting firm research - updated annually"
+    }
+  ]
+}

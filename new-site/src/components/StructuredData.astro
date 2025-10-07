@@ -147,11 +147,39 @@ const serviceSchema = serviceName ? {
   "serviceType": "Professional Consulting"
 } : null;
 
+// Breadcrumb Schema based on page type
+const currentPath = Astro.url.pathname;
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://lighthousementoring.co.uk"
+    }
+  ]
+};
+
+// Add current page to breadcrumb if not homepage
+if (currentPath !== '/' && currentPath !== '') {
+  const pathParts = currentPath.split('/').filter(part => part);
+  pathParts.forEach((part, index) => {
+    breadcrumbSchema.itemListElement.push({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": part.charAt(0).toUpperCase() + part.slice(1),
+      "item": `https://lighthousementoring.co.uk/${pathParts.slice(0, index + 1).join('/')}`
+    });
+  });
+}
+
 const schemas = type === 'person'
-  ? [organizationSchema, personSchema]
+  ? [organizationSchema, personSchema, breadcrumbSchema]
   : type === 'service' && serviceSchema
-  ? [organizationSchema, serviceSchema]
-  : [organizationSchema];
+  ? [organizationSchema, serviceSchema, breadcrumbSchema]
+  : [organizationSchema, breadcrumbSchema];
 ---
 
 {schemas.map((schema) => (

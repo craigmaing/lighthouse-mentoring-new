@@ -1,34 +1,64 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import { Image, Picture } from 'astro:assets';
+
+// Import images for optimization
+import craigHeadshot from '../images/craig-headshot.jpg';
+import rsphBadge from '../images/RSPH-Fellow-Badge.jpg';
+import iodAmbassadorBadge from '../images/IoD-Ambassador-badge-web.png';
+import cmiFellowCert from '../images/cmi-fellow-certificate.png';
+import iodAspiringAward from '../images/iod-aspiring-award-badge.png';
+import iodGlobalAward from '../images/iod-global-award-badge.png';
 ---
 
 <Layout
   schemaType="person"
   keywords="Craig Fearn, FCMI Fellow, FRSPH Fellow, IoD Ambassador, board governance expert, strategic consultant, non-executive director"
   title="About Craig Fearn | Strategic Consultant & Board Advisor"
-  description="Meet Craig Fearn: FCMI Fellow, FRSPH Fellow, and IoD Ambassador. 17 years of board-level experience helping organizations achieve sustainable performance."
+  description="Meet Craig Fearn: FCMI Fellow, FRSPH Fellow, and IoD Ambassador. Extensive board-level experience helping organizations achieve sustainable performance."
 >
   <!-- Page Hero -->
-  <section class="section-padding bg-gradient-to-br from-gray-900 to-brand-800 text-white">
+  <section class="hero section-padding bg-primary text-white">
     <div class="container">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div>
-          <h1 class="text-hero mb-6">
-            Strategic Insight From 17 Years at Board Level
+          <h1 class="mb-6">
+            Strategic Insight From Extensive Board-Level Experience
           </h1>
-          <p class="text-xl text-primary leading-relaxed">
-            FCMI Fellow | FRSPH Fellow | IoD Ambassador — bringing pattern recognition and strategic clarity to complex organizational challenges.
+          <p class="text-gray-100 leading-relaxed mb-6">
+            Bringing pattern recognition and strategic clarity to complex organizational challenges.
           </p>
+
+          <!-- Credentials Bar -->
+          <div class="flex flex-wrap gap-3 mb-8">
+            <span class="badge bg-eggshell/10 text-white border-0">IoD Ambassador</span>
+            <span class="badge bg-eggshell/10 text-white border-0">FRSPH Fellow</span>
+            <span class="badge bg-eggshell/10 text-white border-0">FCMI Fellow</span>
+            <span class="badge bg-eggshell/10 text-white border-0">IoD Awards Finalist 2025</span>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <Button href="/contact" variant="secondary">
+              Book a Strategy Call
+            </Button>
+            <Button href="/services" variant="ghost" class="text-white hover:text-gray-100">
+              View Services
+            </Button>
+          </div>
         </div>
         <div>
-          <img
-            src="/images/craig-headshot.jpg"
+          <Picture
+            src={craigHeadshot}
             alt="Craig Fearn"
             class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-            width="800"
-            height="1105"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
             loading="eager"
+            fetchpriority="high"
+            quality={85}
           />
         </div>
       </div>
@@ -36,14 +66,14 @@ import Button from '../components/Button.astro';
   </section>
 
   <!-- Experience Section -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <h2 class="text-h2 text-gray-900 mb-8 text-center">Experience That Can't Be Googled</h2>
-      <p class="text-xl text-gray-600 text-center mb-12">Most strategic advisors have qualifications. Some have experience. Very few have both at this level.</p>
+      <p class="text-gray-600 text-center mb-12">Most strategic advisors have qualifications. Some have experience. Very few have both at this level.</p>
 
-      <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+      <div class="space-y-6 text-gray-700 leading-relaxed">
         <p>
-          17 years at board level across sectors including healthcare, technology, and professional services. Not as an observer—as the person making the calls. The person navigating stakeholder conflict. The person accountable when strategy meets reality.
+          Extensive board-level experience across sectors including healthcare, technology, and professional services. Not as an observer—as the person making the calls. The person navigating stakeholder conflict. The person accountable when strategy meets reality.
         </p>
 
         <p>
@@ -51,118 +81,350 @@ import Button from '../components/Button.astro';
         </p>
 
         <p>
-          Craig holds three globally-recognized Fellowships—a combination that doesn't exist elsewhere: IoD Ambassador (recognized authority on board governance), FRSPH Fellow (leadership in public health and wellbeing strategy), and FCMI Fellow (mastery of management practice and organizational leadership).
+          Craig holds two globally-recognized Fellowships—FRSPH Fellow (leadership in public health and wellbeing strategy) and FCMI Fellow (mastery of management practice and organizational leadership)—plus serves as an IoD Ambassador (recognized authority on board governance).
         </p>
 
         <p>
-          This isn't credential-collecting. It's proof of depth in three areas that matter for strategic advisory: governance expertise, wellbeing insight, and management mastery.
+          This isn't credential-collecting. It's proof of depth in three critical areas for strategic advisory: governance expertise, wellbeing insight, and management mastery.
         </p>
       </div>
+    </div>
+  </section>
+
+  <!-- Sector Expertise Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Cross-Sector Experience</h2>
+        <p class="text-gray-600">Pattern recognition across industries that brings unique strategic insights</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">🏥</div>
+          <p class="text-sm font-semibold text-gray-900">Healthcare</p>
+          <p class="text-xs text-gray-600">NHS</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">🏦</div>
+          <p class="text-sm font-semibold text-gray-900">Financial Services</p>
+          <p class="text-xs text-gray-600">HSBC</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">💻</div>
+          <p class="text-sm font-semibold text-gray-900">Technology</p>
+          <p class="text-xs text-gray-600">Digital & SaaS</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">🥃</div>
+          <p class="text-sm font-semibold text-gray-900">Spirits & Beverage</p>
+          <p class="text-xs text-gray-600">Edrington, Brown-Forman</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">🏗️</div>
+          <p class="text-sm font-semibold text-gray-900">Engineering</p>
+          <p class="text-xs text-gray-600">AECOM</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">🍽️</div>
+          <p class="text-sm font-semibold text-gray-900">Hospitality</p>
+          <p class="text-xs text-gray-600">Healthy Hospo</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">⚙️</div>
+          <p class="text-sm font-semibold text-gray-900">Manufacturing</p>
+          <p class="text-xs text-gray-600">Industrial</p>
+        </div>
+
+        <div class="card p-4 text-center">
+          <div class="text-3xl mb-2">💼</div>
+          <p class="text-sm font-semibold text-gray-900">Professional Services</p>
+          <p class="text-xs text-gray-600">Consulting</p>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
+        This cross-sector experience means I can recognize patterns and solutions that specialists within a single industry often miss. Board challenges are remarkably similar across sectors—it's the context that changes.
+      </p>
     </div>
   </section>
 
   <!-- Credentials Section -->
   <section class="section-padding bg-gray-50">
-    <div class="container">
-      <h2 class="text-h2 text-gray-900 mb-12 text-center">Professional Credentials</h2>
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Professional Credentials</h2>
+        <p class="text-xl text-gray-600">
+          Fellowship-level expertise across governance, public health, and management practice.
+        </p>
+      </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-        <div class="card p-6 text-center">
-          <img
-            src="/images/RSPH-Fellow-Badge.jpg"
-            alt="FRSPH Fellow"
-            class="w-24 h-24 mx-auto mb-4 object-contain"
-            width="150"
-            height="150"
+      <!-- First Row: 3 Main Credentials -->
+      <div class="grid md:grid-cols-3 gap-8 mb-6">
+        <div class="credential-badge">
+          <Image
+            src={rsphBadge}
+            alt="FRSPH Fellow Badge"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
             loading="lazy"
+            format="webp"
+            quality={90}
           />
-          <h3 class="text-h4 text-gray-900 mb-2">FRSPH Fellow</h3>
-          <p class="text-sm text-gray-600">Royal Society for Public Health</p>
+          <h3 class="credential-badge__title">FRSPH Fellow</h3>
+          <p class="credential-badge__subtitle">Royal Society for Public Health</p>
         </div>
 
-        <div class="card p-6 text-center">
-          <img
-            src="/images/IoD-Ambassador-badge-web.png"
-            alt="IoD Ambassador"
-            class="w-24 h-24 mx-auto mb-4 object-contain"
-            width="150"
-            height="150"
+        <div class="credential-badge">
+          <Image
+            src={iodAmbassadorBadge}
+            alt="IoD Ambassador Badge"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
             loading="lazy"
+            format="webp"
+            quality={90}
           />
-          <h3 class="text-h4 text-gray-900 mb-2">IoD Ambassador</h3>
-          <p class="text-sm text-gray-600">Institute of Directors</p>
+          <h3 class="credential-badge__title">IoD Ambassador</h3>
+          <p class="credential-badge__subtitle">Institute of Directors South West</p>
         </div>
 
-        <div class="card p-6 text-center">
-          <img
-            src="/images/iod-aspiring-award-badge.png"
-            alt="IoD Awards"
-            class="w-24 h-24 mx-auto mb-4 object-contain"
-            width="150"
-            height="150"
+        <div class="credential-badge">
+          <Image
+            src={cmiFellowCert}
+            alt="FCMI Fellow Certificate"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
             loading="lazy"
+            format="webp"
+            quality={90}
           />
-          <h3 class="text-h4 text-gray-900 mb-2">IoD Awards Finalist</h3>
-          <p class="text-sm text-gray-600">Aspiring Director 2025</p>
-        </div>
-
-        <div class="card p-6 text-center">
-          <img
-            src="/images/iod-global-award-badge.png"
-            alt="IoD Global Award"
-            class="w-24 h-24 mx-auto mb-4 object-contain"
-            width="150"
-            height="150"
-            loading="lazy"
-          />
-          <h3 class="text-h4 text-gray-900 mb-2">IoD Global Award</h3>
-          <p class="text-sm text-gray-600">Finalist 2025</p>
+          <h3 class="credential-badge__title">FCMI Fellow</h3>
+          <p class="credential-badge__subtitle">Chartered Management Institute</p>
         </div>
       </div>
 
-      <div class="text-center mt-12">
-        <p class="text-lg text-gray-700 font-semibold">
-          FCMI Fellow | Chartered Management Institute
+      <!-- Second Row: Awards -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="credential-badge">
+          <Image
+            src={iodAspiringAward}
+            alt="IoD Aspiring Director Award"
+            class="credential-badge__image credential-badge__image--award"
+            widths={[300, 600]}
+            sizes="300px"
+            loading="lazy"
+            format="webp"
+            quality={90}
+          />
+          <h3 class="credential-badge__title">IoD Awards Finalist</h3>
+          <p class="credential-badge__subtitle">Aspiring Director 2025</p>
+        </div>
+
+        <div class="credential-badge">
+          <Image
+            src={iodGlobalAward}
+            alt="IoD Global Award"
+            class="credential-badge__image credential-badge__image--award"
+            widths={[300, 600]}
+            sizes="300px"
+            loading="lazy"
+            format="webp"
+            quality={90}
+          />
+          <h3 class="credential-badge__title">IoD Global Award</h3>
+          <p class="credential-badge__subtitle">Finalist 2025</p>
+        </div>
+      </div>
+
+      <!-- Additional Qualifications -->
+      <div class="text-center">
+        <p class="text-gray-700 font-semibold mb-2">
+          Academic Qualifications
         </p>
-        <p class="text-gray-600 mt-2">
-          MEd, BSc (Hons), PGCE, QTLS | EMCC Professional Coach
+        <p class="text-gray-600">
+          MEd, BSc (Hons), PGCE (L7), QTLS | EMCC Professional Coach
         </p>
       </div>
     </div>
   </section>
 
+  <!-- Education & Professional Development Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Continuous Professional Development</h2>
+        <p class="text-xl text-gray-600">
+          Leadership and wellbeing expertise backed by globally-recognized institutions
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Google Project Management -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">Google</p>
+              <p class="text-xs text-gray-500">2025</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">Project Management</p>
+        </div>
+
+        <!-- Yale University -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">Yale University</p>
+              <p class="text-xs text-gray-500">2021</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">The Science of Well-Being</p>
+        </div>
+
+        <!-- Johns Hopkins -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">Johns Hopkins University</p>
+              <p class="text-xs text-gray-500">2021</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">Psychological First Aid</p>
+        </div>
+
+        <!-- UC Davis Health -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">UC Davis Health</p>
+              <p class="text-xs text-gray-500">2022</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">Managing as a Coach</p>
+        </div>
+
+        <!-- NEDonBoard -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">NEDonBoard</p>
+              <p class="text-xs text-gray-500">2021</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">NED Accelerator Programme</p>
+        </div>
+
+        <!-- University of Sydney -->
+        <div class="card p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900 text-sm">University of Sydney</p>
+              <p class="text-xs text-gray-500">2021</p>
+            </div>
+          </div>
+          <p class="text-gray-700 font-medium">Positive Psychiatry & Mental Health</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-gray-600 text-sm">
+          Plus 15+ additional certifications in leadership, emotional intelligence, resilience, and psychological safety
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-Page CTA -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container max-w-3xl text-center">
+      <h2 class="text-h2 mb-6">Ready to Work Together?</h2>
+      <p class="text-gray-100 leading-relaxed mb-8">
+        If you're facing a strategic challenge that requires board-level insight and evidence-based expertise, let's explore whether Craig's experience is the right fit.
+      </p>
+      <Button href="/contact" variant="secondary">
+        Book a Strategy Call
+      </Button>
+    </div>
+  </section>
+
   <!-- Sectors Section -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-eggshell">
     <div class="container max-w-4xl">
       <h2 class="text-h2 text-gray-900 mb-8 text-center">Sectors & Impact</h2>
 
       <div class="grid md:grid-cols-2 gap-8">
         <div class="card p-8">
-          <h3 class="text-h3 text-gray-900 mb-4">100+ Organizations Supported</h3>
+          <h3 class="text-h3 text-gray-900 mb-4">Cross-Sector Experience</h3>
           <ul class="space-y-3 text-gray-700">
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>NHS Trusts and Healthcare</span>
+              <span>Banking & Financial Services (HSBC)</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>Technology and Software</span>
+              <span>Global Spirits Industry (Edrington, Brown-Forman)</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>Financial Services</span>
+              <span>Mining & Natural Resources (Cornish Lithium)</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>Manufacturing</span>
+              <span>Hospitality & Wellbeing (Healthy Hospo)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Technology & Gaming, Manufacturing, Education, Healthcare</span>
             </li>
           </ul>
         </div>
@@ -171,25 +433,25 @@ import Button from '../components/Button.astro';
           <h3 class="text-h3 text-gray-900 mb-4">How Directors Work With Craig</h3>
           <ul class="space-y-3 text-gray-700">
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-secondary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
               <span>Board advisory and NED services</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-secondary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
               <span>Strategic transformation programs</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-secondary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
               <span>Executive coaching for resilience</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-secondary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
               <span>Wellbeing governance frameworks</span>
@@ -200,20 +462,103 @@ import Button from '../components/Button.astro';
     </div>
   </section>
 
+  <!-- Why I Do This Work Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Why I Do This Work</h2>
+        <p class="text-gray-600">It's personal. It's about people.</p>
+      </div>
+
+      <div class="card p-8 md:p-12 max-w-3xl mx-auto">
+        <div class="space-y-6 text-gray-700 leading-relaxed">
+          <p class="text-lg">
+            I've sat in boardrooms where strategic decisions affected thousands of people. I've seen brilliant leaders struggle under impossible pressure. I've watched organizations damage people through systems they didn't even realize were broken.
+          </p>
+
+          <p>
+            This work isn't about credentials or frameworks—it's about helping people navigate the hardest challenges of leadership. Board dynamics that feel impossible. Executive pressure that keeps you awake at night. Organizational wellbeing issues that everyone knows exist but nobody knows how to fix.
+          </p>
+
+          <p>
+            <strong>My commitment is simple:</strong> If I take on your work, I'm genuinely invested in your success. Not because of a contract, but because I believe in helping people lead better, govern better, and create healthier organizations.
+          </p>
+
+          <p>
+            The Fellowships and credentials matter—they represent decades of learning and professional rigor. But what matters more is whether I can actually help you solve the specific challenge you're facing. Sometimes I can. Sometimes I can't. But I'll always be honest about it.
+          </p>
+
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <p class="text-center text-gray-900 font-semibold">
+              If you're navigating something difficult, let's talk. No obligation. Just a professional conversation about whether I might be able to help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What People Say About Working With Craig</h2>
+        <p class="text-gray-600">
+          Beyond credentials—character, empathy, and genuine care
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Tim Etherington-Judge - Empathy & First-Hand Experience -->
+        <div class="card p-8 flex flex-col">
+          <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+            "I've been fortunate enough to have worked with Craig on a couple of projects now and what sets him apart is not his encyclopedic knowledge of his subject matter, it's his empathy and ability to speak from a place of first hand experience. I'm excited to continue working with Craig and recommend his services to everyone that is need of mental health support."
+          </p>
+          <div class="border-t border-gray-200 pt-4">
+            <p class="font-semibold text-gray-900">Tim Etherington-Judge</p>
+            <p class="text-sm text-gray-600">Founder, Avallen Solutions, Avallen Spirits, Healthy Hospo</p>
+          </div>
+        </div>
+
+        <!-- Sabina Ôn-Stothard - Professional Credentials & Compassion -->
+        <div class="card p-8 flex flex-col">
+          <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+            "Craig is one of a kind. He has the professional credentials but also the personal experience needed in his job. He brings such compassion and a sense of humour to his role, which is just what I needed. Great guy :)"
+          </p>
+          <div class="border-t border-gray-200 pt-4">
+            <p class="font-semibold text-gray-900">Sabina Ôn-Stothard PIEMA</p>
+            <p class="text-sm text-gray-600">Senior BNG Consultant</p>
+          </div>
+        </div>
+
+        <!-- Mark Kendall - Warm & Genuine Human Being -->
+        <div class="card p-8 flex flex-col">
+          <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+            "Psychiatrists, psychologists, councillors, mentors are all names that we associate with helping us through the mental difficulties that we all go through sometimes but Craig goes past that and simply provides what we need by listening and providing simple advice and observations that 9 times out of ten we already know but are afraid to admit to ourselves. This for me is the core of getting help and what Craig excels at. My thanks to him not only for the clarity but for being a warm and genuine human being who wants to help."
+          </p>
+          <div class="border-t border-gray-200 pt-4">
+            <p class="font-semibold text-gray-900">Mark Kendall</p>
+            <p class="text-sm text-gray-600">Freelance Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
-  <section class="section-padding bg-gradient-to-r from-primary to-brand-800 text-white">
+  <section class="section-padding bg-primary text-white">
     <div class="container">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-h2 font-bold mb-6">
           Start with a Conversation
         </h2>
-        <p class="text-xl text-primary mb-8 leading-relaxed">
+        <p class="text-gray-100 mb-8 leading-relaxed">
           No pressure. No sales pitch. Just a strategic conversation about your challenge. Most clients start with a 45-minute exploratory call to discuss what they're navigating and whether Craig's experience and approach are the right fit.
         </p>
-        <Button href="/contact" size="large" variant="secondary">
+        <Button href="/contact" variant="secondary">
           Book a Strategy Call
         </Button>
-        <p class="text-sm text-primary mt-4">
+        <p class="text-sm text-gray-100 mt-4">
           All conversations are confidential and obligation-free.
         </p>
       </div>

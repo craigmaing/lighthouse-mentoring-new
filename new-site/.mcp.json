@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "dataforseo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@skobyn/mcp-dataforseo"
+      ],
+      "env": {
+        "DATAFORSEO_USERNAME": "craig.fearn@lighthousementoring.co.uk",
+        "DATAFORSEO_PASSWORD": "9a2c6ace2bf8b626"
+      }
+    }
+  }
+}

@@ -4,24 +4,25 @@ const currentPath = Astro.url.pathname;
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/insights', label: 'Insights' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
 ---
 
-<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<nav transition:persist transition:name="main-nav" class="bg-primary border-b border-primary/50 shadow-lg sticky top-0 z-50">
   <div class="container">
-    <div class="flex items-center justify-between py-4">
+    <div class="flex items-center justify-between h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-3 min-h-11 py-1.5">
         <img
           src="/images/logo-final.png"
           alt="Lighthouse Mentoring"
-          class="h-12 w-auto"
+          class="h-10 w-auto"
           width="150"
           height="40"
         />
-        <span class="text-xl font-bold text-gray-900 hidden sm:block">Lighthouse Mentoring</span>
+        <span class="text-xl font-bold text-white hidden sm:block">Lighthouse Mentoring</span>
       </a>
 
       <!-- Navigation Links -->
@@ -29,8 +30,8 @@ const navLinks = [
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class={`text-gray-700 hover:text-primary transition-colors font-medium ${
-              currentPath === link.href ? 'text-primary' : ''
+            class={`text-gray-200 hover:text-white transition-colors font-medium ${
+              currentPath === link.href ? 'text-white border-b-2 border-accent' : ''
             }`}
           >
             {link.label}
@@ -40,10 +41,7 @@ const navLinks = [
 
       <!-- CTA Button -->
       <div class="hidden md:block">
-        <a
-          href="/contact"
-          class="btn btn-primary"
-        >
+        <a href="/contact" class="btn-nav">
           Get Started
         </a>
       </div>
@@ -51,7 +49,7 @@ const navLinks = [
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="md:hidden p-2 text-gray-700 hover:text-primary"
+        class="md:hidden p-3 text-gray-200 hover:text-white min-w-11 min-h-11 flex items-center justify-center"
         aria-label="Toggle menu"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,25 +63,45 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class={`block py-2 text-gray-700 hover:text-primary transition-colors ${
-            currentPath === link.href ? 'text-primary font-semibold' : ''
+          class={`block py-3 text-gray-200 hover:text-white transition-colors min-h-11 flex items-center ${
+            currentPath === link.href ? 'text-white font-semibold border-l-2 border-accent pl-2' : ''
           }`}
         >
           {link.label}
         </a>
       ))}
-      <a href="/contact" class="btn btn-primary w-full mt-4">
+      <a href="/contact" class="btn-nav block text-center mt-4">
         Get Started
       </a>
     </div>
   </div>
 </nav>
 
-<script>
-  const button = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
+<script is:inline>
+  // Mobile menu setup function
+  function setupMobileMenu() {
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
 
-  button?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
-  });
+    if (button && menu) {
+      // Remove existing listeners by cloning button
+      const newButton = button.cloneNode(true);
+      button.parentNode?.replaceChild(newButton, button);
+
+      // Add click listener to new button
+      newButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  }
+
+  // Initialize on page load (works with Astro View Transitions)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupMobileMenu);
+  } else {
+    setupMobileMenu();
+  }
+
+  // Re-initialize after Astro view transitions
+  document.addEventListener('astro:page-load', setupMobileMenu);
 </script>

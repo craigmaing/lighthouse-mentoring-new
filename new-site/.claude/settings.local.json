@@ -1,20 +1,34 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm create:*)",
-      "Bash(npm install:*)",
-      "Bash(npx tailwindcss:*)",
+      "Bash(netlify:*)",
       "Bash(npm run dev:*)",
-      "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_resize",
-      "mcp__playwright__browser_evaluate",
-      "Bash(cat:*)",
-      "mcp__playwright__browser_network_requests",
-      "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "mcp__chrome-devtools__list_pages",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_ideas",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_suggestions",
+      "mcp__chrome-devtools__performance_start_trace",
+      "mcp__dataforseo__serp_organic_live_advanced",
+      "WebSearch",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__emulate_network",
+      "mcp__chrome-devtools__emulate_cpu",
+      "Read(//c/Users/Fearn/**)",
+      "mcp__dataforseo__keywords_data_google_ads_search_volume",
+      "Bash(dir:*)",
+      "mcp__dataforseo__serp_locations",
+      "WebFetch(domain:github.com)",
+      "Bash(npm view:*)",
+      "Bash(npm search:*)",
+      "Bash(npm info:*)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true
 }

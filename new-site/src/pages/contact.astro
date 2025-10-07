@@ -1,5 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import { Image, Picture } from 'astro:assets';
+
+// Import images for optimization
+import craigWelcoming from '../images/craig-welcoming-7493.jpg';
+import rsphBadge from '../images/RSPH-Fellow-Badge.jpg';
+import iodAmbassadorBadge from '../images/IoD-Ambassador-badge-web.png';
+import cmiFellowCert from '../images/cmi-fellow-certificate.png';
 ---
 
 <Layout
@@ -8,29 +16,45 @@ import Layout from '../layouts/Layout.astro';
   description="Get in touch to discuss board advisory, executive coaching, or organizational wellbeing services. Book your first conversation with Craig Fearn."
 >
   <!-- Page Hero -->
-  <section class="section-padding bg-gradient-to-br from-gray-900 to-brand-800 text-white">
+  <section class="hero section-padding bg-primary text-white">
     <div class="container">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
       <div>
-        <h1 class="text-hero mb-6">
+        <h1 class="mb-6">
           Start with a Conversation
         </h1>
-        <p class="text-xl text-primary leading-relaxed mb-4">
+        <p class="text-gray-100 leading-relaxed mb-4">
           No pressure. No sales pitch. Just a strategic conversation about your challenge.
         </p>
-        <p class="text-lg text-primary leading-relaxed">
+        <p class="text-gray-100 leading-relaxed mb-8">
           Most clients start with a 45-minute exploratory call to discuss what they're navigating and whether Craig's experience and approach are the right fit.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="mailto:craig.fearn@lighthousementoring.co.uk" variant="secondary">
+            Email Craig
+          </Button>
+          <Button href="https://www.linkedin.com/in/craig-fearn1/" variant="ghost" class="text-white hover:text-gray-100" target="_blank" rel="noopener">
+            Connect on LinkedIn
+          </Button>
+        </div>
+        <p class="text-sm text-gray-100 mt-4">
+          Or fill out the form below ↓
         </p>
         </div>
         <!-- Conference Image -->
         <div class="hidden lg:block">
-          <img
-            src="/images/iod-conference-07.jpg"
+          <Picture
+            src={craigWelcoming}
             alt="Craig Fearn at IoD Conference"
             class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-            width="800"
-            height="600"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
             loading="eager"
+            fetchpriority="high"
+            quality={85}
           />
         </div>
       </div>
@@ -39,74 +63,68 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Trust Indicators Section -->
   <section class="section-padding bg-gray-50">
-    <div class="container">
+    <div class="container max-w-5xl">
       <div class="text-center mb-12">
         <h2 class="text-h2 text-gray-900 mb-4">
           Trusted by Board-Level Leaders
         </h2>
-        <p class="text-xl text-gray-600">
-          100+ organizations across NHS, technology, and financial services
+        <p class="text-gray-600">
+          Experience across NHS, technology, and financial services sectors
         </p>
       </div>
 
-      <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
-        <div class="text-center">
-          <div class="w-24 h-24 mx-auto mb-3 flex items-center justify-center">
-            <img
-              src="/images/IoD-Ambassador-badge-web.png"
-              alt="IoD Ambassador"
-              class="w-full h-full object-contain"
-              width="150"
-              height="150"
-              loading="lazy"
-            />
-          </div>
-          <p class="text-sm font-semibold text-gray-900">IoD Ambassador</p>
+      <!-- Credentials Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="credential-badge">
+          <Image
+            src={rsphBadge}
+            alt="FRSPH Fellow Badge"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
+            loading="lazy"
+            format="webp"
+            quality={90}
+          />
+          <h3 class="credential-badge__title">FRSPH Fellow</h3>
+          <p class="credential-badge__subtitle">Royal Society for Public Health</p>
         </div>
 
-        <div class="text-center">
-          <div class="w-24 h-24 mx-auto mb-3 flex items-center justify-center">
-            <img
-              src="/images/RSPH-Fellow-Badge.jpg"
-              alt="FRSPH Fellow"
-              class="w-full h-full object-contain"
-              width="150"
-              height="150"
-              loading="lazy"
-            />
-          </div>
-          <p class="text-sm font-semibold text-gray-900">FRSPH Fellow</p>
+        <div class="credential-badge">
+          <Image
+            src={iodAmbassadorBadge}
+            alt="IoD Ambassador Badge"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
+            loading="lazy"
+            format="webp"
+            quality={90}
+          />
+          <h3 class="credential-badge__title">IoD Ambassador</h3>
+          <p class="credential-badge__subtitle">Institute of Directors South West</p>
         </div>
 
-        <div class="text-center">
-          <div class="w-24 h-24 mx-auto mb-3 flex items-center justify-center">
-            <img
-              src="/images/iod-aspiring-award-badge.png"
-              alt="IoD Awards Finalist"
-              class="w-full h-full object-contain"
-              width="150"
-              height="150"
-              loading="lazy"
-            />
-          </div>
-          <p class="text-sm font-semibold text-gray-900">IoD Awards Finalist 2025</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-24 h-24 mx-auto mb-3 flex items-center justify-center bg-gray-100 rounded-lg">
-            <div class="text-center px-2">
-              <p class="text-2xl font-bold text-primary">FCMI</p>
-              <p class="text-xs text-gray-600">Fellow</p>
-            </div>
-          </div>
-          <p class="text-sm font-semibold text-gray-900">Chartered Management</p>
+        <div class="credential-badge">
+          <Image
+            src={cmiFellowCert}
+            alt="FCMI Fellow Certificate"
+            class="credential-badge__image"
+            widths={[120, 240]}
+            sizes="120px"
+            loading="lazy"
+            format="webp"
+            quality={90}
+          />
+          <h3 class="credential-badge__title">FCMI Fellow</h3>
+          <p class="credential-badge__subtitle">Chartered Management Institute</p>
         </div>
       </div>
 
       <!-- Quick Testimonial -->
       <div class="max-w-2xl mx-auto">
-        <div class="card p-8 text-center">
-          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        <div class="card p-8 text-center flex flex-col">
+          <p class="text-gray-700 leading-relaxed mb-4 flex-grow">
             "Craig is an absolute workhorse, with a mission to change lives through better governance and a real understanding of what wellbeing means. Craig helps Directors improve overall business performance by making people matter."
           </p>
           <div class="border-t border-gray-200 pt-4">
@@ -119,7 +137,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Contact Content -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-eggshell">
     <div class="container">
       <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
         <!-- Contact Information -->
@@ -135,8 +153,8 @@ import Layout from '../layouts/Layout.astro';
               </div>
               <div>
                 <h3 class="text-h3 text-gray-900 mb-2">Email</h3>
-                <a href="mailto:craig@lighthousementoring.co.uk" class="text-primary hover:text-brand-800 transition-colors">
-                  craig@lighthousementoring.co.uk
+                <a href="mailto:craig.fearn@lighthousementoring.co.uk" class="text-accent hover:text-accent-dark transition-colors">
+                  craig.fearn@lighthousementoring.co.uk
                 </a>
               </div>
             </div>
@@ -149,7 +167,7 @@ import Layout from '../layouts/Layout.astro';
               </div>
               <div>
                 <h3 class="text-h3 text-gray-900 mb-2">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/craig-fearn1/" target="_blank" rel="noopener" class="text-primary hover:text-brand-800 transition-colors">
+                <a href="https://www.linkedin.com/in/craig-fearn1/" target="_blank" rel="noopener" class="text-accent hover:text-accent-dark transition-colors">
                   Connect on LinkedIn
                 </a>
               </div>
@@ -199,26 +217,70 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h2 class="text-h2 text-gray-900 mb-6">Send a Message</h2>
 
-          <form class="space-y-6" method="POST" name="contact" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Success Message (hidden by default) -->
+          <div id="form-success" class="hidden mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <p class="font-medium text-green-900">Message sent successfully!</p>
+                <p class="text-sm text-green-700 mt-1">Craig will respond within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Message (hidden by default) -->
+          <div id="form-error" class="hidden mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+              </svg>
+              <div>
+                <p class="font-medium text-red-900">Unable to send message</p>
+                <p class="text-sm text-red-700 mt-1">Please try again or email directly: <a href="mailto:craig.fearn@lighthousementoring.co.uk" class="underline">craig.fearn@lighthousementoring.co.uk</a></p>
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="contact-form"
+            class="space-y-6"
+            method="POST"
+            name="contact"
+            action="/thank-you"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
             <input type="hidden" name="form-name" value="contact" />
-            <p class="hidden">
-              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+
+            <!-- Honeypot fields (multiple layers of spam protection) -->
+            <p class="hidden" aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
             </p>
+            <input type="hidden" name="subject" value="New contact form submission from Lighthouse Mentoring website" />
+            <input type="hidden" name="form-time" id="form-time" value="" />
 
             <div>
-              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <label for="name" class="block text-gray-700 font-medium mb-2">
+                Name <span class="text-accent">*</span>
+              </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
+                minlength="2"
+                maxlength="100"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                placeholder="Your name"
+                placeholder="Your full name"
               />
             </div>
 
             <div>
-              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <label for="email" class="block text-gray-700 font-medium mb-2">
+                Email <span class="text-accent">*</span>
+              </label>
               <input
                 type="email"
                 id="email"
@@ -230,41 +292,264 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <div>
-              <label for="service" class="block text-gray-700 font-medium mb-2">Service of Interest</label>
+              <label for="phone" class="block text-gray-700 font-medium mb-2">
+                Phone <span class="text-sm text-gray-500">(optional)</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                placeholder="+44 7700 900000"
+              />
+            </div>
+
+            <div>
+              <label for="service" class="block text-gray-700 font-medium mb-2">
+                Service of Interest <span class="text-accent">*</span>
+              </label>
               <select
                 id="service"
                 name="service"
+                required
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               >
-                <option value="">Select a service</option>
-                <option value="board-advisory">Board Advisory</option>
-                <option value="executive-coaching">Executive Coaching</option>
-                <option value="organizational-wellbeing">Organizational Wellbeing</option>
-                <option value="general-inquiry">General Inquiry</option>
+                <option value="">Please select...</option>
+                <option value="Board Advisory">Board Advisory</option>
+                <option value="Executive Coaching">Executive Coaching</option>
+                <option value="Organizational Wellbeing">Organizational Wellbeing</option>
+                <option value="General Inquiry">General Inquiry</option>
               </select>
             </div>
 
             <div>
-              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <label for="message" class="block text-gray-700 font-medium mb-2">
+                Message <span class="text-accent">*</span>
+              </label>
               <textarea
                 id="message"
                 name="message"
                 rows="6"
                 required
+                minlength="10"
+                maxlength="1000"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                placeholder="Tell me about your needs and goals..."
+                placeholder="Tell me about your challenges, goals, and how I might be able to help..."
               ></textarea>
+              <p class="text-sm text-gray-500 mt-1">
+                <span id="char-count">0</span> / 1000 characters
+              </p>
             </div>
 
             <button
               type="submit"
-              class="btn btn-primary w-full text-lg"
+              id="submit-btn"
+              class="btn-primary w-full relative"
             >
-              Send Message
+              <span id="submit-text">Send Message</span>
+              <span id="submit-loading" class="hidden">
+                <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              </span>
             </button>
+
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to our <a href="/privacy" class="text-accent hover:underline">Privacy Policy</a>.
+              We'll only use your information to respond to your inquiry.
+            </p>
           </form>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- What to Expect Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What to Expect When You Contact Me</h2>
+        <p class="text-gray-600">Clear, straightforward next steps</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-3">Within 24 Hours</h3>
+          <p class="text-gray-700">You'll receive a personal response from Craig—not an assistant, not a bot</p>
+        </div>
+
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-3">No Sales Pitch</h3>
+          <p class="text-gray-700">Just a professional conversation about your challenges and whether I can help</p>
+        </div>
+
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-3">Completely Confidential</h3>
+          <p class="text-gray-700">Your situation, challenges, and conversations remain strictly confidential</p>
+        </div>
+      </div>
+
+      <div class="mt-12 card p-8 bg-eggshell max-w-3xl mx-auto">
+        <h3 class="text-h3 text-gray-900 mb-4 text-center">First Call Will Cover:</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Your specific challenges and what you're trying to achieve</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Whether my approach and experience are a good fit</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>What working together might look like (if we both agree it's right)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Clear next steps—no obligation to proceed</span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
+        <strong>Most important:</strong> You'll know quickly if this feels like the right fit. If not, I'll say so. If yes, we'll explore next steps together.
+      </p>
+    </div>
+  </section>
 </Layout>
+
+<script>
+  // Form enhancement and spam protection
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+    const submitText = document.getElementById('submit-text');
+    const submitLoading = document.getElementById('submit-loading');
+    const messageField = document.getElementById('message') as HTMLTextAreaElement;
+    const charCount = document.getElementById('char-count');
+    const formTimeField = document.getElementById('form-time') as HTMLInputElement;
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+
+    // Record when form was loaded (spam protection - bots submit too fast)
+    const formLoadTime = Date.now();
+    formTimeField.value = formLoadTime.toString();
+
+    // Character counter
+    if (messageField && charCount) {
+      messageField.addEventListener('input', () => {
+        const length = messageField.value.length;
+        charCount.textContent = length.toString();
+
+        // Visual feedback when approaching limit
+        if (length > 900) {
+          charCount.classList.add('text-red-600', 'font-semibold');
+        } else {
+          charCount.classList.remove('text-red-600', 'font-semibold');
+        }
+      });
+    }
+
+    // Form submission handling
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Spam protection: Check if submitted too quickly (less than 3 seconds)
+        const submitTime = Date.now();
+        const timeSpent = (submitTime - formLoadTime) / 1000;
+
+        if (timeSpent < 3) {
+          console.warn('Form submitted too quickly - possible bot');
+          showError();
+          return;
+        }
+
+        // Show loading state
+        submitBtn.disabled = true;
+        submitText?.classList.add('hidden');
+        submitLoading?.classList.remove('hidden');
+
+        // Get form data
+        const formData = new FormData(form);
+
+        try {
+          // Submit to Netlify
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData as any).toString()
+          });
+
+          if (response.ok) {
+            // Success - redirect to thank you page
+            window.location.href = '/thank-you';
+          } else {
+            showError();
+          }
+        } catch (error) {
+          console.error('Form submission error:', error);
+          showError();
+        } finally {
+          // Reset button state
+          submitBtn.disabled = false;
+          submitText?.classList.remove('hidden');
+          submitLoading?.classList.add('hidden');
+        }
+      });
+    }
+
+    function showError() {
+      formError?.classList.remove('hidden');
+      formSuccess?.classList.add('hidden');
+
+      // Scroll to error message
+      formError?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Hide error after 8 seconds
+      setTimeout(() => {
+        formError?.classList.add('hidden');
+      }, 8000);
+    }
+
+    // Email validation enhancement
+    const emailField = document.getElementById('email') as HTMLInputElement;
+    if (emailField) {
+      emailField.addEventListener('blur', () => {
+        const email = emailField.value;
+        const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (email && !isValid) {
+          emailField.setCustomValidity('Please enter a valid email address');
+          emailField.reportValidity();
+        } else {
+          emailField.setCustomValidity('');
+        }
+      });
+    }
+  });
+</script>

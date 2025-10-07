@@ -1,0 +1,124 @@
+---
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FAQ[];
+  pageTitle?: string;
+}
+
+const { faqs, pageTitle = "Frequently Asked Questions" } = Astro.props;
+
+// Generate FAQ schema for this section
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<!-- FAQ Schema -->
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<!-- FAQ Section -->
+<section class="section-padding bg-gray-50">
+  <div class="container max-w-4xl">
+    <div class="text-center mb-12">
+      <h2 class="text-h2 text-gray-900 mb-4">{pageTitle}</h2>
+      <p class="text-gray-600">Common questions answered</p>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((faq, index) => (
+        <details class="faq-item group">
+          <summary class="faq-question">
+            <span class="faq-question-text">{faq.question}</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-answer" set:html={faq.answer} />
+        </details>
+      ))}
+    </div>
+
+    <!-- People Also Ask CTA -->
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 mb-4">Still have questions?</p>
+      <a href="/contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item {
+    @apply bg-white rounded-lg border border-gray-200 overflow-hidden transition-all duration-200;
+  }
+
+  .faq-item:hover {
+    @apply border-primary/30 shadow-md;
+  }
+
+  .faq-item[open] {
+    @apply border-primary/50 shadow-lg;
+  }
+
+  .faq-question {
+    @apply flex items-center justify-between w-full px-6 py-5 cursor-pointer;
+    @apply text-left font-semibold text-gray-900 text-lg;
+    @apply hover:text-primary transition-colors duration-200;
+    list-style: none;
+  }
+
+  /* Hide default marker */
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question-text {
+    @apply flex-1 pr-4;
+  }
+
+  .faq-icon {
+    @apply flex-shrink-0 text-primary transition-transform duration-200;
+  }
+
+  .faq-item[open] .faq-icon {
+    @apply rotate-180;
+  }
+
+  .faq-answer {
+    @apply px-6 pb-6 text-gray-700 leading-relaxed;
+    @apply border-t border-gray-100 pt-4;
+  }
+
+  /* Style for rich content in answers */
+  .faq-answer :global(p) {
+    @apply mb-4;
+  }
+
+  .faq-answer :global(p:last-child) {
+    @apply mb-0;
+  }
+
+  .faq-answer :global(ul) {
+    @apply list-disc list-inside mb-4 space-y-2;
+  }
+
+  .faq-answer :global(strong) {
+    @apply font-semibold text-gray-900;
+  }
+
+  .faq-answer :global(a) {
+    @apply text-accent hover:text-accent-dark underline;
+  }
+</style>

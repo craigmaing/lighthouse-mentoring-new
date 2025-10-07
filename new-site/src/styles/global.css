@@ -1,55 +1,189 @@
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/600.css';
-@import '@fontsource/inter/700.css';
+@import '@fontsource-variable/inter';
+
+/* Font optimization: Ensure font-display swap for better performance */
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter Variable', system-ui, sans-serif;
+  }
+}
+
+/* Fallback for browsers without variable font support */
+@supports not (font-variation-settings: normal) {
+  :root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* Focus visible styles for better accessibility */
+  *:focus-visible {
+    @apply outline-none ring-4 ring-accent ring-offset-2;
+  }
+
   body {
     @apply font-sans text-gray-900 antialiased;
   }
 
+  /* Responsive Typography - Mobile First */
   h1 {
-    @apply text-h1;
+    @apply text-h1 md:text-[3rem] lg:text-[4rem];
   }
 
   h2 {
-    @apply text-h2;
+    @apply text-h2 md:text-[2.25rem] lg:text-[3rem];
   }
 
   h3 {
-    @apply text-h3;
+    @apply text-h3 md:text-[1.75rem];
   }
 
   h4 {
-    @apply text-h4;
+    @apply text-h4 md:text-[1.5rem];
+  }
+
+  p {
+    @apply text-body md:text-body-large;
+  }
+
+  /* Hero specific - larger than h1 */
+  .hero h1 {
+    @apply text-hero md:text-[3.5rem] lg:text-[4.5rem];
   }
 }
 
 @layer components {
-  .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  /* Skip to content link for accessibility */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50;
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold;
   }
 
+  /* Container with max-width constraint */
+  .container {
+    @apply max-w-container mx-auto px-6 sm:px-8 lg:px-12;
+  }
+
+  .container-wide {
+    @apply max-w-container-wide mx-auto px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Section spacing - consistent across site */
   .section-padding {
     @apply py-16 md:py-24;
   }
 
+  /* Button System - 3 consistent variants */
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+    @apply inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200;
+    @apply min-h-[56px] px-8 text-lg;
   }
 
+  /* Primary CTA - High emphasis */
   .btn-primary {
-    @apply btn bg-primary text-white hover:bg-brand-800 hover:shadow-lg;
+    @apply btn bg-accent text-white;
+    @apply hover:bg-accent-dark hover:shadow-lg hover:-translate-y-0.5;
+    @apply active:translate-y-0;
   }
 
+  /* Secondary CTA - Medium emphasis */
   .btn-secondary {
-    @apply btn bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white;
+    @apply btn bg-eggshell text-primary border-2 border-primary;
+    @apply hover:bg-primary hover:text-white;
   }
 
+  /* Ghost/Tertiary - Low emphasis */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply text-accent underline underline-offset-4;
+    @apply hover:text-accent-dark hover:underline-offset-[6px];
+  }
+
+  /* Navigation specific button */
+  .btn-nav {
+    @apply px-6 py-2 rounded-lg font-semibold text-base transition-all duration-200;
+    @apply bg-accent text-white;
+    @apply hover:bg-accent-dark;
+  }
+
+  /* Badge styling */
+  .badge {
+    @apply text-badge px-4 py-2 rounded-full;
+    @apply bg-gray-100 text-gray-700;
+  }
+
+  /* Credential badge specific */
+  .credential-badge {
+    @apply flex flex-col items-center text-center gap-1;
+  }
+
+  .credential-badge__image {
+    @apply w-[120px] h-[120px] object-contain;
+  }
+
+  /* IoD Award banners - larger for readability */
+  .credential-badge__image--award {
+    @apply w-full max-w-[600px] h-auto object-contain;
+  }
+
+  .credential-badge__title {
+    @apply text-xl font-semibold text-gray-900 leading-tight;
+  }
+
+  .credential-badge__subtitle {
+    @apply text-sm text-gray-600;
+  }
+
+  /* Card component */
   .card {
     @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+
+  /* Improve link accessibility */
+  a:focus-visible {
+    @apply rounded-sm;
+  }
+
+  /* Ensure buttons have visible focus states */
+  button:focus-visible {
+    @apply ring-4 ring-accent ring-offset-2;
+  }
+}
+
+@layer utilities {
+  /* Mobile touch target accessibility - WCAG 2.1 Level AA */
+  /* Using utilities layer for maximum specificity over component styles */
+  @media (max-width: 767px) {
+    /* Ensure all interactive elements meet minimum 44x44px touch target */
+    a, button, input, select, textarea {
+      min-height: 44px !important;
+      min-width: 44px !important;
+    }
+
+    /* Exception for inline text links - use padding instead */
+    a.inline, p a, li a {
+      min-height: auto !important;
+      min-width: auto !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+
+    /* Navigation specific overrides */
+    nav a, nav button {
+      min-height: 44px !important;
+      padding: 12px 16px !important;
+    }
+
+    /* Mobile menu button */
+    #mobile-menu-button {
+      min-height: 44px !important;
+      min-width: 44px !important;
+      padding: 12px !important;
+    }
   }
 }

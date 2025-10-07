@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2025-10-06T13:06:58.984Z",
+  "totalRecommendations": 5,
+  "uniquePosts": 5,
+  "duplicatesFiltered": 0,
+  "duplicates": [],
+  "uniqueRecommendations": [
+    {
+      "title": "Executive Coaching vs Leadership Coaching: What is the Difference?",
+      "keywords": [
+        "executive coaching",
+        "leadership coaching",
+        "executive coaching uk"
+      ],
+      "intent": "informational"
+    },
+    {
+      "title": "How to Choose an Executive Coach: A Complete Guide for C-Suite Leaders",
+      "keywords": [
+        "best executive coaching",
+        "executive coaching consultant",
+        "senior executive coaching"
+      ],
+      "intent": "commercial"
+    },
+    {
+      "title": "What Does a Non-Executive Director Actually Do?",
+      "keywords": [
+        "non-executive director",
+        "what is non-executive director"
+      ],
+      "intent": "informational"
+    },
+    {
+      "title": "Board Advisory Services: When and Why Your Business Needs Them",
+      "keywords": [
+        "board advisory",
+        "board advisory services"
+      ],
+      "intent": "commercial"
+    },
+    {
+      "title": "The ROI of Organizational Wellbeing: A Data-Driven Framework",
+      "keywords": [
+        "organizational wellbeing",
+        "wellbeing governance"
+      ],
+      "intent": "commercial"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const insights = await getCollection('insights');
+  return insights.map((insight) => ({
+    params: { slug: insight.slug },
+    props: { insight },
+  }));
+}
+
+const { insight } = Astro.props;
+const { Content } = await insight.render();
+
+// Get related articles (same category, different article, max 3)
+const allInsights = await getCollection('insights');
+const relatedInsights = allInsights
+  .filter(item =>
+    item.slug !== insight.slug &&
+    item.data.category === insight.data.category
+  )
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+// Fallback: if not enough related by category, get latest articles
+if (relatedInsights.length < 3) {
+  const additionalInsights = allInsights
+    .filter(item =>
+      item.slug !== insight.slug &&
+      !relatedInsights.includes(item)
+    )
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 3 - relatedInsights.length);
+  relatedInsights.push(...additionalInsights);
+}
+
+// Current page URL for sharing
+const currentUrl = `${Astro.site}insights/${insight.slug}`;
+const shareTitle = encodeURIComponent(insight.data.title);
+const shareUrl = encodeURIComponent(currentUrl);
+
+const categoryColors = {
+  'board-advisory': 'bg-blue-100 text-blue-800',
+  'executive-coaching': 'bg-green-100 text-green-800',
+  'wellbeing': 'bg-purple-100 text-purple-800',
+  'leadership': 'bg-orange-100 text-orange-800',
+  'governance': 'bg-gray-100 text-gray-800',
+};
+
+// Article Schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": insight.data.title,
+  "description": insight.data.description,
+  ...(insight.data.image && {
+    "image": insight.data.image
+  }),
+  "author": {
+    "@type": "Person",
+    "name": insight.data.author,
+    "jobTitle": "Founder & Principal Consultant",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FCMI Fellow"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FRSPH Fellow"
+      }
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lighthouse Mentoring",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${Astro.site}logo.png`
+    }
+  },
+  "datePublished": insight.data.pubDate.toISOString(),
+  "dateModified": insight.data.pubDate.toISOString(),
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `${Astro.site}insights/${insight.slug}`
+  }
+};
+---
+
+<Layout
+  title={`${insight.data.title} | Lighthouse Mentoring`}
+  description={insight.data.description}
+>
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <!-- Article Header -->
+  <article class="bg-eggshell">
+    {insight.data.image && (
+      <div class="w-full h-[400px] md:h-[500px] overflow-hidden">
+        <img
+          src={insight.data.image}
+          alt={insight.data.title}
+          class="w-full h-full object-cover"
+          loading="eager"
+        />
+      </div>
+    )}
+
+    <div class="section-padding">
+      <div class="container max-w-4xl">
+        <div class="mb-8">
+          <span class={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${categoryColors[insight.data.category]}`}>
+            {insight.data.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+          </span>
+
+          <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+            {insight.data.title}
+          </h1>
+
+        <p class="text-xl text-gray-600 mb-6">
+          {insight.data.description}
+        </p>
+
+        <div class="flex items-center gap-4 text-sm text-gray-600 pt-4 border-t border-gray-200">
+          <span>By {insight.data.author}</span>
+          <span>•</span>
+          <time datetime={insight.data.pubDate.toISOString()}>
+            {insight.data.pubDate.toLocaleDateString('en-GB', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+        </div>
+      </div>
+
+      <!-- Article Content -->
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+
+
+      <!-- Author Bio -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <div class="card p-8 bg-gray-50">
+          <h3 class="text-h3 text-gray-900 mb-3">About the Author</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            <strong>Craig Fearn</strong> is the founder of Lighthouse Mentoring. He holds two Fellowships (FCMI and FRSPH) and serves as an IoD Ambassador. With 17 years of board-level experience across NHS, technology, financial services, and manufacturing, Craig provides strategic guidance on board governance, executive coaching, and organizational wellbeing.
+          </p>
+          <a href="/about" class="text-accent hover:underline font-semibold">
+            Learn more about Craig →
+          </a>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      {relatedInsights.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <h3 class="text-h2 text-gray-900 mb-8">Related Articles</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            {relatedInsights.map((related) => (
+              <article class="card p-6 hover:shadow-lg transition-shadow duration-200">
+                <span class={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${categoryColors[related.data.category]}`}>
+                  {related.data.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                </span>
+                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2 leading-tight">
+                  <a href={`/insights/${related.slug}`} class="hover:text-accent transition-colors">
+                    {related.data.title}
+                  </a>
+                </h4>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                  {related.data.description}
+                </p>
+                <a
+                  href={`/insights/${related.slug}`}
+                  class="text-accent hover:underline text-sm font-semibold inline-flex items-center py-2.5 min-h-11"
+                >
+                  Read article →
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a href="/insights" class="text-accent hover:underline font-semibold">
+          ← Back to all insights
+        </a>
+      </div>
+    </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .prose {
+    @apply text-gray-700;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-serif font-bold text-gray-900 mt-12 mb-6;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-serif font-bold text-gray-900 mt-8 mb-4;
+  }
+
+  .prose h4 {
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply mb-6 leading-relaxed;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-6 pl-6 space-y-2;
+  }
+
+  .prose ul {
+    @apply list-disc;
+  }
+
+  .prose ol {
+    @apply list-decimal;
+  }
+
+  .prose li {
+    @apply leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-accent hover:underline;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-accent pl-6 italic text-gray-600 my-6;
+  }
+
+  .prose code {
+    @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
+  }
+
+  .prose table {
+    @apply w-full border-collapse mb-6;
+  }
+
+  .prose th {
+    @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold;
+  }
+
+  .prose td {
+    @apply border border-gray-300 px-4 py-2;
+  }
+</style>

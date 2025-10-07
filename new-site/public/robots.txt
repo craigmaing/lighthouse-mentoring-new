@@ -1,0 +1,39 @@
+# Lighthouse Mentoring - robots.txt
+# Optimized for traditional search engines AND AI search (ChatGPT, Perplexity, Gemini)
+
+# Allow all traditional search engines
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# GPTBot (OpenAI crawler)
+User-agent: GPTBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google (includes Gemini)
+User-agent: Googlebot
+Allow: /
+
+# Google AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# Claude (Anthropic) - if web crawler exists
+User-agent: ClaudeBot
+Allow: /
+
+# Bing (includes Copilot)
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://lighthousementoring.com/sitemap.xml

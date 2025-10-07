@@ -1,0 +1,30 @@
+# Security and Performance Headers for Netlify/CDN deployment
+
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+  # Performance Headers
+  Cache-Control: public, max-age=31536000, immutable
+
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-ancestors 'none';
+
+# Cache images for 1 year
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache HTML for 1 hour
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Don't cache the sitemap
+/sitemap-*.xml
+  Cache-Control: public, max-age=0, must-revalidate
