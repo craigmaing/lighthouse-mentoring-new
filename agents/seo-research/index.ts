@@ -22,7 +22,8 @@ import {
   SEO_CONFIG,
   COMPETITOR_DOMAINS,
   AUDIENCE_MODIFIERS,
-  INTENT_MODIFIERS
+  INTENT_MODIFIERS,
+  GEO_MODIFIERS
 } from './config';
 import { DataForSEOTools } from './tools/dataforseo';
 
@@ -121,24 +122,43 @@ export class SEOResearchAgent {
 
   /**
    * Generate keyword variations for comprehensive analysis
+   * Supports worldwide targeting (Craig works globally)
    */
   private generateKeywordVariations(baseKeyword: string): string[] {
     const variations: string[] = [baseKeyword];
 
-    // Add high-value modifiers
+    // High-value modifiers (location-agnostic)
     variations.push(`${baseKeyword} services`);
     variations.push(`${baseKeyword} consultant`);
-    variations.push(`${baseKeyword} uk`);
-    variations.push(`${baseKeyword} london`);
+    variations.push(`${baseKeyword} consultancy`);
+    variations.push(`${baseKeyword} expert`);
 
-    // Add common question formats (likely to have search volume)
+    // Common question formats (likely to have search volume)
     variations.push(`what is ${baseKeyword}`);
     variations.push(`best ${baseKeyword}`);
+    variations.push(`how to find ${baseKeyword}`);
 
-    // Add top audience modifiers
+    // Top audience modifiers
     variations.push(`${baseKeyword} for executives`);
     variations.push(`executive ${baseKeyword}`);
     variations.push(`senior ${baseKeyword}`);
+    variations.push(`${baseKeyword} for CEOs`);
+    variations.push(`${baseKeyword} for boards`);
+
+    // Global/international modifiers
+    variations.push(`international ${baseKeyword}`);
+    variations.push(`global ${baseKeyword}`);
+
+    // Major market modifiers (if user wants geo-specific research)
+    // These are optional - can be enabled/disabled
+    if (SEO_CONFIG.location.includes('Kingdom')) {
+      variations.push(`${baseKeyword} uk`);
+      variations.push(`${baseKeyword} london`);
+    }
+    if (SEO_CONFIG.location.includes('States')) {
+      variations.push(`${baseKeyword} usa`);
+      variations.push(`${baseKeyword} new york`);
+    }
 
     // Deduplicate
     return [...new Set(variations)];
@@ -323,6 +343,12 @@ export function generateServiceKeywordMap(
   return results.map(result => {
     const allKeywords = result.relatedKeywords;
 
+    // Extract geo-specific keywords (any location from GEO_MODIFIERS)
+    const geoKeywords = allKeywords.filter(k => {
+      const lowerKeyword = k.keyword.toLowerCase();
+      return GEO_MODIFIERS.some(geo => lowerKeyword.includes(geo.toLowerCase()));
+    });
+
     return {
       service: result.primaryKeyword,
       primaryKeywords: allKeywords
@@ -337,10 +363,7 @@ export function generateServiceKeywordMap(
         .filter(k => k.keyword.split(' ').length >= 3)
         .slice(0, 15)
         .map(k => k.keyword),
-      localKeywords: allKeywords
-        .filter(k => k.keyword.toLowerCase().includes('uk') ||
-                     k.keyword.toLowerCase().includes('london'))
-        .map(k => k.keyword),
+      localKeywords: geoKeywords.map(k => k.keyword),
       competitorKeywords: [] // TODO: Extract from competitor analysis
     };
   });

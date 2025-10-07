@@ -1,12 +1,13 @@
 ---
 title: "Wellbeing Governance: Why Boards Need a Strategic Approach"
 description: "Wellbeing has moved beyond HR's remit. It's now a board-level governance issue with material implications for risk, performance, and organizational resilience. Here's why boards need to govern wellbeing strategically—not delegate it."
-pubDate: 2025-10-02
+pubDate: 2025-10-10
 author: "Craig Fearn"
 category: "wellbeing"
 tags: ["wellbeing governance", "board governance", "organizational wellbeing", "workplace wellbeing", "board oversight", "duty of care"]
 featured: true
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The board member who pulled me aside after a governance meeting last year had a confession. Her organization ran multiple wellbeing initiatives—mental health first aiders, an employee assistance program, regular wellness communications. All looked great on paper. But absence rates kept climbing. Turnover stayed high. And the board? They got quarterly updates from HR that everything was fine.
@@ -15,7 +16,7 @@ The board member who pulled me aside after a governance meeting last year had a 
 
 She was right. And she's not alone.
 
-After seventeen years working at board level and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've seen this pattern repeatedly. Organizations treat wellbeing as an HR program to manage rather than a strategic imperative to govern. Boards get reassuring dashboards while missing the underlying organizational health issues that'll eventually show up as operational risk, talent crises, or worse.
+After extensive cross-sector board experience and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've seen this pattern repeatedly. Organizations treat wellbeing as an HR program to manage rather than a strategic imperative to govern. Boards get reassuring dashboards while missing the underlying organizational health issues that'll eventually show up as operational risk, talent crises, or worse.
 
 The [CIPD's 2025 Health and Wellbeing report](https://www.cipd.org/uk/knowledge/reports/health-well-being-work/) shows 74% of respondents say wellbeing is on senior leaders' agendas. But being on the agenda isn't the same as being governed properly. Most boards haven't figured out what effective wellbeing governance actually looks like.
 
@@ -49,7 +50,7 @@ The risk framework needs to include wellbeing risks—high absence, turnover, bu
 
 **Regular, meaningful reporting**. Not quarterly dashboards showing how many people used the wellness app. Reporting that tells the board about organizational health, emerging risks, the effectiveness of interventions. Metrics that actually matter—absence trends, turnover in critical roles, engagement data, stress-related issues, early warning indicators.
 
-**Evidence-based interventions**. Research from [What Works Wellbeing](https://whatworkswellbeing.org/projects/board-level-and-governance-wellbeing-roles/) shows that effective governance requires "continuity of effort and adaptation of interventions, supported by functional learning and governance structures." Translation: you need systematic approaches informed by what actually works, not just copying what other organizations do.
+**Evidence-based interventions**. Research from [CIPD's 2025 Health and Wellbeing Report](https://www.cipd.org/uk/knowledge/reports/health-well-being-work/) shows that 74% of organizations now have health and wellbeing on senior leaders' agendas, emphasizing the need for systematic approaches informed by what actually works, not just copying what other organizations do.
 
 **Cultural leadership from the top**. The board sets organizational culture, whether intentionally or not. If board members and senior executives model overwork, always-on availability, and burnout culture, wellbeing initiatives won't land. If the board genuinely prioritizes sustainable performance, that permission flows through the organization.
 
@@ -124,3 +125,17 @@ The boards that figure this out early—before wellbeing is a crisis requiring u
 Wellbeing governance isn't complicated. But it requires boards to recognize that workforce wellbeing is a governance issue, not just an HR program. Get that right, and everything else becomes more straightforward.
 
 If you're working through how to establish effective wellbeing governance or would like to understand where your organization currently stands, a [conversation](/contact) about your specific situation can help clarify the path forward. This work shapes organizational capability and performance for years to come. Worth getting right.
+
+## References
+
+- British Safety Council (2024). *Five Star Wellbeing Audit*. British Safety Council. Available at: https://www.britsafe.org/audit-and-consultancy/all-audits/five-star-wellbeing-audit
+
+- Business in the Community (2024). *Financial Return on Investing in Wellbeing*. BITC. Available at: https://www.bitc.org.uk/news/financial-return-on-investing-in-wellbeing-could-be-up-to-370-billion-new-research-shows/
+
+- CIPD (2024). *Health and Wellbeing at Work 2024*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/reports/health-well-being-work/
+
+- Deloitte (2024). *Mental Health and Employers: The Case for Investment*. Deloitte. Available at: https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html
+
+- Health and Safety Executive (2024). *Mental Health at Work*. HSE. Available at: https://www.hse.gov.uk/stress/mental-health.htm
+
+- CIPD (2025). *Health and Wellbeing at Work 2025*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/reports/health-well-being-work/

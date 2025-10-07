@@ -1,5 +1,5 @@
 ---
-title: "Leadership Coaching for Founders vs Corporate Executives: Key Differences"
+title: "Leadership Coaching for Founders or Corporate Executives: Key Differences"
 description: "Founder and corporate executive face fundamentally different challenges. The coaching that serves one may not fit the other. Here's how to identify which approach you need—and why the distinction matters."
 pubDate: 2025-10-02
 author: "Craig Fearn"
@@ -15,7 +15,7 @@ As we talked through what she'd been working on, the pattern became clear. Both 
 
 She wasn't just leading an organization. She was building one from scratch. Creating systems and culture while simultaneously leading through them. Making product and go-to-market decisions that had no precedent in her company. Wearing multiple hats and trying to figure out which ones to delegate. The challenges facing founders are genuinely different from those facing executives in established organizations.
 
-After seventeen years working across startup and corporate contexts, from tech scale-ups to NHS trusts, and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've learned this: effective coaching requires matching approach to context. What serves founders well differs in important ways from what serves corporate executives.
+With extensive experience across startup and corporate contexts, from tech scale-ups to NHS trusts, and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've learned this: effective coaching requires matching approach to context. What serves founders well differs in important ways from what serves corporate executives.
 
 If you're seeking coaching, understanding this distinction helps you find support that actually fits your needs. If you're providing coaching, recognizing these differences shapes how you work.
 
@@ -97,7 +97,7 @@ When I work with corporate executives, different themes dominate.
 
 **Leadership identity and presence**. How do you show up as leader? What's your leadership brand? How do you inspire and influence without formal authority over many stakeholders? [Executive presence](/insights/executive-presence-what-it-is-how-to-develop) and leadership effectiveness within established organizations requires particular attention.
 
-**Strategic thinking and positioning**. Not just executing strategy but thinking strategically. Seeing patterns. Understanding market dynamics. Positioning yourself and your function for impact. My seventeen years of [board-level experience](/about) enables coaching that develops this strategic perspective.
+**Strategic thinking and positioning**. Not just executing strategy but thinking strategically. Seeing patterns. Understanding market dynamics. Positioning yourself and your function for impact. Extensive [board-level experience](/about) enables coaching that develops this strategic perspective.
 
 **Stakeholder management complexity**. Managing upward, across, and downward simultaneously. Understanding organizational politics without being political. Building coalitions. Navigating board relationships. These skills matter tremendously in corporate context.
 
@@ -145,7 +145,7 @@ In my own [executive coaching](/services/executive-coaching) work, I support bot
 
 With founders, I bring understanding of growth-stage challenges, systems thinking, organizational development expertise, and my [FRSPH Fellowship](https://www.rsph.org.uk/) perspective on building healthy organizational cultures from the ground up.
 
-With corporate executives, I draw on seventeen years of board-level experience across sectors, understanding of governance and stakeholder dynamics, and expertise in leadership development within complex organizations.
+With corporate executives, I draw on extensive board-level experience across sectors, understanding of governance and stakeholder dynamics, and expertise in leadership development within complex organizations.
 
 Both benefit from coaching that balances challenge with support, develops strategic thinking, and creates space for working through complex problems. But the specific challenges we work on, the questions I ask, the frameworks we use—these adapt to whether you're building the organization or leading within it.
 

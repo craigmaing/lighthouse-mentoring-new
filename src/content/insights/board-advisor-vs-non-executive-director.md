@@ -1,19 +1,20 @@
 ---
-title: "Board Advisor vs Non-Executive Director: Navigating the Distinction"
+title: "Board Advisor or Non-Executive Director: Navigating the Distinction"
 description: "Understanding when a company needs formal board governance through a Non-Executive Director versus strategic advisory support reveals much about organizational maturity, governance requirements, and the nature of expertise being sought."
-pubDate: 2025-10-02
+pubDate: 2025-09-15
 author: "Craig Fearn"
 category: "board-advisory"
 tags: ["board advisory", "non-executive director", "NED", "governance", "board composition"]
 featured: true
 image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The conversation usually starts the same way. A founder or CEO tells me they've reached a stage where they need "someone on the board." Then we talk through what they're actually after—strategic guidance? Governance oversight? Specific expertise? Investor confidence? And it becomes clear pretty quickly that board advisor and Non-Executive Director, while related, are very different things.
 
 This isn't just splitting hairs. The choice between a board advisor and a NED has real implications. Legal liability. Governance structure. Time commitment. Cost. The nature of the relationship itself. Get it wrong and you're either paying for governance you don't need yet, or you're missing the formal oversight your growth stage or investors demand.
 
-I've worked at board level for seventeen years—NHS trusts to tech scale-ups—and I serve as an [Institute of Directors Ambassador](https://www.iod.com/). What I've seen is this: the choice shapes how organizations develop. And there's a thoughtful pathway from advisory work to formal NED appointment. But trying to blur these distinctions? That creates more confusion than value.
+With extensive board-level experience—NHS trusts to tech scale-ups—and I serve as an [Institute of Directors Ambassador](https://www.iod.com/). What I've seen is this: the choice shapes how organizations develop. And there's a thoughtful pathway from advisory work to formal NED appointment. But trying to blur these distinctions? That creates more confusion than value.
 
 ## Why Both Roles Exist
 
@@ -136,3 +137,17 @@ This creates opportunities for advisors to provide expertise in specialized doma
 The distinction between advisor and NED will likely remain important precisely because they serve different needs. As governance expectations rise and complexity increases, companies need both—the flexibility of advisory for specific expertise and the sustained oversight of committed NEDs. Understanding which role fits which need enables better governance and more effective use of resources—financial and professional time.
 
 If you're working through questions about board composition, governance structure, or whether your organization would benefit more from advisory or formal directorship, a [conversation](/contact) about your specific situation can help clarify the path forward. These decisions shape organizational capability and governance quality for years to come. Worth investing the time to think them through properly.
+
+## References
+
+- CIPD (2024). *Board Governance and People Strategy*. CIPD. Available at: https://www.cipd.co.uk/knowledge/strategy/governance/factsheet/
+
+- Financial Reporting Council (2024). *UK Corporate Governance Code*. FRC. Available at: https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/uk-corporate-governance-code/
+
+- HM Government (2024). *Board Directors: Your Legal Responsibilities*. UK Government. Available at: https://www.gov.uk/government/publications/board-directors-your-legal-responsibilities
+
+- ICSA (2024). *The Governance Institute Board Effectiveness Resources*. Chartered Governance Institute. Available at: https://www.cgi.org.uk/
+
+- Institute of Directors (2024). *IoD Commission: Non-Executive Directors in the UK*. IoD. Available at: https://www.iod.com/news/policy-and-governance/non-executive-directors-commission/
+
+- McKinsey & Company (2024). *Board Governance Research*. McKinsey Quarterly. Available at: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights

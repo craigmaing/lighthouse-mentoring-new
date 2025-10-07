@@ -1,0 +1,784 @@
+{
+  "timestamp": "2025-10-06T13:20:38.007Z",
+  "postSlug": "how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders",
+  "overallPassed": false,
+  "overallScore": 70,
+  "seo": {
+    "passed": false,
+    "score": 40,
+    "issues": [
+      "Title tag should be 50-60 characters (currently: 70)",
+      "Should have exactly one H1 heading (found: 0)",
+      "Primary keyword \"best executive coaching\" should appear in H1",
+      "Should have at least 3 internal links (found: 0)",
+      "Should have at least 2 external authoritative links (found: 0)"
+    ],
+    "recommendations": [
+      "Add internal links to related content and service pages",
+      "Add links to Harvard Business Review, McKinsey, or other .edu/.gov sources"
+    ],
+    "checks": {
+      "titleTag": false,
+      "metaDescription": true,
+      "headingHierarchy": false,
+      "keywordInH1": false,
+      "keywordInFirstParagraph": true,
+      "internalLinks": false,
+      "externalLinks": false,
+      "imageAltText": false,
+      "schemaMarkup": true,
+      "urlSlug": true
+    }
+  },
+  "readability": {
+    "passed": true,
+    "score": 100,
+    "avgSentenceLength": 11.954954954954955,
+    "avgWordLength": 6.096458176337603,
+    "issues": [],
+    "recommendations": []
+  },
+  "relevance": {
+    "passed": true,
+    "score": 100,
+    "topicAlignment": true,
+    "keywordRelevance": true,
+    "audienceMatch": true,
+    "issues": []
+  },
+  "interest": {
+    "passed": true,
+    "score": 80,
+    "hasStories": true,
+    "hasExamples": false,
+    "hasData": true,
+    "hasVisuals": true,
+    "conversationalTone": true,
+    "issues": [
+      "Include specific examples to illustrate points"
+    ]
+  },
+  "images": {
+    "passed": true,
+    "totalImages": 3,
+    "heroImage": true,
+    "sectionImages": 2,
+    "allHaveAltText": true,
+    "allOptimized": true,
+    "issues": []
+  },
+  "grammar": {
+    "passed": false,
+    "score": 0,
+    "totalIssues": 73,
+    "errors": 0,
+    "warnings": 73,
+    "issues": [
+      {
+        "line": 63,
+        "column": 203,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "behavioural"
+      },
+      {
+        "line": 103,
+        "column": 145,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "behavioural"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 69,
+        "column": 114,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisations"
+      },
+      {
+        "line": 78,
+        "column": 6,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisations"
+      },
+      {
+        "line": 69,
+        "column": 114,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisations"
+      },
+      {
+        "line": 78,
+        "column": 6,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisations"
+      },
+      {
+        "line": 95,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisation"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 203,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "behavioural"
+      },
+      {
+        "line": 103,
+        "column": 145,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "behavioural"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 63,
+        "column": 230,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 95,
+        "column": 205,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 107,
+        "column": 79,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 109,
+        "column": 65,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 121,
+        "column": 337,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 125,
+        "column": 134,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 147,
+        "column": 263,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      },
+      {
+        "line": 153,
+        "column": 254,
+        "message": "Use UK English spelling",
+        "severity": "warning",
+        "source": "spell",
+        "suggestion": "organisational"
+      }
+    ],
+    "summary": "Found 73 warnings."
+  },
+  "aiDetection": {
+    "passed": true,
+    "score": 71,
+    "soundsHuman": true,
+    "issues": [
+      {
+        "type": "ai_phrase",
+        "message": "AI cliché detected: \"navigating complex\" - sounds robotic",
+        "suggestion": "Use more natural, conversational language",
+        "severity": "warning"
+      },
+      {
+        "type": "ai_phrase",
+        "message": "AI cliché detected: \"crucial\" - sounds robotic",
+        "suggestion": "Use more natural, conversational language",
+        "severity": "warning"
+      }
+    ],
+    "metrics": {
+      "contractionRate": 0.0255500354861604,
+      "sentenceLengthVariance": 1,
+      "aiPhrasesFound": 2,
+      "formalTransitions": 0,
+      "personalityScore": 1
+    },
+    "summary": "Content sounds mostly human but could use more personality and specific examples."
+  },
+  "performance": null,
+  "criticalIssues": [
+    "Primary keyword not in H1"
+  ],
+  "warnings": [
+    "Title tag should be 50-60 characters (currently: 70)",
+    "Should have exactly one H1 heading (found: 0)",
+    "Primary keyword \"best executive coaching\" should appear in H1",
+    "Should have at least 3 internal links (found: 0)",
+    "Should have at least 2 external authoritative links (found: 0)",
+    "Include specific examples to illustrate points",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 103)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 69)",
+    "Use UK English spelling (line 78)",
+    "Use UK English spelling (line 69)",
+    "Use UK English spelling (line 78)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 103)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "Use UK English spelling (line 63)",
+    "Use UK English spelling (line 95)",
+    "Use UK English spelling (line 107)",
+    "Use UK English spelling (line 109)",
+    "Use UK English spelling (line 121)",
+    "Use UK English spelling (line 125)",
+    "Use UK English spelling (line 147)",
+    "Use UK English spelling (line 153)",
+    "AI cliché detected: \"navigating complex\" - sounds robotic",
+    "AI cliché detected: \"crucial\" - sounds robotic"
+  ],
+  "recommendations": [
+    "Add internal links to related content and service pages",
+    "Add links to Harvard Business Review, McKinsey, or other .edu/.gov sources",
+    "Good human voice! Consider adding more specific examples and real-world details."
+  ],
+  "readyToPublish": false
+}

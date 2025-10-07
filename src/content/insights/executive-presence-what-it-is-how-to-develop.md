@@ -1,12 +1,13 @@
 ---
 title: "Executive Presence: What It Is and How to Develop It"
 description: "You know executive presence when you see it—that quality that makes certain leaders command attention and inspire confidence. But can you develop it if you don't have it naturally? Yes. Here's how."
-pubDate: 2025-10-02
+pubDate: 2025-09-28
 author: "Craig Fearn"
 category: "executive-coaching"
 tags: ["executive presence", "leadership presence", "leadership development", "executive coaching", "communication skills", "gravitas"]
 featured: true
 image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The senior manager who started working with me had a problem she couldn't quite articulate. Technically brilliant. Strategic thinker. Delivered results consistently. But when she presented to the board, something fell flat. When she led meetings, people didn't quite engage. Colleagues respected her competence but didn't seek her out for guidance the way they did with other leaders.
@@ -15,7 +16,7 @@ The senior manager who started working with me had a problem she couldn't quite 
 
 She was describing executive presence—that elusive quality that separates technically competent managers from leaders people instinctively follow. And she was experiencing what many capable professionals discover: excellence at your work doesn't automatically translate to executive presence.
 
-Good news? Executive presence isn't something you're born with or without. It's a cultivatable skill. After seventeen years working at board level and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've supported numerous executives in developing the presence their roles require.
+Good news? Executive presence isn't something you're born with or without. It's a cultivatable skill. After extensive cross-sector board experience and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've supported numerous executives in developing the presence their roles require.
 
 Let me walk through what executive presence actually is, why it matters, and most importantly—how you develop it.
 
@@ -27,7 +28,7 @@ Executive presence is the ability to project confidence, competence, and calm un
 
 It's how you show up—physically, verbally, emotionally. It's what makes people listen when you speak. Believe what you say. Want to work with you and for you.
 
-[Research from the Center for Talent Innovation](https://emeritus.org/blog/what-is-executive-presence/) breaks executive presence into three elements in descending order of importance: gravitas (how you act), communication (how you speak), and appearance (how you look).
+Research from the Center for Talent Innovation (now Coqual) by Sylvia Ann Hewlett breaks executive presence into three elements in descending order of importance: gravitas (how you act), communication (how you speak), and appearance (how you look), with 67% of senior executives citing gravitas as the most important factor.
 
 **Gravitas**—the most critical element—includes confidence and decisiveness, emotional intelligence and composure under pressure, integrity and authenticity, clear values and consistent behavior, and appropriate assertiveness without aggression.
 
@@ -139,7 +140,7 @@ Executive presence includes being seen as strategic, not just tactical.
 
 **Ask strategic questions**. In meetings, probe assumptions, consider implications, raise connections others miss. Strategic thinking demonstrated through questions builds presence.
 
-My seventeen years of [board-level experience](/about) across sectors means when coaching executives on presence, we're not just working on delivery style. We're developing the strategic thinking capability that creates substance behind presence.
+Extensive [board-level experience](/about) across sectors means when coaching executives on presence, we're not just working on delivery style. We're developing the strategic thinking capability that creates substance behind presence.
 
 ### Practice in Real Situations
 
@@ -210,3 +211,17 @@ If you're working on developing executive presence or preparing for roles that r
 Executive presence isn't mystery. It's not innate gift some people have and others don't. It's cultivatable set of capabilities, confidence, and communication skills. Develop them deliberately and watch how your effectiveness expands.
 
 That's the promise of executive presence work. And for leaders ready to invest in development, it's promise that delivers.
+
+## References
+
+- Center for Creative Leadership (2024). *Leadership Development Research*. CCL. Available at: https://www.ccl.org/insights-research/
+
+- CIPD (2024). *Leadership Development Resources*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/topics/leadership-development/
+
+- Gallup (2024). *State of the Global Workplace Report*. Gallup. Available at: https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx
+
+- Harvard Business Review (2024). *The New Rules of Executive Presence*. HBR. Available at: https://hbr.org/2024/01/the-new-rules-of-executive-presence
+
+- Harvard Business Review (2020). *Executive Coaches, Your Job Is to Deliver Business Results*. HBR. Available at: https://hbr.org/2020/08/executive-coaches-your-job-is-to-deliver-business-results
+
+- McKinsey & Company (2024). *Leadership Matters*. McKinsey Quarterly. Available at: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights

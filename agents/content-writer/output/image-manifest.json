@@ -1,0 +1,317 @@
+{
+  "generatedAt": "2025-10-06T13:20:37.881Z",
+  "totalImages": 4,
+  "posts": [
+    {
+      "slug": "executive-coaching-vs-leadership-coaching-what-is-the-difference",
+      "images": [
+        {
+          "unsplashId": "photo-1573496359142-b8d87734a5a2",
+          "photographer": {
+            "name": "Unsplash",
+            "username": "unsplash"
+          },
+          "requirement": {
+            "position": "hero",
+            "searchQuery": "professional executive coaching business executive",
+            "altText": "Professional executive coaching session with business executive"
+          },
+          "files": {
+            "original": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive.jpg",
+            "optimized": [
+              {
+                "width": 400,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-400w.avif",
+                "size": 25273
+              },
+              {
+                "width": 400,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-400w.webp",
+                "size": 18070
+              },
+              {
+                "width": 400,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-400w.jpg",
+                "size": 25256
+              },
+              {
+                "width": 800,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-800w.avif",
+                "size": 81355
+              },
+              {
+                "width": 800,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-800w.webp",
+                "size": 53296
+              },
+              {
+                "width": 800,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-800w.jpg",
+                "size": 76728
+              },
+              {
+                "width": 1200,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1200w.avif",
+                "size": 179087
+              },
+              {
+                "width": 1200,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1200w.webp",
+                "size": 110978
+              },
+              {
+                "width": 1200,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1200w.jpg",
+                "size": 156397
+              },
+              {
+                "width": 1600,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1600w.avif",
+                "size": 322462
+              },
+              {
+                "width": 1600,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1600w.webp",
+                "size": 202572
+              },
+              {
+                "width": 1600,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive-1600w.jpg",
+                "size": 273367
+              }
+            ]
+          },
+          "attribution": "Photo by Unsplash (https://unsplash.com)",
+          "astroCode": "<Picture\n  src={import('./images/executive-coaching-vs-leadership-coaching-what-is-the-difference-professional-executive-coaching-business-executive.avif')}\n  widths={[400, 800, 1200, 1600]}\n  sizes=\"(max-width: 640px) 400px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px\"\n  formats={['avif', 'webp', 'jpg']}\n  alt=\"Professional executive coaching session with business executive\"\n  loading=\"eager\"\n  class=\"w-full h-auto\"\n/>"
+        },
+        {
+          "unsplashId": "photo-1573497019940-1c28c88b4f3e",
+          "photographer": {
+            "name": "Unsplash",
+            "username": "unsplash"
+          },
+          "requirement": {
+            "position": "section",
+            "searchQuery": "business meeting leadership discussion",
+            "altText": "Leadership team in strategic discussion"
+          },
+          "files": {
+            "original": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion.jpg",
+            "optimized": [
+              {
+                "width": 400,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-400w.avif",
+                "size": 54064
+              },
+              {
+                "width": 400,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-400w.webp",
+                "size": 39218
+              },
+              {
+                "width": 400,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-400w.jpg",
+                "size": 38036
+              },
+              {
+                "width": 800,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-800w.avif",
+                "size": 185663
+              },
+              {
+                "width": 800,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-800w.webp",
+                "size": 127784
+              },
+              {
+                "width": 800,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion-800w.jpg",
+                "size": 135648
+              }
+            ]
+          },
+          "attribution": "Photo by Unsplash (https://unsplash.com)",
+          "astroCode": "<Image\n  src={import('./images/executive-coaching-vs-leadership-coaching-what-is-the-difference-business-meeting-leadership-discussion.webp')}\n  width={800}\n  height={450} // 16:9 aspect ratio\n  format=\"webp\"\n  alt=\"Leadership team in strategic discussion\"\n  loading=\"lazy\"\n  class=\"w-full h-auto rounded-lg shadow-sm\"\n/>"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders",
+      "images": [
+        {
+          "unsplashId": "photo-1573496359142-b8d87734a5a2",
+          "photographer": {
+            "name": "Unsplash",
+            "username": "unsplash"
+          },
+          "requirement": {
+            "position": "hero",
+            "searchQuery": "professional best executive coaching business executive",
+            "altText": "Professional best executive coaching session with business executive"
+          },
+          "files": {
+            "original": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive.jpg",
+            "optimized": [
+              {
+                "width": 400,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-400w.avif",
+                "size": 25273
+              },
+              {
+                "width": 400,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-400w.webp",
+                "size": 18070
+              },
+              {
+                "width": 400,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-400w.jpg",
+                "size": 25256
+              },
+              {
+                "width": 800,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-800w.avif",
+                "size": 81355
+              },
+              {
+                "width": 800,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-800w.webp",
+                "size": 53296
+              },
+              {
+                "width": 800,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-800w.jpg",
+                "size": 76728
+              },
+              {
+                "width": 1200,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1200w.avif",
+                "size": 179087
+              },
+              {
+                "width": 1200,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1200w.webp",
+                "size": 110978
+              },
+              {
+                "width": 1200,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1200w.jpg",
+                "size": 156397
+              },
+              {
+                "width": 1600,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1600w.avif",
+                "size": 322462
+              },
+              {
+                "width": 1600,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1600w.webp",
+                "size": 202572
+              },
+              {
+                "width": 1600,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive-1600w.jpg",
+                "size": 273367
+              }
+            ]
+          },
+          "attribution": "Photo by Unsplash (https://unsplash.com)",
+          "astroCode": "<Picture\n  src={import('./images/how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-professional-best-executive-coaching-business-executive.avif')}\n  widths={[400, 800, 1200, 1600]}\n  sizes=\"(max-width: 640px) 400px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px\"\n  formats={['avif', 'webp', 'jpg']}\n  alt=\"Professional best executive coaching session with business executive\"\n  loading=\"eager\"\n  class=\"w-full h-auto\"\n/>"
+        },
+        {
+          "unsplashId": "photo-1573497019940-1c28c88b4f3e",
+          "photographer": {
+            "name": "Unsplash",
+            "username": "unsplash"
+          },
+          "requirement": {
+            "position": "section",
+            "searchQuery": "business meeting leadership discussion",
+            "altText": "Leadership team in strategic discussion"
+          },
+          "files": {
+            "original": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion.jpg",
+            "optimized": [
+              {
+                "width": 400,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-400w.avif",
+                "size": 54064
+              },
+              {
+                "width": 400,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-400w.webp",
+                "size": 39218
+              },
+              {
+                "width": 400,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-400w.jpg",
+                "size": 38036
+              },
+              {
+                "width": 800,
+                "format": "avif",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-800w.avif",
+                "size": 185663
+              },
+              {
+                "width": 800,
+                "format": "webp",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-800w.webp",
+                "size": 127784
+              },
+              {
+                "width": 800,
+                "format": "jpg",
+                "path": "C:\\Users\\Fearn\\New folder (4)\\new-site\\public\\images\\blog\\how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion-800w.jpg",
+                "size": 135648
+              }
+            ]
+          },
+          "attribution": "Photo by Unsplash (https://unsplash.com)",
+          "astroCode": "<Image\n  src={import('./images/how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders-business-meeting-leadership-discussion.webp')}\n  width={800}\n  height={450} // 16:9 aspect ratio\n  format=\"webp\"\n  alt=\"Leadership team in strategic discussion\"\n  loading=\"lazy\"\n  class=\"w-full h-auto rounded-lg shadow-sm\"\n/>"
+        }
+      ]
+    }
+  ],
+  "optimizationStats": {
+    "totalOriginalSize": 158674,
+    "totalOptimizedSize": 4210508,
+    "totalFiles": 36,
+    "savings": {
+      "bytes": -4051834,
+      "percentage": -2553.558869127897
+    }
+  }
+}

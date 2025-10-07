@@ -1,0 +1,197 @@
+{
+  "timestamp": "2025-10-06T13:06:59.082Z",
+  "verified": false,
+  "totalClaims": 1,
+  "totalStatistics": 4,
+  "issuesFound": [
+    "Unverified claim: \"**Harvard Business Review**  (2021)\"",
+    "Unverified statistic: \"23%\"",
+    "Unverified statistic: \"40%\"",
+    "Unverified statistic: \"38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\"",
+    "Unverified statistic: \"5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\""
+  ],
+  "claims": [
+    {
+      "claim": "**Harvard Business Review**  (2021)",
+      "verified": false,
+      "confidence": "low",
+      "evidence": [
+        "VERIFICATION REQUIRED: Search authoritative sources",
+        "Suggested query: \"**Harvard Business Review**  (2021)\" (site:hbr.org OR site:mckinsey.com OR site:bcg.com OR site:deloitte.com OR site:.edu OR site:.gov)",
+        "Focus on: HBR, McKinsey, BCG, Deloitte, academic journals"
+      ],
+      "sources": [
+        {
+          "url": "https://scholar.google.com/scholar?q=**Harvard%20Business%20Review**%20%20(2021)",
+          "title": "Google Scholar - Academic Search",
+          "excerpt": "Search academic papers and journals"
+        },
+        {
+          "url": "https://hbr.org/search?term=**Harvard%20Business%20Review**",
+          "title": "Harvard Business Review - Search",
+          "excerpt": "Search HBR for business research and case studies"
+        },
+        {
+          "url": "https://www.mckinsey.com/search?q=**Harvard%20Business%20Review**%20%20(2021)",
+          "title": "McKinsey & Company - Search",
+          "excerpt": "Search McKinsey research and insights"
+        }
+      ],
+      "recommendation": "modify",
+      "suggestedRevision": "[RESEARCH NEEDED: \"**Harvard Business Review**  (2021)\" - Verify with HBR, McKinsey, or academic source]"
+    }
+  ],
+  "statistics": [
+    {
+      "query": "23%",
+      "verified": false,
+      "source": "VERIFICATION REQUIRED",
+      "sourceUrl": "https://scholar.google.com/scholar?q=23%25",
+      "sourceAuthority": "pending",
+      "citation": "[RESEARCH NEEDED: Verify \"23%\" with authoritative source]",
+      "alternativeSources": [
+        {
+          "url": "https://hbr.org/search?term=23%25",
+          "title": "Harvard Business Review",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.mckinsey.com/search?q=23%25",
+          "title": "McKinsey & Company",
+          "authority": "high"
+        },
+        {
+          "url": "https://www2.deloitte.com/search.html?query=23%25",
+          "title": "Deloitte Insights",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.bcg.com/search?q=23%25",
+          "title": "Boston Consulting Group",
+          "authority": "high"
+        },
+        {
+          "url": "https://scholar.google.com/scholar?q=23%25+executive+coaching",
+          "title": "Google Scholar - Executive Coaching Research",
+          "authority": "high"
+        }
+      ],
+      "note": "Manual verification required for accuracy. Check multiple sources to confirm statistic."
+    },
+    {
+      "query": "40%",
+      "verified": false,
+      "source": "VERIFICATION REQUIRED",
+      "sourceUrl": "https://scholar.google.com/scholar?q=40%25",
+      "sourceAuthority": "pending",
+      "citation": "[RESEARCH NEEDED: Verify \"40%\" with authoritative source]",
+      "alternativeSources": [
+        {
+          "url": "https://hbr.org/search?term=40%25",
+          "title": "Harvard Business Review",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.mckinsey.com/search?q=40%25",
+          "title": "McKinsey & Company",
+          "authority": "high"
+        },
+        {
+          "url": "https://www2.deloitte.com/search.html?query=40%25",
+          "title": "Deloitte Insights",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.bcg.com/search?q=40%25",
+          "title": "Boston Consulting Group",
+          "authority": "high"
+        },
+        {
+          "url": "https://scholar.google.com/scholar?q=40%25+executive+coaching",
+          "title": "Google Scholar - Executive Coaching Research",
+          "authority": "high"
+        }
+      ],
+      "note": "Manual verification required for accuracy. Check multiple sources to confirm statistic."
+    },
+    {
+      "query": "38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right",
+      "verified": false,
+      "source": "VERIFICATION REQUIRED",
+      "sourceUrl": "https://scholar.google.com/scholar?q=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+      "sourceAuthority": "pending",
+      "citation": "[RESEARCH NEEDED: Verify \"38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\" with authoritative source]",
+      "alternativeSources": [
+        {
+          "url": "https://hbr.org/search?term=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Harvard Business Review",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.mckinsey.com/search?q=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "McKinsey & Company",
+          "authority": "high"
+        },
+        {
+          "url": "https://www2.deloitte.com/search.html?query=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Deloitte Insights",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.bcg.com/search?q=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Boston Consulting Group",
+          "authority": "high"
+        },
+        {
+          "url": "https://scholar.google.com/scholar?q=38%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right+executive+coaching",
+          "title": "Google Scholar - Executive Coaching Research",
+          "authority": "high"
+        }
+      ],
+      "note": "Manual verification required for accuracy. Check multiple sources to confirm statistic."
+    },
+    {
+      "query": "5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right",
+      "verified": false,
+      "source": "VERIFICATION REQUIRED",
+      "sourceUrl": "https://scholar.google.com/scholar?q=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+      "sourceAuthority": "pending",
+      "citation": "[RESEARCH NEEDED: Verify \"5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\" with authoritative source]",
+      "alternativeSources": [
+        {
+          "url": "https://hbr.org/search?term=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Harvard Business Review",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.mckinsey.com/search?q=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "McKinsey & Company",
+          "authority": "high"
+        },
+        {
+          "url": "https://www2.deloitte.com/search.html?query=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Deloitte Insights",
+          "authority": "high"
+        },
+        {
+          "url": "https://www.bcg.com/search?q=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right",
+          "title": "Boston Consulting Group",
+          "authority": "high"
+        },
+        {
+          "url": "https://scholar.google.com/scholar?q=5.7x%20average%20ROI%20on%20coaching%20investments%0A-%2038%25%20improvement%20in%20decision-making%20quality%0A-%2026%25%20increase%20in%20team%20productivity%0A-%2042%25%20reduction%20in%20executive%20turnover%0A%0ABut%E2%80%94and%20this%20is%20crucial%E2%80%94only%20when%20it's%20done%20right+executive+coaching",
+          "title": "Google Scholar - Executive Coaching Research",
+          "authority": "high"
+        }
+      ],
+      "note": "Manual verification required for accuracy. Check multiple sources to confirm statistic."
+    }
+  ],
+  "suggestedRevisions": [
+    "[RESEARCH NEEDED: \"**Harvard Business Review**  (2021)\" - Verify with HBR, McKinsey, or academic source]",
+    "[RESEARCH NEEDED: Verify \"23%\" with authoritative source]",
+    "[RESEARCH NEEDED: Verify \"40%\" with authoritative source]",
+    "[RESEARCH NEEDED: Verify \"38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\" with authoritative source]",
+    "[RESEARCH NEEDED: Verify \"5.7x average ROI on coaching investments\n- 38% improvement in decision-making quality\n- 26% increase in team productivity\n- 42% reduction in executive turnover\n\nBut—and this is crucial—only when it's done right\" with authoritative source]"
+  ]
+}

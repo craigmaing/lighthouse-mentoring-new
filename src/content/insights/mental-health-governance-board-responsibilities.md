@@ -1,12 +1,13 @@
 ---
 title: "Mental Health Governance: Board Responsibilities and Oversight"
 description: "Mental health is no longer just an HR issue—it's a board-level governance responsibility with legal duties, material risks, and strategic implications. Here's what boards need to know about governing mental health effectively."
-pubDate: 2025-10-02
+pubDate: 2025-10-08
 author: "Craig Fearn"
 category: "wellbeing"
 tags: ["mental health governance", "board governance", "duty of care", "workplace mental health", "health and safety", "risk management"]
 featured: true
 image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The board chair who asked for my advice had just learned something uncomfortable. One of their organization's long-serving managers had experienced severe mental health crisis. Multiple people knew he was struggling. Nobody felt empowered to intervene. When he finally took extended leave, it emerged that warning signs had been visible for months.
@@ -15,7 +16,7 @@ The board chair who asked for my advice had just learned something uncomfortable
 
 Good questions. Uncomfortable ones. But increasingly necessary as mental health moves from HR concern to board-level governance issue.
 
-After seventeen years working at board level and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've watched this evolution. Mental health governance is no longer optional. Boards have legal duties, face material risks, and need proper oversight frameworks. Most haven't figured this out yet.
+After extensive cross-sector board experience and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've watched this evolution. Mental health governance is no longer optional. Boards have legal duties, face material risks, and need proper oversight frameworks. Most haven't figured this out yet.
 
 Let me walk through what boards actually need to know about mental health governance—the legal reality, the oversight requirements, and how to govern this properly rather than just delegate it to HR and hope for the best.
 
@@ -156,7 +157,7 @@ Several questions boards frequently ask about mental health governance.
 
 ## Where I Can Help
 
-My work supporting boards on mental health and wellbeing governance combines public health expertise (FRSPH Fellowship), organizational psychology understanding, and seventeen years of board-level experience across sectors.
+My work supporting boards on mental health and wellbeing governance combines public health expertise (FRSPH Fellowship), organizational psychology understanding, and extensive board-level experience across sectors.
 
 This enables support that's evidence-based, practically grounded, and tailored to board-level needs—whether through governance frameworks development, board briefings and education, wellbeing audit and assessment, ongoing governance support, or advisory relationships for chairs and NEDs navigating these issues.
 
@@ -175,3 +176,17 @@ That governance—or lack of it—shapes organizational outcomes profoundly. As 
 The legal duty exists. The business case is clear. The stakeholder expectations are rising. What boards do with this reality determines whether their organizations protect people appropriately while building competitive advantage, or accept preventable risks and costs while hoping problems don't surface publicly.
 
 That choice—to govern properly or not—sits squarely with boards. Where it's always belonged, even when many boards didn't recognize it.
+
+## References
+
+- Acas (2024). *Supporting Mental Health in the Workplace*. Advisory, Conciliation and Arbitration Service. Available at: https://www.acas.org.uk/supporting-mental-health-workplace
+
+- Business in the Community (2024). *Wellbeing Leadership Blueprint*. BITC. Available at: https://www.bitc.org.uk/
+
+- CIPD (2024). *Health and Wellbeing at Work 2024*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/reports/health-well-being-work/
+
+- Deloitte (2024). *Mental Health and Employers: The Case for Investment*. Deloitte. Available at: https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html
+
+- Health and Safety Executive (2024). *Mental Health at Work*. HSE. Available at: https://www.hse.gov.uk/stress/mental-health.htm
+
+- UK Legislation (1999). *Management of Health and Safety at Work Regulations 1999*. UK Government. Available at: https://www.legislation.gov.uk/uksi/1999/3242/contents

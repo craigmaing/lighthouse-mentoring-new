@@ -1,12 +1,13 @@
 ---
 title: "When Your Organization Needs a Wellbeing Audit (And What It Involves)"
 description: "Running wellbeing programs without understanding whether they're working? Seeing concerning trends in absence or turnover but not sure why? Here's when wellbeing audits make sense—and how they provide the clarity you need to fix what's not working."
-pubDate: 2025-10-02
+pubDate: 2025-10-12
 author: "Craig Fearn"
 category: "wellbeing"
 tags: ["wellbeing audit", "organizational wellbeing", "workplace wellbeing", "wellbeing assessment", "employee wellbeing", "organizational health"]
 featured: true
 image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The HR director who called me was frustrated. Her organization had invested seriously in wellbeing over the past two years. Mental health first aiders. Employee assistance program. Wellbeing app. Regular communications. Leadership training on supporting mental health.
@@ -19,7 +20,7 @@ But absence rates hadn't improved. Turnover in critical roles stayed high. Engag
 
 That's when a wellbeing audit makes sense. When you need to move from guessing to knowing. From assumptions to evidence. From scattershot initiatives to strategic approach.
 
-After seventeen years working at board level and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've conducted numerous organizational wellbeing audits. What they consistently reveal is this: most organizations overestimate how well they're addressing wellbeing and miss significant gaps between what leadership thinks is happening and what employees actually experience.
+After extensive cross-sector board experience and through my work as an [FRSPH Fellow](https://www.rsph.org.uk/), I've conducted numerous organizational wellbeing audits. What they consistently reveal is this: most organizations overestimate how well they're addressing wellbeing and miss significant gaps between what leadership thinks is happening and what employees actually experience.
 
 Let me walk you through when audits make sense, what they involve, and how to use findings strategically.
 
@@ -133,7 +134,7 @@ Internal assessment has value—understanding what you can see from inside. But 
 
 **Objectivity**. External auditors don't have internal politics to navigate or sacred cows to protect. They can identify problems that internal people might miss or hesitate to surface.
 
-**Expertise**. Organizations doing this regularly understand benchmarks, best practice, what effective approaches look like across different contexts. My own work combines [FRSPH Fellowship](https://www.rsph.org.uk/) credentialing in public health with seventeen years of board-level organizational experience. That combination enables assessment that's both evidence-based and practically grounded.
+**Expertise**. Organizations doing this regularly understand benchmarks, best practice, what effective approaches look like across different contexts. My own work combines [FRSPH Fellowship](https://www.rsph.org.uk/) credentialing in public health with extensive board-level organizational experience. That combination enables assessment that's both evidence-based and practically grounded.
 
 **Confidentiality**. Employees often share more honestly with external auditor than with internal team. They trust that feedback won't be used against them.
 
@@ -183,9 +184,7 @@ If answers are unclear or uncomfortable, audit probably makes sense.
 
 Next question: internal assessment or external? For most organizations, external audit provides objectivity, expertise, and credibility that justify the investment. Particularly if findings will inform significant decisions or need board-level credibility.
 
-My own [organizational wellbeing audit](/services/organizational-wellbeing) work combines public health expertise, organizational psychology understanding, and practical board-level experience. This enables assessment that's rigorous, evidence-based, and practically useful—not just academic frameworks but actionable insight.
-
-If you're considering wellbeing audit or want to understand what it might reveal about your organization, a [conversation](/contact) about your specific situation can help clarify whether this is the right step and what approach would serve you best.
+Effective external audit combines public health expertise, organizational psychology understanding, and practical board-level experience. This combination enables assessment that's rigorous and evidence-based while remaining practically useful—not just academic frameworks but actionable insight that boards and leadership can use to drive meaningful improvement.
 
 ## The Clarity Benefit
 
@@ -196,3 +195,17 @@ Organizations flying blind spend money on programs that don't work, miss emergin
 Audit creates the clarity that enables everything else. It's not the end point—it's the essential starting point for strategic wellbeing improvement.
 
 That clarity—knowing what's actually happening rather than guessing—that's what audit provides. And for most organizations, that clarity is worth significantly more than the investment required to gain it.
+
+## References
+
+- CIPD (2024). *Health and Wellbeing at Work 2024*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/reports/health-well-being-work/
+
+- Deloitte (2024). *Mental Health and Employers: The Case for Investment*. Deloitte. Available at: https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html
+
+- Gallup (2024). *State of the Global Workplace Report*. Gallup. Available at: https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx
+
+- Health and Safety Executive (2024). *Mental Health at Work*. HSE. Available at: https://www.hse.gov.uk/stress/mental-health.htm
+
+- Business in the Community (2024). *Wellbeing Leadership Blueprint*. BITC. Available at: https://www.bitc.org.uk/
+
+- World Health Organization (2024). *Mental Health at Work Policy Brief*. WHO. Available at: https://www.who.int/publications/i/item/9789240053052

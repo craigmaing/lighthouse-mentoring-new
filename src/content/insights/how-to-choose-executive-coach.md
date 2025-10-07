@@ -1,19 +1,20 @@
 ---
 title: "How to Choose an Executive Coach: A Thoughtful Guide"
 description: "The decision to work with an executive coach represents a significant investment—not just financially, but in time, energy, and the vulnerability required for meaningful development. Choosing well matters profoundly."
-pubDate: 2025-10-02
+pubDate: 2025-10-03
 author: "Craig Fearn"
 category: "executive-coaching"
 tags: ["executive coaching", "choosing a coach", "EMCC", "professional development", "leadership development"]
 featured: true
 image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The executive who called me last month had already worked with two coaches. Neither engagement had produced the transformation she'd hoped for. As we talked through her experiences, a pattern emerged: she'd selected coaches based primarily on credentials and cost, without clarity about what she actually needed or how to assess whether a particular coach could provide it.
 
 Her story isn't unusual. The coaching marketplace has exploded over the past two decades. More options, yes. But also more confusion. Some coaches hold rigorous credentials from established professional bodies. Others took weekend courses and declared themselves coaches. Some specialize deeply in particular domains. Others are generalists. The variation is enormous.
 
-After seventeen years working with executives and boards, and through my own journey to [EMCC Professional Coach](https://www.emccglobal.org/) qualification, I've learned this: selecting a coach well means balancing multiple things—credentials, experience, chemistry, approach. Get this choice right and you create conditions for meaningful development. Get it wrong and you invest serious time and money without achieving the growth you're after.
+With extensive experience working with executives and boards, and through my own journey to [EMCC Professional Coach](https://www.emccglobal.org/) qualification, I've learned this: selecting a coach well means balancing multiple things—credentials, experience, chemistry, approach. Get this choice right and you create conditions for meaningful development. Get it wrong and you invest serious time and money without achieving the growth you're after.
 
 ## Start With What You Actually Need
 
@@ -51,7 +52,7 @@ Actually, it can be misleading. The coach's value isn't having been in your role
 
 Some of the most powerful coaching pairs executives with coaches from completely different backgrounds. Why? Because the coach isn't attached to "how it should be done" in that industry or role. They can ask more naïve questions. Often more generative questions. They're less likely to impose their own experience as the template for yours.
 
-That doesn't mean background is irrelevant. Understanding the pressures and dynamics of executive-level work helps coaches grasp context quickly, recognize patterns, ask more informed questions. In my own work with executives, my seventeen years of [board-level experience](/about) across sectors means I understand governance dynamics, board relationships, organizational politics, the particular challenges of leading at senior levels. This enables more sophisticated coaching. But I'm not advising based on my experience—I'm using it to facilitate their thinking.
+That doesn't mean background is irrelevant. Understanding the pressures and dynamics of executive-level work helps coaches grasp context quickly, recognize patterns, ask more informed questions. In my own work with executives, my extensive [board-level experience](/about) across sectors means I understand governance dynamics, board relationships, organizational politics, the particular challenges of leading at senior levels. This enables more sophisticated coaching. But I'm not advising based on my experience—I'm using it to facilitate their thinking.
 
 The distinction is subtle but important. You want a coach whose experience helps them understand your world, but whose primary capability is facilitating development through skilled coaching process rather than advising based on their own career. The balance between these matters more than either alone.
 
@@ -136,3 +137,17 @@ Remember you're not trapped in your choice. Most coaching relationships include 
 The goal isn't finding the perfect coach. Doesn't exist. Rather, finding a good-enough match who can facilitate meaningful development. With clear goals, appropriate questions, and honest assessment of fit, you can identify coaching support that'll genuinely serve your leadership development.
 
 If you're exploring whether [executive coaching](/services/executive-coaching) might support your leadership growth, a [discovery conversation](/contact) can help clarify both what you're seeking and whether a particular coaching relationship would serve those goals. The investment in choosing well pays dividends throughout your coaching engagement and beyond. The capabilities you develop continue serving you long after the coaching relationship concludes.
+
+## References
+
+- International Coaching Federation (2025). *ICF Code of Ethics*. ICF. Available at: https://coachingfederation.org/credentialing/coaching-ethics/icf-code-of-ethics/
+
+- CIPD (2024). *Coaching and Mentoring Factsheet*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/factsheets/coaching-mentoring-factsheet/
+
+- EMCC Global (2024). *EQA Accreditation Standards*. European Mentoring and Coaching Council. Available at: https://www.emccglobal.org/accreditation/
+
+- Harvard Business Review (2020). *Executive Coaches, Your Job Is to Deliver Business Results*. HBR. Available at: https://hbr.org/2020/08/executive-coaches-your-job-is-to-deliver-business-results
+
+- International Coaching Federation (2024). *ICF Credentials and Standards*. ICF. Available at: https://coachingfederation.org/credentials-and-standards
+
+- McKinsey & Company (2024). *Leadership Development Research*. McKinsey Quarterly. Available at: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights

@@ -7,13 +7,18 @@ const currentYear = new Date().getFullYear();
     <div class="grid md:grid-cols-4 gap-8 mb-8">
       <!-- Company Info -->
       <div class="md:col-span-2">
-        <img
-          src="/images/logo-final.png"
-          alt="Lighthouse Mentoring"
-          class="h-10 w-auto mb-4"
-          width="150"
-          height="40"
-        />
+        <picture>
+          <source srcset="/images/logo-white.webp" type="image/webp" />
+          <img
+            src="/images/logo-white.png"
+            alt="Lighthouse Mentoring"
+            class="h-10 w-auto mb-4"
+            width="150"
+            height="40"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
         <p class="text-gray-400 leading-relaxed mb-4">
           Strategic consulting and board advisory services for organizations committed to sustainable performance.
         </p>

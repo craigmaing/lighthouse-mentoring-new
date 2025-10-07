@@ -1,0 +1,92 @@
+{
+  "schemas": [
+    {
+      "slug": "executive-coaching-vs-leadership-coaching-what-is-the-difference",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Executive Coaching vs Leadership Coaching: What is the Difference?",
+        "description": "**TL;DR**: Executive Coaching vs Leadership Coaching: What is the Difference explained for C-suite executives and senior leaders. This guide covers the key d...",
+        "author": {
+          "@type": "Person",
+          "name": "Craig Fearn",
+          "jobTitle": "Executive Coach and Board Advisor",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FRSPH Fellow",
+              "credentialAwarded": "Royal Society for Public Health"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FCMI Fellow",
+              "credentialAwarded": "Chartered Management Institute"
+            }
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Lighthouse Mentoring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lighthousementoring.com/logo.png"
+          }
+        },
+        "datePublished": "2025-10-06",
+        "dateModified": "2025-10-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lighthousementoring.com/insights/executive-coaching-vs-leadership-coaching-what-is-the-difference"
+        },
+        "image": "https://lighthousementoring.com/images/blog/executive-coaching-vs-leadership-coaching-what-is-the-difference.webp",
+        "keywords": "executive coaching, leadership coaching, executive coaching uk"
+      }
+    },
+    {
+      "slug": "how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Choose an Executive Coach: A Complete Guide for C-Suite Leaders",
+        "description": "**TL;DR**: How to Choose an Executive Coach: A Complete Guide for C-Suite Leaders explained for C-suite executives and senior leaders. This guide covers the ...",
+        "author": {
+          "@type": "Person",
+          "name": "Craig Fearn",
+          "jobTitle": "Executive Coach and Board Advisor",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FRSPH Fellow",
+              "credentialAwarded": "Royal Society for Public Health"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FCMI Fellow",
+              "credentialAwarded": "Chartered Management Institute"
+            }
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Lighthouse Mentoring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lighthousementoring.com/logo.png"
+          }
+        },
+        "datePublished": "2025-10-06",
+        "dateModified": "2025-10-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lighthousementoring.com/insights/how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders"
+        },
+        "image": "https://lighthousementoring.com/images/blog/how-to-choose-an-executive-coach-a-complete-guide-for-c-suite-leaders.webp",
+        "keywords": "best executive coaching, executive coaching consultant, senior executive coaching"
+      }
+    }
+  ]
+}

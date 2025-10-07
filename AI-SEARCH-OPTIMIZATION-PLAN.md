@@ -1,550 +1,326 @@
-# AI Search Optimization Strategy
-## Lighthouse Mentoring - 2025 Plan
+# AI Search Optimization Plan
+## Content Optimization for LLMs, AI Overviews, and Traditional SEO
 
-**Objective**: Increase visibility and citations in AI-powered search engines (ChatGPT, Perplexity, Google AI Overviews, Gemini) while maintaining traditional SEO strength.
-
-**Context**: With ChatGPT reaching 800M weekly users and Google's search share dropping below 90% for the first time, AI search optimization is critical for professional services visibility.
+**Generated**: 6 October 2025
 
 ---
 
-## Current State Analysis
+## Executive Summary
 
-### ✅ What We Have
-1. **Strong Schema.org Markup**
-   - Organization, Person, Service schemas
-   - Breadcrumb navigation
-   - Credential markup (FCMI, FRSPH, IoD)
-   - E-E-A-T signals via structured data
+This document provides comprehensive guidelines for optimizing content for both **traditional SEO** (Google Search) and **AI-based search** (ChatGPT, Perplexity, Gemini, AI Overviews). The Content Writer Agent must follow these principles to ensure maximum visibility across all search platforms.
 
-2. **Expertise Signals**
-   - 17 years board-level experience
-   - Professional fellowships and credentials
-   - Client testimonials from global brands (HSBC, Edrington UK, Brown-Forman)
-   - LinkedIn presence
-
-3. **Technical Foundation**
-   - Fast loading (Lighthouse 95+)
-   - Mobile-responsive
-   - Clean semantic HTML
-   - Structured content hierarchy
-
-### ❌ What We're Missing (High Impact for AI Search)
-
-1. **FAQ Content** (CRITICAL - AI search heavily favors FAQs)
-   - No FAQ schema markup
-   - No question-answer format content
-   - Missing common user questions
-
-2. **Comparative Content** (Accounts for 33% of AI citations!)
-   - "Executive Coaching vs Executive Mentoring"
-   - "Board Advisor vs Non-Executive Director"
-   - "Internal vs External Wellbeing Audits"
-   - "Choosing a Board Advisor: Criteria Comparison"
-
-3. **AI-Optimized Blog/Insights**
-   - No long-form answer content
-   - Missing "How to..." articles
-   - No industry insights or thought leadership
-
-4. **Enhanced Schema Markup**
-   - Missing FAQPage schema
-   - Missing HowTo schema
-   - Missing Article schema
-   - Missing Review/AggregateRating schema
-
-5. **Natural Language Optimization**
-   - Content not optimized for conversational queries
-   - Missing prompt-style questions (e.g., "What should I look for in an executive coach?")
+**Key Principle**: Clarity, depth, and originality matter more than keyword density or backlinks in AI search.
 
 ---
 
-## Strategic Plan: 3-Phase Approach
+## Part 1: AI-Based SEO (LLM Optimization)
 
-### **Phase 1: Quick Wins (1-2 weeks) - IMMEDIATE IMPACT**
+### What is AI Search SEO?
 
-#### 1.1 Add FAQ Sections to All Service Pages
-**Why**: FAQ content performs exceptionally well in AI search. AI models are trained to prioritize Q&A format.
+AI Search SEO is the process of optimizing content so it can be **found, understood, and summarized** by AI tools like ChatGPT, Gemini, Claude, and Perplexity. It focuses on:
 
-**Implementation**:
-- **Board Advisory Page**: 8-10 FAQs
-  - "What does a board advisor do?"
-  - "How is a board advisor different from a non-executive director?"
-  - "When should a company hire a board advisor?"
-  - "What qualifications should a board advisor have?"
-  - "How much does board advisory cost?"
+- **Clarity** - Easy to parse and understand
+- **Structure** - Logical organization with headers, bullets, lists
+- **Entity-rich information** - People, places, brands, concepts clearly identified
+- **Semantic depth** - Covering related concepts, not just keywords
 
-- **Executive Coaching Page**: 8-10 FAQs
-  - "What is executive coaching?"
-  - "How long does executive coaching take?"
-  - "What's the difference between coaching and mentoring?"
-  - "How do I choose an executive coach?"
-  - "What results can I expect from executive coaching?"
+### Core Content Structure for AI
 
-- **Organizational Wellbeing Page**: 8-10 FAQs
-  - "What is an organizational wellbeing audit?"
-  - "How do you measure workplace wellbeing?"
-  - "What is the ROI of wellbeing initiatives?"
-  - "How long does a wellbeing audit take?"
+#### 1. **Formatting Requirements**
 
-**Schema Addition**:
-```json
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What does a board advisor do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Detailed answer here..."
-      }
-    }
-  ]
-}
+✅ **Use these formats:**
+- Short paragraphs (2-4 sentences max)
+- Clear, descriptive headlines (H2, H3 hierarchy)
+- Bullet points and numbered lists
+- Q&A sections
+- How-to guides with step-by-step instructions
+- TL;DR summaries at the top
+- FAQ sections
+- Tables for comparisons
+
+✅ **Content patterns AI loves:**
+```markdown
+## What is [Topic]?
+
+[Clear definition in 1-2 sentences]
+
+[Topic] is important because:
+- Reason 1
+- Reason 2
+- Reason 3
+
+## How [Topic] Works
+
+1. First step: [Description]
+2. Second step: [Description]
+3. Third step: [Description]
+
+## Key Benefits
+
+| Benefit | Description | Impact |
+|---------|-------------|--------|
+| Benefit 1 | Description | Measurable outcome |
 ```
 
-**Estimated Impact**: 40-60% increase in AI citations within 30 days
+#### 2. **Semantic SEO and Entity Optimization**
+
+**What are entities?**
+Entities are specific people, places, brands, or concepts that search engines and LLMs recognize as distinct "things."
+
+**How to optimize for entities:**
+
+✅ **Clearly identify entities:**
+- Use full names on first mention: "Craig Fearn, FRSPH, FCMI"
+- Include titles and credentials: "Fellow of the Chartered Management Institute"
+- Link to authoritative sources: Wikipedia, official websites, .gov/.edu sites
+- Use consistent naming throughout content
+
+✅ **Build entity relationships:**
+```markdown
+Craig Fearn serves as an IoD Ambassador and works with C-suite executives
+including CFOs, CEOs, and board members. His clients include organizations
+like HSBC, Edrington UK (The Macallan, Highland Park), and Brown-Forman
+(Jack Daniels, Woodford Reserve).
+```
+
+This creates clear entity relationships that LLMs can understand.
+
+#### 3. **Topical Authority and Depth**
+
+**Cover related concepts, not just keywords:**
+
+Bad (keyword-focused):
+```
+Executive coaching helps executives. Executive coaching improves leadership.
+Executive coaching is valuable for business.
+```
+
+Good (semantically rich):
+```
+Executive coaching combines behavioral psychology, organizational development,
+and strategic advisory to help C-suite leaders navigate complex challenges.
+Unlike traditional management consulting, which focuses on processes and
+systems, executive coaching addresses the human dimension of leadership—
+decision-making under pressure, team dynamics, and personal effectiveness.
+```
+
+**Build topic clusters:**
+- Pillar page: "Executive Coaching: Complete Guide"
+- Cluster pages:
+  - "Executive Coaching vs. Mentoring"
+  - "How to Choose an Executive Coach"
+  - "ROI of Executive Coaching for C-Suite Leaders"
+  - "Executive Coaching Methodologies"
+
+Internal link all cluster pages to the pillar page.
+
+#### 4. **Natural Language and Conversational Queries**
+
+**Optimize for how people actually ask questions:**
+
+Traditional SEO: "executive coaching london"
+
+AI Search queries:
+- "What's the difference between executive coaching and mentoring?"
+- "How do I find an executive coach with board-level experience?"
+- "Is executive coaching worth it for CFOs?"
+- "What should I expect from my first executive coaching session?"
+
+**Write content that directly answers these questions.**
+
+### Authority and Trust Signals for AI
+
+#### 1. **Author Credibility**
+
+AI tools **strongly prefer** content written by industry experts.
+
+✅ **Always include:**
+- Author bio with credentials
+- Links to author's professional profiles (LinkedIn)
+- Credentials in byline: "By Craig Fearn, FRSPH, FCMI"
+
+#### 2. **Source Citation**
+
+Link to **trusted, authoritative sources**:
+
+✅ **High-authority TLDs:**
+- .gov (government websites)
+- .edu (educational institutions)
+- .org (established organizations)
+- Major publications (Harvard Business Review, McKinsey, etc.)
+
+#### 3. **E-E-A-T Signals**
+
+**E-E-A-T** = Experience, Expertise, Authoritativeness, Trustworthiness
 
 ---
 
-#### 1.2 Create Dedicated FAQ Page
-**Why**: Centralized FAQ resource increases chances of being cited as authoritative source.
+## Part 2: Technical SEO for AI Search
 
-**Content**:
-- 20-25 comprehensive FAQs covering all services
-- Organized by category (Board Advisory, Coaching, Wellbeing, General)
-- Natural language answers (150-300 words each)
-- Internal links to relevant service pages
+### 1. **Structured Data (Schema Markup)**
 
-**Technical**:
-- FAQPage schema markup
-- Semantic HTML5 (article, section tags)
-- Expandable accordion UI for UX
+**Critical for AI understanding**, though evidence is mixed on direct ranking impact.
 
-**Estimated Impact**: High - single source for multiple AI queries
+✅ **Required schema types for blog posts:**
 
----
-
-#### 1.3 Add "People Also Ask" Sections
-**Why**: Mirrors Google's PAA format, which AI models recognize and prioritize.
-
-**Implementation**:
-- Add 3-5 related questions at bottom of each page
-- Link to relevant pages or FAQ page
-- Use natural language phrasing
-
-**Example** (Executive Coaching page):
-- "How is coaching different from therapy?"
-- "Can executive coaching help with imposter syndrome?"
-- "What happens in a typical coaching session?"
-
----
-
-### **Phase 2: Content Expansion (2-4 weeks) - COMPARATIVE & THOUGHT LEADERSHIP**
-
-#### 2.1 Create Comparison Content (HIGH PRIORITY)
-**Why**: Comparative content accounts for 33% of all AI citations - massive opportunity!
-
-**Articles to Create**:
-
-1. **"Executive Coaching vs Executive Mentoring: Complete Guide"** (2,500 words)
-   - Side-by-side comparison table
-   - When to choose each
-   - Cost comparison
-   - Expected outcomes
-   - How to decide
-   - Schema: Article + ComparisonTable
-
-2. **"Board Advisor vs Non-Executive Director: Key Differences"** (2,000 words)
-   - Roles and responsibilities comparison
-   - Time commitment differences
-   - Governance vs advisory focus
-   - When you need each
-   - Can you have both?
-
-3. **"Internal vs External Wellbeing Audits: Which is Right?"** (1,800 words)
-   - Objectivity comparison
-   - Cost-benefit analysis
-   - Best use cases for each
-
-4. **"Executive Coaching Providers: How to Choose [Comparison Framework]"** (2,200 words)
-   - Qualifications to look for (EMCC, ICF, etc.)
-   - Experience levels
-   - Specializations
-   - Price ranges
-   - Red flags to avoid
-
-**Schema Addition**: Article schema with comparative tables
-
----
-
-#### 2.2 Create "How To" Guides (HowTo Schema)
-**Why**: AI search prioritizes instructional content with clear steps.
-
-**Articles**:
-
-1. **"How to Choose a Board Advisor: 7-Step Framework"** (1,500 words)
-   - Step-by-step process
-   - Checklist included
-   - HowTo schema markup
-
-2. **"How to Conduct a Workplace Wellbeing Audit"** (2,000 words)
-   - Preparation steps
-   - Execution process
-   - Analysis framework
-
-3. **"How to Get Maximum Value from Executive Coaching"** (1,200 words)
-   - Before coaching: preparation
-   - During coaching: engagement tips
-   - After coaching: implementation
-
-**Schema Addition**: HowTo schema with step-by-step instructions
-
----
-
-#### 2.3 Authority-Building Content
-**Why**: E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness) are critical for AI.
-
-**Content**:
-
-1. **"The Business Case for Workplace Wellbeing: ROI Analysis"** (3,000 words)
-   - Research citations
-   - Case study data
-   - ROI calculations
-   - Industry benchmarks
-
-2. **"Board Governance in 2025: Trends and Challenges"** (2,500 words)
-   - Current trends
-   - Craig's expert perspective
-   - Future predictions
-
-3. **"Leadership Development at C-Suite Level: What Works"** (2,000 words)
-   - Based on 17 years experience
-   - Real case examples
-   - Frameworks used
-
----
-
-### **Phase 3: Enhanced Schema & Technical (2-3 weeks) - ADVANCED OPTIMIZATION**
-
-#### 3.1 Enhanced Structured Data
-
-**Add Review/Rating Schema**:
 ```json
 {
-  "@type": "LocalBusiness",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "15"
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What's the Difference Between Executive Coaching and Mentoring?",
+  "author": {
+    "@type": "Person",
+    "name": "Craig Fearn",
+    "jobTitle": "Executive Coach and Board Advisor",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FRSPH Fellow"
+      }
+    ]
   }
 }
 ```
 
-**Add Individual Review Schema** (for testimonials):
-```json
-{
-  "@type": "Review",
-  "author": {
-    "@type": "Person",
-    "name": "Andrew Honey CDir FIoD"
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5"
-  },
-  "reviewBody": "Craig is an absolute workhorse..."
-}
+### 2. **Metadata Optimization**
+
+✅ **Title tags** (50-60 characters)
+✅ **Meta descriptions** (150-160 characters)
+✅ **Header hierarchy** (H1 → H2 → H3)
+
+### 3. **Crawlability for AI Bots**
+
+✅ **robots.txt** - Allow AI crawlers:
+```
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 ```
 
-**Expand Person Schema**:
-- Add "knowsLanguage"
-- Add "awards" (IoD Awards)
-- Add "memberOf" (professional bodies)
-- Add "seeks" (types of engagements)
+### 4. **Performance Optimization**
+
+AI bots **heavily penalize slow sites**.
+
+✅ **Performance targets:**
+- First Contentful Paint: < 1.5s
+- Largest Contentful Paint: < 2.5s
+- Cumulative Layout Shift: < 0.1
 
 ---
 
-#### 3.2 Create Pillar Content Structure
+## Part 3: Traditional SEO Best Practices
 
-**Pillar Pages** (comprehensive, 3,000-5,000 words):
-1. "Complete Guide to Board Advisory Services"
-2. "Executive Coaching: The Definitive Guide"
-3. "Organizational Wellbeing: Comprehensive Framework"
+### 1. **Keyword Research and Targeting**
 
-**Cluster Content** (supporting articles linking to pillar):
-- 5-7 related articles per pillar
-- Internal linking strategy
-- Topic cluster schema
+✅ **Primary keyword**: Include in:
+- H1 title
+- First paragraph (first 100 words)
+- At least one H2 heading
+- Meta title and description
+- Image alt text
+- URL slug
+
+✅ **Keyword density**: 1-2% (natural usage, not forced)
+
+### 2. **Content Length and Depth**
+
+✅ **Optimal length by content type:**
+- Pillar content: 2,500-4,000 words
+- Topic cluster posts: 1,500-2,500 words
+- How-to guides: 1,200-2,000 words
+
+### 3. **Internal Linking**
+
+✅ **Link structure:**
+- Every blog post should link to 3-5 other relevant posts
+- Use descriptive anchor text
+- Link to pillar pages from cluster content
+
+### 4. **User Experience Signals**
+
+✅ **Improve engagement:**
+- Strong, compelling introductions
+- Scannable formatting
+- Visual breaks (images, tables)
+- Clear CTAs
 
 ---
 
-#### 3.3 AI-Specific Technical Optimizations
+## Part 4: Content Writer Agent Implementation
 
-**Semantic HTML Enhancements**:
-```html
-<article itemscope itemtype="https://schema.org/Article">
-  <header>
-    <h1 itemprop="headline">Article Title</h1>
-    <meta itemprop="author" content="Craig Fearn">
-  </header>
-  <section itemprop="articleBody">
-    <!-- Content with clear semantic structure -->
-  </section>
-</article>
+### Required Frontmatter
+
+```yaml
+---
+title: "Executive Coaching vs Mentoring: Key Differences"
+description: "Clear explanation of executive coaching vs mentoring"
+publishDate: 2025-01-15
+author: "Craig Fearn"
+authorCredentials: "FRSPH, FCMI, IoD Ambassador"
+keywords: ["executive coaching", "mentoring", "leadership"]
+schema: "Article"
+draft: false
+---
 ```
 
-**Natural Language Processing Optimization**:
-- Add synonyms and related terms
-- Use conversational tone in headings
-- Include voice-search style questions
-- Short paragraphs (2-3 sentences max)
+### AI-Specific Content Additions
 
-**Content Structure**:
-- Use descriptive H2/H3 headings
-- Include summaries at top of articles
-- Add "Key Takeaways" boxes
-- Include downloadable checklists/frameworks
+✅ **Add these sections to every post:**
+
+**TL;DR Summary (at top)**
+**FAQ Section (at bottom)**
+**Key Takeaways Box**
+**Author Bio with Credentials**
 
 ---
 
-## Implementation Priority Matrix
+## Part 5: Quality Checklist
 
-### IMMEDIATE (Week 1-2):
-1. ✅ FAQ sections on all service pages + schema
-2. ✅ Dedicated FAQ page
-3. ✅ "People Also Ask" sections
+### AI Search Optimization ✅
+- [ ] Short paragraphs (2-4 sentences)
+- [ ] Clear H2/H3 hierarchy
+- [ ] Bullet points and lists
+- [ ] TL;DR summary included
+- [ ] FAQ section included
+- [ ] Entities clearly identified
+- [ ] Author bio with credentials
 
-### HIGH PRIORITY (Week 3-4):
-4. ✅ "Executive Coaching vs Mentoring" comparison
-5. ✅ "Board Advisor vs NED" comparison
-6. ✅ Review/Rating schema for testimonials
+### Traditional SEO ✅
+- [ ] Primary keyword in H1, first paragraph
+- [ ] Meta title optimized (50-60 characters)
+- [ ] Meta description optimized (150-160 characters)
+- [ ] 3-5 internal links
+- [ ] 2-5 external authoritative links
 
-### MEDIUM PRIORITY (Week 5-6):
-7. ✅ 3 "How To" guides with HowTo schema
-8. ✅ Wellbeing ROI article
-9. ✅ Enhanced Person schema
-
-### ONGOING (Month 2+):
-10. ✅ Pillar content development
-11. ✅ Topic cluster expansion
-12. ✅ Monthly thought leadership articles
+### Technical SEO ✅
+- [ ] Schema markup (Article, FAQPage, or HowTo)
+- [ ] Images optimized (WebP/AVIF)
+- [ ] Mobile-responsive
+- [ ] Fast load time (< 2.5s LCP)
 
 ---
 
 ## Success Metrics
 
-### AI Search KPIs:
-1. **AI Crawler Visits**: Track ChatGPT-User, PerplexityBot, GoogleOther
-2. **AI Referral Traffic**: Monitor referrals from ChatGPT, Perplexity
-3. **Citation Tracking**: Manual monitoring of brand mentions in AI responses
-4. **Position Zero Captures**: Google AI Overview appearances
+### Traditional SEO Metrics
+- Organic search traffic growth
+- Keyword rankings (top 10)
+- Time on page / engagement
 
-### Traditional SEO KPIs (Maintain):
-5. Organic traffic growth
-6. Keyword rankings (top 30 target keywords)
-7. Conversion rate from organic
-8. Backlink profile growth
+### AI Search Metrics
+- ChatGPT referral traffic
+- Perplexity citations
+- AI Overview appearances
+- Conversion rate from AI traffic
 
-### Business KPIs:
-9. Inquiry form submissions
-10. Discovery call bookings
-11. LinkedIn profile views
-12. Email newsletter signups
+**Note**: Perplexity has proven to deliver the highest conversion rates among AI search platforms.
 
 ---
 
-## Technical Requirements
-
-### New Components Needed:
-1. **FAQAccordion.astro** - Expandable FAQ component with schema
-2. **ComparisonTable.astro** - Visual comparison component
-3. **HowToSteps.astro** - Step-by-step guide component
-4. **ReviewCard.astro** - Individual review display with schema
-5. **PeopleAlsoAsk.astro** - Related questions component
-
-### New Pages Needed:
-1. `/faq` - Comprehensive FAQ page
-2. `/insights` - Blog/article listing page
-3. `/insights/coaching-vs-mentoring` - Comparison article
-4. `/insights/board-advisor-vs-ned` - Comparison article
-5. `/insights/choosing-board-advisor` - How-to guide
-6. `/insights/wellbeing-roi` - Authority article
-
-### Schema Enhancements:
-1. FAQPage schema component
-2. HowTo schema component
-3. Article schema component
-4. Review schema component
-5. AggregateRating schema addition
-
----
-
-## Content Creation Guidelines for AI Optimization
-
-### Writing Style:
-- **Conversational**: Write as if answering a question directly
-- **Clear**: Short sentences, simple language (avoid jargon)
-- **Structured**: Use headers, bullets, tables liberally
-- **Comprehensive**: Answer the question thoroughly (300-500 words per FAQ)
-- **Natural**: Include variations of keywords naturally
-
-### Question Format Optimization:
-- Use actual questions people ask: "What is...", "How do I...", "When should..."
-- Include long-tail variations: "What should I look for when hiring an executive coach?"
-- Add location where relevant: "Best board advisor in Cornwall"
-- Include problem-focused queries: "How to improve board performance"
-
-### Answer Format:
-1. **Direct answer first** (2-3 sentences)
-2. **Detailed explanation** (2-3 paragraphs)
-3. **Examples or use cases** (when relevant)
-4. **Related considerations** (1-2 paragraphs)
-5. **Call to action** (subtle)
-
-### Schema Integration:
-- Every FAQ gets FAQ schema
-- Every how-to gets HowTo schema
-- Every article gets Article schema
-- Testimonials get Review schema
-
----
-
-## Competitive Advantage: Craig's Unique Positioning
-
-### Key Differentiators to Emphasize:
-1. **Dual Fellowship** (FCMI + FRSPH) - rare combination
-2. **17 years board experience** - extensive track record
-3. **IoD Ambassador** - industry recognition
-4. **Wellbeing + Governance integration** - unique expertise
-5. **Global brand clients** - proven at scale
-
-### AI Citation Strategy:
-- Consistently mention credentials in answers
-- Reference real client outcomes (anonymized where needed)
-- Cite industry research and frameworks
-- Position as thought leader, not just service provider
-
----
-
-## Resource Requirements
-
-### Time Investment:
-- **Phase 1**: 15-20 hours (FAQ content creation + schema)
-- **Phase 2**: 30-40 hours (comparison articles + how-tos)
-- **Phase 3**: 20-25 hours (enhanced schema + pillar content)
-
-**Total**: 65-85 hours over 6-8 weeks
-
-### Skills Needed:
-- Content writing (FAQ, articles)
-- Schema markup (JSON-LD)
-- Astro component development
-- SEO copywriting
-- Basic prompt engineering (to test AI responses)
-
----
-
-## Testing & Validation
-
-### Before Launch:
-1. Validate all schema with Google Rich Results Test
-2. Test FAQ rendering in search results
-3. Verify structured data in search console
-4. Mobile responsiveness check
-
-### After Launch:
-1. **Week 1**: Query AI platforms manually with target questions
-2. **Week 2**: Check for citations and references
-3. **Week 4**: Analyze referral traffic from AI sources
-4. **Month 2**: Full analytics review and optimization
-
-### Manual Testing Prompts:
-- "Who are the best board advisors in the UK?"
-- "What should I look for in an executive coach with board experience?"
-- "How do I choose between coaching and mentoring?"
-- "What is the ROI of workplace wellbeing programs?"
-- "Board advisor vs non-executive director difference"
-
----
-
-## Expected Outcomes
-
-### 3 Months:
-- 50-70% increase in AI search citations
-- 30-40% increase in organic discovery traffic
-- Ranking for 15+ comparison/FAQ queries
-- Appearance in Google AI Overviews for 5-8 queries
-
-### 6 Months:
-- Established as authoritative source for board advisory + wellbeing
-- 100-150% increase in AI-referred traffic
-- Top 3 ranking for primary comparison keywords
-- 25-30% increase in qualified leads
-
-### 12 Months:
-- Dominant position in AI search for "board advisor + wellbeing" niche
-- 200%+ increase in total organic visibility
-- Recognized authority cited by AI platforms
-- Sustainable content engine producing monthly thought leadership
-
----
-
-## Risk Mitigation
-
-### Potential Risks:
-1. **AI platform changes**: Algorithms and preferences may shift
-2. **Over-optimization**: Too much schema can trigger spam filters
-3. **Time investment**: Content creation requires significant effort
-4. **ROI uncertainty**: AI search metrics still evolving
-
-### Mitigation Strategies:
-1. Maintain balance between traditional SEO and AI optimization
-2. Focus on genuinely helpful content (not just optimization)
-3. Use phased approach to spread effort
-4. Track both AI and traditional metrics
-5. Start with high-impact, low-effort items (FAQ)
-
----
-
-## Next Steps
-
-### This Week:
-1. Review and approve this plan
-2. Prioritize Phase 1 items
-3. Begin FAQ content outline for all service pages
-4. Set up analytics tracking for AI referrals
-
-### Week 2:
-1. Complete FAQ content writing
-2. Develop FAQ schema component
-3. Create FAQ page structure
-4. Begin "People Also Ask" research
-
-### Week 3-4:
-1. Launch Phase 1 updates
-2. Begin Phase 2 comparison article research
-3. Outline pillar content structure
-4. Start manual AI query testing
-
----
-
-## Conclusion
-
-AI search optimization is not a replacement for traditional SEO—it's a complementary strategy that requires a different content approach. By focusing on:
-
-1. **FAQ content** (highest ROI)
-2. **Comparison articles** (33% of AI citations)
-3. **Structured data** (helps AI understand context)
-4. **Authority signals** (E-E-A-T crucial for professional services)
-5. **Natural language** (conversational, question-based content)
-
-We can significantly increase Lighthouse Mentoring's visibility in the rapidly growing AI search landscape while maintaining strong traditional SEO performance.
-
-**The opportunity is NOW** - with 800M weekly ChatGPT users and Google's declining search share, early movers in AI search optimization will capture disproportionate visibility in this new channel.
-
----
-
-**Prepared by**: Claude AI Strategic Analysis
-**Date**: October 2, 2025
-**Status**: DRAFT - Pending Review & Approval
+*This document should be used by the Content Writer Agent to ensure all content is optimized for both traditional and AI-based search engines.*

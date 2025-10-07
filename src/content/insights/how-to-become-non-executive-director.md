@@ -15,7 +15,7 @@ His problem? He'd been "ready" for three years. Sent applications. Got nowhere. 
 
 We talked it through. Turns out he was missing quite a lot—not about capability, but about how NED appointments actually work. How to position yourself. How to build visibility. What boards actually look for. The pathway from "I'd like to be a NED" to actually sitting in that chair.
 
-After seventeen years working at board level and through my role as an [IoD Ambassador](https://www.iod.com/), I've seen both sides. Aspiring NEDs who struggle to break through. Boards trying to find the right non-executives. The gap between them is often about knowledge, not capability.
+After extensive cross-sector board experience and through my role as an [IoD Ambassador](https://www.iod.com/), I've seen both sides. Aspiring NEDs who struggle to break through. Boards trying to find the right non-executives. The gap between them is often about knowledge, not capability.
 
 So let's talk about how you actually become a Non-Executive Director in the UK. Not the aspirational version. The practical reality.
 

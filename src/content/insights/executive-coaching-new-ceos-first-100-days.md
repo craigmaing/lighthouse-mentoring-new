@@ -1,12 +1,13 @@
 ---
 title: "Executive Coaching for New CEOs: Navigating Your First 100 Days"
 description: "The transition to CEO is fundamentally different from any other leadership step you've taken. Here's why the first 100 days matter—and how executive coaching helps new CEOs navigate this critical period without the costly mistakes most make."
-pubDate: 2025-10-02
+pubDate: 2025-09-22
 author: "Craig Fearn"
 category: "executive-coaching"
 tags: ["CEO coaching", "executive coaching", "CEO transition", "first 100 days", "leadership transition", "new CEO"]
 featured: true
 image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The newly appointed CEO who called me was three weeks into the role. Highly capable. Stellar track record as COO. Board's unanimous choice.
@@ -19,7 +20,7 @@ Everyone wanted pieces of his time. Strategic decisions that couldn't wait. Cult
 
 He's not alone. The transition to CEO represents a fundamental shift that catches even the most capable executives off guard. And those first 100 days? They set the trajectory for your entire tenure.
 
-After seventeen years working at board level and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've supported numerous executives through CEO transitions. What I've learned is this: the new CEOs who get coaching support for this transition perform significantly better than those who try to figure it out alone. Not because they're less capable. Because the transition has unique challenges that benefit from structured support.
+After extensive cross-sector board experience and through my work as an [EMCC Professional Coach](https://www.emccglobal.org/), I've supported numerous executives through CEO transitions. What I've learned is this: the new CEOs who get coaching support for this transition perform significantly better than those who try to figure it out alone. Not because they're less capable. Because the transition has unique challenges that benefit from structured support.
 
 ## Why the CEO Transition is Different
 
@@ -47,7 +48,7 @@ Yes, the first 100 days matter enormously. But not because you need to transform
 
 [Harvard Business Review research](https://hbr.org/2025/08/what-new-ceos-should-ask-themselves-in-their-first-100-days) shows that the most effective new CEOs use early days for learning and relationship-building, not just action. They ask questions. They listen deeply. They resist pressure to make premature decisions just to appear decisive.
 
-[BCG's research](https://www.bcg.com/publications/2023/impact-of-ceo-first-100-days) on CEO transitions found that while first 100 days are important, what really determines success is whether you build the right foundation—relationships, understanding, strategic clarity—that enables sustained performance over the first 1,000 days and beyond.
+Research from [Spencer Stuart](https://www.spencerstuart.com/-/media/pdf%20files/research%20and%20insight%20pdfs/now-youre-in-charge-the-first-100-days_01apr2004.pdf) on CEO transitions found that while first 100 days are important, what really determines success is whether you build the right foundation—relationships, understanding, strategic clarity—that enables sustained performance beyond.
 
 So if you're a new CEO feeling pressure to deliver quick wins and major changes immediately, take a breath. That pressure is real but it's often internally generated or based on outdated thinking about leadership transitions. What you do in early weeks matters. But thoughtful foundation-building beats hasty action every time.
 
@@ -107,7 +108,7 @@ So what does effective coaching for new CEOs actually look like?
 
 **Providing confidential sounding board**. There are thoughts and concerns you can't always share with board or team. Coaching provides confidential space to think through sensitive issues, test ideas, process difficulties without risk of undermining your position.
 
-**Accelerating learning**. My seventeen years of [board-level experience](/about) means I understand the contexts, pressures, and dynamics new CEOs face. This enables more informed coaching—I can help you see patterns you might miss, spot potential issues early, draw on relevant experience without prescribing solutions.
+**Accelerating learning**. Extensive [board-level experience](/about) means I understand the contexts, pressures, and dynamics new CEOs face. This enables more informed coaching—I can help you see patterns you might miss, spot potential issues early, draw on relevant experience without prescribing solutions.
 
 **Maintaining accountability**. It's easy for good intentions about leadership approach or priorities to slip under operational pressure. Coaching creates accountability—did you actually do what you said mattered? If not, what got in the way? This gentle accountability helps new CEOs maintain focus on what genuinely matters.
 
@@ -194,3 +195,17 @@ This isn't remedial intervention. It's high-performance support for leaders taki
 If you're preparing for or navigating CEO transition, a [conversation](/contact) about how coaching might support your specific situation can help clarify whether this makes sense for you. This transition shapes your trajectory as a CEO. Worth thinking through properly and getting the support that maximizes your effectiveness.
 
 The step to CEO is significant. You don't have to navigate it alone.
+
+## References
+
+- CIPD (2024). *Coaching and Mentoring Factsheet*. Chartered Institute of Personnel and Development. Available at: https://www.cipd.org/uk/knowledge/factsheets/coaching-mentoring-factsheet/
+
+- EMCC Global (2024). *Coaching Standards and Guidelines*. European Mentoring and Coaching Council. Available at: https://www.emccglobal.org/
+
+- Harvard Business Review (2024). *What New CEOs Should Ask Themselves in Their First 100 Days*. HBR. Available at: https://hbr.org/2025/08/what-new-ceos-should-ask-themselves-in-their-first-100-days
+
+- Harvard Business Review (2020). *Executive Coaches, Your Job Is to Deliver Business Results*. HBR. Available at: https://hbr.org/2020/08/executive-coaches-your-job-is-to-deliver-business-results
+
+- International Coaching Federation (2024). *ICF Global Coaching Study*. ICF. Available at: https://coachingfederation.org/research
+
+- McKinsey & Company (2024). *Leadership Development Research*. McKinsey Quarterly. Available at: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2025-10-06T08:07:25.012Z",
+    "generatedAt": "2025-10-06T09:49:10.551Z",
     "services": [
       "board advisory",
       "non-executive director",
@@ -18,7 +18,7 @@
   "summary": {
     "servicesAnalyzed": 1,
     "keywordsAnalyzed": 10,
-    "competitorsAnalyzed": 10,
+    "competitorsAnalyzed": 9,
     "totalOpportunities": 1
   },
   "results": [
@@ -1398,11 +1398,20 @@
           "backlinks": 0
         },
         {
+          "domain": "en.wikipedia.org",
+          "title": "Advisory board",
+          "description": "An advisory board is a body that provides non-binding strategic advice to the management of a corporation, organization, or foundation.",
+          "url": "https://en.wikipedia.org/wiki/Advisory_board",
+          "rank": 5,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
           "domain": "boardadvisorypartners.com",
           "title": "Board Advisory Partners |",
           "description": "A deep and growing eco-system of new and experienced Chairs, all united in the desire to work with others to promote the vital contribution that Chairs and ...",
           "url": "https://boardadvisorypartners.com/",
-          "rank": 5,
+          "rank": 6,
           "domainRank": 0,
           "backlinks": 0
         },
@@ -1411,15 +1420,6 @@
           "title": "Advisory boards",
           "description": "6 Jul 2023 — Formerly known as headteacher boards, they are responsible for advising and challenging regional directors on academy-related decisions.",
           "url": "https://www.gov.uk/government/collections/advisory-boards",
-          "rank": 6,
-          "domainRank": 0,
-          "backlinks": 0
-        },
-        {
-          "domain": "en.wikipedia.org",
-          "title": "Advisory board",
-          "description": "An advisory board is a body that provides non-binding strategic advice to the management of a corporation, organization, or foundation.",
-          "url": "https://en.wikipedia.org/wiki/Advisory_board",
           "rank": 7,
           "domainRank": 0,
           "backlinks": 0
@@ -1439,15 +1439,6 @@
           "description": "25 Mar 2025 — An advisory board is a group of individuals who are appointed by an organisation to provide specialist or strategic advice to help solve a range of difficult ...",
           "url": "https://www.advisoryboardcentre.com/insight/difference-between-advisory-board-and-a-board-of-directors/",
           "rank": 9,
-          "domainRank": 0,
-          "backlinks": 0
-        },
-        {
-          "domain": "www.boardintelligence.com",
-          "title": "Advisory services",
-          "description": "We'll assess your board's processes, performance, and impact to provide actionable, data-driven insights that help you improve its effectiveness.",
-          "url": "https://www.boardintelligence.com/board-advisory-services",
-          "rank": 10,
           "domainRank": 0,
           "backlinks": 0
         }

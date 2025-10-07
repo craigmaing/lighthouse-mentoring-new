@@ -1,0 +1,2839 @@
+{
+  "metadata": {
+    "generatedAt": "2025-10-06T09:57:35.405Z",
+    "services": [
+      "board advisory",
+      "non-executive director",
+      "executive coaching",
+      "organizational wellbeing",
+      "wellbeing audit",
+      "wellbeing governance",
+      "leadership coaching",
+      "business mentoring",
+      "strategic consulting"
+    ],
+    "location": "United Kingdom",
+    "languageCode": "en"
+  },
+  "summary": {
+    "servicesAnalyzed": 1,
+    "keywordsAnalyzed": 10,
+    "competitorsAnalyzed": 8,
+    "totalOpportunities": 4
+  },
+  "results": [
+    {
+      "primaryKeyword": "strategic consulting",
+      "relatedKeywords": [
+        {
+          "keyword": "strategic consulting",
+          "searchVolume": 2900,
+          "cpc": 7.14,
+          "competition": 0.33,
+          "competitionLevel": "LOW",
+          "intent": "navigational",
+          "difficulty": 14,
+          "trends": [
+            {
+              "month": "0",
+              "searchVolume": {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "1",
+              "searchVolume": {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "2",
+              "searchVolume": {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "3",
+              "searchVolume": {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "4",
+              "searchVolume": {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "5",
+              "searchVolume": {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 4400
+              }
+            },
+            {
+              "month": "6",
+              "searchVolume": {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "7",
+              "searchVolume": {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "8",
+              "searchVolume": {
+                "year": 2024,
+                "month": 12,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "9",
+              "searchVolume": {
+                "year": 2024,
+                "month": 11,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "10",
+              "searchVolume": {
+                "year": 2024,
+                "month": 10,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "11",
+              "searchVolume": {
+                "year": 2024,
+                "month": 9,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "12",
+              "searchVolume": {
+                "year": 2024,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "13",
+              "searchVolume": {
+                "year": 2024,
+                "month": 7,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "14",
+              "searchVolume": {
+                "year": 2024,
+                "month": 6,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "15",
+              "searchVolume": {
+                "year": 2024,
+                "month": 5,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "16",
+              "searchVolume": {
+                "year": 2024,
+                "month": 4,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "17",
+              "searchVolume": {
+                "year": 2024,
+                "month": 3,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "18",
+              "searchVolume": {
+                "year": 2024,
+                "month": 2,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "19",
+              "searchVolume": {
+                "year": 2024,
+                "month": 1,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "20",
+              "searchVolume": {
+                "year": 2023,
+                "month": 12,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "21",
+              "searchVolume": {
+                "year": 2023,
+                "month": 11,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "22",
+              "searchVolume": {
+                "year": 2023,
+                "month": 10,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "23",
+              "searchVolume": {
+                "year": 2023,
+                "month": 9,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "24",
+              "searchVolume": {
+                "year": 2023,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "25",
+              "searchVolume": {
+                "year": 2023,
+                "month": 7,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "26",
+              "searchVolume": {
+                "year": 2023,
+                "month": 6,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "27",
+              "searchVolume": {
+                "year": 2023,
+                "month": 5,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "28",
+              "searchVolume": {
+                "year": 2023,
+                "month": 4,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "29",
+              "searchVolume": {
+                "year": 2023,
+                "month": 3,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "30",
+              "searchVolume": {
+                "year": 2023,
+                "month": 2,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "31",
+              "searchVolume": {
+                "year": 2023,
+                "month": 1,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "32",
+              "searchVolume": {
+                "year": 2022,
+                "month": 12,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "33",
+              "searchVolume": {
+                "year": 2022,
+                "month": 11,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "34",
+              "searchVolume": {
+                "year": 2022,
+                "month": 10,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "35",
+              "searchVolume": {
+                "year": 2022,
+                "month": 9,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "36",
+              "searchVolume": {
+                "year": 2022,
+                "month": 8,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "37",
+              "searchVolume": {
+                "year": 2022,
+                "month": 7,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "38",
+              "searchVolume": {
+                "year": 2022,
+                "month": 6,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "39",
+              "searchVolume": {
+                "year": 2022,
+                "month": 5,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "40",
+              "searchVolume": {
+                "year": 2022,
+                "month": 4,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "41",
+              "searchVolume": {
+                "year": 2022,
+                "month": 3,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "42",
+              "searchVolume": {
+                "year": 2022,
+                "month": 2,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "43",
+              "searchVolume": {
+                "year": 2022,
+                "month": 1,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "44",
+              "searchVolume": {
+                "year": 2021,
+                "month": 12,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "45",
+              "searchVolume": {
+                "year": 2021,
+                "month": 11,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "46",
+              "searchVolume": {
+                "year": 2021,
+                "month": 10,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "47",
+              "searchVolume": {
+                "year": 2021,
+                "month": 9,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "48",
+              "searchVolume": {
+                "year": 2021,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "49",
+              "searchVolume": {
+                "year": 2021,
+                "month": 7,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "50",
+              "searchVolume": {
+                "year": 2021,
+                "month": 6,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "51",
+              "searchVolume": {
+                "year": 2021,
+                "month": 5,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "52",
+              "searchVolume": {
+                "year": 2021,
+                "month": 4,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "53",
+              "searchVolume": {
+                "year": 2021,
+                "month": 3,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "54",
+              "searchVolume": {
+                "year": 2021,
+                "month": 2,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "55",
+              "searchVolume": {
+                "year": 2021,
+                "month": 1,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "56",
+              "searchVolume": {
+                "year": 2020,
+                "month": 12,
+                "search_volume": 3600
+              }
+            },
+            {
+              "month": "57",
+              "searchVolume": {
+                "year": 2020,
+                "month": 11,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "58",
+              "searchVolume": {
+                "year": 2020,
+                "month": 10,
+                "search_volume": 2900
+              }
+            },
+            {
+              "month": "59",
+              "searchVolume": {
+                "year": 2020,
+                "month": 9,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "60",
+              "searchVolume": {
+                "year": 2020,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "61",
+              "searchVolume": {
+                "year": 2020,
+                "month": 7,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "62",
+              "searchVolume": {
+                "year": 2020,
+                "month": 6,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "63",
+              "searchVolume": {
+                "year": 2020,
+                "month": 5,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "64",
+              "searchVolume": {
+                "year": 2020,
+                "month": 4,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "65",
+              "searchVolume": {
+                "year": 2020,
+                "month": 3,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "66",
+              "searchVolume": {
+                "year": 2020,
+                "month": 2,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "67",
+              "searchVolume": {
+                "year": 2020,
+                "month": 1,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "68",
+              "searchVolume": {
+                "year": 2019,
+                "month": 12,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "69",
+              "searchVolume": {
+                "year": 2019,
+                "month": 11,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "70",
+              "searchVolume": {
+                "year": 2019,
+                "month": 10,
+                "search_volume": 390
+              }
+            },
+            {
+              "month": "71",
+              "searchVolume": {
+                "year": 2019,
+                "month": 9,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "72",
+              "searchVolume": {
+                "year": 2019,
+                "month": 8,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "73",
+              "searchVolume": {
+                "year": 2019,
+                "month": 7,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "74",
+              "searchVolume": {
+                "year": 2019,
+                "month": 6,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "75",
+              "searchVolume": {
+                "year": 2019,
+                "month": 5,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "76",
+              "searchVolume": {
+                "year": 2019,
+                "month": 4,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "77",
+              "searchVolume": {
+                "year": 2019,
+                "month": 3,
+                "search_volume": 1600
+              }
+            },
+            {
+              "month": "78",
+              "searchVolume": {
+                "year": 2019,
+                "month": 2,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "79",
+              "searchVolume": {
+                "year": 2019,
+                "month": 1,
+                "search_volume": 2400
+              }
+            },
+            {
+              "month": "80",
+              "searchVolume": {
+                "year": 2018,
+                "month": 12,
+                "search_volume": 1300
+              }
+            },
+            {
+              "month": "81",
+              "searchVolume": {
+                "year": 2018,
+                "month": 11,
+                "search_volume": 1900
+              }
+            },
+            {
+              "month": "82",
+              "searchVolume": {
+                "year": 2018,
+                "month": 10,
+                "search_volume": 2400
+              }
+            }
+          ]
+        },
+        {
+          "keyword": "strategic consulting london",
+          "searchVolume": 140,
+          "cpc": 6.49,
+          "competition": 0.46,
+          "competitionLevel": "MEDIUM",
+          "intent": "navigational",
+          "difficulty": 11,
+          "trends": [
+            {
+              "month": "0",
+              "searchVolume": {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "1",
+              "searchVolume": {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "2",
+              "searchVolume": {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "3",
+              "searchVolume": {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "4",
+              "searchVolume": {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "5",
+              "searchVolume": {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "6",
+              "searchVolume": {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "7",
+              "searchVolume": {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "8",
+              "searchVolume": {
+                "year": 2024,
+                "month": 12,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "9",
+              "searchVolume": {
+                "year": 2024,
+                "month": 11,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "10",
+              "searchVolume": {
+                "year": 2024,
+                "month": 10,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "11",
+              "searchVolume": {
+                "year": 2024,
+                "month": 9,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "12",
+              "searchVolume": {
+                "year": 2024,
+                "month": 8,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "13",
+              "searchVolume": {
+                "year": 2024,
+                "month": 7,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "14",
+              "searchVolume": {
+                "year": 2024,
+                "month": 6,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "15",
+              "searchVolume": {
+                "year": 2024,
+                "month": 5,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "16",
+              "searchVolume": {
+                "year": 2024,
+                "month": 4,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "17",
+              "searchVolume": {
+                "year": 2024,
+                "month": 3,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "18",
+              "searchVolume": {
+                "year": 2024,
+                "month": 2,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "19",
+              "searchVolume": {
+                "year": 2024,
+                "month": 1,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "20",
+              "searchVolume": {
+                "year": 2023,
+                "month": 12,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "21",
+              "searchVolume": {
+                "year": 2023,
+                "month": 11,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "22",
+              "searchVolume": {
+                "year": 2023,
+                "month": 10,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "23",
+              "searchVolume": {
+                "year": 2023,
+                "month": 9,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "24",
+              "searchVolume": {
+                "year": 2023,
+                "month": 8,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "25",
+              "searchVolume": {
+                "year": 2023,
+                "month": 7,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "26",
+              "searchVolume": {
+                "year": 2023,
+                "month": 6,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "27",
+              "searchVolume": {
+                "year": 2023,
+                "month": 5,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "28",
+              "searchVolume": {
+                "year": 2023,
+                "month": 4,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "29",
+              "searchVolume": {
+                "year": 2023,
+                "month": 3,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "30",
+              "searchVolume": {
+                "year": 2023,
+                "month": 2,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "31",
+              "searchVolume": {
+                "year": 2023,
+                "month": 1,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "32",
+              "searchVolume": {
+                "year": 2022,
+                "month": 12,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "33",
+              "searchVolume": {
+                "year": 2022,
+                "month": 11,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "34",
+              "searchVolume": {
+                "year": 2022,
+                "month": 10,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "35",
+              "searchVolume": {
+                "year": 2022,
+                "month": 9,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "36",
+              "searchVolume": {
+                "year": 2022,
+                "month": 8,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "37",
+              "searchVolume": {
+                "year": 2022,
+                "month": 7,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "38",
+              "searchVolume": {
+                "year": 2022,
+                "month": 6,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "39",
+              "searchVolume": {
+                "year": 2022,
+                "month": 5,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "40",
+              "searchVolume": {
+                "year": 2022,
+                "month": 4,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "41",
+              "searchVolume": {
+                "year": 2022,
+                "month": 3,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "42",
+              "searchVolume": {
+                "year": 2022,
+                "month": 2,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "43",
+              "searchVolume": {
+                "year": 2022,
+                "month": 1,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "44",
+              "searchVolume": {
+                "year": 2021,
+                "month": 12,
+                "search_volume": 50
+              }
+            },
+            {
+              "month": "45",
+              "searchVolume": {
+                "year": 2021,
+                "month": 11,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "46",
+              "searchVolume": {
+                "year": 2021,
+                "month": 10,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "47",
+              "searchVolume": {
+                "year": 2021,
+                "month": 9,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "48",
+              "searchVolume": {
+                "year": 2021,
+                "month": 8,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "49",
+              "searchVolume": {
+                "year": 2021,
+                "month": 7,
+                "search_volume": 50
+              }
+            },
+            {
+              "month": "50",
+              "searchVolume": {
+                "year": 2021,
+                "month": 6,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "51",
+              "searchVolume": {
+                "year": 2021,
+                "month": 5,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "52",
+              "searchVolume": {
+                "year": 2021,
+                "month": 4,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "53",
+              "searchVolume": {
+                "year": 2021,
+                "month": 3,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "54",
+              "searchVolume": {
+                "year": 2021,
+                "month": 2,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "55",
+              "searchVolume": {
+                "year": 2021,
+                "month": 1,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "56",
+              "searchVolume": {
+                "year": 2020,
+                "month": 12,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "57",
+              "searchVolume": {
+                "year": 2020,
+                "month": 11,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "58",
+              "searchVolume": {
+                "year": 2020,
+                "month": 10,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "59",
+              "searchVolume": {
+                "year": 2020,
+                "month": 9,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "60",
+              "searchVolume": {
+                "year": 2020,
+                "month": 8,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "61",
+              "searchVolume": {
+                "year": 2020,
+                "month": 7,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "62",
+              "searchVolume": {
+                "year": 2020,
+                "month": 6,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "63",
+              "searchVolume": {
+                "year": 2020,
+                "month": 5,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "64",
+              "searchVolume": {
+                "year": 2020,
+                "month": 4,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "65",
+              "searchVolume": {
+                "year": 2020,
+                "month": 3,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "66",
+              "searchVolume": {
+                "year": 2020,
+                "month": 2,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "67",
+              "searchVolume": {
+                "year": 2020,
+                "month": 1,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "68",
+              "searchVolume": {
+                "year": 2019,
+                "month": 12,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "69",
+              "searchVolume": {
+                "year": 2019,
+                "month": 11,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "70",
+              "searchVolume": {
+                "year": 2019,
+                "month": 10,
+                "search_volume": 390
+              }
+            },
+            {
+              "month": "71",
+              "searchVolume": {
+                "year": 2019,
+                "month": 9,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "72",
+              "searchVolume": {
+                "year": 2019,
+                "month": 8,
+                "search_volume": 50
+              }
+            },
+            {
+              "month": "73",
+              "searchVolume": {
+                "year": 2019,
+                "month": 7,
+                "search_volume": 40
+              }
+            },
+            {
+              "month": "74",
+              "searchVolume": {
+                "year": 2019,
+                "month": 6,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "75",
+              "searchVolume": {
+                "year": 2019,
+                "month": 5,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "76",
+              "searchVolume": {
+                "year": 2019,
+                "month": 4,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "77",
+              "searchVolume": {
+                "year": 2019,
+                "month": 3,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "78",
+              "searchVolume": {
+                "year": 2019,
+                "month": 2,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "79",
+              "searchVolume": {
+                "year": 2019,
+                "month": 1,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "80",
+              "searchVolume": {
+                "year": 2018,
+                "month": 12,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "81",
+              "searchVolume": {
+                "year": 2018,
+                "month": 11,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "82",
+              "searchVolume": {
+                "year": 2018,
+                "month": 10,
+                "search_volume": 170
+              }
+            }
+          ]
+        },
+        {
+          "keyword": "strategic consulting services",
+          "searchVolume": 20,
+          "cpc": 0,
+          "competition": "UNKNOWN",
+          "competitionLevel": "LOW",
+          "intent": "navigational",
+          "difficulty": 48,
+          "trends": [
+            {
+              "month": "0",
+              "searchVolume": {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "1",
+              "searchVolume": {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "2",
+              "searchVolume": {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "3",
+              "searchVolume": {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "4",
+              "searchVolume": {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "5",
+              "searchVolume": {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 40
+              }
+            },
+            {
+              "month": "6",
+              "searchVolume": {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 30
+              }
+            },
+            {
+              "month": "7",
+              "searchVolume": {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "8",
+              "searchVolume": {
+                "year": 2024,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "9",
+              "searchVolume": {
+                "year": 2024,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "10",
+              "searchVolume": {
+                "year": 2024,
+                "month": 10,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "11",
+              "searchVolume": {
+                "year": 2024,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "12",
+              "searchVolume": {
+                "year": 2024,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "13",
+              "searchVolume": {
+                "year": 2024,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "14",
+              "searchVolume": {
+                "year": 2024,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "15",
+              "searchVolume": {
+                "year": 2024,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "16",
+              "searchVolume": {
+                "year": 2024,
+                "month": 4,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "17",
+              "searchVolume": {
+                "year": 2024,
+                "month": 3,
+                "search_volume": 30
+              }
+            },
+            {
+              "month": "18",
+              "searchVolume": {
+                "year": 2024,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "19",
+              "searchVolume": {
+                "year": 2024,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "20",
+              "searchVolume": {
+                "year": 2023,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "21",
+              "searchVolume": {
+                "year": 2023,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "22",
+              "searchVolume": {
+                "year": 2023,
+                "month": 10,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "23",
+              "searchVolume": {
+                "year": 2023,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "24",
+              "searchVolume": {
+                "year": 2023,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "25",
+              "searchVolume": {
+                "year": 2023,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "26",
+              "searchVolume": {
+                "year": 2023,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "27",
+              "searchVolume": {
+                "year": 2023,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "28",
+              "searchVolume": {
+                "year": 2023,
+                "month": 4,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "29",
+              "searchVolume": {
+                "year": 2023,
+                "month": 3,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "30",
+              "searchVolume": {
+                "year": 2023,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "31",
+              "searchVolume": {
+                "year": 2023,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "32",
+              "searchVolume": {
+                "year": 2022,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "33",
+              "searchVolume": {
+                "year": 2022,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "34",
+              "searchVolume": {
+                "year": 2022,
+                "month": 10,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "35",
+              "searchVolume": {
+                "year": 2022,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "36",
+              "searchVolume": {
+                "year": 2022,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "37",
+              "searchVolume": {
+                "year": 2022,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "38",
+              "searchVolume": {
+                "year": 2022,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "39",
+              "searchVolume": {
+                "year": 2022,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "40",
+              "searchVolume": {
+                "year": 2022,
+                "month": 4,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "41",
+              "searchVolume": {
+                "year": 2022,
+                "month": 3,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "42",
+              "searchVolume": {
+                "year": 2022,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "43",
+              "searchVolume": {
+                "year": 2022,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "44",
+              "searchVolume": {
+                "year": 2021,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "45",
+              "searchVolume": {
+                "year": 2021,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "46",
+              "searchVolume": {
+                "year": 2021,
+                "month": 10,
+                "search_volume": 0
+              }
+            },
+            {
+              "month": "47",
+              "searchVolume": {
+                "year": 2021,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "48",
+              "searchVolume": {
+                "year": 2021,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "49",
+              "searchVolume": {
+                "year": 2021,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "50",
+              "searchVolume": {
+                "year": 2021,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "51",
+              "searchVolume": {
+                "year": 2021,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "52",
+              "searchVolume": {
+                "year": 2021,
+                "month": 4,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "53",
+              "searchVolume": {
+                "year": 2021,
+                "month": 3,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "54",
+              "searchVolume": {
+                "year": 2021,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "55",
+              "searchVolume": {
+                "year": 2021,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "56",
+              "searchVolume": {
+                "year": 2020,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "57",
+              "searchVolume": {
+                "year": 2020,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "58",
+              "searchVolume": {
+                "year": 2020,
+                "month": 10,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "59",
+              "searchVolume": {
+                "year": 2020,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "60",
+              "searchVolume": {
+                "year": 2020,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "61",
+              "searchVolume": {
+                "year": 2020,
+                "month": 7,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "62",
+              "searchVolume": {
+                "year": 2020,
+                "month": 6,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "63",
+              "searchVolume": {
+                "year": 2020,
+                "month": 5,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "64",
+              "searchVolume": {
+                "year": 2020,
+                "month": 4,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "65",
+              "searchVolume": {
+                "year": 2020,
+                "month": 3,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "66",
+              "searchVolume": {
+                "year": 2020,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "67",
+              "searchVolume": {
+                "year": 2020,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "68",
+              "searchVolume": {
+                "year": 2019,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "69",
+              "searchVolume": {
+                "year": 2019,
+                "month": 11,
+                "search_volume": 20
+              }
+            },
+            {
+              "month": "70",
+              "searchVolume": {
+                "year": 2019,
+                "month": 10,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "71",
+              "searchVolume": {
+                "year": 2019,
+                "month": 9,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "72",
+              "searchVolume": {
+                "year": 2019,
+                "month": 8,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "73",
+              "searchVolume": {
+                "year": 2019,
+                "month": 7,
+                "search_volume": 30
+              }
+            },
+            {
+              "month": "74",
+              "searchVolume": {
+                "year": 2019,
+                "month": 6,
+                "search_volume": 50
+              }
+            },
+            {
+              "month": "75",
+              "searchVolume": {
+                "year": 2019,
+                "month": 5,
+                "search_volume": 50
+              }
+            },
+            {
+              "month": "76",
+              "searchVolume": {
+                "year": 2019,
+                "month": 4,
+                "search_volume": 70
+              }
+            },
+            {
+              "month": "77",
+              "searchVolume": {
+                "year": 2019,
+                "month": 3,
+                "search_volume": 40
+              }
+            },
+            {
+              "month": "78",
+              "searchVolume": {
+                "year": 2019,
+                "month": 2,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "79",
+              "searchVolume": {
+                "year": 2019,
+                "month": 1,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "80",
+              "searchVolume": {
+                "year": 2018,
+                "month": 12,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "81",
+              "searchVolume": {
+                "year": 2018,
+                "month": 11,
+                "search_volume": 10
+              }
+            },
+            {
+              "month": "82",
+              "searchVolume": {
+                "year": 2018,
+                "month": 10,
+                "search_volume": 20
+              }
+            }
+          ]
+        },
+        {
+          "keyword": "what is strategic consulting",
+          "searchVolume": 320,
+          "cpc": 0,
+          "competition": 0.01,
+          "competitionLevel": "LOW",
+          "intent": "informational",
+          "difficulty": 17,
+          "trends": [
+            {
+              "month": "0",
+              "searchVolume": {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "1",
+              "searchVolume": {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "2",
+              "searchVolume": {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "3",
+              "searchVolume": {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "4",
+              "searchVolume": {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "5",
+              "searchVolume": {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "6",
+              "searchVolume": {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "7",
+              "searchVolume": {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 390
+              }
+            },
+            {
+              "month": "8",
+              "searchVolume": {
+                "year": 2024,
+                "month": 12,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "9",
+              "searchVolume": {
+                "year": 2024,
+                "month": 11,
+                "search_volume": 390
+              }
+            },
+            {
+              "month": "10",
+              "searchVolume": {
+                "year": 2024,
+                "month": 10,
+                "search_volume": 590
+              }
+            },
+            {
+              "month": "11",
+              "searchVolume": {
+                "year": 2024,
+                "month": 9,
+                "search_volume": 590
+              }
+            },
+            {
+              "month": "12",
+              "searchVolume": {
+                "year": 2024,
+                "month": 8,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "13",
+              "searchVolume": {
+                "year": 2024,
+                "month": 7,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "14",
+              "searchVolume": {
+                "year": 2024,
+                "month": 6,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "15",
+              "searchVolume": {
+                "year": 2024,
+                "month": 5,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "16",
+              "searchVolume": {
+                "year": 2024,
+                "month": 4,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "17",
+              "searchVolume": {
+                "year": 2024,
+                "month": 3,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "18",
+              "searchVolume": {
+                "year": 2024,
+                "month": 2,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "19",
+              "searchVolume": {
+                "year": 2024,
+                "month": 1,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "20",
+              "searchVolume": {
+                "year": 2023,
+                "month": 12,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "21",
+              "searchVolume": {
+                "year": 2023,
+                "month": 11,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "22",
+              "searchVolume": {
+                "year": 2023,
+                "month": 10,
+                "search_volume": 480
+              }
+            },
+            {
+              "month": "23",
+              "searchVolume": {
+                "year": 2023,
+                "month": 9,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "24",
+              "searchVolume": {
+                "year": 2023,
+                "month": 8,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "25",
+              "searchVolume": {
+                "year": 2023,
+                "month": 7,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "26",
+              "searchVolume": {
+                "year": 2023,
+                "month": 6,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "27",
+              "searchVolume": {
+                "year": 2023,
+                "month": 5,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "28",
+              "searchVolume": {
+                "year": 2023,
+                "month": 4,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "29",
+              "searchVolume": {
+                "year": 2023,
+                "month": 3,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "30",
+              "searchVolume": {
+                "year": 2023,
+                "month": 2,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "31",
+              "searchVolume": {
+                "year": 2023,
+                "month": 1,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "32",
+              "searchVolume": {
+                "year": 2022,
+                "month": 12,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "33",
+              "searchVolume": {
+                "year": 2022,
+                "month": 11,
+                "search_volume": 390
+              }
+            },
+            {
+              "month": "34",
+              "searchVolume": {
+                "year": 2022,
+                "month": 10,
+                "search_volume": 480
+              }
+            },
+            {
+              "month": "35",
+              "searchVolume": {
+                "year": 2022,
+                "month": 9,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "36",
+              "searchVolume": {
+                "year": 2022,
+                "month": 8,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "37",
+              "searchVolume": {
+                "year": 2022,
+                "month": 7,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "38",
+              "searchVolume": {
+                "year": 2022,
+                "month": 6,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "39",
+              "searchVolume": {
+                "year": 2022,
+                "month": 5,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "40",
+              "searchVolume": {
+                "year": 2022,
+                "month": 4,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "41",
+              "searchVolume": {
+                "year": 2022,
+                "month": 3,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "42",
+              "searchVolume": {
+                "year": 2022,
+                "month": 2,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "43",
+              "searchVolume": {
+                "year": 2022,
+                "month": 1,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "44",
+              "searchVolume": {
+                "year": 2021,
+                "month": 12,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "45",
+              "searchVolume": {
+                "year": 2021,
+                "month": 11,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "46",
+              "searchVolume": {
+                "year": 2021,
+                "month": 10,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "47",
+              "searchVolume": {
+                "year": 2021,
+                "month": 9,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "48",
+              "searchVolume": {
+                "year": 2021,
+                "month": 8,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "49",
+              "searchVolume": {
+                "year": 2021,
+                "month": 7,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "50",
+              "searchVolume": {
+                "year": 2021,
+                "month": 6,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "51",
+              "searchVolume": {
+                "year": 2021,
+                "month": 5,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "52",
+              "searchVolume": {
+                "year": 2021,
+                "month": 4,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "53",
+              "searchVolume": {
+                "year": 2021,
+                "month": 3,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "54",
+              "searchVolume": {
+                "year": 2021,
+                "month": 2,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "55",
+              "searchVolume": {
+                "year": 2021,
+                "month": 1,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "56",
+              "searchVolume": {
+                "year": 2020,
+                "month": 12,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "57",
+              "searchVolume": {
+                "year": 2020,
+                "month": 11,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "58",
+              "searchVolume": {
+                "year": 2020,
+                "month": 10,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "59",
+              "searchVolume": {
+                "year": 2020,
+                "month": 9,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "60",
+              "searchVolume": {
+                "year": 2020,
+                "month": 8,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "61",
+              "searchVolume": {
+                "year": 2020,
+                "month": 7,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "62",
+              "searchVolume": {
+                "year": 2020,
+                "month": 6,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "63",
+              "searchVolume": {
+                "year": 2020,
+                "month": 5,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "64",
+              "searchVolume": {
+                "year": 2020,
+                "month": 4,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "65",
+              "searchVolume": {
+                "year": 2020,
+                "month": 3,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "66",
+              "searchVolume": {
+                "year": 2020,
+                "month": 2,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "67",
+              "searchVolume": {
+                "year": 2020,
+                "month": 1,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "68",
+              "searchVolume": {
+                "year": 2019,
+                "month": 12,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "69",
+              "searchVolume": {
+                "year": 2019,
+                "month": 11,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "70",
+              "searchVolume": {
+                "year": 2019,
+                "month": 10,
+                "search_volume": 320
+              }
+            },
+            {
+              "month": "71",
+              "searchVolume": {
+                "year": 2019,
+                "month": 9,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "72",
+              "searchVolume": {
+                "year": 2019,
+                "month": 8,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "73",
+              "searchVolume": {
+                "year": 2019,
+                "month": 7,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "74",
+              "searchVolume": {
+                "year": 2019,
+                "month": 6,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "75",
+              "searchVolume": {
+                "year": 2019,
+                "month": 5,
+                "search_volume": 90
+              }
+            },
+            {
+              "month": "76",
+              "searchVolume": {
+                "year": 2019,
+                "month": 4,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "77",
+              "searchVolume": {
+                "year": 2019,
+                "month": 3,
+                "search_volume": 140
+              }
+            },
+            {
+              "month": "78",
+              "searchVolume": {
+                "year": 2019,
+                "month": 2,
+                "search_volume": 210
+              }
+            },
+            {
+              "month": "79",
+              "searchVolume": {
+                "year": 2019,
+                "month": 1,
+                "search_volume": 260
+              }
+            },
+            {
+              "month": "80",
+              "searchVolume": {
+                "year": 2018,
+                "month": 12,
+                "search_volume": 110
+              }
+            },
+            {
+              "month": "81",
+              "searchVolume": {
+                "year": 2018,
+                "month": 11,
+                "search_volume": 170
+              }
+            },
+            {
+              "month": "82",
+              "searchVolume": {
+                "year": 2018,
+                "month": 10,
+                "search_volume": 260
+              }
+            }
+          ]
+        }
+      ],
+      "competitors": [
+        {
+          "domain": "www.brightnetwork.co.uk",
+          "title": "What is Strategy Consulting?",
+          "description": "Strategy consulting is a subset of management consulting where consultants advise businesses on challenges using industry-specific knowledge.",
+          "url": "https://www.brightnetwork.co.uk/career-path-guides/consulting/what-strategy-consulting/",
+          "rank": 1,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.consultancy.uk",
+          "title": "Strategy Consulting",
+          "description": "Strategy consulting, also known as strategic consultancy or boardroom consulting, is an advisory segment for consultants that focus mainly on strategic ...",
+          "url": "https://www.consultancy.uk/consulting-industry/strategy-consulting",
+          "rank": 2,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.bain.com",
+          "title": "Strategy Consulting",
+          "description": "Since Bain's founding in 1973, strategy has been our core business. We work with companies in every industry to develop strategies that deliver results.",
+          "url": "https://www.bain.com/consulting-services/strategy/",
+          "rank": 3,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.reddit.com",
+          "title": "What is strategy consulting exactly and what does it entail?",
+          "description": "This is just growth strategy. It's exactly as it sounds, helping clients create a strategy for realistic and responsible growth, whether organic ...",
+          "url": "https://www.reddit.com/r/Big4/comments/16ht83z/what_is_strategy_consulting_exactly_and_what_does/",
+          "rank": 4,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.bcg.com",
+          "title": "Boston Consulting Group: Strategic Management Consulting",
+          "description": "BCG is a global consulting firm that partners with leaders in business and society to tackle their most important challenges. Learn more about BCG.",
+          "url": "https://www.bcg.com/",
+          "rank": 5,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.jacobs.com",
+          "title": "Strategic Consulting",
+          "description": "We partner with clients on their challenges from strategy to financing and economic advice to business case and planning advice to capital and operational ...",
+          "url": "https://www.jacobs.com/what-we-do/strategic-consulting",
+          "rank": 6,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "www.ey.com",
+          "title": "Strategy Consulting Services",
+          "description": "Our Strategy Consulting teams help CEOs achieve maximum value for stakeholders by designing strategies that improve profitability and long-term value.",
+          "url": "https://www.ey.com/en_uk/services/strategy/consulting",
+          "rank": 7,
+          "domainRank": 0,
+          "backlinks": 0
+        },
+        {
+          "domain": "en.wikipedia.org",
+          "title": "Risk and strategic consulting",
+          "description": "Risk and strategic consulting [1] refers to the provision of information, analysis and associated services in the field of international politics and economics.",
+          "url": "https://en.wikipedia.org/wiki/Risk_and_strategic_consulting",
+          "rank": 8,
+          "domainRank": 0,
+          "backlinks": 0
+        }
+      ],
+      "opportunities": [
+        {
+          "type": "low-competition",
+          "keyword": "strategic consulting",
+          "reason": "High volume (2900) with low competition",
+          "priority": "high",
+          "estimatedTraffic": 870
+        },
+        {
+          "type": "low-competition",
+          "keyword": "what is strategic consulting",
+          "reason": "High volume (320) with low competition",
+          "priority": "high",
+          "estimatedTraffic": 96
+        },
+        {
+          "type": "long-tail",
+          "keyword": "strategic consulting london",
+          "reason": "Long-tail keyword with 140 monthly searches",
+          "priority": "medium"
+        },
+        {
+          "type": "long-tail",
+          "keyword": "what is strategic consulting",
+          "reason": "Long-tail keyword with 320 monthly searches",
+          "priority": "medium"
+        }
+      ],
+      "recommendations": [
+        "Target 2 high-priority keywords: \"strategic consulting\", \"what is strategic consulting\"",
+        "Create content specifically targeting \"strategic consulting\" with board-level positioning",
+        "Differentiate from competitors by emphasizing Craig's dual Fellowships and board-level experience",
+        "Develop 2 blog articles targeting long-tail keywords"
+      ]
+    }
+  ]
+}

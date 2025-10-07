@@ -1,12 +1,13 @@
 ---
 title: "Board Performance: What Makes an Effective Board"
 description: "Most boards go through the motions of evaluation without actually improving how they work. Here's what separates high-performing boards from those just ticking compliance boxes—and how to move from one to the other."
-pubDate: 2025-10-02
+pubDate: 2025-09-18
 author: "Craig Fearn"
 category: "board-advisory"
 tags: ["board performance", "board effectiveness", "board evaluation", "corporate governance", "board governance", "board improvement"]
 featured: true
 image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1600&h=900&fit=crop"
+schema: "Article"
 ---
 
 The chair who asked for my help had run out of patience. Her board met regularly. Checked all the governance boxes. Had the right committee structure. Conducted annual evaluations as required.
@@ -17,7 +18,7 @@ Meetings felt like performances—everyone presenting their best selves, nobody 
 
 "We're going through the motions," she told me. "I need us to actually perform."
 
-After seventeen years working at board level—NHS trusts, tech scale-ups, everything in between—I've seen this pattern repeatedly. Boards that look good on paper but don't actually perform well. And I've seen the opposite: boards that might not tick every governance box but achieve genuinely effective oversight and strategic contribution.
+After extensive cross-sector board experience—NHS trusts, tech scale-ups, everything in between—I've seen this pattern repeatedly. Boards that look good on paper but don't actually perform well. And I've seen the opposite: boards that might not tick every governance box but achieve genuinely effective oversight and strategic contribution.
 
 The difference isn't about structure or compliance. It's about culture, relationships, behaviors, and a genuine commitment to improving performance rather than just evaluating it.
 
@@ -39,7 +40,7 @@ That's what good looks like. Most boards achieve some of this. Few achieve all o
 
 ## The UK Evaluation Requirements
 
-In the UK, the [Corporate Governance Code](https://www.frc.org.uk/library/corporate-governance/uk-corporate-governance-code/) requires listed companies to undertake formal annual evaluation of the board, its committees, and individual directors. FTSE 350 companies must have an externally facilitated evaluation at least every three years.
+In the UK, the [Corporate Governance Code](https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/uk-corporate-governance-code/) requires listed companies to undertake formal annual evaluation of the board, its committees, and individual directors. FTSE 350 companies must have an externally facilitated evaluation at least every three years.
 
 The annual report must explain how the evaluation was conducted, describe the external reviewer's role if used, summarize outcomes and actions, and indicate how results influence board composition and future development.
 
@@ -87,7 +88,7 @@ Based on both research and practical experience, here's what effective board eva
 
 **Start with clear objectives**. What do you want evaluation to achieve? Better strategic oversight? Improved risk governance? More effective challenge? Enhanced board dynamics? Clarity about objectives shapes what you evaluate and how.
 
-**Use multiple methods**. The [UK Corporate Governance Code](https://www.frc.org.uk/library/corporate-governance/uk-corporate-governance-code/) doesn't prescribe methods. Best practice typically combines questionnaires (enable systematic data collection), one-to-one interviews (surface issues people won't write down), board discussions (create shared understanding), and sometimes observation (how does the board actually behave in meetings?).
+**Use multiple methods**. The [UK Corporate Governance Code](https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/uk-corporate-governance-code/) doesn't prescribe methods. Best practice typically combines questionnaires (enable systematic data collection), one-to-one interviews (surface issues people won't write down), board discussions (create shared understanding), and sometimes observation (how does the board actually behave in meetings?).
 
 **Get the scope right**. Comprehensive evaluation covers:
 - Board composition and skills mix
@@ -195,3 +196,17 @@ High-performing boards don't accept this. They're constantly asking "how do we g
 The gap between effective boards and ineffective ones isn't ability or good intentions. It's willingness to honestly assess performance and commit to improvement.
 
 That willingness—or lack of it—shapes everything.
+
+## References
+
+- CIPD (2024). *Board Governance and People Strategy*. CIPD. Available at: https://www.cipd.co.uk/knowledge/strategy/governance/factsheet/
+
+- Financial Reporting Council (2024). *UK Corporate Governance Code*. FRC. Available at: https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/uk-corporate-governance-code/
+
+- Harvard Business Review (2024). *Corporate Governance Research*. HBR. Available at: https://hbr.org/topic/subject/corporate-governance
+
+- ICSA (2024). *The Governance Institute Board Effectiveness Resources*. Chartered Governance Institute. Available at: https://www.cgi.org.uk/
+
+- Institute of Directors (2024). *IoD Commission: Non-Executive Directors in the UK*. IoD. Available at: https://www.iod.com/news/policy-and-governance/non-executive-directors-commission/
+
+- McKinsey & Company (2024). *Board Governance Research*. McKinsey Quarterly. Available at: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights

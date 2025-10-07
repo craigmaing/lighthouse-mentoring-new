@@ -1,5 +1,5 @@
 ---
-title: "Executive Coaching vs Executive Mentoring: Understanding the Distinction"
+title: "Executive Coaching or Executive Mentoring: Understanding the Distinction"
 description: "The terms 'coaching' and 'mentoring' are often used interchangeably in professional development circles, yet they represent fundamentally different approaches to supporting executive growth and leadership effectiveness."
 pubDate: 2025-10-02
 author: "Craig Fearn"
@@ -13,7 +13,7 @@ If you've spent any time looking for executive development support, you've proba
 
 This isn't just semantic hair-splitting. The distinction matters because coaching and mentoring work in fundamentally different ways, serve different purposes, and produce different outcomes. Choose wrong—or work with someone who can't tell the difference—and you'll invest months of time and serious money without getting what you need.
 
-I've spent seventeen years working at board and senior management level, from NHS governance to tech scale-ups. What I've seen is this: the executives who get the most value from development support are the ones who understand what coaching is, what mentoring is, and which one (or sometimes both) they actually need right now.
+With extensive experience at board and senior management level, from NHS governance to tech scale-ups. What I've seen is this: the executives who get the most value from development support are the ones who understand what coaching is, what mentoring is, and which one (or sometimes both) they actually need right now.
 
 ## Why Everyone's Confused About This
 
@@ -53,7 +53,7 @@ Here's something most executives get wrong. They assume they need a coach who's 
 
 But professional coaching doesn't work that way. The value isn't that the coach has been in your shoes. It's that they're really good at the coaching process. A skilled coach can work with executives across industries because they're not giving strategic advice or telling you what worked for them. They're facilitating your thinking. Helping you access your own wisdom. Supporting you to work through your specific challenges.
 
-Now, background isn't irrelevant. When I work with executives and board members, my seventeen years of [board-level experience](/about) helps. I understand the pressures. I recognize the dynamics. I can spot patterns common to board-level leadership. But in a coaching capacity, I'm not offering that as advice. I'm using it to ask better questions and to quickly grasp the context you're operating in.
+Now, background isn't irrelevant. When I work with executives and board members, my extensive [board-level experience](/about) helps. I understand the pressures. I recognize the dynamics. I can spot patterns common to board-level leadership. But in a coaching capacity, I'm not offering that as advice. I'm using it to ask better questions and to quickly grasp the context you're operating in.
 
 Mentoring is different. There, relevant experience is the whole point. If you're stepping into your first NED role, a mentor who's served on multiple boards can show you the ropes—board dynamics, governance frameworks, how to add value without overstepping. If you're building a wellbeing strategy, a mentor with [organizational wellbeing](/services/organizational-wellbeing) expertise can share what actually works and what pitfalls to avoid.
 

@@ -20,12 +20,23 @@ export const LIGHTHOUSE_SERVICES = [
 
 export const SEO_CONFIG: SEOResearchConfig = {
   services: LIGHTHOUSE_SERVICES,
-  location: 'United Kingdom',
+  location: 'United States', // Primary market for DataForSEO (can be changed per research run)
   languageCode: 'en',
   maxKeywordsPerService: 50,
   includeCompetitorAnalysis: true,
   includeTrends: true
 };
+
+// Craig works worldwide - target all major English-speaking markets
+export const TARGET_MARKETS = [
+  { name: 'United States', code: 'US' },
+  { name: 'United Kingdom', code: 'GB' },
+  { name: 'Canada', code: 'CA' },
+  { name: 'Australia', code: 'AU' },
+  { name: 'Ireland', code: 'IE' },
+  { name: 'New Zealand', code: 'NZ' },
+  { name: 'Singapore', code: 'SG' }
+];
 
 // Target audience keywords to combine with services
 export const AUDIENCE_MODIFIERS = [
@@ -38,17 +49,43 @@ export const AUDIENCE_MODIFIERS = [
   'for founders',
   'B2B',
   'corporate',
-  'professional'
+  'professional',
+  'international',
+  'global'
 ];
 
-// Geographic modifiers
+// Geographic modifiers - worldwide markets
 export const GEO_MODIFIERS = [
+  // UK
   'UK',
   'London',
   'United Kingdom',
   'British',
   'England',
-  'South West'
+  'South West',
+  // US
+  'USA',
+  'United States',
+  'New York',
+  'California',
+  'San Francisco',
+  'Chicago',
+  'Boston',
+  // Other markets
+  'Canada',
+  'Toronto',
+  'Australia',
+  'Sydney',
+  'Melbourne',
+  'Singapore',
+  'Ireland',
+  'Dublin',
+  'New Zealand',
+  'Auckland',
+  // Global
+  'international',
+  'global',
+  'worldwide'
 ];
 
 // Intent modifiers
