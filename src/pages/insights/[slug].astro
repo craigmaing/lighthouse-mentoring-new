@@ -199,52 +199,32 @@ const articleSchema = {
   </article>
 </Layout>
 
-<style>
+<style is:global>
   .prose {
     @apply text-gray-700;
-    font-size: 1.125rem;
-    line-height: 1.8;
   }
 
   .prose h2 {
-    @apply text-3xl md:text-4xl font-serif font-bold text-gray-900;
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
+    @apply text-3xl font-serif font-bold text-gray-900 mt-12 mb-6;
   }
 
   .prose h3 {
-    @apply text-2xl md:text-3xl font-serif font-bold text-gray-900;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    @apply text-2xl font-serif font-bold text-gray-900 mt-8 mb-4;
   }
 
   .prose h4 {
-    @apply text-xl md:text-2xl font-semibold text-gray-900;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.4;
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
   }
 
   .prose p {
-    margin-bottom: 1.75rem;
-    line-height: 1.8;
+    @apply mb-6 leading-relaxed;
   }
 
-  /* Image spacing - generous margins for visual breathing room */
   .prose img {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  }
-
-  /* First paragraph after image should have extra space */
-  .prose img + p,
-  .prose img + h2,
-  .prose img + h3 {
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .prose strong {
@@ -253,8 +233,7 @@ const articleSchema = {
 
   .prose ul,
   .prose ol {
-    margin-bottom: 2rem;
-    padding-left: 1.75rem;
+    @apply mb-6 pl-6 space-y-2;
   }
 
   .prose ul {
@@ -266,45 +245,23 @@ const articleSchema = {
   }
 
   .prose li {
-    line-height: 1.8;
-    margin-bottom: 0.75rem;
-  }
-
-  .prose li p {
-    margin-bottom: 0.5rem;
+    @apply leading-relaxed;
   }
 
   .prose a {
-    @apply text-accent;
-    text-decoration: underline;
-    text-decoration-color: rgba(164, 92, 26, 0.3);
-    text-underline-offset: 3px;
-    transition: text-decoration-color 0.2s ease;
-  }
-
-  .prose a:hover {
-    text-decoration-color: rgba(164, 92, 26, 1);
+    @apply text-accent hover:underline;
   }
 
   .prose blockquote {
-    @apply border-l-4 border-accent pl-6 italic text-gray-600;
-    margin: 2.5rem 0;
-    font-size: 1.25rem;
-    line-height: 1.7;
+    @apply border-l-4 border-accent pl-6 italic text-gray-600 my-6;
   }
 
   .prose code {
     @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
   }
 
-  .prose hr {
-    margin: 3rem 0;
-    border-color: #e5e7eb;
-  }
-
   .prose table {
-    @apply w-full border-collapse;
-    margin: 2rem 0;
+    @apply w-full border-collapse mb-6;
   }
 
   .prose th {
@@ -313,19 +270,5 @@ const articleSchema = {
 
   .prose td {
     @apply border border-gray-300 px-4 py-2;
-  }
-
-  /* Footnote styling */
-  .prose sup {
-    @apply text-accent;
-  }
-
-  .prose sup a {
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .prose sup a:hover {
-    text-decoration: underline;
   }
 </style>
