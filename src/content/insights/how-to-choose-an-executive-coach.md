@@ -9,8 +9,6 @@ featured: true
 image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
 ---
 
-# How to Choose an Executive Coach
-
 Choosing an executive coach is a significant decision, one that can profoundly impact your career trajectory and the success of your organisation. Finding the right executive coach involves careful consideration of your needs, goals, and the coach's experience and expertise, so you can choose someone who truly supports your growth. This article provides a comprehensive guide to help you navigate the process of choosing the right executive coach who is the appropriate match for you and your specific circumstances.
 
 ![Executive coaching session with board-level advisor](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80)
@@ -86,16 +84,6 @@ Regularly assessing your progress and success is crucial to ensure that your coa
 ### Adjusting Your Coaching Approach as Needed
 
 The coaching process is not static; it requires flexibility and adaptation to meet your evolving coaching needs. A good coach will be attuned to your progress and willing to adjust their coaching style and approach as needed. As you gain new insights, overcome challenges, and refine your leadership skills, your coaching sessions may shift in focus and intensity. The coach could introduce new strategies, tools, or techniques to further support your development. The right executive coach remains open to feedback and willing to collaborate with you to ensure that the coaching program remains relevant, engaging, and effective throughout the duration of your coaching engagement.
-
----
-
-## About Craig Fearn
-
-Craig Fearn combines [EMCC Professional Coach](https://www.emccglobal.org/) accreditation with extensive board-level experience across NHS, financial services, technology, and manufacturing. He holds FCMI Fellowship ([Chartered Management Institute](https://www.managers.org.uk/)) and FRSPH Fellowship ([Royal Society for Public Health](https://www.rsph.org.uk/)), and serves as an [IoD Ambassador](https://www.iod.com/) in the South West.
-
-His executive coaching focuses on senior leaders navigating C-suite transitions, board dynamics, and strategic leadership challenges—coaching informed by someone who's lived the pressure, not just studied it.
-
-[Learn more about executive coaching services](/services/executive-coaching) | [Book a chemistry session](/contact)
 
 ---
 
