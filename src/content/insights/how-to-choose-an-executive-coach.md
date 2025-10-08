@@ -11,8 +11,6 @@ image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
 
 Choosing an executive coach is a significant decision, one that can profoundly impact your career trajectory and the success of your organisation. Finding the right executive coach involves careful consideration of your needs, goals, and the coach's experience and expertise, so you can choose someone who truly supports your growth. This article provides a comprehensive guide to help you navigate the process of choosing the right executive coach who is the appropriate match for you and your specific circumstances.
 
-![Executive coaching session with board-level advisor](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80)
-
 ## Understanding the Role of an Executive Coach
 
 ### What an Executive Coach Does
@@ -31,8 +29,6 @@ Research shows that 77% of executives said coaching had a significant impact on 
 
 A good executive coach can provide a fresh perspective, challenge assumptions, and facilitate the development of innovative solutions. By working with an executive leadership coach, individuals can enhance their decision-making abilities, improve communication skills, and foster a more positive and productive work environment. The coaching engagement is an investment in both individual and organisational growth.
 
-![Leadership development through executive coaching](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80)
-
 ### How a Coach Can Help in Leadership Development
 
 A great coach plays a pivotal role in leadership development by integrating psychological insights with strategic thinking and practical board-level experience. Academic research demonstrates that coaching-based leadership interventions successfully increase participants' psychological capital, work engagement, and both in-role and extra-role performance[^3].
@@ -49,8 +45,6 @@ When choosing an executive coach, it's essential to consider their credentials a
 
 *   Accreditation by reputable organizations like the [International Coaching Federation (ICF)](https://coachingfederation.org/) or [European Mentoring & Coaching Council (EMCC)](https://www.emccglobal.org/), demonstrating a commitment to professional coaching standards and ethical practices through rigorous training and assessment.
 *   A background that includes extensive coaching experience, like Craig's director-level coaching and fellowship-level expertise across sectors including NHS, technology, financial services, and professional services.
-
-![Professional coaching credentials and certifications](https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80)
 
 ### Coaching Style and Approach
 
@@ -78,8 +72,6 @@ They may need guidance on [board governance](/services/board-advisory), navigati
 
 What kind of leadership skills are you looking to develop? What challenges are you facing that a coach could assist with? A clear understanding of your coaching needs will significantly streamline the process of finding a coach who can provide targeted support and drive meaningful change in your leadership journey.
 
-![Business strategy and executive planning session](https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80)
-
 ### Questions to Ask Potential Executive Coaches
 
 Choosing an executive coach requires a thorough dialogue to assess suitability. A strategy call is a good starting point to explore fit and approach. When speaking with potential coaches, be sure to inquire about:
@@ -104,8 +96,6 @@ It is very important that the right executive coach has the interpersonal skills
 The initial stage of a successful coaching engagement involves clearly defining your objectives with your executive coach. This collaboration ensures that the coaching sessions are tailored to address your specific needs and drive measurable progress within your organisation.
 
 The right executive coach will guide you in establishing realistic and achievable goals that align with your professional development aspirations. By setting clear goals at the outset, you can track progress and ensure that the coaching process remains focused and effective.
-
-![Goal setting and strategic planning](https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&q=80)
 
 ### Measuring Progress and Success
 
