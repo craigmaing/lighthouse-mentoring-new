@@ -37,7 +37,7 @@ export default defineConfig({
   },
 
   build: {
-    inlineStylesheets: 'auto',
+    inlineStylesheets: 'always', // Inline critical CSS for faster rendering
   },
 
   compressHTML: true,

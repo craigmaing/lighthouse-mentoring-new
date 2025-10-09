@@ -43,6 +43,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Preload critical font for faster rendering -->
+    <link rel="preload" href="/@fs/C:/Users/Fearn/New%20folder%20(4)/new-site/node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="Lighthouse Mentoring Insights" href="/rss.xml" />
 
