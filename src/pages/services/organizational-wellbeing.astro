@@ -8,45 +8,45 @@ import craigPortrait from '../../images/craig-portrait-8372.jpg';
 // Import testimonials data
 import testimonialsData from '../../../testimonials-data.json';
 
-// Filter for organizational wellbeing testimonials (exclude homepage and board advisory testimonials)
+// Filter for organisational wellbeing testimonials (exclude homepage and board advisory testimonials)
 const homepageNames = ['Jeremy Wrathall', 'Steve Hill', 'Richard Sharpe', 'Chris Saxby'];
 const boardNames = ['Andrew Honey CDir FIoD'];
 const wellbeingTestimonials = testimonialsData
   .filter(t => t.featured &&
-    (t.category.includes('wellbeing') || t.category.includes('organizational-support')) &&
+    (t.category.includes('wellbeing') || t.category.includes('organisational-support')) &&
     !homepageNames.includes(t.name) &&
     !boardNames.includes(t.name))
   .slice(0, 4);
 
-// Organizational Wellbeing FAQ Data - Optimized for AI Search
+// Organisational Wellbeing FAQ Data - Optimized for AI Search
 const wellbeingFAQs = [
   {
-    question: "What is an organizational wellbeing audit?",
-    answer: `<p><strong>An organizational wellbeing audit is a comprehensive assessment</strong> of employee wellbeing, organizational culture, and the systems and practices that influence both. Unlike standard engagement surveys that give you scores, a wellbeing audit provides strategic insight into the "why" behind the numbers—connecting wellbeing patterns to business outcomes, cultural dynamics, and organizational performance.</p>
+    question: "What is an organisational wellbeing audit?",
+    answer: `<p><strong>An organisational wellbeing audit is a comprehensive assessment</strong> of employee wellbeing, organisational culture, and the systems and practices that influence both. Unlike standard engagement surveys that give you scores, a wellbeing audit provides strategic insight into the "why" behind the numbers—connecting wellbeing patterns to business outcomes, cultural dynamics, and organisational performance.</p>
 
-<p>A wellbeing audit typically examines: <strong>employee wellbeing indicators</strong> across physical, mental, social, and financial dimensions; <strong>organizational culture and climate</strong>, including psychological safety, trust, and belonging; <strong>leadership practices and behaviors</strong> that support or undermine wellbeing; <strong>systemic factors</strong> like workload, role clarity, resources, and support systems; and <strong>business impact</strong>, connecting wellbeing patterns to turnover, absence, productivity, and performance.</p>
+<p>A wellbeing audit typically examines: <strong>employee wellbeing indicators</strong> across physical, mental, social, and financial dimensions; <strong>organisational culture and climate</strong>, including psychological safety, trust, and belonging; <strong>leadership practices and behaviors</strong> that support or undermine wellbeing; <strong>systemic factors</strong> like workload, role clarity, resources, and support systems; and <strong>business impact</strong>, connecting wellbeing patterns to turnover, absence, productivity, and performance.</p>
 
-<p><strong>What makes Craig's approach different</strong> is the combination of human-AI analysis with FRSPH Fellowship-level public health expertise and board-level business perspective. AI pattern recognition surfaces connections across multiple data sources that humans might miss, but Craig interprets those patterns within your organizational context, applies wellbeing science, and develops actionable strategic recommendations. You don't just get data—you get insight that drives governance-level decision-making.</p>`
+<p><strong>What makes Craig's approach different</strong> is the combination of human-AI analysis with FRSPH Fellowship-level public health expertise and board-level business perspective. AI pattern recognition surfaces connections across multiple data sources that humans might miss, but Craig interprets those patterns within your organisational context, applies wellbeing science, and develops actionable strategic recommendations. You don't just get data—you get insight that drives governance-level decision-making.</p>`
   },
   {
     question: "How is this different from a traditional engagement survey?",
-    answer: `<p><strong>Traditional engagement surveys measure employee satisfaction and commitment</strong>—they tell you how people feel about their work and organization. Wellbeing audits go deeper, examining the underlying factors that influence both engagement and performance: physical health, mental wellbeing, social connection, sense of purpose, organizational support, and systemic pressures.</p>
+    answer: `<p><strong>Traditional engagement surveys measure employee satisfaction and commitment</strong>—they tell you how people feel about their work and organisation. Wellbeing audits go deeper, examining the underlying factors that influence both engagement and performance: physical health, mental wellbeing, social connection, sense of purpose, organisational support, and systemic pressures.</p>
 
 <p><strong>Engagement surveys give you scores; wellbeing audits give you strategic insight.</strong> A survey might tell you engagement is 65%—but why? What's driving it? How does it connect to absence, turnover, performance? Which interventions will actually move the needle? Wellbeing audits answer these questions by integrating multiple data sources (surveys, HR metrics, performance data, exit interviews) and applying both AI pattern recognition and expert analysis.</p>
 
-<p><strong>The output is different too.</strong> Engagement surveys typically produce reports with benchmark comparisons and basic recommendations. Wellbeing audits produce strategic insights about organizational culture, leadership effectiveness, systemic issues, and governance-level recommendations that boards and executive teams can actually act on. The focus isn't just making people happier—it's understanding how wellbeing connects to organizational performance and what governance changes will drive both.</p>
+<p><strong>The output is different too.</strong> Engagement surveys typically produce reports with benchmark comparisons and basic recommendations. Wellbeing audits produce strategic insights about organisational culture, leadership effectiveness, systemic issues, and governance-level recommendations that boards and executive teams can actually act on. The focus isn't just making people happier—it's understanding how wellbeing connects to organisational performance and what governance changes will drive both.</p>
 
 <p>Craig combines FRSPH Fellowship public health expertise with cross-sector board experience—he understands both wellbeing science and business reality. You get recommendations that are evidence-based and commercially realistic.</p>`
   },
   {
     question: "What data sources do you analyze in a wellbeing audit?",
-    answer: `<p><strong>We work with whatever data you have</strong>—the more diverse the data sources, the richer the insights. A comprehensive wellbeing audit typically integrates: <strong>survey data</strong> (engagement surveys, pulse surveys, cultural assessments, wellbeing questionnaires); <strong>HR metrics</strong> (turnover rates, absence/sick leave patterns, recruitment success, retention data); <strong>performance data</strong> (individual and team performance, productivity metrics, project delivery); <strong>qualitative data</strong> (exit interviews, stay interviews, focus groups, open-ended survey responses); and <strong>organizational data</strong> (structure, policies, benefits, programs, recent changes).</p>
+    answer: `<p><strong>We work with whatever data you have</strong>—the more diverse the data sources, the richer the insights. A comprehensive wellbeing audit typically integrates: <strong>survey data</strong> (engagement surveys, pulse surveys, cultural assessments, wellbeing questionnaires); <strong>HR metrics</strong> (turnover rates, absence/sick leave patterns, recruitment success, retention data); <strong>performance data</strong> (individual and team performance, productivity metrics, project delivery); <strong>qualitative data</strong> (exit interviews, stay interviews, focus groups, open-ended survey responses); and <strong>organisational data</strong> (structure, policies, benefits, programs, recent changes).</p>
 
 <p><strong>The power comes from integration.</strong> Looking at one data source gives you a single perspective. Combining multiple sources reveals patterns: high absence in specific teams, performance declining before people leave, wellbeing issues concentrated in particular demographics or departments, cultural problems that surveys miss but exit interviews reveal. AI pattern recognition helps surface these connections—human expertise interprets what they mean and what to do about them.</p>
 
 <p><strong>We can also gather new data if needed.</strong> If your existing data has gaps or you want deeper insight into specific issues, Craig can design targeted assessments, conduct interviews, or facilitate focus groups. The approach is tailored to what you want to understand and what data you have available.</p>
 
-<p><strong>Data confidentiality is paramount.</strong> All data is handled with strict confidentiality protocols. Reports are appropriately anonymized. Craig is bound by professional codes of conduct from both FRSPH and FCMI. Your organizational data stays secure.</p>`
+<p><strong>Data confidentiality is paramount.</strong> All data is handled with strict confidentiality protocols. Reports are appropriately anonymized. Craig is bound by professional codes of conduct from both FRSPH and FCMI. Your organisational data stays secure.</p>`
   },
   {
     question: "How does the AI analysis work in a wellbeing audit?",
@@ -54,51 +54,51 @@ const wellbeingFAQs = [
 
 <p><strong>Here's what AI does:</strong> identifies recurring themes and concerns across qualitative data; detects sentiment shifts over time or across departments; surfaces correlations between different data sources (e.g., teams with low psychological safety also show high turnover); finds outliers and anomalies that warrant deeper investigation; and processes unstructured data at scale to reveal patterns.</p>
 
-<p><strong>But AI doesn't understand organizational context—that's where Craig comes in.</strong> He interprets AI-surfaced patterns within your organizational reality, applies public health and wellbeing science to understand root causes, connects findings to business outcomes and strategic priorities, distinguishes genuine issues from statistical noise, and develops governance-level recommendations that are actionable within your context.</p>
+<p><strong>But AI doesn't understand organisational context—that's where Craig comes in.</strong> He interprets AI-surfaced patterns within your organisational reality, applies public health and wellbeing science to understand root causes, connects findings to business outcomes and strategic priorities, distinguishes genuine issues from statistical noise, and develops governance-level recommendations that are actionable within your context.</p>
 
-<p><strong>The human-AI combination is more powerful than either alone.</strong> AI spots patterns humans miss; humans provide context, judgment, and strategic thinking AI lacks. You get the speed and thoroughness of AI analysis with the wisdom and organizational understanding of an FRSPH Fellow who's operated at board level across multiple sectors.</p>`
+<p><strong>The human-AI combination is more powerful than either alone.</strong> AI spots patterns humans miss; humans provide context, judgment, and strategic thinking AI lacks. You get the speed and thoroughness of AI analysis with the wisdom and organisational understanding of an FRSPH Fellow who's operated at board level across multiple sectors.</p>`
   },
   {
-    question: "What size organization is a wellbeing audit suitable for?",
-    answer: `<p><strong>Wellbeing audits work for organizations of all sizes—from 50 employees to 5,000+.</strong> The approach scales depending on organizational complexity, data availability, and strategic priorities. What matters isn't size—it's commitment to understanding and improving organizational wellbeing as a strategic priority, not just a "nice to have."</p>
+    question: "What size organisation is a wellbeing audit suitable for?",
+    answer: `<p><strong>Wellbeing audits work for organisations of all sizes—from 50 employees to 5,000+.</strong> The approach scales depending on organisational complexity, data availability, and strategic priorities. What matters isn't size—it's commitment to understanding and improving organisational wellbeing as a strategic priority, not just a "nice to have."</p>
 
-<p><strong>Smaller organizations (50-500 employees)</strong> often get highly personalized insights. With fewer people, it's easier to identify specific teams, relationships, and cultural dynamics driving wellbeing patterns. Recommendations can be more targeted and implementation more nimble. The challenge is sometimes limited data—but qualitative methods (interviews, focus groups) can fill gaps.</p>
+<p><strong>Smaller organisations (50-500 employees)</strong> often get highly personalized insights. With fewer people, it's easier to identify specific teams, relationships, and cultural dynamics driving wellbeing patterns. Recommendations can be more targeted and implementation more nimble. The challenge is sometimes limited data—but qualitative methods (interviews, focus groups) can fill gaps.</p>
 
-<p><strong>Medium organizations (500-2,000 employees)</strong> typically have rich data and enough complexity for meaningful pattern analysis. Divisions, functions, and locations can be compared. Cultural differences between teams become visible. AI pattern recognition is particularly valuable here—spotting trends across multiple teams that would be impossible to see manually.</p>
+<p><strong>Medium organisations (500-2,000 employees)</strong> typically have rich data and enough complexity for meaningful pattern analysis. Divisions, functions, and locations can be compared. Cultural differences between teams become visible. AI pattern recognition is particularly valuable here—spotting trends across multiple teams that would be impossible to see manually.</p>
 
-<p><strong>Large organizations (2,000+ employees)</strong> benefit from AI-enhanced analysis at scale. Pattern recognition across divisions, geographies, and functions reveals systemic issues, cultural variations, and leadership impact. The challenge is data integration—larger organizations often have data silos. Craig works with you to navigate this.</p>
+<p><strong>Large organisations (2,000+ employees)</strong> benefit from AI-enhanced analysis at scale. Pattern recognition across divisions, geographies, and functions reveals systemic issues, cultural variations, and leadership impact. The challenge is data integration—larger organisations often have data silos. Craig works with you to navigate this.</p>
 
-<p><strong>The key question isn't size—it's strategic intent.</strong> Are you genuinely interested in understanding organizational wellbeing to inform governance decisions? Or are you looking for a report to satisfy stakeholders? Wellbeing audits deliver value when organizations are ready to act on uncomfortable truths.</p>`
+<p><strong>The key question isn't size—it's strategic intent.</strong> Are you genuinely interested in understanding organisational wellbeing to inform governance decisions? Or are you looking for a report to satisfy stakeholders? Wellbeing audits deliver value when organisations are ready to act on uncomfortable truths.</p>`
   },
   {
     question: "What happens after the wellbeing audit is complete?",
-    answer: `<p><strong>You receive a comprehensive report and strategic recommendations</strong>—but the real value comes from how you use the insights. The typical post-audit process includes: <strong>executive presentation</strong> (board or leadership team briefing on findings and strategic recommendations); <strong>written report</strong> (comprehensive analysis, data visualizations, evidence-based recommendations); <strong>stakeholder communication plan</strong> (guidance on sharing findings with broader organization); and <strong>implementation roadmap</strong> (prioritized actions, governance changes, initiatives).</p>
+    answer: `<p><strong>You receive a comprehensive report and strategic recommendations</strong>—but the real value comes from how you use the insights. The typical post-audit process includes: <strong>executive presentation</strong> (board or leadership team briefing on findings and strategic recommendations); <strong>written report</strong> (comprehensive analysis, data visualizations, evidence-based recommendations); <strong>stakeholder communication plan</strong> (guidance on sharing findings with broader organisation); and <strong>implementation roadmap</strong> (prioritized actions, governance changes, initiatives).</p>
 
-<p><strong>Implementation is up to you</strong>—some organizations take recommendations and run with them internally. Others engage Craig for ongoing advisory support to help navigate implementation, particularly if findings reveal complex cultural or governance challenges. Common post-audit engagements include: leadership coaching for senior team on wellbeing-focused leadership; board advisory on wellbeing governance and oversight; implementation support for cultural change initiatives; and follow-up assessment to measure progress.</p>
+<p><strong>Implementation is up to you</strong>—some organisations take recommendations and run with them internally. Others engage Craig for ongoing advisory support to help navigate implementation, particularly if findings reveal complex cultural or governance challenges. Common post-audit engagements include: leadership coaching for senior team on wellbeing-focused leadership; board advisory on wellbeing governance and oversight; implementation support for cultural change initiatives; and follow-up assessment to measure progress.</p>
 
 <p><strong>The most impactful wellbeing audits lead to governance-level changes:</strong> board agenda time dedicated to wellbeing oversight; leadership accountability for wellbeing outcomes; policy and practice changes based on evidence; cultural shifts driven by leadership behavior change; and resource allocation aligned with wellbeing priorities.</p>
 
 <p><strong>Less impactful audits</strong> produce reports that sit on shelves. The difference is leadership commitment. If you're ready to act on what you learn—even if it's uncomfortable—wellbeing audits drive meaningful change. If you're just looking for reassurance or box-ticking, save your money.</p>`
   },
   {
-    question: "How much does an organizational wellbeing audit cost?",
-    answer: `<p><strong>Investment depends on organization size, data complexity, and audit scope.</strong> Following an initial consultation, Craig provides a clear proposal outlining approach, timeline, deliverables, and investment. Wellbeing audits are strategic investments—the cost of poor wellbeing (turnover, absence, low productivity, reputational damage) is far higher than the cost of understanding and addressing it.</p>
+    question: "How much does an organisational wellbeing audit cost?",
+    answer: `<p><strong>Investment depends on organisation size, data complexity, and audit scope.</strong> Following an initial consultation, Craig provides a clear proposal outlining approach, timeline, deliverables, and investment. Wellbeing audits are strategic investments—the cost of poor wellbeing (turnover, absence, low productivity, reputational damage) is far higher than the cost of understanding and addressing it.</p>
 
-<p><strong>Typical cost drivers include:</strong> organization size (employee numbers, locations, divisions); data complexity (number of sources, data quality, integration requirements); audit depth (quantitative only, or including qualitative methods like interviews/focus groups); reporting requirements (executive summary, comprehensive report, board presentations); and post-audit support (implementation advisory, stakeholder communication, follow-up measurement).</p>
+<p><strong>Typical cost drivers include:</strong> organisation size (employee numbers, locations, divisions); data complexity (number of sources, data quality, integration requirements); audit depth (quantitative only, or including qualitative methods like interviews/focus groups); reporting requirements (executive summary, comprehensive report, board presentations); and post-audit support (implementation advisory, stakeholder communication, follow-up measurement).</p>
 
-<p><strong>ROI typically comes from:</strong> reduced turnover (replacing senior leaders costs 6-12 months salary); reduced absence (absence costs UK organizations average £600+ per employee annually); improved productivity (wellbeing interventions show 10-20% productivity gains); better talent attraction and retention; and reduced organizational risk (wellbeing failures create reputational, legal, and operational risks).</p>
+<p><strong>ROI typically comes from:</strong> reduced turnover (replacing senior leaders costs 6-12 months salary); reduced absence (absence costs UK organisations average £600+ per employee annually); improved productivity (wellbeing interventions show 10-20% productivity gains); better talent attraction and retention; and reduced organisational risk (wellbeing failures create reputational, legal, and operational risks).</p>
 
-<p><strong>Many organizations fund wellbeing audits from:</strong> learning and development budgets (executive team development); risk and compliance budgets (duty of care, health and safety); or strategic initiatives budgets (culture change, transformation programs). Some treat it as board advisory expense—which it is, when wellbeing connects to governance and strategic outcomes.</p>
+<p><strong>Many organisations fund wellbeing audits from:</strong> learning and development budgets (executive team development); risk and compliance budgets (duty of care, health and safety); or strategic initiatives budgets (culture change, transformation programs). Some treat it as board advisory expense—which it is, when wellbeing connects to governance and strategic outcomes.</p>
 
 <p>Investment is discussed transparently during the initial consultation, with clear value proposition and expected return.</p>`
   },
   {
-    question: "What if the audit reveals uncomfortable truths about our organization?",
+    question: "What if the audit reveals uncomfortable truths about our organisation?",
     answer: `<p><strong>That's often where the greatest value lies.</strong> Wellbeing audits frequently surface issues that surveys miss—cultural dysfunction, leadership blind spots, systemic problems, toxic behaviors, structural inequities. These uncomfortable truths are what's actually driving turnover, absence, and underperformance. If you only wanted good news, you wouldn't need an audit.</p>
 
 <p><strong>Craig presents findings with board-level sensitivity</strong>—he understands governance dynamics and stakeholder complexity. Findings are framed around evidence, not blame. The focus is actionable insight, not judgment. He's navigated board-level difficult conversations across NHS, financial services, technology, and manufacturing—presenting uncomfortable truths is part of effective board advisory.</p>
 
-<p><strong>Organizations that embrace difficult truths make the biggest improvements.</strong> When boards and leadership teams genuinely want to understand what's happening (not just confirm what they hope is happening), wellbeing audits drive meaningful change. The organizations that get least value are those looking for validation rather than truth.</p>
+<p><strong>Organisations that embrace difficult truths make the biggest improvements.</strong> When boards and leadership teams genuinely want to understand what's happening (not just confirm what they hope is happening), wellbeing audits drive meaningful change. The organisations that get least value are those looking for validation rather than truth.</p>
 
 <p><strong>Common uncomfortable findings include:</strong> leadership behaviors undermining stated values; cultural issues concentrated in specific teams or divisions; systemic overwork and unrealistic expectations; wellbeing initiatives not addressing actual needs; policies that sound good but don't work in practice; and governance blind spots around wellbeing oversight.</p>
 
@@ -106,33 +106,33 @@ const wellbeingFAQs = [
   },
   {
     question: "How is this different from HR consultancy wellbeing work?",
-    answer: `<p><strong>HR consultants typically focus on programs, policies, and interventions</strong>—employee assistance programs, mental health training, wellbeing benefits, engagement initiatives. These are important tactical elements, but they're not strategic. Craig focuses on wellbeing governance: connecting organizational wellbeing to performance, culture, and business outcomes at a level that matters for boards and executive teams.</p>
+    answer: `<p><strong>HR consultants typically focus on programs, policies, and interventions</strong>—employee assistance programs, mental health training, wellbeing benefits, engagement initiatives. These are important tactical elements, but they're not strategic. Craig focuses on wellbeing governance: connecting organisational wellbeing to performance, culture, and business outcomes at a level that matters for boards and executive teams.</p>
 
-<p><strong>The difference is perspective and depth.</strong> As an FRSPH Fellow, Craig brings public health expertise—understanding wellbeing as a population-level issue requiring systemic intervention, not just individual support. As someone with cross-sector board experience, he understands how wellbeing connects to governance, risk, strategy, and organizational performance. This combination is rare.</p>
+<p><strong>The difference is perspective and depth.</strong> As an FRSPH Fellow, Craig brings public health expertise—understanding wellbeing as a population-level issue requiring systemic intervention, not just individual support. As someone with cross-sector board experience, he understands how wellbeing connects to governance, risk, strategy, and organisational performance. This combination is rare.</p>
 
-<p><strong>HR consultants ask: "What programs should we offer?"</strong> Craig asks: "How does organizational wellbeing connect to our strategic priorities? What governance changes would drive systematic improvement? What are we missing in our board-level oversight of wellbeing? How do leadership behaviors influence organizational wellbeing? Where are systemic issues that programs won't fix?"</p>
+<p><strong>HR consultants ask: "What programs should we offer?"</strong> Craig asks: "How does organisational wellbeing connect to our strategic priorities? What governance changes would drive systematic improvement? What are we missing in our board-level oversight of wellbeing? How do leadership behaviors influence organisational wellbeing? Where are systemic issues that programs won't fix?"</p>
 
 <p><strong>The output is different too.</strong> HR consultancy typically produces recommendations for wellbeing programs and policies. Wellbeing audits produce strategic insights for boards and executive teams: governance-level recommendations, cultural change priorities, leadership development needs, systemic issues requiring structural change, and evidence-based prioritization of initiatives.</p>
 
 <p><strong>You might need both:</strong> HR consultancy to implement programs, Craig's wellbeing audit to provide strategic direction and governance oversight. They complement each other—but they're not the same.</p>`
   },
   {
-    question: "How long does an organizational wellbeing audit take?",
-    answer: `<p><strong>Typical timeline is 6-12 weeks from kickoff to final report</strong>, depending on organization size, data complexity, and audit scope. Rushed audits miss important patterns; overly lengthy audits lose momentum. The timeframe balances thoroughness with actionable delivery.</p>
+    question: "How long does an organisational wellbeing audit take?",
+    answer: `<p><strong>Typical timeline is 6-12 weeks from kickoff to final report</strong>, depending on organisation size, data complexity, and audit scope. Rushed audits miss important patterns; overly lengthy audits lose momentum. The timeframe balances thoroughness with actionable delivery.</p>
 
-<p><strong>Typical audit phases include:</strong> <strong>Discovery and scoping</strong> (1-2 weeks): understand organizational context, define questions you want answered, identify data sources, agree approach and timeline. <strong>Data collection and integration</strong> (2-3 weeks): gather existing data (surveys, HR metrics, performance data), conduct any additional data collection (interviews, focus groups if needed), prepare data for analysis. <strong>Analysis and interpretation</strong> (2-4 weeks): AI-enhanced pattern recognition across data sources, expert interpretation within organizational context, development of findings and insights, identification of root causes and systemic issues. <strong>Recommendations and reporting</strong> (1-2 weeks): develop governance-level recommendations, create executive report and visualizations, prepare board/leadership presentation, finalize implementation roadmap.</p>
+<p><strong>Typical audit phases include:</strong> <strong>Discovery and scoping</strong> (1-2 weeks): understand organisational context, define questions you want answered, identify data sources, agree approach and timeline. <strong>Data collection and integration</strong> (2-3 weeks): gather existing data (surveys, HR metrics, performance data), conduct any additional data collection (interviews, focus groups if needed), prepare data for analysis. <strong>Analysis and interpretation</strong> (2-4 weeks): AI-enhanced pattern recognition across data sources, expert interpretation within organisational context, development of findings and insights, identification of root causes and systemic issues. <strong>Recommendations and reporting</strong> (1-2 weeks): develop governance-level recommendations, create executive report and visualizations, prepare board/leadership presentation, finalize implementation roadmap.</p>
 
-<p><strong>Timeline flexibility depends on:</strong> data availability (ready to analyze vs. needs significant cleaning); organizational complexity (single site vs. multi-location, multi-division); qualitative data collection needs (desk-based analysis vs. requiring interviews/focus groups); and stakeholder engagement requirements (single executive briefing vs. multiple presentations).</p>
+<p><strong>Timeline flexibility depends on:</strong> data availability (ready to analyze vs. needs significant cleaning); organisational complexity (single site vs. multi-location, multi-division); qualitative data collection needs (desk-based analysis vs. requiring interviews/focus groups); and stakeholder engagement requirements (single executive briefing vs. multiple presentations).</p>
 
-<p><strong>The goal is meaningful insight delivered at a pace that allows thorough analysis</strong> without losing organizational attention. The initial consultation clarifies expected timeline for your specific situation.</p>`
+<p><strong>The goal is meaningful insight delivered at a pace that allows thorough analysis</strong> without losing organisational attention. The initial consultation clarifies expected timeline for your specific situation.</p>`
   }
 ];
 ---
 
 <Layout
-  title="Organizational Wellbeing Audit Services | Lighthouse Mentoring"
+  title="Organisational Wellbeing Audit Services | Lighthouse Mentoring"
   description="Organizational wellbeing audits with human-AI analysis. FRSPH Fellow providing strategic insights beyond traditional surveys. Board-level wellbeing governance."
-  keywords="organizational wellbeing audit, workplace wellbeing consultant, employee wellbeing assessment, wellbeing audit services, wellbeing strategy consultant"
+  keywords="organisational wellbeing audit, workplace wellbeing consultant, employee wellbeing assessment, wellbeing audit services, wellbeing strategy consultant"
 >
   <!-- Hero Section -->
   <section class="hero section-padding bg-primary text-white">
@@ -146,7 +146,7 @@ const wellbeingFAQs = [
             Understand Wellbeing Beyond the Survey
           </h1>
           <p class="text-gray-100 leading-relaxed mb-8">
-            Human-AI analysis that surfaces patterns traditional surveys miss. Strategic insights that connect organizational wellbeing to performance, governance, and culture.
+            Human-AI analysis that surfaces patterns traditional surveys miss. Strategic insights that connect organisational wellbeing to performance, governance, and culture.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <Button href="/contact" variant="secondary">
@@ -298,7 +298,7 @@ const wellbeingFAQs = [
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>You're accountable for organizational health</span>
+              <span>You're accountable for organisational health</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -334,13 +334,13 @@ const wellbeingFAQs = [
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>You're developing organizational wellbeing strategy</span>
+              <span>You're developing organisational wellbeing strategy</span>
             </li>
           </ul>
         </div>
 
         <div class="card p-8">
-          <h3 class="text-h3 text-gray-900 mb-4">Organizations Facing Challenges</h3>
+          <h3 class="text-h3 text-gray-900 mb-4">Organisations Facing Challenges</h3>
           <ul class="space-y-3 text-gray-700">
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -370,7 +370,7 @@ const wellbeingFAQs = [
         </div>
 
         <div class="card p-8">
-          <h3 class="text-h3 text-gray-900 mb-4">Forward-Thinking Organizations</h3>
+          <h3 class="text-h3 text-gray-900 mb-4">Forward-Thinking Organisations</h3>
           <ul class="space-y-3 text-gray-700">
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -704,7 +704,7 @@ const wellbeingFAQs = [
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>Extensive experience navigating organizational dynamics</span>
+              <span>Extensive experience navigating organisational dynamics</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -740,7 +740,7 @@ const wellbeingFAQs = [
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span>Tailored to your organizational context</span>
+              <span>Tailored to your organisational context</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -787,7 +787,7 @@ const wellbeingFAQs = [
             </div>
             <div>
               <h3 class="text-h4 text-gray-900 mb-2">Clear Wellbeing Baseline</h3>
-              <p class="text-gray-700">Data-driven understanding of organizational wellbeing status</p>
+              <p class="text-gray-700">Data-driven understanding of organisational wellbeing status</p>
             </div>
           </div>
         </div>
@@ -851,7 +851,7 @@ const wellbeingFAQs = [
             <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
-            <p class="text-gray-700">You need to understand organizational wellbeing beyond surface-level surveys</p>
+            <p class="text-gray-700">You need to understand organisational wellbeing beyond surface-level surveys</p>
           </div>
           <div class="flex items-start gap-4">
             <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -901,7 +901,7 @@ const wellbeingFAQs = [
             </div>
             <div>
               <h3 class="text-h4 text-gray-900 mb-2">Initial Discussion (Within 24 Hours)</h3>
-              <p class="text-gray-700">Understanding your organization, wellbeing concerns, and audit objectives</p>
+              <p class="text-gray-700">Understanding your organisation, wellbeing concerns, and audit objectives</p>
             </div>
           </div>
         </div>
@@ -983,10 +983,10 @@ const wellbeingFAQs = [
     <div class="container max-w-3xl text-center">
       <h2 class="text-h2 mb-6">Understand Your Organization's Wellbeing</h2>
       <p class="text-gray-100 leading-relaxed mb-8">
-        Most organizations measure wellbeing but don't truly understand it. Book a 45-minute consultation to discuss what you want to learn about your organization and explore whether a wellbeing audit is right for you.
+        Most organisations measure wellbeing but don't truly understand it. Book a 45-minute consultation to discuss what you want to learn about your organisation and explore whether a wellbeing audit is right for you.
       </p>
       <p class="text-gray-100 leading-relaxed mb-8">
-        No obligation. Just a strategic conversation about organizational wellbeing.
+        No obligation. Just a strategic conversation about organisational wellbeing.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button href="/contact" variant="secondary">
