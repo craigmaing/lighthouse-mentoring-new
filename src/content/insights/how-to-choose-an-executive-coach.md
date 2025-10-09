@@ -3,11 +3,45 @@ title: "How to Choose an Executive Coach | Complete UK Guide 2025"
 description: "Expert guide on how to choose an executive coach. Learn what credentials matter, questions to ask, and how to find the right executive coach for your leadership development."
 pubDate: 2025-01-15
 author: "Craig Fearn"
+authorCredentials: "FRSPH, FCMI, IoD Ambassador"
+readTime: "9 min"
 category: "executive-coaching"
 tags: ["executive coaching", "leadership development", "choosing a coach", "CEO coaching", "board advisory", "coaching credentials", "EMCC coach", "professional coach", "hire executive coach", "find executive coach"]
 featured: true
 image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
 imageAlt: "Professional executive coach meeting with C-suite leader for leadership development coaching session"
+
+# AI Search Optimization Fields
+tldr:
+  - "Look for ICF or EMCC accredited coaches with proven board-level experience"
+  - "77% of executives report significant business impact from coaching"
+  - "Ask about coaching style, methodology, and measurable outcomes before committing"
+  - "Verify credentials, check testimonials, and ensure cultural fit with your organization"
+
+keyTakeaways:
+  - "Choose coaches with recognized credentials (ICF, EMCC) and extensive board-level experience in your industry"
+  - "Successful coaching relationships require clear goals, trust, and alignment on methodology and approach"
+  - "Request references from C-suite clients and verify track record of delivering measurable business outcomes"
+  - "Investment in executive coaching delivers 70% improvement in work performance and 86% positive ROI"
+
+faqs:
+  - question: "What qualifications should an executive coach have?"
+    answer: "Look for accreditation from the International Coaching Federation (ICF) or European Mentoring & Coaching Council (EMCC), proven board-level experience, relevant industry knowledge, and testimonials from senior executives. Coaches like Craig Fearn hold fellowship credentials (FRSPH, FCMI) and serve in ambassador roles (IoD) demonstrating deep expertise."
+
+  - question: "How much does executive coaching cost in the UK?"
+    answer: "Executive coaching typically ranges from £200-£500 per hour for experienced coaches, with comprehensive programs running 6-12 months. Board-level coaches with fellowships and extensive C-suite experience command premium rates but deliver significantly higher ROI through strategic impact."
+
+  - question: "How long does an executive coaching engagement last?"
+    answer: "Most effective executive coaching engagements run for 6-12 months with sessions every 2-4 weeks. This timeframe allows for meaningful behavioral change, strategic implementation, and measurable results while providing accountability and sustained support."
+
+  - question: "What's the difference between executive coaching and mentoring?"
+    answer: "Executive coaching focuses on facilitating self-discovery and helping leaders develop their own solutions through structured methodologies. Mentoring involves a more experienced individual sharing knowledge and advice based on their own experience. Coaching is more structured and goal-oriented."
+
+  - question: "How do I know if an executive coach is right for me?"
+    answer: "Schedule an initial consultation to assess chemistry, coaching style, and approach. Discuss your specific challenges, ask about their methodology, request client references, and ensure their experience aligns with your industry and leadership level. Trust and rapport are essential for successful coaching outcomes."
+
+  - question: "What should I expect in the first coaching session?"
+    answer: "The first session typically involves goal-setting, assessment of current challenges, discussion of desired outcomes, and establishing the coaching framework. Your coach will explore your leadership context, organizational dynamics, and create a tailored development plan with measurable milestones."
 ---
 
 Choosing an executive coach is a significant decision, one that can profoundly impact your career trajectory and the success of your organisation.

@@ -3,11 +3,44 @@ title: "Executive Leadership Coaching: A Guide to Coaching Services and Leadersh
 description: "Comprehensive guide to executive leadership coaching for senior leaders. Learn about coaching methodologies, choosing the right coach, and how leadership coaching drives organizational success."
 pubDate: 2025-01-20
 author: "Craig Fearn"
+authorCredentials: "FRSPH, FCMI, IoD Ambassador"
+readTime: "12 min"
 category: "executive-coaching"
 tags: ["executive leadership coaching", "leadership coach", "coaching services", "senior leaders", "professional development", "coaching methodologies", "leadership skills", "organizational success", "executive coach", "coaching program"]
 featured: true
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
-imageAlt: "Executive leadership coaching session with senior leader discussing strategic leadership development"
+image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+imageAlt: "Executive leadership development session showing professional coaching services for business leaders"
+
+tldr:
+  - "Executive leadership coaching focuses on developing self-awareness and leadership effectiveness through personalized one-on-one guidance"
+  - "Coaching methodologies like GROW model and 360-degree feedback drive measurable improvements in leadership performance"
+  - "The right leadership coach brings board-level experience, recognized credentials (ICF/EMCC), and proven results with C-suite leaders"
+  - "Coaching programs typically run 6-12 months and deliver ROI through enhanced decision-making, team performance, and organizational culture"
+
+keyTakeaways:
+  - "Executive coaching is distinct from consulting - it develops the individual leader rather than solving organizational problems directly"
+  - "Effective leadership coaches hold ICF or EMCC accreditation and bring extensive director-level experience across multiple sectors"
+  - "Common coaching methodologies include GROW model, 360-degree feedback, and solution-focused approaches tailored to senior leadership challenges"
+  - "Successful coaching relationships require clear goals, mutual trust, regular sessions, and measurable outcomes aligned to organizational success"
+
+faqs:
+  - question: "What is the difference between executive coaching and leadership consulting?"
+    answer: "Executive coaching focuses on developing the individual leader through personalized guidance, self-awareness, and goal-setting. It's a partnership where the coach facilitates the leader's own insights and solutions. Leadership consulting, by contrast, involves experts analyzing organizational problems and providing direct recommendations or solutions. Coaching develops capability; consulting provides expertise."
+
+  - question: "How long does an executive coaching program typically last?"
+    answer: "Most executive coaching programs run 6-12 months, with sessions typically held bi-weekly or monthly. This timeframe allows for meaningful behavioral change, skill development, and measurable impact on leadership effectiveness. Some intensive programs may be shorter (3-6 months), while ongoing development coaching can extend beyond a year."
+
+  - question: "What qualifications should I look for in an executive leadership coach?"
+    answer: "Look for coaches with ICF (International Coaching Federation) or EMCC (European Mentoring & Coaching Council) accreditation, extensive board-level or C-suite experience, proven track record with senior leaders, and ideally fellowship-level credentials (like FCMI, FRSPH). The best coaches combine formal training with deep business experience at director level."
+
+  - question: "What is the GROW model in executive coaching?"
+    answer: "The GROW model is a structured coaching framework: Goal (define objectives), Reality (assess current situation), Options (explore possibilities), and Way Forward (commit to action). It's widely used in executive coaching to facilitate strategic thinking and problem-solving while keeping the leader accountable to their development goals."
+
+  - question: "How do I measure ROI from executive coaching?"
+    answer: "ROI from coaching can be measured through: improved 360-degree feedback scores, enhanced team performance metrics, better decision-making outcomes, increased employee engagement scores, reduced turnover in the leader's team, achievement of specific strategic goals, and qualitative feedback from peers and direct reports."
+
+  - question: "Can executive coaching help with work-life balance and wellbeing?"
+    answer: "Yes, board-level executive coaching often addresses wellbeing and work-life integration as these directly impact leadership effectiveness. Coaches with backgrounds in organizational psychology and wellbeing (like those with FRSPH fellowship) can help leaders develop sustainable high-performance practices that protect their health while driving results."
 ---
 
 Welcome to a comprehensive guide on executive leadership coaching, a vital resource for senior leaders aiming to enhance their leadership skills and drive organizational success.

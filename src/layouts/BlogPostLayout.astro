@@ -1,0 +1,237 @@
+---
+import Layout from './Layout.astro';
+import AuthorByline from '../components/blog/AuthorByline.astro';
+import TLDRSummary from '../components/blog/TLDRSummary.astro';
+import KeyTakeaways from '../components/blog/KeyTakeaways.astro';
+import FAQSection from '../components/blog/FAQSection.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  author?: string;
+  authorCredentials?: string;
+  readTime?: string;
+  tldr?: string[];
+  keyTakeaways?: string[];
+  faqs?: Array<{ question: string; answer: string }>;
+  image?: string;
+  imageAlt?: string;
+  tags?: string[];
+  category?: string;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  author = "Craig Fearn",
+  authorCredentials = "FRSPH, FCMI, IoD Ambassador",
+  readTime,
+  tldr = [],
+  keyTakeaways = [],
+  faqs = [],
+  image,
+  imageAlt,
+  tags = [],
+  category = "leadership"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = image || `${Astro.site}images/craig-headshot.jpg`;
+
+// Article Schema.org structured data for SEO
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": ogImageURL,
+  "datePublished": pubDate.toISOString(),
+  "dateModified": pubDate.toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": `${Astro.site}about`,
+    "jobTitle": "Strategic Consultant & Board Advisor",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FCMI - Chartered Management Institute"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Fellowship",
+        "name": "FRSPH - Royal Society for Public Health"
+      }
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lighthouse Mentoring",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${Astro.site}images/logo-black.png`
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalURL.toString()
+  },
+  "keywords": tags.join(', '),
+  "articleSection": category
+};
+---
+
+<Layout title={title} description={description} schemaType="service">
+  <!-- Blog-specific SEO meta tags -->
+  <Fragment slot="head">
+    <meta property="article:published_time" content={pubDate.toISOString()} />
+    <meta property="article:author" content={author} />
+    <meta property="article:section" content={category} />
+    {tags.map((tag) => (
+      <meta property="article:tag" content={tag} />
+    ))}
+    {tags.length > 0 && <meta name="keywords" content={tags.join(', ')} />}
+
+    <!-- Article Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+
+  <article class="max-w-4xl mx-auto px-4 md:px-6 py-12">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+        {title}
+      </h1>
+
+      <AuthorByline
+        author={author}
+        credentials={authorCredentials}
+        date={pubDate}
+        readTime={readTime}
+      />
+    </header>
+
+    <!-- Hero Image (if provided) -->
+    {image && (
+      <div class="mb-12">
+        <img
+          src={image}
+          alt={imageAlt || title}
+          class="w-full rounded-lg shadow-lg"
+          loading="eager"
+        />
+      </div>
+    )}
+
+    <!-- TL;DR Summary (if provided) -->
+    {tldr.length > 0 && <TLDRSummary points={tldr} />}
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none
+      prose-headings:text-primary prose-headings:font-bold
+      prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-8
+      prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-5
+      prose-p:text-gray-700 prose-p:leading-loose prose-p:mb-8
+      prose-a:text-accent prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+      prose-strong:text-primary prose-strong:font-bold
+      prose-ul:my-8 prose-li:mb-3 prose-li:leading-relaxed
+      prose-ol:my-8
+    ">
+      <slot />
+    </div>
+
+    <!-- Key Takeaways (if provided) -->
+    {keyTakeaways.length > 0 && <KeyTakeaways takeaways={keyTakeaways} />}
+
+    <!-- FAQ Section (if provided) -->
+    {faqs.length > 0 && <FAQSection faqs={faqs} />}
+
+    <!-- Author Bio -->
+    <div class="mt-16 pt-8 border-t-2 border-gray-200">
+      <h2 class="text-2xl font-bold text-primary mb-4">About the Author</h2>
+      <div class="bg-eggshell p-6 rounded-lg">
+        <h3 class="text-xl font-bold text-primary mb-2">{author}</h3>
+        <p class="text-accent font-semibold mb-3">{authorCredentials}</p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Craig Fearn is an executive coach and board advisor with extensive director-level experience.
+          As an IoD Ambassador, FRSPH Fellow, and FCMI Fellow, he works with C-suite leaders and boards
+          across sectors including NHS, technology, financial services, and professional services.
+          Craig combines deep psychological insight with practical board-level experience to deliver
+          measurable leadership development outcomes.
+        </p>
+        <a href="/about" class="text-accent font-semibold hover:underline">
+          Learn more about Craig →
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-12 bg-gradient-to-br from-primary to-primary/90 text-white p-8 md:p-12 rounded-lg">
+      <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Leadership?</h2>
+      <p class="text-lg mb-6 opacity-90">
+        Explore how board-level executive coaching can accelerate your development
+        and create lasting impact within your organization.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="/contact"
+          class="inline-block bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-lg transition-colors text-center"
+        >
+          Get in Touch
+        </a>
+        <a
+          href="/services/executive-coaching"
+          class="inline-block bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-lg transition-colors text-center"
+        >
+          Learn About Coaching
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style is:global>
+  /* Ensure proper paragraph spacing in markdown content */
+  .prose p {
+    margin-bottom: 2rem !important;
+  }
+
+  .prose p + p {
+    margin-top: 0;
+  }
+
+  /* Ensure links are styled properly */
+  .prose a {
+    color: #A45C1A;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .prose a:hover {
+    text-decoration: underline;
+  }
+
+  /* Better spacing for lists */
+  .prose ul, .prose ol {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Better heading spacing */
+  .prose h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .prose h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+</style>
