@@ -7,6 +7,7 @@ category: "executive-coaching"
 tags: ["executive coaching", "leadership development", "choosing a coach", "CEO coaching", "board advisory", "coaching credentials", "EMCC coach", "professional coach", "hire executive coach", "find executive coach"]
 featured: true
 image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
+imageAlt: "Professional executive coach meeting with C-suite leader for leadership development coaching session"
 ---
 
 Choosing an executive coach is a significant decision, one that can profoundly impact your career trajectory and the success of your organisation. Finding the right executive coach involves careful consideration of your needs, goals, and the coach's experience and expertise, so you can choose someone who truly supports your growth. This article provides a comprehensive guide to help you navigate the process of choosing the right executive coach who is the appropriate match for you and your specific circumstances.
@@ -25,13 +26,13 @@ It is important to remember that an executive coach isn't a therapist or a life 
 
 The benefits of hiring a good executive coach are substantial and far-reaching. [Executive coaching services](/services/executive-coaching) offer strategic clarity, helping leaders navigate complex board dynamics and develop leadership capability.
 
-Research shows that 77% of executives said coaching had a significant impact on at least one major business metric[^1], while 87% of organizations report a positive ROI from coaching[^2]. Coaching services can also improve [organisational wellbeing](/services/organizational-wellbeing), ultimately leading to measurable outcomes.
+According to [International Coaching Federation research](https://coachingfederation.org/blog/coaching-statistics-the-roi-of-coaching-in-2024/), 77% of executives said coaching had a significant impact on at least one major business metric, while 87% of organizations report a positive ROI from coaching. Coaching services can also improve [organisational wellbeing](/services/organizational-wellbeing), ultimately leading to measurable outcomes.
 
 A good executive coach can provide a fresh perspective, challenge assumptions, and facilitate the development of innovative solutions. By working with an executive leadership coach, individuals can enhance their decision-making abilities, improve communication skills, and foster a more positive and productive work environment. The coaching engagement is an investment in both individual and organisational growth.
 
 ### How a Coach Can Help in Leadership Development
 
-A great coach plays a pivotal role in leadership development by integrating psychological insights with strategic thinking and practical board-level experience. Academic research demonstrates that coaching-based leadership interventions successfully increase participants' psychological capital, work engagement, and both in-role and extra-role performance[^3].
+A great coach plays a pivotal role in leadership development by integrating psychological insights with strategic thinking and practical board-level experience. [Academic research](https://pmc.ncbi.nlm.nih.gov/articles/PMC7011779/) demonstrates that coaching-based leadership interventions successfully increase participants' psychological capital, work engagement, and both in-role and extra-role performance.
 
 A coach can help individuals enhance their self-awareness, identify areas for improvement, and create action plans for growth. Through targeted coaching sessions, leaders can refine their communication style, improve their ability to influence others, and build stronger, more cohesive teams.
 
@@ -113,17 +114,7 @@ The right executive coach remains open to feedback and willing to collaborate wi
 
 ---
 
-## References
-
-[^1]: International Coaching Federation (ICF). (2024). [Coaching Statistics: The ROI of Coaching in 2024](https://coachingfederation.org/blog/coaching-statistics-the-roi-of-coaching-in-2024/). ICF Global.
-
-[^2]: Luisa Zhou. (2025). [70+ Trusted Coaching Statistics: ROI, Growth & AI](https://luisazhou.com/blog/coaching-statistics/). Based on PriceWaterhouseCoopers and Association Resource Center global survey.
-
-[^3]: Berg, M. E., & Karlsen, J. T. (2020). [Coaching-Based Leadership Intervention Program: A Controlled Trial Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7011779/). *Journal of Leadership & Organizational Studies*. PMC.
-
-[^4]: National Center for Biotechnology Information (NCBI). (2023). [The effects of executive coaching on behaviors, attitudes, and personal characteristics: a meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC10272735/). *Frontiers in Psychology*.
-
-### Further Reading
+## Further Reading
 
 - [International Coaching Federation (ICF)](https://coachingfederation.org/) - Global coaching body and research
 - [European Mentoring & Coaching Council (EMCC)](https://www.emccglobal.org/) - Professional coaching standards

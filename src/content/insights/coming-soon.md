@@ -6,6 +6,7 @@ author: "Craig Fearn"
 category: "leadership"
 tags: ["updates"]
 image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&q=80"
+imageAlt: "Professional workspace with laptop showing content development for leadership and coaching insights"
 ---
 
 ## Insights Coming Soon
