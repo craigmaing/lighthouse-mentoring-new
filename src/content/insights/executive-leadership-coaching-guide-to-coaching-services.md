@@ -8,7 +8,7 @@ readTime: "12 min"
 category: "executive-coaching"
 tags: ["executive leadership coaching", "leadership coach", "coaching services", "senior leaders", "professional development", "coaching methodologies", "leadership skills", "organisational success", "executive coach", "coaching program"]
 featured: true
-image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Executive leadership development session showing professional coaching services for business leaders"
 
 tldr:

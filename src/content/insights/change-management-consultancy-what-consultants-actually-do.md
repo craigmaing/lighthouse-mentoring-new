@@ -8,7 +8,7 @@ readTime: "10 min"
 category: "leadership"
 tags: ["change management", "change management consultancy", "organisational change", "transformation consulting", "culture change", "change management strategy", "business transformation", "change management consultant", "organisational development", "change initiatives"]
 featured: false
-image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Change management consultants facilitating organisational transformation strategy session with leadership team"
 
 tldr:

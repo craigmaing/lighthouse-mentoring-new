@@ -8,7 +8,7 @@ readTime: "12 min"
 category: "executive-coaching"
 tags: ["executive coaching ROI", "coaching investment", "leadership development", "business growth", "productivity", "employee retention", "coaching programmes", "business coaching", "coaching statistics", "return on investment"]
 featured: true
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Executive coaching session showing business leader development and ROI calculation for coaching investment"
 
 tldr:

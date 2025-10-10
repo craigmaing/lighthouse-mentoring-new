@@ -8,7 +8,7 @@ readTime: "10 min"
 category: "executive-coaching"
 tags: ["executive coaching", "leadership development", "coaching programme", "executive coach benefits", "professional coaching", "business coaching", "leadership coaching", "executive development", "coaching ROI", "leadership transformation"]
 featured: false
-image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Professional executive coaching session showing benefits of structured coaching programme for leadership development"
 
 tldr:

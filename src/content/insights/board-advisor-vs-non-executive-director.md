@@ -8,13 +8,38 @@ readTime: "10 min"
 category: "board-advisory"
 tags: ["board advisor", "non-executive director", "NED", "board governance", "advisory board", "board of directors", "corporate governance", "board roles", "fiduciary duties", "board appointments", "startup governance", "board structure"]
 featured: true
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Board meeting showing the difference between board advisors and non-executive directors in corporate governance"
 tldr:
   - Non-Executive Directors (NEDs) are formal board members with fiduciary duties and legal liabilities, while Board Advisors provide specialized guidance without the same legal responsibilities
   - The company board of directors has ultimate decision-making authority, whereas advisory boards provide advice and recommendations without formal governance power
   - NEDs contribute essential oversight and accountability for startups, while advisory board members offer flexible, specialized expertise for strategic decision-making
   - Choosing the right board role depends on your organisation's needs - NEDs for formal governance and accountability, advisors for targeted expertise and guidance
+
+keyTakeaways:
+  - "Non-Executive Directors (NEDs) are formal board members with fiduciary duties, legal liabilities, and voting rights on strategic decisions, while Board Advisors provide specialized guidance without formal governance responsibilities"
+  - "The company board of directors holds ultimate decision-making authority, whereas advisory boards offer recommendations and expertise without binding authority or regulatory oversight"
+  - "Startups benefit from NEDs for governance and investor confidence, particularly after institutional funding, while advisory boards provide flexible, cost-effective expertise during early growth stages"
+  - "Selection criteria differ significantly - NEDs require governance expertise, independence, and formal time commitments, while advisors are chosen for specialized domain knowledge and flexible engagement"
+
+faqs:
+  - question: "What is the main difference between a Board Advisor and a Non-Executive Director?"
+    answer: "The main difference is legal status and responsibility. Non-Executive Directors (NEDs) are formal board members with fiduciary duties, legal liabilities, and voting rights on company decisions. They are registered at Companies House and subject to corporate governance codes. Board Advisors provide expert guidance and recommendations without fiduciary duties, legal liabilities, or voting rights. Advisors operate outside the formal board structure, offering specialized expertise on a more flexible basis."
+
+  - question: "Can a Board Advisor become a Non-Executive Director later?"
+    answer: "Yes, this is a common progression. Many organisations use advisory board positions as a trial period before making formal NED appointments. This allows both the organisation and the advisor to assess compatibility, value contribution, and cultural fit before committing to a formal directorship with its attendant legal responsibilities and time commitments. Successful advisors who demonstrate significant value often transition to NED roles as the company matures."
+
+  - question: "Do Board Advisors have any legal liability?"
+    answer: "Generally, Board Advisors have minimal legal liability compared to NEDs. Advisors typically operate under consulting agreements that limit their exposure, and they don't have the fiduciary duties that create legal obligations for formal directors. However, advisors should still be cautious about the advice they provide, as they could theoretically face liability for gross negligence or fraudulent misrepresentation. Professional indemnity insurance is advisable for active advisors."
+
+  - question: "How much time commitment is expected from NEDs vs. Board Advisors?"
+    answer: "Non-Executive Directors typically commit 20-30 days per year, including board meetings (usually 8-12 annually), committee work, preparation time, and strategic engagements. Some NEDs of larger organisations commit 40+ days annually. Board Advisors have more flexible arrangements, typically committing 5-15 days per year with as-needed availability for specific issues. Advisory engagements can be structured monthly, quarterly, or on a project basis depending on organisational needs."
+
+  - question: "What compensation structure is typical for NEDs and Board Advisors?"
+    answer: "Non-Executive Directors are typically compensated with director's fees (ranging from £20,000-£100,000+ annually depending on company size and complexity), often supplemented with equity or share options. Additional fees may apply for committee chair roles. Board Advisors have more varied compensation structures, including consulting fees (daily or monthly rates), equity grants, or a combination. Startup advisors often work for equity only (typically 0.25%-1% vesting over 2-4 years), while advisors to established companies command consulting fees similar to their professional rates."
+
+  - question: "When should a startup appoint its first Non-Executive Director?"
+    answer: "Most startups should appoint their first NED around Series A funding (£2-5 million raised), when investor governance requirements typically mandate independent board oversight. Earlier appointment may be beneficial if the startup faces complex regulatory requirements, is in a highly specialized industry, or has founders with limited commercial experience. Before Series A, advisory boards usually provide sufficient strategic guidance without the formal governance overhead and cost of NEDs."
 ---
 
 ## Board Advisor or Non-Executive Director: Understanding the Differences in Board Roles

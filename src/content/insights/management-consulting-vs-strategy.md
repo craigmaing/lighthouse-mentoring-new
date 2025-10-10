@@ -8,7 +8,7 @@ readTime: "12 min"
 category: "leadership"
 tags: ["management consulting", "strategy consulting", "business strategy", "organizational development", "strategic planning"]
 featured: true
-image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Business executives reviewing strategic consulting plans and management frameworks"
 
 tldr:

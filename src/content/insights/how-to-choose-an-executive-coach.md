@@ -8,7 +8,7 @@ readTime: "9 min"
 category: "executive-coaching"
 tags: ["executive coaching", "leadership development", "choosing a coach", "CEO coaching", "board advisory", "coaching credentials", "EMCC coach", "professional coach", "hire executive coach", "find executive coach"]
 featured: true
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Professional executive coach meeting with C-suite leader for leadership development coaching session"
 
 # AI Search Optimization Fields

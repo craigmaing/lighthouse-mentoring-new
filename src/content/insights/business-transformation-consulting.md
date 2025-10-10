@@ -8,7 +8,7 @@ readTime: "11 min"
 category: "leadership"
 tags: ["business transformation", "transformation consulting", "change management", "digital transformation", "organisational change", "transformation strategy", "business strategy", "transformation consultant", "business consulting"]
 featured: false
-image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&q=80"
+image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "Transformation consultants facilitating strategic business transformation planning session with executive team"
 
 tldr:
