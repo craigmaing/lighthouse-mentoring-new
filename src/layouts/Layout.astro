@@ -78,15 +78,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     {import.meta.env.PUBLIC_GA_MEASUREMENT_ID && (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_MEASUREMENT_ID }}>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', gaId, {
-            anonymize_ip: true,
-            cookie_flags: 'SameSite=None;Secure'
-          });
-        </script>
+        <script
+          async
+          src="/js/analytics.js"
+          data-ga-id={import.meta.env.PUBLIC_GA_MEASUREMENT_ID}
+          integrity="sha384-ssQ4OSf0nfWq4fxVS2SGGIL0EtbnprL+2xn9VrOVGpmZ+nRLUDeTZeJftIvbQ1ow"
+          crossorigin="anonymous"
+        ></script>
       </>
     )}
   </head>
