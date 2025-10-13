@@ -36,4 +36,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap
-Sitemap: https://lighthousementoring.com/sitemap.xml
+Sitemap: https://lighthousementoring.co.uk/sitemap-index.xml
