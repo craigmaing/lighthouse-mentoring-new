@@ -175,12 +175,11 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Sitemap - no cache
+# Sitemap - no cache, allow crawling (remove X-Robots-Tag for sitemaps)
 [[headers]]
   for = "/sitemap-*.xml"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
-    X-Robots-Tag = "noindex"
 
 # RSS feed
 [[headers]]
