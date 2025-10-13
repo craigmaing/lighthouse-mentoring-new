@@ -8,16 +8,205 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Redirect rules
+# ====================================================================
+# CONTEXT-SPECIFIC CONFIGURATION
+# Prevent deploy previews and branch deploys from being indexed
+# ====================================================================
+
+# Production context (main site - lighthousementoring.co.uk)
+[context.production]
+  command = "npm run build"
+
+  # Production gets indexed
+  [[context.production.headers]]
+    for = "/*"
+    [context.production.headers.values]
+      X-Robots-Tag = "index, follow"
+
+# Deploy preview context (PR previews) - BLOCK FROM INDEXING
+[context.deploy-preview]
+  command = "npm run build"
+
+  # Block deploy previews from being indexed
+  [[context.deploy-preview.headers]]
+    for = "/*"
+    [context.deploy-preview.headers.values]
+      X-Robots-Tag = "noindex, nofollow"
+
+# Branch deploy context (non-production branches) - BLOCK FROM INDEXING
+[context.branch-deploy]
+  command = "npm run build"
+
+  # Block branch deploys from being indexed
+  [[context.branch-deploy.headers]]
+    for = "/*"
+    [context.branch-deploy.headers.values]
+      X-Robots-Tag = "noindex, nofollow"
+
+# ====================================================================
+# CRITICAL 301 REDIRECTS - Old Netlify App to New Domain
+# ====================================================================
+# Redirect all traffic from lighthousementoring.netlify.app to lighthousementoring.co.uk
+[[redirects]]
+  from = "https://lighthousementoring.netlify.app/*"
+  to = "https://lighthousementoring.co.uk/:splat"
+  status = 301
+  force = true
+
+# Redirect all traffic from www to non-www (canonical domain)
+[[redirects]]
+  from = "https://www.lighthousementoring.co.uk/*"
+  to = "https://lighthousementoring.co.uk/:splat"
+  status = 301
+  force = true
+
+# Redirect all traffic from http to https
+[[redirects]]
+  from = "http://lighthousementoring.co.uk/*"
+  to = "https://lighthousementoring.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.lighthousementoring.co.uk/*"
+  to = "https://lighthousementoring.co.uk/:splat"
+  status = 301
+  force = true
+
+# ====================================================================
+# PAGE-SPECIFIC REDIRECTS
+# ====================================================================
+# Main pages
 [[redirects]]
   from = "/contact-success"
   to = "/contact/?success=true"
   status = 301
   force = true
 
-# Headers (additional to public/_headers)
+# Service pages
+[[redirects]]
+  from = "/board-advisory"
+  to = "/services/board-advisory"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/executive-coaching"
+  to = "/services/executive-coaching"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/organizational-wellbeing"
+  to = "/services/organizational-wellbeing"
+  status = 301
+  force = true
+
+# Blog/Insights redirects (handle common blog URL patterns)
+[[redirects]]
+  from = "/blog/*"
+  to = "/insights/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/post/*"
+  to = "/insights/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article/*"
+  to = "/insights/:splat"
+  status = 301
+  force = true
+
+# ====================================================================
+# CATCH-ALL FOR OLD SITE URLS (410 Gone)
+# ====================================================================
+# Any URL from the old site that doesn't match above redirects
+# Gets a 410 Gone status (tells Google page is permanently deleted)
+# This is STRONGER than 404 - Google removes 410 pages from index faster
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 410
+  force = false  # Only triggers if no other route matches (Astro routes take priority)
+
+# ====================================================================
+# SEO OPTIMIZATION HEADERS
+# ====================================================================
+# Global headers for all pages
 [[headers]]
   for = "/*"
   [headers.values]
     X-Robots-Tag = "index, follow"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# HTML files - shorter cache for SEO
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+    X-Robots-Tag = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+
+# Static assets - long cache
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Sitemap - no cache
+[[headers]]
+  for = "/sitemap-*.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Robots-Tag = "noindex"
+
+# RSS feed
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+    Content-Type = "application/rss+xml; charset=utf-8"
+
+# ====================================================================
+# PROCESSING SETTINGS
+# ====================================================================
+# Skip build for specific paths that might cause issues
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
 
