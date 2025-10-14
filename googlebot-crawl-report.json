@@ -1,0 +1,2828 @@
+{
+  "crawlDate": "2025-10-14T07:07:53.669Z",
+  "totalPages": 19,
+  "successfulPages": 19,
+  "failedPages": 0,
+  "results": [
+    {
+      "url": "https://lighthousementoring.co.uk/",
+      "status": "success",
+      "title": "Craig Fearn - Strategic Consultant | Board Advisory | Executive Leadership",
+      "metaDescription": "Strategic consultant specializing in board advisory and AI-enhanced decision-making. FCMI Fellow | FRSPH Fellow | IoD Ambassador. Board-level expertise across multiple sectors.",
+      "canonical": "https://lighthousementoring.co.uk/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Craig Fearn - Strategic Consultant | Board Advisory | Executive Leadership",
+      "ogDescription": "Strategic consultant specializing in board advisory and AI-enhanced decision-making. FCMI Fellow | FRSPH Fellow | IoD Ambassador. Board-level expertise across multiple sectors.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "The Strategic Advisor Boards Turn to First"
+      ],
+      "h2Count": 7,
+      "internalLinks": 46,
+      "externalLinks": 7,
+      "totalImages": 8,
+      "imagesWithoutAlt": 0,
+      "wordCount": 796,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.19999999972060323,
+        "loadComplete": 2057.5999999996275,
+        "transferSize": 14368
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/about/",
+      "status": "success",
+      "title": "About Craig Fearn | Strategic Consultant & Board Advisor",
+      "metaDescription": "Meet Craig Fearn: FCMI Fellow, FRSPH Fellow, and IoD Ambassador. Extensive board-level experience helping organizations achieve sustainable performance.",
+      "canonical": "https://lighthousementoring.co.uk/about/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "About Craig Fearn | Strategic Consultant & Board Advisor",
+      "ogDescription": "Meet Craig Fearn: FCMI Fellow, FRSPH Fellow, and IoD Ambassador. Extensive board-level experience helping organizations achieve sustainable performance.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Craig Fearn",
+          "jobTitle": "Strategic Consultant & Board Advisor",
+          "description": "Board-level strategic advisor with extensive cross-sector experience. FCMI Fellow, FRSPH Fellow, and IoD Ambassador specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "url": "https://lighthousementoring.co.uk",
+          "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+          "email": "craig@lighthousementoring.co.uk",
+          "sameAs": [
+            "https://www.linkedin.com/in/craig-fearn1/"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Lighthouse Mentoring"
+          },
+          "alumniOf": [
+            {
+              "@type": "Organization",
+              "name": "Chartered Management Institute"
+            },
+            {
+              "@type": "Organization",
+              "name": "Royal Society for Public Health"
+            }
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FCMI - Chartered Management Institute"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Fellowship",
+              "name": "FRSPH - Royal Society for Public Health"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Ambassador",
+              "name": "IoD Ambassador - Institute of Directors"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "EMCC Professional Coach"
+            }
+          ],
+          "knowsAbout": [
+            "Board Governance",
+            "Executive Coaching",
+            "Strategic Advisory",
+            "Organizational Wellbeing",
+            "Non-Executive Director Services",
+            "Leadership Development"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "https://lighthousementoring.co.uk/about"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Strategic Insight From Extensive Board-Level Experience"
+      ],
+      "h2Count": 9,
+      "internalLinks": 31,
+      "externalLinks": 9,
+      "totalImages": 8,
+      "imagesWithoutAlt": 0,
+      "wordCount": 959,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 1329.3000000002794,
+        "transferSize": 0
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/contact/",
+      "status": "success",
+      "title": "Contact Craig Fearn | Book a Strategic Consultation",
+      "metaDescription": "Get in touch to discuss board advisory, executive coaching, or organisational wellbeing services. Book your first conversation with Craig Fearn.",
+      "canonical": "https://lighthousementoring.co.uk/contact/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Contact Craig Fearn | Book a Strategic Consultation",
+      "ogDescription": "Get in touch to discuss board advisory, executive coaching, or organisational wellbeing services. Book your first conversation with Craig Fearn.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://lighthousementoring.co.uk/contact"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Start with a Conversation"
+      ],
+      "h2Count": 4,
+      "internalLinks": 21,
+      "externalLinks": 3,
+      "totalImages": 6,
+      "imagesWithoutAlt": 0,
+      "wordCount": 379,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.39999999990686774,
+        "loadComplete": 821.5999999996275,
+        "transferSize": 0
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/",
+      "status": "success",
+      "title": "Insights & Articles | Lighthouse Mentoring",
+      "metaDescription": "Expert insights on board advisory, executive coaching, and organizational wellbeing from Craig Fearn, FCMI Fellow and FRSPH Fellow.",
+      "canonical": "https://lighthousementoring.co.uk/insights/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Insights & Articles | Lighthouse Mentoring",
+      "ogDescription": "Expert insights on board advisory, executive coaching, and organizational wellbeing from Craig Fearn, FCMI Fellow and FRSPH Fellow.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Insights & Articles"
+      ],
+      "h2Count": 2,
+      "internalLinks": 42,
+      "externalLinks": 1,
+      "totalImages": 2,
+      "imagesWithoutAlt": 0,
+      "wordCount": 540,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.09999999962747097,
+        "loadComplete": 43.10000000009313,
+        "transferSize": 0
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/board-advisor-vs-non-executive-director/",
+      "status": "success",
+      "title": "Board Advisor vs Non-Executive Director: Understanding the Key Differences",
+      "metaDescription": "Discover the critical differences between Board Advisors and Non-Executive Directors (NEDs). Learn about governance roles, fiduciary duties, liabilities, and which board role best suits your organisation's strategic needs.",
+      "canonical": "https://lighthousementoring.co.uk/insights/board-advisor-vs-non-executive-director/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Board Advisor vs Non-Executive Director: Understanding the Key Differences",
+      "ogDescription": "Discover the critical differences between Board Advisors and Non-Executive Directors (NEDs). Learn about governance roles, fiduciary duties, liabilities, and which board role best suits your organisation's strategic needs.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Board-advisor-vs-non-executive-director",
+              "item": "https://lighthousementoring.co.uk/insights/board-advisor-vs-non-executive-director"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the main difference between a Board Advisor and a Non-Executive Director?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main difference is legal status and responsibility. Non-Executive Directors (NEDs) are formal board members with fiduciary duties, legal liabilities, and voting rights on company decisions. They are registered at Companies House and subject to corporate governance codes. Board Advisors provide expert guidance and recommendations without fiduciary duties, legal liabilities, or voting rights. Advisors operate outside the formal board structure, offering specialized expertise on a more flexible basis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a Board Advisor become a Non-Executive Director later?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, this is a common progression. Many organisations use advisory board positions as a trial period before making formal NED appointments. This allows both the organisation and the advisor to assess compatibility, value contribution, and cultural fit before committing to a formal directorship with its attendant legal responsibilities and time commitments. Successful advisors who demonstrate significant value often transition to NED roles as the company matures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do Board Advisors have any legal liability?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generally, Board Advisors have minimal legal liability compared to NEDs. Advisors typically operate under consulting agreements that limit their exposure, and they don't have the fiduciary duties that create legal obligations for formal directors. However, advisors should still be cautious about the advice they provide, as they could theoretically face liability for gross negligence or fraudulent misrepresentation. Professional indemnity insurance is advisable for active advisors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much time commitment is expected from NEDs vs. Board Advisors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non-Executive Directors typically commit 20-30 days per year, including board meetings (usually 8-12 annually), committee work, preparation time, and strategic engagements. Some NEDs of larger organisations commit 40+ days annually. Board Advisors have more flexible arrangements, typically committing 5-15 days per year with as-needed availability for specific issues. Advisory engagements can be structured monthly, quarterly, or on a project basis depending on organisational needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What compensation structure is typical for NEDs and Board Advisors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non-Executive Directors are typically compensated with director's fees (ranging from £20,000-£100,000+ annually depending on company size and complexity), often supplemented with equity or share options. Additional fees may apply for committee chair roles. Board Advisors have more varied compensation structures, including consulting fees (daily or monthly rates), equity grants, or a combination. Startup advisors often work for equity only (typically 0.25%-1% vesting over 2-4 years), while advisors to established companies command consulting fees similar to their professional rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should a startup appoint its first Non-Executive Director?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most startups should appoint their first NED around Series A funding (£2-5 million raised), when investor governance requirements typically mandate independent board oversight. Earlier appointment may be beneficial if the startup faces complex regulatory requirements, is in a highly specialized industry, or has founders with limited commercial experience. Before Series A, advisory boards usually provide sufficient strategic guidance without the formal governance overhead and cost of NEDs."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Board Advisor vs Non-Executive Director: Understanding the Key Differences"
+      ],
+      "h2Count": 14,
+      "internalLinks": 29,
+      "externalLinks": 16,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 4566,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 877.4000000003725,
+        "transferSize": 21681
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/business-transformation-consulting/",
+      "status": "success",
+      "title": "Business Transformation Consulting: Unlocking Success with Expert Transformation Consultants",
+      "metaDescription": "Discover how expert transformation consultants drive business transformation through strategic change management, digital transformation, and proven methodologies for organisational success.",
+      "canonical": "https://lighthousementoring.co.uk/insights/business-transformation-consulting/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Business Transformation Consulting: Unlocking Success with Expert Transformation Consultants",
+      "ogDescription": "Discover how expert transformation consultants drive business transformation through strategic change management, digital transformation, and proven methodologies for organisational success.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Business-transformation-consulting",
+              "item": "https://lighthousementoring.co.uk/insights/business-transformation-consulting"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is business transformation and how is it different from regular change management?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Business transformation is a fundamental shift in how a company operates, encompassing strategic initiatives that fundamentally alter business strategy, processes, technology, and culture. Unlike incremental improvements or standard change management, transformation involves reinventing the organisation to create sustainable competitive advantage, requiring holistic approach to operations, culture, and customer experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does a transformation consultant actually do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Transformation consultants partner with organisations to develop and implement comprehensive transformation strategies. They provide board-level strategic advice, manage transformation programmes, navigate complex organisational challenges, and ensure alignment with company goals. Expert consultants like Craig Fearn combine director-level experience with evidence-based methodology, using analytics and AI tools to augment human judgment and deliver strategic clarity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a typical business transformation project take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Business transformation timeframes vary significantly depending on scope and complexity, typically ranging from 12-36 months for major transformations. Digital transformations may take 18-24 months, while cultural transformations can extend beyond 3 years. The key is phased implementation with measurable milestones, allowing for continuous adjustment and demonstrating incremental value throughout the journey."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the most common reasons business transformations fail?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Research shows the primary failure factors include lack of clear vision and strategy, insufficient leadership commitment, poor change management, inadequate employee engagement, and failure to measure and communicate progress. Organizations with experienced transformation consultants and board-level support are 2.5 times more likely to succeed by addressing these critical success factors from the outset."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you measure the success of a business transformation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Success is measured through both quantitative and qualitative metrics aligned with strategic goals, including financial performance indicators (revenue growth, cost reduction, ROI), operational metrics (process efficiency, productivity gains), customer satisfaction scores, employee engagement levels, and market position improvements. Regular progress reviews and stakeholder feedback ensure transformation stays on track and delivers intended business value."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should I look for in a transformation consultant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for consultants with extensive board-level or director-level experience, proven track record across multiple sectors, fellowship-level credentials (like FCMI, FRSPH), and demonstrated expertise in strategic planning and change management. The best consultants combine deep business experience with evidence-based methodology, understand complex organisational dynamics, and can provide strategic clarity tailored to your specific challenges."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Business Transformation Consulting: Unlocking Success with Expert Transformation Consultants"
+      ],
+      "h2Count": 12,
+      "internalLinks": 29,
+      "externalLinks": 4,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 2202,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 2683.8000000002794,
+        "transferSize": 17066
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/change-management-consultancy/",
+      "status": "success",
+      "title": "Change Management Consultancy: What Consultants Actually Do",
+      "metaDescription": "Discover what change management consultants actually do to help organisations navigate transformation. Learn about change management strategies, cultural change services, and how consultants accelerate organisational change.",
+      "canonical": "https://lighthousementoring.co.uk/insights/change-management-consultancy/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Change Management Consultancy: What Consultants Actually Do",
+      "ogDescription": "Discover what change management consultants actually do to help organisations navigate transformation. Learn about change management strategies, cultural change services, and how consultants accelerate organisational change.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Change-management-consultancy",
+              "item": "https://lighthousementoring.co.uk/insights/change-management-consultancy"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What exactly does a change management consultant do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Change management consultants guide organisations through transformation by developing comprehensive change strategies, facilitating stakeholder engagement, creating communication plans, managing resistance, and measuring change effectiveness. They bring objective perspective, board-level strategic insight, and proven methodologies to accelerate implementation of change initiatives while minimizing disruption and maximizing employee adoption."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is change management different from project management?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While project management focuses on the technical aspects of delivering a project (scope, timeline, budget), change management focuses on the human side of transformation. Change management ensures that individuals successfully adopt new processes, technologies, and ways of working. Both are essential for successful transformation, but change management specifically addresses employee engagement, communication, training, and resistance to ensure sustainable adoption."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should an organisation hire a change management consultant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Organizations should consider change management consultants when undertaking significant transformations such as digital transformation, organisational restructuring, culture change initiatives, system implementations, or mergers and acquisitions. Consultants are particularly valuable when internal change management expertise is limited, when previous change initiatives have struggled, or when the organisation needs objective perspective and proven methodologies to accelerate success."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should a change management consultant have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for consultants with recognized change management certifications (such as Prosci or CMI qualifications), extensive board-level or director-level experience, proven track record across multiple sectors, and fellowship-level credentials (like FCMI, FRSPH). The best consultants combine formal change management methodology with deep business experience, understanding of organisational dynamics, and ability to provide strategic clarity tailored to specific challenges."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you measure the success of change management?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Success is measured through multiple metrics including adoption rates of new processes or systems, employee engagement scores, productivity improvements, reduction in resistance, achievement of project objectives, and sustained behavioral change post-implementation. Effective change management consultants establish clear baseline metrics, track progress throughout the initiative, and measure both quantitative outcomes and qualitative cultural shifts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the most common reasons change initiatives fail?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Research shows that 70% of change initiatives fail, primarily due to lack of clear vision and strategy, insufficient leadership commitment, poor communication, inadequate employee engagement, resistance management failures, and lack of sustainable reinforcement mechanisms. Organizations that engage experienced change management consultants with board-level support are significantly more likely to succeed by addressing these critical factors from the outset."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Change Management Consultancy: What Consultants Actually Do"
+      ],
+      "h2Count": 11,
+      "internalLinks": 29,
+      "externalLinks": 5,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 2010,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.20000000018626451,
+        "loadComplete": 760.5,
+        "transferSize": 16477
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/executive-coach-benefits/",
+      "status": "success",
+      "title": "Executive Coach: Benefits of Executive Coaching Programme",
+      "metaDescription": "Discover the transformative benefits of executive coaching programmes. Learn how an executive coach can enhance leadership skills, drive organizational success, and unlock your full potential through structured coaching programs.",
+      "canonical": "https://lighthousementoring.co.uk/insights/executive-coach-benefits/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Executive Coach: Benefits of Executive Coaching Programme",
+      "ogDescription": "Discover the transformative benefits of executive coaching programmes. Learn how an executive coach can enhance leadership skills, drive organizational success, and unlock your full potential through structured coaching programs.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Executive-coach-benefits",
+              "item": "https://lighthousementoring.co.uk/insights/executive-coach-benefits"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What makes executive coaching different from other types of coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching is specifically tailored to senior leaders and focuses on high-level strategic challenges, organizational dynamics, and leadership effectiveness. Unlike business coaching or life coaching, executive coaching addresses the unique pressures and responsibilities of leadership roles in complex organizations, requiring coaches with board-level experience and deep understanding of C-suite dynamics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a typical executive coaching programme last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most executive coaching programmes run 6-12 months, with regular one-on-one sessions occurring weekly, bi-weekly, or monthly depending on the executive's needs and schedule. This timeframe allows for meaningful behavioral change, skill development, and measurable impact on leadership effectiveness. Some intensive programmes may be shorter, while ongoing development coaching can extend beyond a year."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should I look for in an executive coach?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for coaches accredited by the International Coaching Federation (ICF) or European Mentoring & Coaching Council (EMCC), as this ensures they meet rigorous standards of training and ethical practice. Additionally, seek coaches with relevant industry experience, board-level expertise, proven track record with senior leaders, and ideally fellowship-level credentials (like FCMI, FRSPH) that demonstrate deep business experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you measure the ROI of executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ROI is measured through specific Key Performance Indicators (KPIs) aligned with programme goals, including improvements in leadership effectiveness, team performance, employee engagement, and business outcomes. Research shows organizations see measurable improvements in leadership quality, with sustained benefits including stronger leadership pipelines, improved organizational culture, and enhanced business performance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens during a typical executive coaching session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "During coaching sessions, the executive coach uses powerful questions, active listening, and evidence-based techniques to help leaders explore challenges, develop new perspectives, and create action plans. Sessions provide dedicated space for reflection, learning, and growth, with the coach serving as a trusted partner who facilitates self-discovery, challenges assumptions, and supports skill development."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if executive coaching is right for me?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching is ideal if you're navigating complex leadership challenges, preparing for a new senior role, seeking to enhance your impact as a leader, or wanting to develop specific capabilities like strategic thinking or emotional intelligence. Most coaches offer an initial consultation to assess fit and discuss your goals before committing to a full programme."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Executive Coach: Benefits of Executive Coaching Programme"
+      ],
+      "h2Count": 11,
+      "internalLinks": 28,
+      "externalLinks": 8,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 1907,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 1111.3000000002794,
+        "transferSize": 16251
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/executive-coaching-roi/",
+      "status": "success",
+      "title": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+      "metaDescription": "Discover the proven ROI of executive coaching for UK businesses. Learn how executive coaching delivers 788% returns through enhanced leadership performance, productivity gains, and measurable business growth.",
+      "canonical": "https://lighthousementoring.co.uk/insights/executive-coaching-roi/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving",
+      "ogDescription": "Discover the proven ROI of executive coaching for UK businesses. Learn how executive coaching delivers 788% returns through enhanced leadership performance, productivity gains, and measurable business growth.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Executive-coaching-roi",
+              "item": "https://lighthousementoring.co.uk/insights/executive-coaching-roi"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the average ROI of executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Research from Metrix Global shows executive coaching delivers an average 788% return on investment. Even excluding retention benefits, the ROI averages 529%. The International Coaching Federation reports that 87% of organisations agree executive coaching has high ROI, with 25% of companies reporting returns of 10-49 times their initial investment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you calculate the ROI of executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calculate coaching ROI by measuring tangible outcomes against investment costs. Key metrics include increased productivity, improved employee retention rates, enhanced leadership effectiveness, accelerated business growth, and reduced turnover costs. Compare these quantifiable gains against the cost of coaching programmes to determine your return on investment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the measurable benefits of executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Measurable benefits include improved leadership skills, increased productivity and employee engagement, enhanced decision-making capabilities, reduced staff turnover, stronger team performance, and accelerated business growth. Studies show coaching impacts productivity with average improvements of 70% in work performance and 86% positive ROI."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to see ROI from executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most organisations begin seeing measurable improvements within 3-6 months of starting structured coaching programmes. However, the full ROI of executive coaching typically manifests over 6-12 months as leadership skills develop, new behaviours embed, and organisational changes take effect. Long-term benefits continue accruing for years after coaching engagement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is executive coaching worth the investment for small businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, executive coaching delivers significant ROI for businesses of all sizes. While large corporations may see greater absolute returns, small businesses often achieve proportionally higher ROI due to the direct impact of leadership improvements on overall business performance. Structured coaching programs can be tailored to fit various budgets while delivering measurable results."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes executive coaching more effective than other leadership development methods?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching provides personalised, one-on-one guidance tailored to specific leadership challenges and business goals. Unlike generic training programmes, coaching addresses individual strengths and weaknesses, provides ongoing accountability, and focuses on practical application. This targeted approach delivers higher ROI through sustainable behavioural change and measurable performance improvements."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Executive Coaching ROI: The 788% Return UK Businesses Are Achieving"
+      ],
+      "h2Count": 12,
+      "internalLinks": 29,
+      "externalLinks": 18,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 3481,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 1047.3999999999069,
+        "transferSize": 20269
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/executive-leadership-coaching/",
+      "status": "success",
+      "title": "Executive Leadership Coaching: A Guide to Coaching Services and Leadership Coaches",
+      "metaDescription": "Comprehensive guide to executive leadership coaching for senior leaders. Learn about coaching methodologies, choosing the right coach, and how leadership coaching drives organisational success.",
+      "canonical": "https://lighthousementoring.co.uk/insights/executive-leadership-coaching/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Executive Leadership Coaching: A Guide to Coaching Services and Leadership Coaches",
+      "ogDescription": "Comprehensive guide to executive leadership coaching for senior leaders. Learn about coaching methodologies, choosing the right coach, and how leadership coaching drives organisational success.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Executive-leadership-coaching",
+              "item": "https://lighthousementoring.co.uk/insights/executive-leadership-coaching"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the difference between executive coaching and leadership consulting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching focuses on developing the individual leader through personalized guidance, self-awareness, and goal-setting. It's a partnership where the coach facilitates the leader's own insights and solutions. Leadership consulting, by contrast, involves experts analyzing organisational problems and providing direct recommendations or solutions. Coaching develops capability; consulting provides expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does an executive coaching program typically last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most executive coaching programs run 6-12 months, with sessions typically held bi-weekly or monthly. This timeframe allows for meaningful behavioral change, skill development, and measurable impact on leadership effectiveness. Some intensive programs may be shorter (3-6 months), while ongoing development coaching can extend beyond a year."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should I look for in an executive leadership coach?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for coaches with ICF (International Coaching Federation) or EMCC (European Mentoring & Coaching Council) accreditation, extensive board-level or C-suite experience, proven track record with senior leaders, and ideally fellowship-level credentials (like FCMI, FRSPH). The best coaches combine formal training with deep business experience at director level."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the GROW model in executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The GROW model is a structured coaching framework: Goal (define objectives), Reality (assess current situation), Options (explore possibilities), and Way Forward (commit to action). It's widely used in executive coaching to facilitate strategic thinking and problem-solving while keeping the leader accountable to their development goals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I measure ROI from executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ROI from coaching can be measured through: improved 360-degree feedback scores, enhanced team performance metrics, better decision-making outcomes, increased employee engagement scores, reduced turnover in the leader's team, achievement of specific strategic goals, and qualitative feedback from peers and direct reports."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can executive coaching help with work-life balance and wellbeing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, board-level executive coaching often addresses wellbeing and work-life integration as these directly impact leadership effectiveness. Coaches with backgrounds in organisational psychology and wellbeing (like those with FRSPH fellowship) can help leaders develop sustainable high-performance practices that protect their health while driving results."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Executive Leadership Coaching: A Guide to Coaching Services and Leadership Coaches"
+      ],
+      "h2Count": 12,
+      "internalLinks": 29,
+      "externalLinks": 10,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 2448,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 1098.5,
+        "transferSize": 17465
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/how-to-choose-an-executive-coach/",
+      "status": "success",
+      "title": "How to Choose an Executive Coach | Complete UK Guide 2025",
+      "metaDescription": "Expert guide on how to choose an executive coach. Learn what credentials matter, questions to ask, and how to find the right executive coach for your leadership development.",
+      "canonical": "https://lighthousementoring.co.uk/insights/how-to-choose-an-executive-coach/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "How to Choose an Executive Coach | Complete UK Guide 2025",
+      "ogDescription": "Expert guide on how to choose an executive coach. Learn what credentials matter, questions to ask, and how to find the right executive coach for your leadership development.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "How-to-choose-an-executive-coach",
+              "item": "https://lighthousementoring.co.uk/insights/how-to-choose-an-executive-coach"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What qualifications should an executive coach have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for accreditation from the International Coaching Federation (ICF) or European Mentoring & Coaching Council (EMCC), proven board-level experience, relevant industry knowledge, and testimonials from senior executives. Coaches like Craig Fearn hold fellowship credentials (FRSPH, FCMI) and serve in ambassador roles (IoD) demonstrating deep expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does executive coaching cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching typically ranges from £200-£500 per hour for experienced coaches, with comprehensive programs running 6-12 months. Board-level coaches with fellowships and extensive C-suite experience command premium rates but deliver significantly higher ROI through strategic impact."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does an executive coaching engagement last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most effective executive coaching engagements run for 6-12 months with sessions every 2-4 weeks. This timeframe allows for meaningful behavioral change, strategic implementation, and measurable results while providing accountability and sustained support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the difference between executive coaching and mentoring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Executive coaching focuses on facilitating self-discovery and helping leaders develop their own solutions through structured methodologies. Mentoring involves a more experienced individual sharing knowledge and advice based on their own experience. Coaching is more structured and goal-oriented."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if an executive coach is right for me?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Schedule an initial consultation to assess chemistry, coaching style, and approach. Discuss your specific challenges, ask about their methodology, request client references, and ensure their experience aligns with your industry and leadership level. Trust and rapport are essential for successful coaching outcomes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I expect in the first coaching session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The first session typically involves goal-setting, assessment of current challenges, discussion of desired outcomes, and establishing the coaching framework. Your coach will explore your leadership context, organizational dynamics, and create a tailored development plan with measurable milestones."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "How to Choose an Executive Coach | Complete UK Guide 2025"
+      ],
+      "h2Count": 10,
+      "internalLinks": 30,
+      "externalLinks": 9,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 1997,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 3680.2999999998137,
+        "transferSize": 16376
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/insights/management-consulting-vs-strategy/",
+      "status": "success",
+      "title": "Management Consulting vs Strategy: What's the Difference?",
+      "metaDescription": "Understand the key differences between management consulting and strategy consulting to choose the right expertise for your organization's needs and drive sustainable growth.",
+      "canonical": "https://lighthousementoring.co.uk/insights/management-consulting-vs-strategy/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Management Consulting vs Strategy: What's the Difference?",
+      "ogDescription": "Understand the key differences between management consulting and strategy consulting to choose the right expertise for your organization's needs and drive sustainable growth.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Insights",
+              "item": "https://lighthousementoring.co.uk/insights"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Management-consulting-vs-strategy",
+              "item": "https://lighthousementoring.co.uk/insights/management-consulting-vs-strategy"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the main difference between management consulting and strategy consulting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main difference lies in scope and focus. Management consulting addresses broad operational improvements across various departments, focusing on efficiency and implementation. Strategy consulting specializes in high-level strategic decisions that shape long-term competitive positioning and growth, focusing on the 'why' behind business decisions rather than just the 'how'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should I hire a strategy consultant instead of a management consultant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hire a strategy consultant when facing strategic challenges such as declining market share, need for diversification, rapidly changing competitive landscape, or requiring long-term market positioning guidance. Choose a management consultant when you need to improve operational efficiency, streamline processes, implement new technologies, or achieve rapid measurable improvements in specific departments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are strategy consulting fees higher than management consulting fees?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, strategy consulting firms typically command higher fees due to the high-level, specialized nature of their work. These engagements often involve senior partners and require extensive data analysis and strategic modeling. Management consulting may offer more flexible pricing options depending on project scope and duration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a consultant provide both management and strategy consulting services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While some consulting firms and individual consultants offer both services, they typically have specialized expertise in one area. The methodologies, approaches, and deliverables differ significantly between the two disciplines. It's important to ensure your consultant has deep expertise in the specific type of consulting your organization needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the typical deliverables from strategy consulting vs management consulting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Strategy consulting delivers long-term strategic plans, market entry strategies, competitive positioning frameworks, and growth roadmaps. Management consulting yields tangible operational improvements, process optimization reports, change management plans, cost reduction initiatives, and implementation roadmaps for new systems or technologies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do typical engagements last for each type of consulting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Strategy consulting engagements tend to be more intensive and can last 3-12 months depending on complexity, as they involve extensive market analysis and strategic planning. Management consulting projects vary widely from 2-6 months for specific operational improvements to longer-term implementations, depending on the scope of operational changes required."
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Management Consulting vs Strategy: What's the Difference?"
+      ],
+      "h2Count": 10,
+      "internalLinks": 29,
+      "externalLinks": 3,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 2908,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.09999999962747097,
+        "loadComplete": 254.89999999990687,
+        "transferSize": 0
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/privacy/",
+      "status": "success",
+      "title": "Privacy Policy | Lighthouse Mentoring",
+      "metaDescription": "Privacy policy for Lighthouse Mentoring - how we collect, use, and protect your personal information.",
+      "canonical": "https://lighthousementoring.co.uk/privacy/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Privacy Policy | Lighthouse Mentoring",
+      "ogDescription": "Privacy policy for Lighthouse Mentoring - how we collect, use, and protect your personal information.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy",
+              "item": "https://lighthousementoring.co.uk/privacy"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Privacy Policy"
+      ],
+      "h2Count": 15,
+      "internalLinks": 20,
+      "externalLinks": 2,
+      "totalImages": 2,
+      "imagesWithoutAlt": 0,
+      "wordCount": 769,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 611.2999999998137,
+        "transferSize": 11858
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/services/",
+      "status": "success",
+      "title": "Strategic Consulting Services | Board Advisory & Executive Coaching",
+      "metaDescription": "Board advisory, executive coaching, and organizational wellbeing services. Evidence-based strategic consulting from an FCMI Fellow, FRSPH Fellow, and IoD Ambassador.",
+      "canonical": "https://lighthousementoring.co.uk/services/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Strategic Consulting Services | Board Advisory & Executive Coaching",
+      "ogDescription": "Board advisory, executive coaching, and organizational wellbeing services. Evidence-based strategic consulting from an FCMI Fellow, FRSPH Fellow, and IoD Ambassador.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://lighthousementoring.co.uk/services"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Strategic Advisory When Stakes Are High"
+      ],
+      "h2Count": 4,
+      "internalLinks": 28,
+      "externalLinks": 1,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 361,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 898.2999999998137,
+        "transferSize": 0
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/services/board-advisory/",
+      "status": "success",
+      "title": "Board Advisory Services | Lighthouse Mentoring",
+      "metaDescription": "Board advisory from extensive board-level experience. IoD Ambassador offering governance consulting, board effectiveness, and strategic support. Cornwall & UK.",
+      "canonical": "https://lighthousementoring.co.uk/services/board-advisory/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Board Advisory Services | Lighthouse Mentoring",
+      "ogDescription": "Board advisory from extensive board-level experience. IoD Ambassador offering governance consulting, board effectiveness, and strategic support. Cornwall & UK.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://lighthousementoring.co.uk/services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Board-advisory",
+              "item": "https://lighthousementoring.co.uk/services/board-advisory"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does a board advisor do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p>A board advisor provides strategic guidance and expert perspective on board-level challenges, governance, and decision-making. Unlike a Non-Executive Director (NED) who holds a formal position with fiduciary duties, a board advisor works in an advisory capacity to help boards be more effective.</p>\n\n<p>Board advisors typically support with: <strong>governance design and board effectiveness reviews</strong>, helping boards understand how well they're functioning and where improvements can be made; <strong>strategic decision support</strong> on complex or high-stakes issues where an experienced external perspective adds value; <strong>stakeholder relationship navigation</strong>, particularly when there's conflict or misalignment; and <strong>board dynamics assessment</strong>, addressing issues like dysfunction, poor meeting culture, or lack of psychological safety.</p>\n\n<p>The value comes from lived experience in the boardroom. Craig has extensive board-level experience across multiple sectors—NHS, technology, financial services, and manufacturing. This means board advisors don't just bring theory; they bring pattern recognition from navigating similar challenges across different contexts.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is a board advisor different from a non-executive director (NED)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>The fundamental difference is accountability and formality.</strong> A Non-Executive Director holds a legal position on the board with fiduciary duties, governance responsibilities, and personal liability. They attend all board meetings, vote on decisions, and are accountable to shareholders or stakeholders. A board advisor, in contrast, provides strategic counsel without formal board membership or fiduciary responsibilities.</p>\n\n<p><strong>Engagement flexibility:</strong> NEDs typically serve fixed terms (often 3 years with renewal options) and have structured commitments. Board advisors can engage on specific projects, time-limited challenges, or ongoing advisory relationships tailored to the organisation's needs—offering more flexibility.</p>\n\n<p><strong>Independence and objectivity:</strong> Because board advisors don't hold formal positions, they can sometimes provide more candid challenge without the political dynamics that can affect NED relationships. They're not navigating internal board politics in the same way.</p>\n\n<p><strong>Cost and commitment:</strong> NED appointments involve significant time commitments and ongoing fees. Board advisory can be scoped to specific challenges, making it more accessible for organizations not ready for or not needing a full NED appointment.</p>\n\n<p>Importantly, these roles can be complementary. Some organizations engage a board advisor before appointing NEDs, or use board advisory to address specific gaps the existing board doesn't cover.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should a company hire a board advisor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p>Organisations typically engage board advisors when facing <strong>specific governance challenges that require experienced perspective</strong>. Common scenarios include: board dysfunction or conflict that's impacting decision-making; strategic uncertainty where the board needs support thinking through complex options; governance structure changes, such as moving from informal to formal governance or preparing for external investment; board effectiveness concerns, where meetings feel unproductive or directors aren't adding sufficient value; and stakeholder tension, particularly between founders, executives, investors, or other board members.</p>\n\n<p><strong>Early-stage and growth companies</strong> often benefit from board advisory before they're ready to appoint NEDs. When you're scaling rapidly and governance needs are evolving faster than your board composition can keep up, a board advisor can provide immediate support without the commitment of a permanent appointment.</p>\n\n<p><strong>Established organizations</strong> use board advisors when facing one-off challenges: major strategic decisions, leadership transitions, crisis response, or preparing for significant change (such as mergers, restructuring, or regulatory shifts).</p>\n\n<p>The question isn't about organisation size—it's about the value of experienced guidance. If your board is facing challenges that could benefit from someone who's navigated similar situations, that's when board advisory makes sense. The discovery conversation with Craig will quickly clarify whether board advisory is the right intervention for your specific situation.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should a board advisor have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>The most critical qualification is extensive board-level experience.</strong> Theory and credentials matter, but lived experience in boardrooms—actually sitting in the chair, making the calls, navigating the dynamics—is what creates real value. Look for advisors who've served on multiple boards across different contexts, not just managed organizations.</p>\n\n<p><strong>Professional credentials signal depth and commitment.</strong> Look for Fellows of professional bodies (such as FCMI - Chartered Management Institute or FRSPH - Royal Society for Public Health), which represent the highest level of professional achievement. Recognition within governance circles, such as being an IoD (Institute of Directors) Ambassador, indicates standing in the board advisory community.</p>\n\n<p><strong>Cross-sector experience provides pattern recognition.</strong> Someone who's only worked in one sector may miss insights that come from seeing how different industries approach similar challenges. Craig's experience spans NHS, technology, financial services, and manufacturing—this breadth creates unique perspective.</p>\n\n<p><strong>Specific expertise matters for specialized challenges.</strong> If you're addressing wellbeing governance, organizational transformation, or stakeholder conflict, look for advisors with proven experience in those areas. Craig combines governance expertise with Fellowship-level credentials in wellbeing and management—a rare combination.</p>\n\n<p><strong>References and track record are essential.</strong> Ask for examples of similar challenges they've navigated and outcomes they've helped achieve. Board advisory is intensely personal—chemistry and trust matter as much as credentials.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does board advisory cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Board advisory fees depend on scope, frequency, and complexity of the challenge.</strong> Following the initial discovery consultation, Craig provides a clear proposal outlining the investment required. Engagements can range from focused project work addressing specific governance challenges to ongoing advisory relationships providing sustained board support.</p>\n\n<p>Board advisory is a significant investment, but governance failures are far more costly. Poor board dynamics, strategic missteps, stakeholder conflict, and governance crises often cost organizations multiples of what effective advisory would have cost. The value calculation should focus on risk mitigation and improved decision quality, not just the advisory fee.</p>\n\n<p><strong>Typical engagement structures include:</strong> project-based work for specific challenges (board effectiveness reviews, governance design, crisis response); retained advisory for ongoing support (monthly or quarterly sessions); and intensive support during critical periods (leadership transitions, major strategic decisions, organizational change).</p>\n\n<p>Investment is discussed transparently during the discovery phase, ensuring alignment before any commitment.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is board advisory different from management consulting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Board advisory focuses specifically on governance, board dynamics, and director-level decision-making</strong>—it's about helping boards be more effective as governing bodies, not improving operational performance. Management consultants typically work with executive teams on operational strategy, process improvement, and organizational change. Board advisors work with directors on governance, strategic oversight, and board effectiveness.</p>\n\n<p><strong>The perspective is fundamentally different.</strong> Craig has sat in your chair as a board member and chair—he brings lived experience from the boardroom, not theory from the sidelines. This means understanding the political dynamics, the weight of fiduciary responsibility, the challenge of holding executives to account while maintaining productive relationships, and the reality of making decisions with imperfect information.</p>\n\n<p><strong>Board advisory addresses challenges like:</strong> board dysfunction or conflict; strategic decision-making and oversight; stakeholder relationship navigation; governance structure design; board effectiveness and dynamics; risk oversight frameworks; and director development. These are distinctly different from operational challenges that management consultants address.</p>\n\n<p>The right intervention depends on where the challenge sits. If it's about board performance, governance, or director-level challenges—that's board advisory territory.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you attend board meetings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Board meeting attendance can be arranged when it adds value.</strong> Some engagements involve observation of board meetings to understand dynamics, assess effectiveness, and identify improvement opportunities. This is particularly valuable when addressing board dysfunction, meeting effectiveness concerns, or governance design challenges.</p>\n\n<p>Other engagements are purely advisory—regular strategic sessions outside formal board meetings where directors can explore challenges, test thinking, and gain external perspective without the constraints of formal board processes. This can create space for more open conversation.</p>\n\n<p><strong>The approach is tailored to your needs and the challenge being addressed.</strong> During the discovery phase, we discuss what level of board involvement makes sense. Some clients value an advisor who observes board dynamics firsthand. Others prefer advisory support that doesn't require meeting attendance.</p>\n\n<p>Where board meeting observation occurs, Craig attends as a non-voting advisor, providing perspective on meeting effectiveness, board dynamics, and governance practices. All observations remain confidential unless specifically agreed otherwise.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if the issues are confidential or politically sensitive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>All board advisory work is strictly confidential.</strong> Craig is bound by professional codes of conduct from the Chartered Management Institute (FCMI), Royal Society for Public Health (FRSPH), and Institute of Directors. Discretion and trust are foundational to effective board advisory—without them, the work simply cannot succeed.</p>\n\n<p>Board challenges are often politically sensitive. Stakeholder conflicts, leadership concerns, governance tensions, and strategic disagreements require careful navigation. Craig has extensive experience working in these environments, understanding when to challenge, when to listen, and how to maintain relationships while addressing difficult issues.</p>\n\n<p><strong>Confidentiality protocols are established upfront:</strong> clear agreement on what can be shared and with whom; understanding of any reporting requirements; protocols for handling sensitive information; and boundaries around external disclosure. If the engagement involves multiple stakeholders with conflicting interests, we agree on how confidentiality will be managed.</p>\n\n<p>Your board challenges stay confidential. That's not negotiable—it's the foundation of trust that makes board advisory effective.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do board advisory engagements typically last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Engagement duration depends on the challenge and objectives.</strong> Some board advisory work addresses specific issues and concludes when those are resolved—this might be 3-6 months for a board effectiveness review, governance structure redesign, or addressing a particular stakeholder challenge.</p>\n\n<p>Other engagements provide ongoing strategic support, with regular advisory sessions (monthly or quarterly) continuing as long as they deliver value. This is common for organizations navigating sustained growth, significant change, or complex strategic challenges where having experienced counsel available makes a material difference.</p>\n\n<p><strong>Common engagement patterns include:</strong> project-based (3-6 months) for specific governance challenges; transition support (6-12 months) during leadership changes or major organizational shifts; and retained advisory (ongoing) for strategic support and governance counsel.</p>\n\n<p><strong>We agree scope upfront and review regularly.</strong> If the engagement isn't delivering value, we discuss it openly. If objectives are achieved earlier than expected, we conclude. The focus is on outcomes, not artificial timelines or unnecessarily extended engagements.</p>\n\n<p>The discovery conversation will clarify likely engagement duration based on your specific situation.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you help with board recruitment or succession planning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Yes, Craig provides guidance on board composition, skills matrices, NED recruitment strategy, and succession planning.</strong> This includes: assessing current board skills and identifying gaps; developing director role specifications; advising on recruitment process and candidate evaluation; supporting NED interviews and assessment; and planning board succession and knowledge transfer.</p>\n\n<p><strong>Craig doesn't recruit directors directly</strong>—that's the role of specialized search firms or recruitment consultants. However, he can guide the process, help evaluate candidates, advise on board composition strategy, and support the integration of new directors once appointed.</p>\n\n<p><strong>Board composition and succession work often reveals deeper governance questions:</strong> What skills does the board actually need? Are we recruiting for today's challenges or tomorrow's? How do we balance continuity with fresh perspective? What diversity (of thought, background, experience) will make the board more effective? These strategic questions require someone who understands boards from the inside—not just recruitment specialists.</p>\n\n<p>If board composition, recruitment, or succession planning is part of your governance challenge, Craig can provide experienced guidance on navigating these critical decisions.</p>"
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Board Advisory That Comes From The Boardroom"
+      ],
+      "h2Count": 10,
+      "internalLinks": 31,
+      "externalLinks": 6,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 957,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 1200.8999999999069,
+        "transferSize": 19340
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/services/executive-coaching/",
+      "status": "success",
+      "title": "Executive Coaching Services | Lighthouse Mentoring",
+      "metaDescription": "Executive coaching combining EMCC Professional Coach accreditation with extensive board experience. Performance-focused leadership development. UK & Cornwall.",
+      "canonical": "https://lighthousementoring.co.uk/services/executive-coaching/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Executive Coaching Services | Lighthouse Mentoring",
+      "ogDescription": "Executive coaching combining EMCC Professional Coach accreditation with extensive board experience. Performance-focused leadership development. UK & Cornwall.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://lighthousementoring.co.uk/services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Executive-coaching",
+              "item": "https://lighthousementoring.co.uk/services/executive-coaching"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Executive coaching is a professional development process</strong> focused on helping senior leaders and executives enhance their leadership effectiveness, navigate complex challenges, and achieve their career goals. Unlike generic life coaching, executive coaching specifically addresses board-level and C-suite challenges with a focus on measurable leadership performance.</p>\n\n<p>Executive coaching typically addresses: <strong>leadership effectiveness and executive presence</strong>, helping you show up with confidence and authority in high-stakes situations; <strong>strategic decision-making capability</strong>, developing the thinking skills required at board level; <strong>stakeholder relationship management</strong>, navigating complex organizational politics and board dynamics; <strong>career transitions</strong>, preparing for C-suite roles or NED positions; and <strong>leadership resilience</strong>, managing the intense pressure that comes with executive responsibility.</p>\n\n<p><strong>What makes Craig's executive coaching different</strong> is the combination of professional coaching methodology (EMCC accredited) with extensive board-level experience. He's not theorizing about executive pressure—he's lived it across NHS, financial services, technology, and manufacturing sectors. You get rigorous coaching combined with someone who understands the boardroom dynamics, stakeholder complexity, and strategic challenges you actually face.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is executive coaching different from mentoring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>The fundamental difference is in the approach and power dynamic.</strong> Coaching focuses on helping you find your own answers through structured exploration, powerful questions, and challenge. The coach doesn't provide answers—they help you discover your own insights and solutions. Mentoring is more directive: the mentor shares their experience, offers advice, and provides guidance based on what worked for them.</p>\n\n<p><strong>Executive coaching is about developing your capability</strong>, not just solving the immediate problem. A coach helps you build the thinking skills, self-awareness, and strategic perspective needed to navigate future challenges independently. Mentoring is about knowledge transfer—learning from someone who's been there before.</p>\n\n<p><strong>Craig's approach combines both when appropriate.</strong> He brings professional coaching methodology (EMCC accredited) but also has the board-level experience to share strategic insight when it serves your development. The coaching relationship determines when to coach (help you discover) versus when to mentor (share experience). Most of the time it's coaching, but board-level context matters—sometimes you need to know how boardrooms actually work.</p>\n\n<p>The approach is tailored to what you need in the moment: sometimes that's being challenged on your thinking, sometimes it's learning from someone who's navigated similar challenges.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does executive coaching take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Executive coaching engagements typically range from 6 months to 18 months</strong>, depending on your development goals and the complexity of challenges you're addressing. Some focus on specific transitions (preparing for a C-suite role, navigating organizational change), while others are ongoing development relationships that evolve as your leadership challenges change.</p>\n\n<p><strong>Typical engagement patterns include:</strong> <strong>transition coaching</strong> (6-9 months) for preparing for new roles or navigating major leadership challenges; <strong>development coaching</strong> (12-18 months) for sustained leadership capability building and strategic thinking development; and <strong>ongoing advisory coaching</strong> (open-ended) where regular sessions continue as long as they deliver value, often with reduced frequency over time.</p>\n\n<p><strong>Session frequency usually follows this pattern:</strong> intensive early phase with bi-weekly or weekly sessions to build momentum; steady development phase with sessions every 2-3 weeks for sustained progress; and consolidation phase with monthly sessions to integrate learning and maintain accountability.</p>\n\n<p><strong>Progress is reviewed regularly.</strong> Every 3-4 months we assess progress against your original development goals, adjust the coaching approach if needed, and decide whether to continue. If the coaching isn't delivering value, we discuss it openly. If you've achieved what you set out to achieve, we wrap up. The focus is on outcomes, not artificially extending engagements.</p>\n\n<p>The chemistry session helps clarify likely engagement duration based on your specific goals and situation.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens in an executive coaching session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Executive coaching sessions are confidential, challenging conversations</strong> about your real leadership challenges—the things keeping you up at night, the relationships that are difficult, the decisions where you're uncertain, the leadership patterns you want to change. Sessions are structured but flexible, typically lasting 60-90 minutes.</p>\n\n<p><strong>A typical session flow includes:</strong> <strong>Progress and reflection</strong> (10-15 minutes): What's happened since last session? What did you try? What worked? What didn't? <strong>Focus and exploration</strong> (30-40 minutes): Deep dive into the leadership challenge or development area you want to work on. This is where the real coaching happens—powerful questions, challenge, new perspectives, experimenting with different ways of thinking. <strong>Action and commitment</strong> (10-15 minutes): What will you do differently? What experiments will you run? How will you know if it's working?</p>\n\n<p><strong>It's action-focused, not theoretical.</strong> You're not talking about leadership in the abstract—you're working on specific challenges you're facing right now. Between sessions, you experiment with new approaches, test different ways of showing up, practice new behaviors. The next session starts with what you learned.</p>\n\n<p><strong>Coaching is challenging, not comfortable.</strong> Craig will question your assumptions, push back on your thinking, and hold you accountable. But it's always in service of your development—helping you see blind spots, explore options you haven't considered, and build the capability to handle future challenges independently.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What qualifications should an executive coach have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Look for three things: professional coaching credentials, board-level experience, and track record with executives.</strong> The coaching industry is unregulated, so credentials matter. Professional accreditation from recognized bodies (ICF, EMCC, AC) indicates training, supervision, and adherence to ethical standards. Craig holds EMCC Professional Coach accreditation—a rigorous qualification requiring demonstrated competence.</p>\n\n<p><strong>Board-level experience is crucial for executive coaching.</strong> Many coaches have never sat in a boardroom, never carried fiduciary responsibility, never navigated the political complexity of executive leadership. Craig has extensive board-level experience—he's not theorizing about executive pressure, he's lived it. This means he understands the dynamics you're facing without needing lengthy explanations.</p>\n\n<p><strong>Fellowship-level credentials signal depth and commitment.</strong> Craig holds FCMI Fellowship (Chartered Management Institute) and FRSPH Fellowship (Royal Society for Public Health)—the highest professional achievements in management and wellbeing. This combination of coaching, governance expertise, and wellbeing insight is rare and particularly valuable for executive leaders managing both performance pressure and personal resilience.</p>\n\n<p><strong>Track record matters most.</strong> Ask for examples of executives they've coached and outcomes achieved. Not names (confidentiality matters), but context: What kinds of challenges? What transformations? What career progressions resulted? The chemistry session is your chance to assess whether this coach has the experience and approach that will serve your development.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is executive coaching confidential?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Absolutely—confidentiality is foundational to effective coaching.</strong> What you discuss in coaching sessions remains confidential except in exceptional circumstances required by law (e.g., risk of harm). Craig is bound by the EMCC code of ethics, which has strict confidentiality protocols. Without trust and confidentiality, the deep, honest conversations required for real development simply cannot happen.</p>\n\n<p><strong>Many clients don't tell their organizations they're being coached</strong>—it's entirely your choice. Some executives fund coaching personally specifically to maintain total independence. Others have organizational sponsorship (where the organization pays for coaching as professional development), but even then, session content remains confidential. Craig will never discuss what's covered in sessions without your explicit permission.</p>\n\n<p><strong>If your organization sponsors coaching, boundaries are established upfront:</strong> the organization might receive progress updates on development goals (not session content), but you control what's shared and when. Craig never reports to your organization without your knowledge and agreement. The coaching relationship is with you, not your employer.</p>\n\n<p><strong>This confidentiality creates space for honesty.</strong> You can discuss doubts about your career, concerns about relationships with bosses or boards, challenges you're struggling with—all without fear it will be shared. That safety is what allows the deep reflection and honest self-assessment required for genuine leadership development.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does executive coaching cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Executive coaching is a professional development investment, not an expense.</strong> Fees depend on coaching frequency, engagement duration, and complexity of development goals. Following the initial chemistry session, Craig provides a clear proposal outlining session frequency, commitment period, and total investment.</p>\n\n<p><strong>Many organizations sponsor executive coaching</strong> for their senior leaders, recognizing it as high-leverage development. Leadership capability improvements compound—better decision-making, stronger stakeholder relationships, more effective teams. Organizations investing in executive coaching typically see returns through improved leadership performance, better succession readiness, and reduced executive derailment.</p>\n\n<p><strong>Some executives self-fund coaching</strong> to maintain independence or because it's a personal development investment. Career progression, board appointments, and leadership capability enhancements often result from coaching—making it one of the highest-ROI personal development investments available to executives.</p>\n\n<p><strong>Investment is discussed transparently during the chemistry session</strong>, ensuring alignment before any commitment. The focus is on value delivered (leadership capability developed, challenges navigated, career goals achieved), not just session hours. Most clients report significant returns on their coaching investment through promotions, successful transitions, or simply being more effective and less stressed in their current role.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer group or team coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Yes, Craig works with executive teams on collective leadership effectiveness.</strong> Team coaching addresses how the leadership team works together—decision-making processes, meeting effectiveness, strategic alignment, conflict resolution, and building psychological safety. This is different from 1:1 coaching but equally powerful for leadership team performance.</p>\n\n<p><strong>Executive team coaching typically addresses:</strong> improving board or leadership team effectiveness; resolving conflicts or dysfunctional team dynamics; aligning around strategic priorities and execution; building trust and psychological safety within the team; enhancing collective decision-making quality; and developing shared leadership practices and behaviors.</p>\n\n<p><strong>The approach combines team facilitation with coaching methodology</strong>—helping the team discover their own solutions while providing structure and challenge. Craig's board-level experience is particularly valuable here: he understands board and executive team dynamics from the inside, not just theory.</p>\n\n<p><strong>Team coaching engagements are typically structured as:</strong> initial team assessment (interviews, observation, team dynamics analysis); series of facilitated team sessions (usually monthly or quarterly); individual coaching for team members where valuable; and progress review and team effectiveness measurement.</p>\n\n<p>If you're interested in team or group coaching, discuss this during the initial conversation to explore whether it's the right intervention for your team's challenges.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is this different from generic executive coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Craig brings both professional coaching methodology (EMCC accredited) and extensive board-level experience</strong>—a combination that's rare in executive coaching. Many executive coaches have solid coaching training but limited experience in actual boardrooms. Others have impressive executive careers but lack professional coaching accreditation and methodology. Craig combines both.</p>\n\n<p><strong>Board-level experience changes everything.</strong> Craig has extensive experience across multiple boards—NHS, technology, financial services, manufacturing. He's navigated stakeholder conflict, strategic uncertainty, governance challenges, leadership transitions, and organizational crises. When you're describing board dynamics or executive pressure, he doesn't need lengthy explanations—he's lived it. This creates a different kind of coaching conversation: less time explaining context, more time working on solutions.</p>\n\n<p><strong>Fellowship-level credentials add strategic depth.</strong> FCMI Fellowship (Chartered Management Institute) and FRSPH Fellowship (Royal Society for Public Health) represent the highest professional achievement in management and wellbeing. This means coaching that integrates strategic thinking, organizational dynamics understanding, and wellbeing insight—particularly valuable for executives managing both performance pressure and personal sustainability.</p>\n\n<p><strong>The approach is performance-focused, not therapeutic.</strong> While coaching may address personal patterns and mindset, the focus is always on leadership effectiveness and measurable outcomes. You're not here for life coaching or personal therapy—you're developing executive capability to handle the challenges you're facing and prepare for the ones coming next.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if coaching doesn't work for me?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>You'll know within the first 2-3 sessions whether coaching is valuable.</strong> Effective coaching produces noticeable shifts—new insights, different perspectives, actionable experiments that you're motivated to try. If you're not experiencing this early momentum, something isn't working, and we address it directly.</p>\n\n<p><strong>The chemistry session is designed to assess fit upfront.</strong> Not every coach works for every leader—coaching effectiveness depends heavily on trust, rapport, and communication style. The initial session helps both of you determine whether you can work together effectively. If it doesn't feel right, it's better to know before committing to a full engagement.</p>\n\n<p><strong>If the coaching relationship isn't working, we discuss it openly.</strong> Maybe the approach needs adjustment. Maybe you need a different kind of support (mentoring, advisory, therapy). Maybe it's just not the right time for coaching. Honest conversation about what's working and what isn't is part of professional coaching—Craig will raise concerns if he's not seeing progress, and you should too.</p>\n\n<p><strong>Success requires honest engagement from both sides.</strong> Coaching isn't passive—it requires showing up, being honest about struggles, experimenting between sessions, and genuinely wanting to develop. If you're going through the motions or avoiding the real challenges, coaching won't work. But if you're engaged and it still isn't delivering value, that's feedback about the coaching relationship, not about you.</p>\n\n<p>The goal is impact, not just completing sessions. If that's not happening, we address it or conclude the engagement. No hard feelings—it's a professional development intervention, not a personal relationship.</p>"
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Executive Coaching That Understands Board-Level Pressure"
+      ],
+      "h2Count": 10,
+      "internalLinks": 29,
+      "externalLinks": 5,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 989,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 1234.2999999998137,
+        "transferSize": 20140
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/services/organizational-wellbeing/",
+      "status": "success",
+      "title": "Organisational Wellbeing Audit Services | Lighthouse Mentoring",
+      "metaDescription": "Organizational wellbeing audits with human-AI analysis. FRSPH Fellow providing strategic insights beyond traditional surveys. Board-level wellbeing governance.",
+      "canonical": "https://lighthousementoring.co.uk/services/organizational-wellbeing/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Organisational Wellbeing Audit Services | Lighthouse Mentoring",
+      "ogDescription": "Organizational wellbeing audits with human-AI analysis. FRSPH Fellow providing strategic insights beyond traditional surveys. Board-level wellbeing governance.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://lighthousementoring.co.uk/services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Organizational-wellbeing",
+              "item": "https://lighthousementoring.co.uk/services/organizational-wellbeing"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is an organisational wellbeing audit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>An organisational wellbeing audit is a comprehensive assessment</strong> of employee wellbeing, organisational culture, and the systems and practices that influence both. Unlike standard engagement surveys that give you scores, a wellbeing audit provides strategic insight into the \"why\" behind the numbers—connecting wellbeing patterns to business outcomes, cultural dynamics, and organisational performance.</p>\n\n<p>A wellbeing audit typically examines: <strong>employee wellbeing indicators</strong> across physical, mental, social, and financial dimensions; <strong>organisational culture and climate</strong>, including psychological safety, trust, and belonging; <strong>leadership practices and behaviors</strong> that support or undermine wellbeing; <strong>systemic factors</strong> like workload, role clarity, resources, and support systems; and <strong>business impact</strong>, connecting wellbeing patterns to turnover, absence, productivity, and performance.</p>\n\n<p><strong>What makes Craig's approach different</strong> is the combination of human-AI analysis with FRSPH Fellowship-level public health expertise and board-level business perspective. AI pattern recognition surfaces connections across multiple data sources that humans might miss, but Craig interprets those patterns within your organisational context, applies wellbeing science, and develops actionable strategic recommendations. You don't just get data—you get insight that drives governance-level decision-making.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is this different from a traditional engagement survey?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Traditional engagement surveys measure employee satisfaction and commitment</strong>—they tell you how people feel about their work and organisation. Wellbeing audits go deeper, examining the underlying factors that influence both engagement and performance: physical health, mental wellbeing, social connection, sense of purpose, organisational support, and systemic pressures.</p>\n\n<p><strong>Engagement surveys give you scores; wellbeing audits give you strategic insight.</strong> A survey might tell you engagement is 65%—but why? What's driving it? How does it connect to absence, turnover, performance? Which interventions will actually move the needle? Wellbeing audits answer these questions by integrating multiple data sources (surveys, HR metrics, performance data, exit interviews) and applying both AI pattern recognition and expert analysis.</p>\n\n<p><strong>The output is different too.</strong> Engagement surveys typically produce reports with benchmark comparisons and basic recommendations. Wellbeing audits produce strategic insights about organisational culture, leadership effectiveness, systemic issues, and governance-level recommendations that boards and executive teams can actually act on. The focus isn't just making people happier—it's understanding how wellbeing connects to organisational performance and what governance changes will drive both.</p>\n\n<p>Craig combines FRSPH Fellowship public health expertise with cross-sector board experience—he understands both wellbeing science and business reality. You get recommendations that are evidence-based and commercially realistic.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What data sources do you analyze in a wellbeing audit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>We work with whatever data you have</strong>—the more diverse the data sources, the richer the insights. A comprehensive wellbeing audit typically integrates: <strong>survey data</strong> (engagement surveys, pulse surveys, cultural assessments, wellbeing questionnaires); <strong>HR metrics</strong> (turnover rates, absence/sick leave patterns, recruitment success, retention data); <strong>performance data</strong> (individual and team performance, productivity metrics, project delivery); <strong>qualitative data</strong> (exit interviews, stay interviews, focus groups, open-ended survey responses); and <strong>organisational data</strong> (structure, policies, benefits, programs, recent changes).</p>\n\n<p><strong>The power comes from integration.</strong> Looking at one data source gives you a single perspective. Combining multiple sources reveals patterns: high absence in specific teams, performance declining before people leave, wellbeing issues concentrated in particular demographics or departments, cultural problems that surveys miss but exit interviews reveal. AI pattern recognition helps surface these connections—human expertise interprets what they mean and what to do about them.</p>\n\n<p><strong>We can also gather new data if needed.</strong> If your existing data has gaps or you want deeper insight into specific issues, Craig can design targeted assessments, conduct interviews, or facilitate focus groups. The approach is tailored to what you want to understand and what data you have available.</p>\n\n<p><strong>Data confidentiality is paramount.</strong> All data is handled with strict confidentiality protocols. Reports are appropriately anonymized. Craig is bound by professional codes of conduct from both FRSPH and FCMI. Your organisational data stays secure.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the AI analysis work in a wellbeing audit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>AI serves as a pattern recognition tool, not a replacement for human insight.</strong> Large language models and machine learning analyze text data (survey comments, exit interviews, focus group transcripts) to identify themes, sentiment patterns, and connections that would take humans months to find manually. AI can process thousands of survey responses, detect subtle language patterns, and surface relationships between different data sources.</p>\n\n<p><strong>Here's what AI does:</strong> identifies recurring themes and concerns across qualitative data; detects sentiment shifts over time or across departments; surfaces correlations between different data sources (e.g., teams with low psychological safety also show high turnover); finds outliers and anomalies that warrant deeper investigation; and processes unstructured data at scale to reveal patterns.</p>\n\n<p><strong>But AI doesn't understand organisational context—that's where Craig comes in.</strong> He interprets AI-surfaced patterns within your organisational reality, applies public health and wellbeing science to understand root causes, connects findings to business outcomes and strategic priorities, distinguishes genuine issues from statistical noise, and develops governance-level recommendations that are actionable within your context.</p>\n\n<p><strong>The human-AI combination is more powerful than either alone.</strong> AI spots patterns humans miss; humans provide context, judgment, and strategic thinking AI lacks. You get the speed and thoroughness of AI analysis with the wisdom and organisational understanding of an FRSPH Fellow who's operated at board level across multiple sectors.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What size organisation is a wellbeing audit suitable for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Wellbeing audits work for organisations of all sizes—from 50 employees to 5,000+.</strong> The approach scales depending on organisational complexity, data availability, and strategic priorities. What matters isn't size—it's commitment to understanding and improving organisational wellbeing as a strategic priority, not just a \"nice to have.\"</p>\n\n<p><strong>Smaller organisations (50-500 employees)</strong> often get highly personalized insights. With fewer people, it's easier to identify specific teams, relationships, and cultural dynamics driving wellbeing patterns. Recommendations can be more targeted and implementation more nimble. The challenge is sometimes limited data—but qualitative methods (interviews, focus groups) can fill gaps.</p>\n\n<p><strong>Medium organisations (500-2,000 employees)</strong> typically have rich data and enough complexity for meaningful pattern analysis. Divisions, functions, and locations can be compared. Cultural differences between teams become visible. AI pattern recognition is particularly valuable here—spotting trends across multiple teams that would be impossible to see manually.</p>\n\n<p><strong>Large organisations (2,000+ employees)</strong> benefit from AI-enhanced analysis at scale. Pattern recognition across divisions, geographies, and functions reveals systemic issues, cultural variations, and leadership impact. The challenge is data integration—larger organisations often have data silos. Craig works with you to navigate this.</p>\n\n<p><strong>The key question isn't size—it's strategic intent.</strong> Are you genuinely interested in understanding organisational wellbeing to inform governance decisions? Or are you looking for a report to satisfy stakeholders? Wellbeing audits deliver value when organisations are ready to act on uncomfortable truths.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens after the wellbeing audit is complete?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>You receive a comprehensive report and strategic recommendations</strong>—but the real value comes from how you use the insights. The typical post-audit process includes: <strong>executive presentation</strong> (board or leadership team briefing on findings and strategic recommendations); <strong>written report</strong> (comprehensive analysis, data visualizations, evidence-based recommendations); <strong>stakeholder communication plan</strong> (guidance on sharing findings with broader organisation); and <strong>implementation roadmap</strong> (prioritized actions, governance changes, initiatives).</p>\n\n<p><strong>Implementation is up to you</strong>—some organisations take recommendations and run with them internally. Others engage Craig for ongoing advisory support to help navigate implementation, particularly if findings reveal complex cultural or governance challenges. Common post-audit engagements include: leadership coaching for senior team on wellbeing-focused leadership; board advisory on wellbeing governance and oversight; implementation support for cultural change initiatives; and follow-up assessment to measure progress.</p>\n\n<p><strong>The most impactful wellbeing audits lead to governance-level changes:</strong> board agenda time dedicated to wellbeing oversight; leadership accountability for wellbeing outcomes; policy and practice changes based on evidence; cultural shifts driven by leadership behavior change; and resource allocation aligned with wellbeing priorities.</p>\n\n<p><strong>Less impactful audits</strong> produce reports that sit on shelves. The difference is leadership commitment. If you're ready to act on what you learn—even if it's uncomfortable—wellbeing audits drive meaningful change. If you're just looking for reassurance or box-ticking, save your money.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does an organisational wellbeing audit cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Investment depends on organisation size, data complexity, and audit scope.</strong> Following an initial consultation, Craig provides a clear proposal outlining approach, timeline, deliverables, and investment. Wellbeing audits are strategic investments—the cost of poor wellbeing (turnover, absence, low productivity, reputational damage) is far higher than the cost of understanding and addressing it.</p>\n\n<p><strong>Typical cost drivers include:</strong> organisation size (employee numbers, locations, divisions); data complexity (number of sources, data quality, integration requirements); audit depth (quantitative only, or including qualitative methods like interviews/focus groups); reporting requirements (executive summary, comprehensive report, board presentations); and post-audit support (implementation advisory, stakeholder communication, follow-up measurement).</p>\n\n<p><strong>ROI typically comes from:</strong> reduced turnover (replacing senior leaders costs 6-12 months salary); reduced absence (absence costs UK organisations average £600+ per employee annually); improved productivity (wellbeing interventions show 10-20% productivity gains); better talent attraction and retention; and reduced organisational risk (wellbeing failures create reputational, legal, and operational risks).</p>\n\n<p><strong>Many organisations fund wellbeing audits from:</strong> learning and development budgets (executive team development); risk and compliance budgets (duty of care, health and safety); or strategic initiatives budgets (culture change, transformation programs). Some treat it as board advisory expense—which it is, when wellbeing connects to governance and strategic outcomes.</p>\n\n<p>Investment is discussed transparently during the initial consultation, with clear value proposition and expected return.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if the audit reveals uncomfortable truths about our organisation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>That's often where the greatest value lies.</strong> Wellbeing audits frequently surface issues that surveys miss—cultural dysfunction, leadership blind spots, systemic problems, toxic behaviors, structural inequities. These uncomfortable truths are what's actually driving turnover, absence, and underperformance. If you only wanted good news, you wouldn't need an audit.</p>\n\n<p><strong>Craig presents findings with board-level sensitivity</strong>—he understands governance dynamics and stakeholder complexity. Findings are framed around evidence, not blame. The focus is actionable insight, not judgment. He's navigated board-level difficult conversations across NHS, financial services, technology, and manufacturing—presenting uncomfortable truths is part of effective board advisory.</p>\n\n<p><strong>Organisations that embrace difficult truths make the biggest improvements.</strong> When boards and leadership teams genuinely want to understand what's happening (not just confirm what they hope is happening), wellbeing audits drive meaningful change. The organisations that get least value are those looking for validation rather than truth.</p>\n\n<p><strong>Common uncomfortable findings include:</strong> leadership behaviors undermining stated values; cultural issues concentrated in specific teams or divisions; systemic overwork and unrealistic expectations; wellbeing initiatives not addressing actual needs; policies that sound good but don't work in practice; and governance blind spots around wellbeing oversight.</p>\n\n<p><strong>The question to ask yourself:</strong> Are you genuinely ready to hear difficult truths and act on them? Or are you looking for a report that makes everything seem fine? If it's the former, a wellbeing audit delivers enormous value. If it's the latter, skip it.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is this different from HR consultancy wellbeing work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>HR consultants typically focus on programs, policies, and interventions</strong>—employee assistance programs, mental health training, wellbeing benefits, engagement initiatives. These are important tactical elements, but they're not strategic. Craig focuses on wellbeing governance: connecting organisational wellbeing to performance, culture, and business outcomes at a level that matters for boards and executive teams.</p>\n\n<p><strong>The difference is perspective and depth.</strong> As an FRSPH Fellow, Craig brings public health expertise—understanding wellbeing as a population-level issue requiring systemic intervention, not just individual support. As someone with cross-sector board experience, he understands how wellbeing connects to governance, risk, strategy, and organisational performance. This combination is rare.</p>\n\n<p><strong>HR consultants ask: \"What programs should we offer?\"</strong> Craig asks: \"How does organisational wellbeing connect to our strategic priorities? What governance changes would drive systematic improvement? What are we missing in our board-level oversight of wellbeing? How do leadership behaviors influence organisational wellbeing? Where are systemic issues that programs won't fix?\"</p>\n\n<p><strong>The output is different too.</strong> HR consultancy typically produces recommendations for wellbeing programs and policies. Wellbeing audits produce strategic insights for boards and executive teams: governance-level recommendations, cultural change priorities, leadership development needs, systemic issues requiring structural change, and evidence-based prioritization of initiatives.</p>\n\n<p><strong>You might need both:</strong> HR consultancy to implement programs, Craig's wellbeing audit to provide strategic direction and governance oversight. They complement each other—but they're not the same.</p>"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does an organisational wellbeing audit take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p><strong>Typical timeline is 6-12 weeks from kickoff to final report</strong>, depending on organisation size, data complexity, and audit scope. Rushed audits miss important patterns; overly lengthy audits lose momentum. The timeframe balances thoroughness with actionable delivery.</p>\n\n<p><strong>Typical audit phases include:</strong> <strong>Discovery and scoping</strong> (1-2 weeks): understand organisational context, define questions you want answered, identify data sources, agree approach and timeline. <strong>Data collection and integration</strong> (2-3 weeks): gather existing data (surveys, HR metrics, performance data), conduct any additional data collection (interviews, focus groups if needed), prepare data for analysis. <strong>Analysis and interpretation</strong> (2-4 weeks): AI-enhanced pattern recognition across data sources, expert interpretation within organisational context, development of findings and insights, identification of root causes and systemic issues. <strong>Recommendations and reporting</strong> (1-2 weeks): develop governance-level recommendations, create executive report and visualizations, prepare board/leadership presentation, finalize implementation roadmap.</p>\n\n<p><strong>Timeline flexibility depends on:</strong> data availability (ready to analyze vs. needs significant cleaning); organisational complexity (single site vs. multi-location, multi-division); qualitative data collection needs (desk-based analysis vs. requiring interviews/focus groups); and stakeholder engagement requirements (single executive briefing vs. multiple presentations).</p>\n\n<p><strong>The goal is meaningful insight delivered at a pace that allows thorough analysis</strong> without losing organisational attention. The initial consultation clarifies expected timeline for your specific situation.</p>"
+              }
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Understand Wellbeing Beyond the Survey"
+      ],
+      "h2Count": 10,
+      "internalLinks": 30,
+      "externalLinks": 4,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0,
+      "wordCount": 1027,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 1711,
+        "transferSize": 20870
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/terms/",
+      "status": "success",
+      "title": "Terms of Service | Lighthouse Mentoring",
+      "metaDescription": "Terms of Service for Lighthouse Mentoring - terms and conditions for using our website and services.",
+      "canonical": "https://lighthousementoring.co.uk/terms/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Terms of Service | Lighthouse Mentoring",
+      "ogDescription": "Terms of Service for Lighthouse Mentoring - terms and conditions for using our website and services.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Terms",
+              "item": "https://lighthousementoring.co.uk/terms"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Terms of Service"
+      ],
+      "h2Count": 21,
+      "internalLinks": 20,
+      "externalLinks": 1,
+      "totalImages": 2,
+      "imagesWithoutAlt": 0,
+      "wordCount": 1045,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0,
+        "loadComplete": 800.8000000002794,
+        "transferSize": 12696
+      },
+      "errors": []
+    },
+    {
+      "url": "https://lighthousementoring.co.uk/thank-you/",
+      "status": "success",
+      "title": "Thank You | Message Received",
+      "metaDescription": "Thank you for contacting Lighthouse Mentoring. Craig will be in touch within 24 hours.",
+      "canonical": "https://lighthousementoring.co.uk/thank-you/",
+      "robotsMeta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "ogTitle": "Thank You | Message Received",
+      "ogDescription": "Thank you for contacting Lighthouse Mentoring. Craig will be in touch within 24 hours.",
+      "ogImage": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Lighthouse Mentoring",
+          "alternateName": "Craig Fearn Strategic Consulting",
+          "url": "https://lighthousementoring.co.uk",
+          "logo": "https://lighthousementoring.co.uk/images/logo-black.png",
+          "description": "Strategic consulting and board advisory services for organizations committed to sustainable performance. Specializing in board advisory, executive coaching, and organizational wellbeing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Cornwall",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "addressRegion": "South West England"
+          },
+          "email": "craig@lighthousementoring.co.uk",
+          "founder": {
+            "@type": "Person",
+            "name": "Craig Fearn",
+            "jobTitle": "Strategic Consultant & Board Advisor",
+            "description": "FCMI Fellow | FRSPH Fellow | IoD Ambassador - Strategic advisor specializing in board advisory, executive coaching, and organizational wellbeing",
+            "url": "https://lighthousementoring.co.uk/about",
+            "image": "https://lighthousementoring.co.uk/images/craig-headshot.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/craig-fearn1/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FCMI Fellow - Chartered Management Institute"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Fellowship",
+                "name": "FRSPH Fellow - Royal Society for Public Health"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Professional Recognition",
+                "name": "IoD Ambassador - Institute of Directors South West"
+              }
+            ]
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          "priceRange": "£££",
+          "serviceType": [
+            "Board Advisory",
+            "Executive Coaching",
+            "Non-Executive Director Services",
+            "Organizational Wellbeing Audits",
+            "Strategic Consulting"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lighthousementoring.co.uk"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thank-you",
+              "item": "https://lighthousementoring.co.uk/thank-you"
+            }
+          ]
+        }
+      ],
+      "h1s": [
+        "Thank You!"
+      ],
+      "h2Count": 1,
+      "internalLinks": 22,
+      "externalLinks": 1,
+      "totalImages": 2,
+      "imagesWithoutAlt": 0,
+      "wordCount": 110,
+      "viewport": "width=device-width, initial-scale=1.0",
+      "performance": {
+        "domContentLoaded": 0.10000000009313226,
+        "loadComplete": 706,
+        "transferSize": 9997
+      },
+      "errors": []
+    }
+  ]
+}

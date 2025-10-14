@@ -30,6 +30,7 @@
     "lightningcss": "^1.28.4",
     "natural": "^8.1.0",
     "pdf-poppler": "^0.2.2",
+    "puppeteer": "^24.24.1",
     "retext": "^9.0.0",
     "retext-english": "^5.0.0",
     "retext-equality": "^7.1.0",
