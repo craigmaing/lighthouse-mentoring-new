@@ -143,7 +143,7 @@ The aim is to deliver measurable outcomes for organisations through structured e
 
 Coaching sessions designed around specific objectives help leaders address challenges and boost the organisation's success. As an executive leadership coach, it's crucial to connect coaching to the [organisation's success](/services/organisational-wellbeing), making professional development more impactful and yielding better returns on investment for the company.
 
-### How Coaching Services Influence Organizational Success
+### How Coaching Services Influence Organisational Success
 
 **Coaching services enhance organisational success by improving leadership skills at all levels.**
 

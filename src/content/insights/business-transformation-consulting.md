@@ -13,7 +13,7 @@ imageAlt: "Transformation consultants facilitating strategic business transforma
 
 tldr:
   - "Business transformation requires strategic insight and expert guidance to fundamentally reinvent operations, processes, and culture"
-  - "Organizations with experienced transformation consultants are 2.5x more likely to achieve their transformation goals"
+  - "Organisations with experienced transformation consultants are 2.5x more likely to achieve their transformation goals"
   - "Successful transformation combines digital innovation, change management, and cultural evolution to create sustainable competitive advantage"
   - "Expert consultants provide board-level strategic clarity, evidence-based methodology, and cross-sector experience for complex organisational change"
 
@@ -34,7 +34,7 @@ faqs:
     answer: "Business transformation timeframes vary significantly depending on scope and complexity, typically ranging from 12-36 months for major transformations. Digital transformations may take 18-24 months, while cultural transformations can extend beyond 3 years. The key is phased implementation with measurable milestones, allowing for continuous adjustment and demonstrating incremental value throughout the journey."
 
   - question: "What are the most common reasons business transformations fail?"
-    answer: "Research shows the primary failure factors include lack of clear vision and strategy, insufficient leadership commitment, poor change management, inadequate employee engagement, and failure to measure and communicate progress. Organizations with experienced transformation consultants and board-level support are 2.5 times more likely to succeed by addressing these critical success factors from the outset."
+    answer: "Research shows the primary failure factors include lack of clear vision and strategy, insufficient leadership commitment, poor change management, inadequate employee engagement, and failure to measure and communicate progress. Organisations with experienced transformation consultants and board-level support are 2.5 times more likely to succeed by addressing these critical success factors from the outset."
 
   - question: "How do you measure the success of a business transformation?"
     answer: "Success is measured through both quantitative and qualitative metrics aligned with strategic goals, including financial performance indicators (revenue growth, cost reduction, ROI), operational metrics (process efficiency, productivity gains), customer satisfaction scores, employee engagement levels, and market position improvements. Regular progress reviews and stakeholder feedback ensure transformation stays on track and delivers intended business value."

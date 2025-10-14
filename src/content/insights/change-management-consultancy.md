@@ -31,7 +31,7 @@ faqs:
     answer: "While project management focuses on the technical aspects of delivering a project (scope, timeline, budget), change management focuses on the human side of transformation. Change management ensures that individuals successfully adopt new processes, technologies, and ways of working. Both are essential for successful transformation, but change management specifically addresses employee engagement, communication, training, and resistance to ensure sustainable adoption."
 
   - question: "When should an organisation hire a change management consultant?"
-    answer: "Organizations should consider change management consultants when undertaking significant transformations such as digital transformation, organisational restructuring, culture change initiatives, system implementations, or mergers and acquisitions. Consultants are particularly valuable when internal change management expertise is limited, when previous change initiatives have struggled, or when the organisation needs objective perspective and proven methodologies to accelerate success."
+    answer: "Organisations should consider change management consultants when undertaking significant transformations such as digital transformation, organisational restructuring, culture change initiatives, system implementations, or mergers and acquisitions. Consultants are particularly valuable when internal change management expertise is limited, when previous change initiatives have struggled, or when the organisation needs objective perspective and proven methodologies to accelerate success."
 
   - question: "What qualifications should a change management consultant have?"
     answer: "Look for consultants with recognised change management certifications (such as Prosci or CMI qualifications), extensive board-level or director-level experience, proven track record across multiple sectors, and fellowship-level credentials (like FCMI, FRSPH). The best consultants combine formal change management methodology with deep business experience, understanding of organisational dynamics, and ability to provide strategic clarity tailored to specific challenges."
@@ -40,7 +40,7 @@ faqs:
     answer: "Success is measured through multiple metrics including adoption rates of new processes or systems, employee engagement scores, productivity improvements, reduction in resistance, achievement of project objectives, and sustained behavioural change post-implementation. Effective change management consultants establish clear baseline metrics, track progress throughout the initiative, and measure both quantitative outcomes and qualitative cultural shifts."
 
   - question: "What are the most common reasons change initiatives fail?"
-    answer: "Research shows that 70% of change initiatives fail, primarily due to lack of clear vision and strategy, insufficient leadership commitment, poor communication, inadequate employee engagement, resistance management failures, and lack of sustainable reinforcement mechanisms. Organizations that engage experienced change management consultants with board-level support are significantly more likely to succeed by addressing these critical factors from the outset."
+    answer: "Research shows that 70% of change initiatives fail, primarily due to lack of clear vision and strategy, insufficient leadership commitment, poor communication, inadequate employee engagement, resistance management failures, and lack of sustainable reinforcement mechanisms. Organisations that engage experienced change management consultants with board-level support are significantly more likely to succeed by addressing these critical factors from the outset."
 ---
 
 In today's rapidly evolving business landscape, the ability to adapt and thrive in the face of change is paramount. **Change management consultancy** plays a crucial role in helping  navigate complex  projects and **accelerate** their journey towards success.
@@ -59,7 +59,7 @@ At its core,  is the discipline that guides how we prepare, equip, and support i
 
 According to [Prosci](https://www.prosci.com/resources/articles/what-is-change-management), a leading authority in change management, this ensures that **organisational change management** is as seamless and **effective** as possible.
 
-### Importance of Change Management in Organizations
+### Importance of Change Management in Organisations
 
 The importance of **change management consultancy** in  cannot be overstated. It ensures that **business transformation** efforts are not only strategically sound but also effectively implemented.
 
@@ -92,7 +92,7 @@ Effective **change management consultancy** requires a diverse skill set. **Chan
 
 Craig combines deep experience with evidence-based methodology, leveraging AI tools to analyse data and patterns to augment his human judgment, offering real-world solutions for **successful change**.
 
-### How Consultants Facilitate Organizational Change
+### How Consultants Facilitate Organisational Change
 
 **Change management consultants** facilitate  by providing a structured **approach to change**. This includes conducting assessments, developing  plans, and providing training and support to employees.
 
@@ -138,7 +138,7 @@ Seek out **change management consulting** that offers scalable solutions. Your c
 
 Scalability ensures that the **change management strategy** can accommodate growth, complexity, and unforeseen challenges, leading to **successful change** and sustainable results, helping  **manage change**. The services offer strategic clarity and **help organisations** navigate complex board dynamics.
 
-## Accelerating Change in Organizations
+## Accelerating Change in Organisations
 
 ### Strategies to Accelerate Change Management
 

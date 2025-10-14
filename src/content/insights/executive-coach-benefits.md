@@ -21,7 +21,7 @@ keyTakeaways:
   - "Executive coaching is specifically tailored to senior leaders, addressing high-level strategic challenges and organisational dynamics"
   - "Increased self-awareness and emotional intelligence enable executives to build stronger relationships and lead with authenticity"
   - "Regular coaching sessions with clear goals and progress tracking ensure alignment with organisational objectives"
-  - "Organizations that invest in executive coaching see measurable improvements in leadership quality and business performance"
+  - "Organisations that invest in executive coaching see measurable improvements in leadership quality and business performance"
 
 faqs:
   - question: "What makes executive coaching different from other types of coaching?"
@@ -87,7 +87,7 @@ Self-awareness is a cornerstone of effective leadership, and **executive coachin
 
 This increased self-awareness, combined with the development of emotional intelligence, enables executives to build stronger relationships, manage stress effectively, and lead with empathy and authenticity.
 
-### Greater Organizational Impact
+### Greater Organisational Impact
 
 The **benefits of executive coaching** extend beyond individual development to create a significant  impact. [Research from Harvard Business Review](https://hbr.org/2019/01/the-leader-as-coach) demonstrates that when senior leaders engage in **executive coaching**, the positive effects ripple throughout the organisation, improving team performance, employee engagement, and overall organisational culture.
 
@@ -133,7 +133,7 @@ The long-term **benefits of executive coaching** for individuals are substantial
 
  equips leaders with skills and insights that they can apply throughout their careers, making it a valuable investment in professional development.
 
-### Long-Term Benefits for Organizations
+### Long-Term Benefits for Organisations
 
 For organisations, the long-term **benefits** of **executive coaching programmes** include stronger leadership pipelines, improved organisational culture, and enhanced business performance. [McKinsey research](https://www.mckinsey.com/capabilities/people-and-organisational-performance/our-insights/the-organisation-blog/coaching-that-works-five-principles-for-helping-people-change) shows that organisations that invest in **executive coaching** see measurable improvements in leadership quality and organisational effectiveness.
 

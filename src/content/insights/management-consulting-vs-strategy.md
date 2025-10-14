@@ -21,7 +21,7 @@ keyTakeaways:
   - Management consulting encompasses broad operational improvements including process optimization, change management, and technology implementation
   - Strategy consulting concentrates on corporate strategy, market analysis, and developing sustainable competitive advantages
   - Strategy consulting typically commands higher fees due to specialised senior expertise and extensive strategic modeling
-  - Organizations facing strategic challenges like declining market share need strategy consultants while those seeking operational efficiency benefit from management consultants
+  - Organisations facing strategic challenges like declining market share need strategy consultants while those seeking operational efficiency benefit from management consultants
 
 faqs:
   - question: "What is the main difference between management consulting and strategy consulting?"
@@ -78,7 +78,7 @@ A management consultant might also work on change management initiatives, helpin
 
 **Process Improvement**: Analyzing and optimising workflows to increase efficiency and reduce costs across the organisation.
 
-**Organizational Restructuring**: Realigning organisational structure to improve communication, decision-making, and overall effectiveness.
+**Organisational Restructuring**: Realigning organisational structure to improve communication, decision-making, and overall effectiveness.
 
 **Supply Chain Optimization**: Streamlining supply chain operations to reduce costs, improve delivery times, and enhance customer satisfaction.
 
@@ -139,7 +139,7 @@ The scope often includes:
 * Technology implementation and systems integration
 * Supply chain optimization and logistics management
 * Performance management systems and metrics
-* Organizational restructuring and workforce planning
+* Organisational restructuring and workforce planning
 
 Conversely, strategy consulting focuses on high-level strategic decisions that shape the company's long-term direction. Consulting services might include market analysis, competitive assessment, and the development of growth strategies.
 
@@ -178,9 +178,9 @@ The outcomes and deliverables resulting from consulting engagements differ signi
 * Change management plans with detailed training materials
 * Technology implementation roadmaps and integration plans
 * Performance dashboards, metrics, and monitoring systems
-* Organizational restructuring plans and workforce strategies
+* Organisational restructuring plans and workforce strategies
 
-Management consulting aims to deliver measurable outcomes through structured engagement and regular progress reviews. Organizations can expect to see immediate improvements in operational metrics and productivity.
+Management consulting aims to deliver measurable outcomes through structured engagement and regular progress reviews. Organisations can expect to see immediate improvements in operational metrics and productivity.
 
 **Strategy Consulting Deliverables**:
 
@@ -243,7 +243,7 @@ Management consulting firms, while still a significant investment, may offer mor
 * Mix of senior and junior consultants depending on project phase and requirements
 * Clear ROI expectations through measurable operational improvements
 
-Organizations must carefully assess their budget constraints and weigh the potential return on investment when deciding between strategy and management consulting options. It is also beneficial to have a clear vision of how to implement strategies and a realistic timeline for achieving desired outcomes.
+Organisations must carefully assess their budget constraints and weigh the potential return on investment when deciding between strategy and management consulting options. It is also beneficial to have a clear vision of how to implement strategies and a realistic timeline for achieving desired outcomes.
 
 ### Long-term vs Short-term Goals
 
@@ -267,7 +267,7 @@ However, if your objectives are more immediate, such as improving operational ef
 * Addressing immediate performance issues affecting business results
 * Delivering quick wins to build momentum for larger organisational changes
 
-Understanding the temporal aspect of your business goals ensures that you choose the right type of consulting to achieve desired results. In some cases, organisations may benefit from a phased approach – starting with strategy consulting to define direction, followed by management consulting to implement operational improvements aligned with the strategic vision. [Organizational wellbeing](/services/organisational-wellbeing) should be considered throughout both strategic and operational transformations to ensure sustainable success.
+Understanding the temporal aspect of your business goals ensures that you choose the right type of consulting to achieve desired results. In some cases, organisations may benefit from a phased approach – starting with strategy consulting to define direction, followed by management consulting to implement operational improvements aligned with the strategic vision. [Organisational wellbeing](/services/organisational-wellbeing) should be considered throughout both strategic and operational transformations to ensure sustainable success.
 
 ## Conclusion
 
