@@ -10,7 +10,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: 'Lighthouse Mentoring | Insights',
-    description: 'Expert insights on board advisory, executive coaching, and organizational wellbeing from Craig Fearn, FCMI Fellow and FRSPH Fellow.',
+    description: 'Expert insights on board advisory, executive coaching, and organisational wellbeing from Craig Fearn, FCMI Fellow and FRSPH Fellow.',
     site: context.site || 'https://lighthousementoring.co.uk',
     items: sortedInsights.map((insight) => ({
       title: insight.data.title,

@@ -96,9 +96,22 @@
   status = 301
   force = true
 
+# UK English URL redirect (US to UK spelling)
 [[redirects]]
-  from = "/organizational-wellbeing"
-  to = "/services/organizational-wellbeing"
+  from = "/services/organizational-wellbeing"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/organizational-wellbeing/"
+  to = "/services/organisational-wellbeing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/organisational-wellbeing"
+  to = "/services/organisational-wellbeing"
   status = 301
   force = true
 

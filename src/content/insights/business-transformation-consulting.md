@@ -84,7 +84,7 @@ These **transformation experts** help **clients** navigate challenges and achiev
 
 A  partners with organisations to develop and implement comprehensive **transformation strategy**. Craig provides advice to organisations facing complex challenges related to board governance, executive pressure,  complexity, and cultural .
 
-He focuses on providing strategic clarity, not just generic advice, and uses **analytics** and AI tools to analyze data and patterns, augmenting his human judgment.
+He focuses on providing strategic clarity, not just generic advice, and uses **analytics** and AI tools to analyse data and patterns, augmenting his human judgment.
 
 ### Skills and Expertise of Transformation Consultants
 
@@ -106,7 +106,7 @@ These roles provide a chance to  and make a significant impact on **organisation
 
 ### How Digital Transformation Drives Business Value
 
- drives significant  improvements by enabling  to innovate, reduce costs, and enhance customer engagement. By leveraging **analytics** and automation, companies can make data-driven **business decisions**, optimize operations, and respond more effectively to market changes to ensure transformation success. Effective  strategies lead to increased agility, competitiveness, and profitability.
+ drives significant  improvements by enabling  to innovate, reduce costs, and enhance customer engagement. By leveraging **analytics** and automation, companies can make data-driven **business decisions**, optimise operations, and respond more effectively to market changes to ensure transformation success. Effective  strategies lead to increased agility, competitiveness, and profitability.
 
 ### Case Studies of Successful Digital Transformations
 

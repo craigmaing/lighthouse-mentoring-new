@@ -53,7 +53,7 @@ An executive coach is a professional who works with executives, managers, and ot
 
 [Executive coaching services](/services/executive-coaching) combine psychological insight with strategic thinking and practical board-level experience. The ultimate goal of an executive coach is to help businesses achieve sustained business growth and success through improved leadership and strategic decision-making.
 
-According to the [International Coaching Federation (ICF)](https://coachingfederation.org/), executive coaching is a thought-provoking and creative process that partners with clients to maximize their personal and professional potential. This partnership approach ensures coaching delivers measurable outcomes aligned with organisational objectives.
+According to the [International Coaching Federation (ICF)](https://coachingfederation.org/), executive coaching is a thought-provoking and creative process that partners with clients to maximise their personal and professional potential. This partnership approach ensures coaching delivers measurable outcomes aligned with organisational objectives.
 
 ### Differences Between Business Coach and Executive Coach
 
@@ -98,7 +98,7 @@ Understanding business coaching statistics and success stories from the coaching
 - **Selection of the Right Executive Coach**: Coaches with board-level experience and recognised credentials (ICF, EMCC) deliver superior outcomes
 - **Alignment with Business Objectives**: Coaching goals must directly support strategic priorities
 - **Active Participation**: Coaching clients' engagement level directly correlates with ROI
-- **Structured Programmes**: Clear objectives, milestones, and progress reviews maximize returns
+- **Structured Programmes**: Clear objectives, milestones, and progress reviews maximise returns
 - **Measurement Systems**: Establishing KPIs and tracking mechanisms from the outset
 
 According to the [European Mentoring & Coaching Council (EMCC)](https://www.emccglobal.org/), organisations with excellent change management practices supported by coaching are six times more likely to meet or exceed project objectives, directly impacting the overall ROI.
@@ -134,7 +134,7 @@ The benefits of executive coaching for business leaders are multifold, encompass
 
 An executive coach helps develop leadership capability with coaching that combines psychological insight, strategic thinking, and real-world board-level experience. By working with an executive coach, business owners can develop a more profound understanding of their leadership style, strengths, and weaknesses.
 
-This leads to more effective leadership and significant business growth through targeted coaching programmes. Research from [McKinsey & Company](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-organization-blog/coaching-that-works-five-principles-for-helping-people-change) shows that organisations investing in leadership development through coaching see measurable improvements in leadership quality and business performance.
+This leads to more effective leadership and significant business growth through targeted coaching programmes. Research from [McKinsey & Company](https://www.mckinsey.com/capabilities/people-and-organisational-performance/our-insights/the-organisation-blog/coaching-that-works-five-principles-for-helping-people-change) shows that organisations investing in leadership development through coaching see measurable improvements in leadership quality and business performance.
 
 **Specific Benefits Include:**
 
@@ -303,7 +303,7 @@ By developing leadership skills and promoting a culture of continuous improvemen
 
 Research from [Harvard Business Review](https://hbr.org/2019/01/the-leader-as-coach) shows that organisations where leaders adopt coaching approaches see sustained improvements in employee engagement, innovation, and performance years after initial coaching interventions.
 
-[Organisational wellbeing](/services/organizational-wellbeing) combined with executive coaching creates a comprehensive approach to sustainable high performance that delivers returns for years beyond the initial coaching engagement.
+[Organisational wellbeing](/services/organisational-wellbeing) combined with executive coaching creates a comprehensive approach to sustainable high performance that delivers returns for years beyond the initial coaching engagement.
 
 ---
 

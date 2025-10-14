@@ -14,7 +14,7 @@ imageAlt: "Executive leadership development session showing professional coachin
 tldr:
   - "Executive leadership coaching focuses on developing self-awareness and leadership effectiveness through personalized one-on-one guidance"
   - "Coaching methodologies like GROW model and 360-degree feedback drive measurable improvements in leadership performance"
-  - "The right leadership coach brings board-level experience, recognized credentials (ICF/EMCC), and proven results with C-suite leaders"
+  - "The right leadership coach brings board-level experience, recognised credentials (ICF/EMCC), and proven results with C-suite leaders"
   - "Coaching programs typically run 6-12 months and deliver ROI through enhanced decision-making, team performance, and organisational culture"
 
 keyTakeaways:
@@ -25,10 +25,10 @@ keyTakeaways:
 
 faqs:
   - question: "What is the difference between executive coaching and leadership consulting?"
-    answer: "Executive coaching focuses on developing the individual leader through personalized guidance, self-awareness, and goal-setting. It's a partnership where the coach facilitates the leader's own insights and solutions. Leadership consulting, by contrast, involves experts analyzing organisational problems and providing direct recommendations or solutions. Coaching develops capability; consulting provides expertise."
+    answer: "Executive coaching focuses on developing the individual leader through personalized guidance, self-awareness, and goal-setting. It's a partnership where the coach facilitates the leader's own insights and solutions. Leadership consulting, by contrast, involves experts analysing organisational problems and providing direct recommendations or solutions. Coaching develops capability; consulting provides expertise."
 
   - question: "How long does an executive coaching program typically last?"
-    answer: "Most executive coaching programs run 6-12 months, with sessions typically held bi-weekly or monthly. This timeframe allows for meaningful behavioral change, skill development, and measurable impact on leadership effectiveness. Some intensive programs may be shorter (3-6 months), while ongoing development coaching can extend beyond a year."
+    answer: "Most executive coaching programs run 6-12 months, with sessions typically held bi-weekly or monthly. This timeframe allows for meaningful behavioural change, skill development, and measurable impact on leadership effectiveness. Some intensive programs may be shorter (3-6 months), while ongoing development coaching can extend beyond a year."
 
   - question: "What qualifications should I look for in an executive leadership coach?"
     answer: "Look for coaches with ICF (International Coaching Federation) or EMCC (European Mentoring & Coaching Council) accreditation, extensive board-level or C-suite experience, proven track record with senior leaders, and ideally fellowship-level credentials (like FCMI, FRSPH). The best coaches combine formal training with deep business experience at director level."
@@ -49,7 +49,7 @@ This article delves into the nuances of executive leadership coaching, exploring
 
 ## Understanding Executive Leadership Coaching
 
-**Executive leadership coaching is a specialized form of professional coaching designed to help leaders at the executive level enhance their leadership skills and navigate complex leadership challenges.**
+**Executive leadership coaching is a specialised form of professional coaching designed to help leaders at the executive level enhance their leadership skills and navigate complex leadership challenges.**
 
 Unlike traditional consulting, coaching focuses on the individual, fostering self-awareness and helping leaders set goals that align with their personal and organisational objectives.
 

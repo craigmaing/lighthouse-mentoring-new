@@ -16,10 +16,10 @@ tldr:
   - "Look for ICF or EMCC accredited coaches with proven board-level experience"
   - "77% of executives report significant business impact from coaching"
   - "Ask about coaching style, methodology, and measurable outcomes before committing"
-  - "Verify credentials, check testimonials, and ensure cultural fit with your organization"
+  - "Verify credentials, check testimonials, and ensure cultural fit with your organisation"
 
 keyTakeaways:
-  - "Choose coaches with recognized credentials (ICF, EMCC) and extensive board-level experience in your industry"
+  - "Choose coaches with recognised credentials (ICF, EMCC) and extensive board-level experience in your industry"
   - "Successful coaching relationships require clear goals, trust, and alignment on methodology and approach"
   - "Request references from C-suite clients and verify track record of delivering measurable business outcomes"
   - "Investment in executive coaching delivers 70% improvement in work performance and 86% positive ROI"
@@ -32,7 +32,7 @@ faqs:
     answer: "Executive coaching typically ranges from £200-£500 per hour for experienced coaches, with comprehensive programs running 6-12 months. Board-level coaches with fellowships and extensive C-suite experience command premium rates but deliver significantly higher ROI through strategic impact."
 
   - question: "How long does an executive coaching engagement last?"
-    answer: "Most effective executive coaching engagements run for 6-12 months with sessions every 2-4 weeks. This timeframe allows for meaningful behavioral change, strategic implementation, and measurable results while providing accountability and sustained support."
+    answer: "Most effective executive coaching engagements run for 6-12 months with sessions every 2-4 weeks. This timeframe allows for meaningful behavioural change, strategic implementation, and measurable results while providing accountability and sustained support."
 
   - question: "What's the difference between executive coaching and mentoring?"
     answer: "Executive coaching focuses on facilitating self-discovery and helping leaders develop their own solutions through structured methodologies. Mentoring involves a more experienced individual sharing knowledge and advice based on their own experience. Coaching is more structured and goal-oriented."
@@ -41,7 +41,7 @@ faqs:
     answer: "Schedule an initial consultation to assess chemistry, coaching style, and approach. Discuss your specific challenges, ask about their methodology, request client references, and ensure their experience aligns with your industry and leadership level. Trust and rapport are essential for successful coaching outcomes."
 
   - question: "What should I expect in the first coaching session?"
-    answer: "The first session typically involves goal-setting, assessment of current challenges, discussion of desired outcomes, and establishing the coaching framework. Your coach will explore your leadership context, organizational dynamics, and create a tailored development plan with measurable milestones."
+    answer: "The first session typically involves goal-setting, assessment of current challenges, discussion of desired outcomes, and establishing the coaching framework. Your coach will explore your leadership context, organisational dynamics, and create a tailored development plan with measurable milestones."
 ---
 
 Choosing an executive coach is a significant decision, one that can profoundly impact your career trajectory and the success of your organisation.
@@ -54,7 +54,7 @@ This article provides a comprehensive guide to help you navigate the process of 
 
 ### What an Executive Coach Does
 
-An [executive coach](/services/executive-coaching) serves as a trusted advisor, mentor, and facilitator, guiding leaders and organisations through complex challenges. A good coach provides advice to organisations facing intricate issues, such as [board governance](/services/board-advisory), executive pressure, organizational complexity, and cultural transformation.
+An [executive coach](/services/executive-coaching) serves as a trusted advisor, mentor, and facilitator, guiding leaders and organisations through complex challenges. A good coach provides advice to organisations facing intricate issues, such as [board governance](/services/board-advisory), executive pressure, organisational complexity, and cultural transformation.
 
 The coach can assist in identifying blind spots, refining leadership skills, and developing strategies for improved performance. The coach can help you gain clarity, navigate difficult situations, and achieve your professional development goals.
 
@@ -64,7 +64,7 @@ It is important to remember that an executive coach isn't a therapist or a life 
 
 The benefits of hiring a good executive coach are substantial and far-reaching. [Executive coaching services](/services/executive-coaching) offer strategic clarity, helping leaders navigate complex board dynamics and develop leadership capability.
 
-According to [International Coaching Federation research](https://coachingfederation.org/blog/coaching-statistics-the-roi-of-coaching-in-2024/), 77% of executives said coaching had a significant impact on at least one major business metric, while 87% of organizations report a positive ROI from coaching. Coaching services can also improve [organisational wellbeing](/services/organizational-wellbeing), ultimately leading to measurable outcomes.
+According to [International Coaching Federation research](https://coachingfederation.org/blog/coaching-statistics-the-roi-of-coaching-in-2024/), 77% of executives said coaching had a significant impact on at least one major business metric, while 87% of organisations report a positive ROI from coaching. Coaching services can also improve [organisational wellbeing](/services/organisational-wellbeing), ultimately leading to measurable outcomes.
 
 A good executive coach can provide a fresh perspective, challenge assumptions, and facilitate the development of innovative solutions. By working with an executive leadership coach, individuals can enhance their decision-making abilities, improve communication skills, and foster a more positive and productive work environment. The coaching engagement is an investment in both individual and organisational growth.
 
@@ -82,7 +82,7 @@ The right coach will facilitate a deeper understanding of leadership principles 
 
 When choosing an executive coach, it's essential to consider their credentials and coaching experience. A good executive coach will possess relevant qualifications and a solid track record of success. Look for key attributes, such as:
 
-*   Accreditation by reputable organizations like the [International Coaching Federation (ICF)](https://coachingfederation.org/) or [European Mentoring & Coaching Council (EMCC)](https://www.emccglobal.org/), demonstrating a commitment to professional coaching standards and ethical practices through rigorous training and assessment.
+*   Accreditation by reputable organisations like the [International Coaching Federation (ICF)](https://coachingfederation.org/) or [European Mentoring & Coaching Council (EMCC)](https://www.emccglobal.org/), demonstrating a commitment to professional coaching standards and ethical practices through rigorous training and assessment.
 *   A background that includes extensive coaching experience, like Craig's director-level coaching and fellowship-level expertise across sectors including NHS, technology, financial services, and professional services.
 
 ### Coaching Style and Approach
@@ -107,7 +107,7 @@ If you read testimonials that show how the coach can help you achieve your caree
 
 Before embarking on the search for the right executive coach, it's crucial to thoroughly assess your specific coaching needs. Many executives and directors grapple with strategic challenges within their organisations.
 
-They may need guidance on [board governance](/services/board-advisory), navigating executive pressure, or dealing with [organisational complexity and cultural transformation](/services/organizational-wellbeing). Choosing an executive coach should be specific to your individual circumstances and your organisation.
+They may need guidance on [board governance](/services/board-advisory), navigating executive pressure, or dealing with [organisational complexity and cultural transformation](/services/organisational-wellbeing). Choosing an executive coach should be specific to your individual circumstances and your organisation.
 
 What kind of leadership skills are you looking to develop? What challenges are you facing that a coach could assist with? A clear understanding of your coaching needs will significantly streamline the process of finding a coach who can provide targeted support and drive meaningful change in your leadership journey.
 
