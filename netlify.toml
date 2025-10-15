@@ -147,14 +147,8 @@
 # ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
 # ====================================================================
-# Any URL from the old site that doesn't match above redirects
-# Gets a 410 Gone status (tells Google page is permanently deleted)
-# This is STRONGER than 404 - Google removes 410 pages from index faster
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 410
-  force = false  # Only triggers if no other route matches (Astro routes take priority)
+# REMOVED: Catch-all redirect was causing Google indexing issues
+# Astro's built-in 404 page handles non-existent URLs correctly
 
 # ====================================================================
 # SEO OPTIMIZATION HEADERS
