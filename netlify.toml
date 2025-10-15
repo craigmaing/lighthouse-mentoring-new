@@ -135,6 +135,16 @@
   force = true
 
 # ====================================================================
+# SITEMAP REDIRECT
+# ====================================================================
+# Redirect sitemap.xml to sitemap-index.xml (Astro generates sitemap-index.xml)
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 301
+  force = true
+
+# ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
 # ====================================================================
 # Any URL from the old site that doesn't match above redirects
