@@ -3,79 +3,88 @@ const currentPath = Astro.url.pathname;
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/insights', label: 'Insights' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/services/', label: 'Services' },
+  { href: '/insights/', label: 'Insights' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
 ];
 ---
 
-<nav transition:persist transition:name="main-nav" class="bg-primary border-b border-primary/50 shadow-lg sticky top-0 z-50">
+<nav transition:persist transition:name="main-nav" class="bg-primary border-b border-white/10 shadow-xl sticky top-0 z-50 backdrop-blur-sm">
   <div class="container">
-    <div class="flex items-center justify-between h-20">
-      <!-- Logo -->
-      <a href="/" class="flex items-center gap-3 min-h-11 py-1.5">
+    <div class="flex items-center justify-between h-24">
+      <!-- Logo - Enhanced Size & Visibility -->
+      <a href="/" class="flex items-center gap-3 min-h-14 py-2 hover:opacity-90 transition-opacity">
         <picture>
           <source srcset="/images/logo-white.webp" type="image/webp" />
           <img
             src="/images/logo-white.png"
             alt="Lighthouse Mentoring"
-            class="h-10 w-auto"
-            width="150"
-            height="40"
+            class="h-14 w-auto"
+            width="180"
+            height="56"
             loading="eager"
             decoding="async"
           />
         </picture>
       </a>
 
-      <!-- Navigation Links -->
-      <div class="hidden md:flex items-center gap-8">
+      <!-- Desktop Navigation Links - Enhanced Spacing & Typography -->
+      <div class="hidden lg:!flex items-center gap-10">
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class={`text-gray-200 hover:text-white transition-colors font-medium ${
-              currentPath === link.href ? 'text-white border-b-2 border-accent' : ''
+            data-nav-link
+            data-href={link.href}
+            class={`text-gray-100 hover:text-white transition-all duration-200 font-medium text-[15px] tracking-wide relative pb-1 ${
+              currentPath === link.href ? 'text-white' : ''
             }`}
           >
             {link.label}
+            <span class="nav-indicator absolute bottom-0 left-0 w-full h-0.5 bg-accent opacity-0 transition-opacity duration-200"></span>
           </a>
         ))}
       </div>
 
-      <!-- CTA Button -->
-      <div class="hidden md:block">
-        <a href="/contact" class="btn-nav">
-          Get Started
+      <!-- CTA Button - Enhanced Visual Prominence -->
+      <div class="hidden lg:!block">
+        <a href="/contact/" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+          Book Strategy Call
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
+      <!-- Mobile Menu Button - Enhanced -->
       <button
         id="mobile-menu-button"
-        class="md:hidden p-3 text-gray-200 hover:text-white min-w-11 min-h-11 flex items-center justify-center"
+        class="flex lg:!hidden items-center justify-center p-3 text-gray-100 hover:text-white min-w-12 min-h-12 rounded-lg hover:bg-white/10 transition-colors"
         aria-label="Toggle menu"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pb-4">
+    <!-- Mobile Menu - Enhanced -->
+    <div id="mobile-menu" class="hidden lg:hidden pb-6 pt-2">
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class={`block py-3 text-gray-200 hover:text-white transition-colors min-h-11 flex items-center ${
-            currentPath === link.href ? 'text-white font-semibold border-l-2 border-accent pl-2' : ''
+          class={`block py-4 px-2 text-gray-100 hover:text-white hover:bg-white/5 transition-all duration-200 min-h-12 flex items-center rounded-lg ${
+            currentPath === link.href ? 'text-white font-semibold bg-white/10 border-l-4 border-accent pl-4' : ''
           }`}
         >
           {link.label}
         </a>
       ))}
-      <a href="/contact" class="btn-nav block text-center mt-4">
-        Get Started
+      <a href="/contact/" class="inline-flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-4 rounded-lg transition-all duration-200 shadow-lg mt-6">
+        Book Strategy Call
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
       </a>
     </div>
   </div>
@@ -86,3 +95,34 @@ const navLinks = [
   integrity="sha384-M6yY7LZSj4s3/1YoQbN+pBloeNNyBWYD71n9PiilQPidAFsXLM4HDwrP2Q3gClFE"
   crossorigin="anonymous"
 ></script>
+
+<script is:inline>
+  // Update active navigation state on page load and navigation
+  function updateActiveNav() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('[data-nav-link]');
+
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute('data-href');
+      const indicator = link.querySelector('.nav-indicator');
+
+      if (currentPath === linkHref) {
+        // Active state
+        link.classList.add('text-white');
+        link.classList.remove('text-gray-100');
+        if (indicator) indicator.classList.remove('opacity-0');
+      } else {
+        // Inactive state
+        link.classList.remove('text-white');
+        link.classList.add('text-gray-100');
+        if (indicator) indicator.classList.add('opacity-0');
+      }
+    });
+  }
+
+  // Run on initial load
+  updateActiveNav();
+
+  // Run after each View Transition navigation
+  document.addEventListener('astro:page-load', updateActiveNav);
+</script>
