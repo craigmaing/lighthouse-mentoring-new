@@ -8,6 +8,61 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Netlify Sitemap Plugin
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+    buildDir = "dist"
+    # Exclude utility pages from sitemap
+    exclude = [
+      '/404/',
+      '/thank-you/'
+    ]
+    # Configure priorities and changefreq
+    priority = 0.7
+    changeFreq = "weekly"
+    # Custom priority and changefreq per URL pattern
+    [[plugins.inputs.urls]]
+      pattern = "/"
+      priority = 1.0
+      changeFreq = "weekly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/services/*"
+      priority = 0.9
+      changeFreq = "weekly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/about/"
+      priority = 0.8
+      changeFreq = "monthly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/contact/"
+      priority = 0.8
+      changeFreq = "monthly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/insights/"
+      priority = 0.7
+      changeFreq = "weekly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/insights/*"
+      priority = 0.6
+      changeFreq = "monthly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/privacy/"
+      priority = 0.3
+      changeFreq = "yearly"
+
+    [[plugins.inputs.urls]]
+      pattern = "/terms/"
+      priority = 0.3
+      changeFreq = "yearly"
+
 # ====================================================================
 # CONTEXT-SPECIFIC CONFIGURATION
 # Prevent deploy previews and branch deploys from being indexed
@@ -131,16 +186,6 @@
 [[redirects]]
   from = "/article/*"
   to = "/insights/:splat"
-  status = 301
-  force = true
-
-# ====================================================================
-# SITEMAP REDIRECT
-# ====================================================================
-# Redirect sitemap.xml to sitemap-index.xml (Astro generates sitemap-index.xml)
-[[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap-index.xml"
   status = 301
   force = true
 
