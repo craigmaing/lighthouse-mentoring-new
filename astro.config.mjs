@@ -1,13 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://lighthousementoring.co.uk',
 
-  // Always use trailing slashes for consistent URLs
-  trailingSlash: 'always',
+  // Never use trailing slashes to match netlify.toml pretty_urls=false
+  trailingSlash: 'never',
 
   // Prefetch for near-instant page navigation
   prefetch: {
@@ -24,6 +25,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: true,
     }),
+    sitemap(),
   ],
 
   image: {
