@@ -8,7 +8,7 @@ readTime: "11 min"
 category: "wellbeing"
 tags: ["AI wellbeing audit", "workplace wellbeing", "organizational wellbeing", "wellbeing assessment", "employee wellbeing"]
 featured: true
-image: "/images/blog/ai-wellbeing-audits-hero.jpg"
+image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80&fm=webp&fit=crop"
 imageAlt: "AI-enhanced wellbeing audit dashboard showing real-time employee wellbeing metrics and analytics"
 
 # AI Optimization Fields
