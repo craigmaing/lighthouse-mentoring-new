@@ -146,6 +146,195 @@
   force = true
 
 # ====================================================================
+# OLD SITE 404 REDIRECTS (33 URLs from GSC)
+# ====================================================================
+# Specific insight redirects (must come before blog wildcard)
+[[redirects]]
+  from = "/insights/executive-coaching-new-ceos-first-100-days"
+  to = "/insights/executive-leadership-coaching"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/executive-coaching-new-ceos-first-100-days/"
+  to = "/insights/executive-leadership-coaching"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/executive-presence-what-it-is-how-to-develop"
+  to = "/insights/executive-leadership-coaching"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/how-to-choose-executive-coach"
+  to = "/insights/how-to-choose-an-executive-coach"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/how-to-choose-executive-coach/"
+  to = "/insights/how-to-choose-an-executive-coach"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/business-case-workplace-wellbeing"
+  to = "/insights/ai-enhanced-wellbeing-audits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/business-case-workplace-wellbeing/"
+  to = "/insights/ai-enhanced-wellbeing-audits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/how-to-become-non-executive-director"
+  to = "/insights/board-advisor-vs-non-executive-director"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/how-to-become-non-executive-director/"
+  to = "/insights/board-advisor-vs-non-executive-director"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insights/coming-soon"
+  to = "/insights/"
+  status = 301
+  force = true
+
+# Specific blog/AI audit redirect
+[[redirects]]
+  from = "/blog/how-ai-transforms-workplace-wellbeing-audits"
+  to = "/insights/ai-enhanced-wellbeing-audits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-wellbeing-audit"
+  to = "/insights/ai-enhanced-wellbeing-audits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-wellbeing-audit/"
+  to = "/insights/ai-enhanced-wellbeing-audits"
+  status = 301
+  force = true
+
+# Location-based wellbeing audit pages
+[[redirects]]
+  from = "/wellbeing-audit-bristol"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wellbeing-audit-manchester"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wellbeing-audit-cardiff"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+# Industry-specific wellbeing audits
+[[redirects]]
+  from = "/education-wellbeing-audit"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/healthcare-wellbeing-audit"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/professional-services-wellbeing-audit"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+# Wellbeing service variations
+[[redirects]]
+  from = "/quarterly-pulse"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/quarterly-pulse/"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pulse-check"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pulse-check/"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/corporate-wellness-assessment"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/corporate-wellness-assessment/"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/workplace-culture-assessment"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/workplace-culture-assessment/"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/workplace-wellbeing-assessment"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/workplace-wellbeing-assessment/"
+  to = "/services/organisational-wellbeing"
+  status = 301
+  force = true
+
+# Downloads redirect to contact page
+[[redirects]]
+  from = "/downloads/sme-wellbeing-checklist.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+# ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
 # ====================================================================
 # REMOVED: Catch-all redirect was causing Google indexing issues
