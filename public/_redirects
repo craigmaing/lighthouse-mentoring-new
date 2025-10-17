@@ -1,6 +1,0 @@
-# Trailing slash redirect - MUST be processed FIRST
-# Each wildcard needs its own :splat placeholder
-/*/ /:splat 301!
-/*/*/ /:splat/:splat 301!
-/*/*/*/ /:splat/:splat/:splat 301!
-/*/*/*/*/ /:splat/:splat/:splat/:splat 301!

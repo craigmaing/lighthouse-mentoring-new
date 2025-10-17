@@ -460,10 +460,13 @@
   force = true
 
 # ====================================================================
-# TRAILING SLASH REDIRECT (CRITICAL FOR SEO)
+# TRAILING SLASH NORMALIZATION (CRITICAL FOR SEO)
 # ====================================================================
-# Handled by public/_redirects file for better pattern matching
-# See: public/_redirects
+# Handled by Edge Function for clean programmatic redirect
+# All URLs ending with "/" (except root) redirect to no-slash version via 301
+[[edge_functions]]
+  function = "remove-trailing-slash"
+  path = "/*"
 
 # ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
