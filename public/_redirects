@@ -1,6 +1,6 @@
 # Trailing slash redirect - MUST be processed FIRST
-# Match different path depths to properly strip trailing slashes
+# Each wildcard needs its own :splat placeholder
 /*/ /:splat 301!
-/*/*/ /:splat 301!
-/*/*/*/ /:splat 301!
-/*/*/*/*/ /:splat 301!
+/*/*/ /:splat/:splat 301!
+/*/*/*/ /:splat/:splat/:splat 301!
+/*/*/*/*/ /:splat/:splat/:splat/:splat 301!
