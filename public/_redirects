@@ -1,2 +1,6 @@
-# Trailing slash redirect - must be processed FIRST
+# Trailing slash redirect - MUST be processed FIRST
+# Match different path depths to properly strip trailing slashes
 /*/ /:splat 301!
+/*/*/ /:splat 301!
+/*/*/*/ /:splat 301!
+/*/*/*/*/ /:splat 301!
