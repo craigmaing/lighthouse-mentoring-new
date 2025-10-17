@@ -460,6 +460,19 @@
   force = true
 
 # ====================================================================
+# TRAILING SLASH REDIRECT (CRITICAL FOR SEO)
+# ====================================================================
+# Redirect all URLs with trailing slashes to non-trailing slash versions
+# This prevents duplicate content and ensures clean canonical URLs
+# Must come AFTER specific redirects so they take precedence
+
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = false
+
+# ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
 # ====================================================================
 # REMOVED: Catch-all redirect was causing Google indexing issues
