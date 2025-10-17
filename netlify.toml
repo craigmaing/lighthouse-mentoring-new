@@ -470,7 +470,7 @@
   from = "/*/"
   to = "/:splat"
   status = 301
-  force = false
+  force = true
 
 # ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
