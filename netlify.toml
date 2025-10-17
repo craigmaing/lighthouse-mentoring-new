@@ -462,15 +462,8 @@
 # ====================================================================
 # TRAILING SLASH REDIRECT (CRITICAL FOR SEO)
 # ====================================================================
-# Redirect all URLs with trailing slashes to non-trailing slash versions
-# This prevents duplicate content and ensures clean canonical URLs
-# Must come AFTER specific redirects so they take precedence
-
-[[redirects]]
-  from = "/*/"
-  to = "https://lighthousementoring.co.uk/:splat"
-  status = 301
-  force = true
+# Handled by public/_redirects file for better pattern matching
+# See: public/_redirects
 
 # ====================================================================
 # CATCH-ALL FOR OLD SITE URLS (410 Gone)
