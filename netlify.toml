@@ -468,7 +468,7 @@
 
 [[redirects]]
   from = "/*/"
-  to = "/:splat"
+  to = "https://lighthousementoring.co.uk/:splat"
   status = 301
   force = true
 
