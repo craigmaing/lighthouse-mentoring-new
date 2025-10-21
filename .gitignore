@@ -19,3 +19,5 @@ NUL
 
 # Build outputs
 *.log
+# Local Netlify folder
+.netlify
