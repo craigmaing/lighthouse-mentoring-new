@@ -4,86 +4,62 @@ export default {
   theme: {
     extend: {
       colors: {
-        // PREMIUM INFLUENCER COLOR SYSTEM - Based on top 20 site analysis
-        // Primary Palette - Trust & Innovation
-        'primary': '#1E3A8A',     // Deep blue - trust/professionalism (like Dave Ramsey)
-        'accent': '#10B981',      // Bright teal - innovation/growth (unique differentiator)
-        'warning': '#F59E0B',     // Amber - attention/highlight
-        'dark': '#1F2937',        // Charcoal - readable text
-
-        // Supporting Colors - Minimal
-        'gray': {
-          900: '#1A202C',    // Dark text
-          700: '#4A5568',    // Body text
-          100: '#F7FAFC',    // Light backgrounds
+        primary: {
+          DEFAULT: '#2D2D2D',
+          light: '#3F3F3F',
+          dark: '#1A1A1A',
         },
-
-        // Legacy mapping for compatibility
-        'brand': {
-          50: '#E6F4F9',
-          100: '#CCE9F3',
-          200: '#99D3E7',
-          300: '#66BCDB',
-          400: '#4DB3D5',
-          500: '#0A4F63',  // Updated to new primary
-          600: '#0A4F63',  // Primary
-          700: '#0A4F63',  // Primary
-          800: '#0A1628',  // Dark
-          900: '#0A1628',  // Dark
+        accent: {
+          DEFAULT: '#A45C1A',
+          dark: '#8B4513',
+          light: '#B8732C',
         },
-        'neutral': {
-          50: '#F7FAFC',   // gray-100
-          100: '#F7FAFC',  // gray-100
+        eggshell: '#F4F1EA', // Warm cream background
+        gray: {
+          50: '#F9FAFB',
+          100: '#F3F4F6',
           200: '#E5E7EB',
           300: '#D1D5DB',
           400: '#9CA3AF',
           500: '#6B7280',
-          600: '#4A5568',  // gray-700
-          700: '#4A5568',  // gray-700
-          800: '#1A202C',  // gray-900
-          900: '#1A202C',  // gray-900
+          600: '#4B5563',
+          700: '#374151',
+          800: '#1F2937',
+          900: '#111827',
         },
-
-        // Simplified aliases
-        background: '#FFFFFF',
-        surface: '#F7FAFC',
-        border: '#E5E7EB',
-        'text-primary': '#1A202C',
-        'text-secondary': '#4A5568',
-        'text-muted': '#6B7280',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Inter', 'system-ui', 'sans-serif'], // Could upgrade to Montserrat later
       },
       fontSize: {
-        // Typography Scale - Larger for Impact
-        'xs': '14px',
-        'sm': '16px',
-        'base': '18px',     // Up from 16px default
-        'lg': '20px',       // Lead paragraphs
-        'xl': '24px',
-        '2xl': '28px',      // H3 size
-        '3xl': '36px',
-        '4xl': '42px',      // H2 size
-        '5xl': '56px',      // H1 size
-        '6xl': '72px',      // Hero statements
+        // Responsive typography with mobile-first approach
+        'hero': ['2.5rem', { lineHeight: '1.1', fontWeight: '700' }], // 40px mobile
+        'h1': ['2rem', { lineHeight: '1.2', fontWeight: '700' }], // 32px mobile
+        'h2': ['1.75rem', { lineHeight: '1.3', fontWeight: '600' }], // 28px mobile
+        'h3': ['1.5rem', { lineHeight: '1.4', fontWeight: '600' }], // 24px mobile
+        'h4': ['1.25rem', { lineHeight: '1.4', fontWeight: '600' }], // 20px mobile
+        'body-large': ['1.125rem', { lineHeight: '1.6' }], // 18px
+        'body': ['1rem', { lineHeight: '1.6' }], // 16px
+        'small': ['0.875rem', { lineHeight: '1.5' }], // 14px
+        'badge': ['1rem', { lineHeight: '1.3', fontWeight: '500' }], // 16px
       },
-      fontWeight: {
-        'light': '300',     // For large display text only
-        'normal': '400',    // Body text
-        'medium': '500',    // Emphasized body
-        'semibold': '600',  // Subheadings
-        'bold': '700',      // Main headings
+      // Desktop font sizes (applied via md: breakpoint)
+      screens: {
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       },
-      lineHeight: {
-        'tight': '1.2',     // Headings
-        'snug': '1.4',
-        'normal': '1.6',
-        'relaxed': '1.7',   // Body text - improved readability
-        'loose': '2',
+      boxShadow: {
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      },
+      maxWidth: {
+        'container': '1280px',
+        'container-wide': '1400px',
       },
     },
   },
   plugins: [],
 }
+

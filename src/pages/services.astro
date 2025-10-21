@@ -1,377 +1,239 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import { Image, Picture } from 'astro:assets';
+
+// Import images for optimization
+import executiveSuccess from '../images/executive-success-7516.jpg';
 ---
 
 <Layout
-  title="Start With Free Resources - Build Your Wellbeing Leadership | Craig Fearn"
-  description="Access free resources, then choose your investment level. From free wellbeing frameworks to £25K+ strategic transformations. Start your wellbeing leadership journey today.">
-
-  <!-- Hero Section with Value Ladder Introduction -->
-  <section class="section-padding-hero bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
-    <div class="container max-w-6xl">
-      <div class="text-center mb-12">
-        <h1 class="text-hero mb-6">
-          Choose Your Investment Level
+  keywords="board advisory services, executive coaching, non-executive director, strategic consulting, organizational wellbeing, NED services, board governance"
+  title="Strategic Consulting Services | Board Advisory & Executive Coaching"
+  description="Board advisory, executive coaching, and organizational wellbeing services. Evidence-based strategic consulting from an FCMI Fellow, FRSPH Fellow, and IoD Ambassador."
+>
+  <!-- Page Hero -->
+  <section class="hero section-padding bg-primary text-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h1 class="mb-6">
+          Strategic Advisory When Stakes Are High
         </h1>
-        <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
-          From free frameworks that work, to strategic transformations that reshape organisations.
-          Start where you are. Scale when you're ready.
+        <p class="text-gray-100 leading-relaxed mb-6">
+          Board advisory, executive coaching, and strategic consulting—specialized guidance that draws on both deep experience and evidence-based methodology.
         </p>
-      </div>
+        <p class="text-gray-100 leading-relaxed mb-8">
+          Extensive board-level experience across NHS, technology, financial services, and professional services. IoD Ambassador, FRSPH Fellow, FCMI Fellow—supporting organizations navigating complex challenges.
+        </p>
 
-      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
-        <h2 class="text-h2 mb-6 text-center">The Wellbeing Leadership Path</h2>
-        <div class="grid md:grid-cols-4 gap-4 text-center">
-          <div class="text-green-300">
-            <div class="text-2xl font-bold">FREE</div>
-            <div class="text-sm opacity-90">Start Here</div>
-          </div>
-          <div class="text-yellow-300">
-            <div class="text-2xl font-bold">£47</div>
-            <div class="text-sm opacity-90">Go Deeper</div>
-          </div>
-          <div class="text-orange-300">
-            <div class="text-2xl font-bold">£997</div>
-            <div class="text-sm opacity-90">Transform</div>
-          </div>
-          <div class="text-red-300">
-            <div class="text-2xl font-bold">£25K+</div>
-            <div class="text-sm opacity-90">Scale Impact</div>
-          </div>
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/contact" variant="secondary">
+            Discuss Your Challenge
+          </Button>
+          <Button href="#board-advisory" variant="ghost" class="text-white hover:text-gray-100">
+            Explore Services Below
+          </Button>
+        </div>
+        </div>
+        <!-- Conference Image -->
+        <div class="hidden lg:block">
+          <Picture
+            src={executiveSuccess}
+            alt="Craig Fearn - Professional Executive Consultant"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
+            loading="eager"
+            fetchpriority="high"
+            quality={85}
+          />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Value Ladder Section -->
-  <section class="section-padding bg-gray-50">
-    <div class="container max-w-7xl">
-      <div class="text-center mb-16">
-        <h2 class="text-h1 text-gray-900 mb-4">
-          Explore Our Services. Start Your Conversation.
+  <!-- Board Advisory Service -->
+  <section id="board-advisory" class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="card p-8 md:p-12">
+        <h2 class="text-h2 text-gray-900 mb-6">Board Advisory & Governance</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Navigate complex board dynamics, governance challenges, and strategic decisions. Objective perspective from someone who's sat where you sit—extensive experience navigating stakeholder conflict, strategic uncertainty, and fiduciary responsibility.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Governance design and board effectiveness improvement</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Strategic decision support on complex choices</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Stakeholder relationship navigation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Board dynamics and addressing dysfunction</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Risk oversight and strategic risk management</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Board succession planning and director recruitment support</span>
+          </li>
+        </ul>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/board-advisory" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Discuss Your Challenge</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Executive Coaching Service -->
+  <section id="executive-coaching" class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="card p-8 md:p-12">
+        <h2 class="text-h2 text-gray-900 mb-6">Executive Coaching</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Develop leadership capability with coaching that combines psychological insight, strategic thinking, and real-world board-level experience. This isn't feel-good coaching—it's focused on performance, decision-making, and measurable leadership growth.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Leadership effectiveness and executive presence development</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Navigating stakeholder dynamics and organizational politics</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Transition preparation for C-suite or board-level roles</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Strategic clarity on career direction and leadership challenges</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Building resilience and managing executive pressure</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">EMCC Professional Coach accreditation with practical business focus</span>
+          </li>
+        </ul>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/executive-coaching" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Explore Coaching Options</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizational Wellbeing Service -->
+  <section id="wellbeing-audit" class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="card p-8 md:p-12">
+        <h2 class="text-h2 text-gray-900 mb-6">Organizational Wellbeing Audits</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Understand the true state of organizational wellbeing with human-AI analysis that surfaces patterns invisible to traditional surveys. Get strategic insights that connect wellbeing, culture, and performance.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">AI-powered pattern recognition combined with FRSPH Fellowship expertise</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Deep understanding beyond traditional engagement scores</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Actionable recommendations designed for implementation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Connects wellbeing data to strategic business outcomes</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Board-level reporting and governance integration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-gray-700">Evidence-based analysis rooted in FRSPH public health methodology</span>
+          </li>
+        </ul>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="/services/organizational-wellbeing" variant="primary">Learn More</Button>
+          <Button href="/contact" variant="secondary">Discuss a Wellbeing Audit</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-r from-primary to-primary-dark text-white">
+    <div class="container">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-h2 font-bold mb-6">
+          Start with a Conversation
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Every leader's wellbeing journey is different. Discover our range of services and let's discuss what's right for your situation.
+        <p class="text-gray-100 mb-8 leading-relaxed">
+          No pressure. No sales pitch. Just a strategic conversation about your challenge and whether Craig's experience and approach are the right fit.
         </p>
-      </div>
-
-      <!-- The Value Ladder -->
-      <div class="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
-        <!-- FREE Tier -->
-        <div class="bg-gradient-to-b from-green-50 to-white border-2 border-green-200 rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300">
-          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">START HERE</span>
-          </div>
-          <div class="text-center mb-6">
-            <div class="text-4xl font-bold text-green-600 mb-2">FREE</div>
-            <h3 class="text-h3 text-gray-900 mb-4">Wellbeing Leadership Foundations</h3>
-          </div>
-
-          <ul class="space-y-3 text-gray-700 mb-8">
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span>
-              <span>Weekly wellbeing leadership insights email</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span>
-              <span>Free Board Wellbeing Readiness Assessment</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span>
-              <span>"5 Questions Every Board Must Answer" guide</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span>
-              <span>Access to Craig's LinkedIn content library</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span>
-              <span>Monthly wellbeing governance webinars</span>
-            </li>
-          </ul>
-
-          <Button href="#email-signup" variant="primary" class="w-full bg-green-600 hover:bg-green-700">
-            Get Free Resources
-          </Button>
-        </div>
-
-        <!-- £47 Tier -->
-        <div class="bg-gradient-to-b from-yellow-50 to-white border-2 border-yellow-200 rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300">
-          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span class="bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-semibold">MOST POPULAR</span>
-          </div>
-          <div class="text-center mb-6">
-            <div class="text-4xl font-bold text-yellow-600 mb-2">£47</div>
-            <h3 class="text-h3 text-gray-900 mb-4">Board Wellbeing Audit Kit</h3>
-          </div>
-
-          <ul class="space-y-3 text-gray-700 mb-8">
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>Complete board assessment framework</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>47-point governance readiness checklist</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>ROI calculator for wellbeing initiatives</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>Board presentation templates</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>60-minute video masterclass with Craig</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-yellow-500 font-bold">✓</span>
-              <span>Implementation timeline planner</span>
-            </li>
-          </ul>
-
-          <Button href="/contact" variant="primary" class="w-full bg-yellow-600 hover:bg-yellow-700">
-            Get the Kit
-          </Button>
-        </div>
-
-        <!-- £997 Tier -->
-        <div class="bg-gradient-to-b from-orange-50 to-white border-2 border-orange-200 rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300">
-          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">ACCELERATED</span>
-          </div>
-          <div class="text-center mb-6">
-            <div class="text-4xl font-bold text-orange-600 mb-2">£997</div>
-            <h3 class="text-h3 text-gray-900 mb-4">Strategic Wellbeing Assessment</h3>
-          </div>
-
-          <ul class="space-y-3 text-gray-700 mb-8">
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>Complete AI-enhanced organisational audit</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>90-minute strategy session with Craig</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>Bespoke improvement roadmap</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>Board-ready presentation deck</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>3 months email support</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-orange-500 font-bold">✓</span>
-              <span>Implementation toolkit</span>
-            </li>
-          </ul>
-
-          <Button href="/contact" variant="primary" class="w-full bg-orange-600 hover:bg-orange-700">
-            Book Assessment
-          </Button>
-        </div>
-
-        <!-- £25K+ Tier -->
-        <div class="bg-gradient-to-b from-red-50 to-white border-2 border-red-200 rounded-2xl p-8 relative hover:shadow-xl transition-all duration-300">
-          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span class="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold">TRANSFORMATION</span>
-          </div>
-          <div class="text-center mb-6">
-            <div class="text-4xl font-bold text-red-600 mb-2">£25K+</div>
-            <h3 class="text-h3 text-gray-900 mb-4">Strategic Transformation Partnership</h3>
-          </div>
-
-          <ul class="space-y-3 text-gray-700 mb-8">
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>12-month strategic partnership</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>Monthly board advisory sessions</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>Executive team coaching programme</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>Complete wellbeing transformation</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>Direct access to Craig via WhatsApp</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-red-500 font-bold">✓</span>
-              <span>Guaranteed ROI measurement & reporting</span>
-            </li>
-          </ul>
-
-          <Button href="/contact" variant="primary" class="w-full bg-red-600 hover:bg-red-700">
-            Apply for Partnership
-          </Button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why This Approach Works -->
-  <section class="section-padding bg-white">
-    <div class="container max-w-6xl">
-      <div class="text-center mb-16">
-        <h2 class="text-h1 text-gray-900 mb-4">
-          Why Smart Leaders Start Free
-        </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          I was once the director who didn't know if our wellbeing strategy was working. That uncomfortable truth led to frameworks now used by FTSE companies and NHS Trusts.
+        <Button href="/contact" variant="secondary">
+          Book a Strategy Call
+        </Button>
+        <p class="text-sm text-gray-100 mt-4">
+          All conversations are confidential and obligation-free.
         </p>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-8 mb-16">
-        <div class="text-center">
-          <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-            </svg>
-          </div>
-          <h3 class="text-h3 text-gray-900 mb-4">Test Before You Invest</h3>
-          <p class="text-gray-600">See if my approach resonates with your leadership style before committing significant resources.</p>
-        </div>
-
-        <div class="text-center">
-          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-            </svg>
-          </div>
-          <h3 class="text-h3 text-gray-900 mb-4">Immediate Value</h3>
-          <p class="text-gray-600">Every tier delivers actionable insights you can implement immediately, regardless of budget.</p>
-        </div>
-
-        <div class="text-center">
-          <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-            </svg>
-          </div>
-          <h3 class="text-h3 text-gray-900 mb-4">Proven at Scale</h3>
-          <p class="text-gray-600">The same frameworks work whether you're a startup founder or FTSE 100 board member.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Email Signup Section -->
-  <section id="email-signup" class="section-padding bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white">
-    <div class="container max-w-4xl text-center">
-      <h2 class="text-h1 mb-6">
-        Start Your Journey Today
-      </h2>
-      <p class="text-xl text-blue-100 mb-12 leading-relaxed">
-        Join 2,500+ leaders who receive practical wellbeing governance insights every Tuesday at 7am.
-        No fluff. No theory. Just actionable frameworks you can implement this week.
-      </p>
-
-      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-        <form class="space-y-4">
-          <div class="grid md:grid-cols-2 gap-4">
-            <label class="sr-only" for="firstName">First Name</label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              placeholder="First Name"
-              class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
-              aria-label="First Name"
-            />
-            <label class="sr-only" for="email">Email Address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
-              aria-label="Email Address"
-            />
-          </div>
-          <label class="sr-only" for="challenge">What's your biggest wellbeing challenge?</label>
-          <select id="challenge" name="challenge" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Select your biggest wellbeing challenge">
-            <option value="" disabled selected class="text-gray-900">What's your biggest wellbeing challenge?</option>
-            <option value="board-buy-in" class="text-gray-900">Getting board buy-in for wellbeing initiatives</option>
-            <option value="roi-measurement" class="text-gray-900">Measuring ROI of wellbeing programmes</option>
-            <option value="strategic-integration" class="text-gray-900">Integrating wellbeing into business strategy</option>
-            <option value="compliance-governance" class="text-gray-900">ISO 45003 compliance and governance</option>
-            <option value="leadership-development" class="text-gray-900">Developing wellbeing leadership skills</option>
-          </select>
-          <Button type="submit" variant="white" size="large" class="w-full shadow-lg">
-            Send Me Free Resources
-          </Button>
-        </form>
-
-        <p class="text-sm text-white/70 mt-6">
-          Unsubscribe anytime. I respect your inbox and your time.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Proof & Final CTA -->
-  <section class="section-padding bg-gray-50">
-    <div class="container text-center">
-      <h2 class="text-h1 text-gray-900 mb-4">
-        Join 2,500+ Leaders Building Better Workplaces
-      </h2>
-      <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-        From NHS Trust directors to FTSE 100 board members, leaders choose Craig's frameworks because they work at every scale.
-      </p>
-
-      <div class="grid lg:grid-cols-3 gap-8 mb-16">
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="text-4xl font-bold text-blue-600 mb-2">2,500+</div>
-          <h3 class="text-h3 text-gray-900 mb-4">Weekly Email Readers</h3>
-          <p class="text-gray-600">Leaders who implement Craig's frameworks every Tuesday</p>
-        </div>
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="text-4xl font-bold text-green-600 mb-2">100+</div>
-          <h3 class="text-h3 text-gray-900 mb-4">Organisations Transformed</h3>
-          <p class="text-gray-600">FTSE companies and NHS Trusts using Craig's methodology</p>
-        </div>
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="text-4xl font-bold text-purple-600 mb-2">17+</div>
-          <h3 class="text-h3 text-gray-900 mb-4">Years Experience</h3>
-          <p class="text-gray-600">Fellow-level expertise in wellbeing governance</p>
-        </div>
-      </div>
-
-      <div class="bg-gradient-to-r from-slate-900 to-blue-900 text-white rounded-2xl p-12">
-        <h3 class="text-h2 mb-6">
-          Ready to Build Your Wellbeing Leadership?
-        </h3>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Choose your starting point. Every tier delivers immediate value, whether you're just beginning or ready for full transformation.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="#email-signup" variant="white" size="large" class="shadow-lg">
-            Start Free
-          </Button>
-          <Button href="/contact" variant="ghost" size="large" class="!bg-transparent !border-2 !border-white !text-white hover:!bg-white hover:!text-slate-900">
-            Book a Call
-          </Button>
-        </div>
       </div>
     </div>
   </section>
 </Layout>
-

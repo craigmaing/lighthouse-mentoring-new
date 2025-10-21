@@ -1,34 +1,23 @@
 ---
-export interface Props {
-  href?: string;
-  variant?: 'primary' | 'secondary' | 'ghost' | 'white';
-  size?: 'small' | 'medium' | 'large';
+interface Props {
+  href: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  size?: 'default' | 'large';
   class?: string;
-  onclick?: string;
 }
 
-const { href, variant = 'primary', size = 'medium', class: className, onclick } = Astro.props;
+const { href, variant = 'primary', size = 'default', class: className = '' } = Astro.props;
 
 const variantClasses = {
-  primary: 'bg-accent text-white hover:bg-accent/90 shadow-button hover:shadow-button-hover btn-scale',
-  secondary: 'bg-primary text-white hover:bg-primary/90 shadow-button hover:shadow-button-hover btn-scale',
-  ghost: 'bg-transparent text-primary hover:bg-primary/5 border-2 border-primary font-semibold hover-lift',
-  white: 'bg-white text-gray-900 hover:bg-gray-50 shadow-button hover:shadow-button-hover btn-scale'
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  ghost: 'btn-ghost',
 };
-
-const sizeClasses = {
-  small: 'px-4 py-2 text-sm',
-  medium: 'px-6 py-3 text-base',
-  large: 'px-8 py-4 text-lg font-semibold'
-};
-
-const Component = href ? 'a' : 'button';
 ---
 
-<Component
+<a
   href={href}
-  onclick={onclick}
-  class={`inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 cursor-pointer ${variantClasses[variant]} ${sizeClasses[size]} ${className || ''}`}
+  class={`${variantClasses[variant]} ${className}`}
 >
   <slot />
-</Component>
+</a>

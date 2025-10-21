@@ -1,54 +1,30 @@
-# Netlify/Vercel Headers for edge caching and security
+# Security and Performance Headers for Netlify/CDN deployment
 
 /*
-  Cache-Control: public, max-age=31536000, immutable
-  X-Content-Type-Options: nosniff
+  # Security Headers
   X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-/assets/*
+  # Performance Headers
   Cache-Control: public, max-age=31536000, immutable
 
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-ancestors 'none';
+
+# Cache images for 1 year
 /images/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*.webp
+/_astro/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*.jpg
-  Cache-Control: public, max-age=31536000, immutable
-
-/*.png
-  Cache-Control: public, max-age=31536000, immutable
-
-/*.svg
-  Cache-Control: public, max-age=31536000, immutable
-
-/*.woff2
-  Cache-Control: public, max-age=31536000, immutable
-
-/sw.js
-  Cache-Control: public, max-age=0, must-revalidate
-
-/
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
-  Link: </assets/styles.css>; rel=preload; as=style
-  Link: </fonts/inter-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
-
-/index.html
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
-
+# Cache HTML for 1 hour
 /*.html
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: public, max-age=3600, must-revalidate
 
-/*.css
-  Cache-Control: public, max-age=604800
-
-/*.js
-  Cache-Control: public, max-age=604800
-
-# Security headers
-/*
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+# Don't cache the sitemap
+/sitemap-*.xml
+  Cache-Control: public, max-age=0, must-revalidate

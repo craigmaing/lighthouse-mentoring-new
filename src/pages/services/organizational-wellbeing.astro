@@ -1,0 +1,1004 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/Button.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { Picture } from 'astro:assets';
+import craigPortrait from '../../images/craig-portrait-8372.jpg';
+
+// Import testimonials data
+import testimonialsData from '../../../testimonials-data.json';
+
+// Filter for organizational wellbeing testimonials (exclude homepage and board advisory testimonials)
+const homepageNames = ['Jeremy Wrathall', 'Steve Hill', 'Richard Sharpe', 'Chris Saxby'];
+const boardNames = ['Andrew Honey CDir FIoD'];
+const wellbeingTestimonials = testimonialsData
+  .filter(t => t.featured &&
+    (t.category.includes('wellbeing') || t.category.includes('organizational-support')) &&
+    !homepageNames.includes(t.name) &&
+    !boardNames.includes(t.name))
+  .slice(0, 4);
+
+// Organizational Wellbeing FAQ Data - Optimized for AI Search
+const wellbeingFAQs = [
+  {
+    question: "What is an organizational wellbeing audit?",
+    answer: `<p><strong>An organizational wellbeing audit is a comprehensive assessment</strong> of employee wellbeing, organizational culture, and the systems and practices that influence both. Unlike standard engagement surveys that give you scores, a wellbeing audit provides strategic insight into the "why" behind the numbers—connecting wellbeing patterns to business outcomes, cultural dynamics, and organizational performance.</p>
+
+<p>A wellbeing audit typically examines: <strong>employee wellbeing indicators</strong> across physical, mental, social, and financial dimensions; <strong>organizational culture and climate</strong>, including psychological safety, trust, and belonging; <strong>leadership practices and behaviors</strong> that support or undermine wellbeing; <strong>systemic factors</strong> like workload, role clarity, resources, and support systems; and <strong>business impact</strong>, connecting wellbeing patterns to turnover, absence, productivity, and performance.</p>
+
+<p><strong>What makes Craig's approach different</strong> is the combination of human-AI analysis with FRSPH Fellowship-level public health expertise and board-level business perspective. AI pattern recognition surfaces connections across multiple data sources that humans might miss, but Craig interprets those patterns within your organizational context, applies wellbeing science, and develops actionable strategic recommendations. You don't just get data—you get insight that drives governance-level decision-making.</p>`
+  },
+  {
+    question: "How is this different from a traditional engagement survey?",
+    answer: `<p><strong>Traditional engagement surveys measure employee satisfaction and commitment</strong>—they tell you how people feel about their work and organization. Wellbeing audits go deeper, examining the underlying factors that influence both engagement and performance: physical health, mental wellbeing, social connection, sense of purpose, organizational support, and systemic pressures.</p>
+
+<p><strong>Engagement surveys give you scores; wellbeing audits give you strategic insight.</strong> A survey might tell you engagement is 65%—but why? What's driving it? How does it connect to absence, turnover, performance? Which interventions will actually move the needle? Wellbeing audits answer these questions by integrating multiple data sources (surveys, HR metrics, performance data, exit interviews) and applying both AI pattern recognition and expert analysis.</p>
+
+<p><strong>The output is different too.</strong> Engagement surveys typically produce reports with benchmark comparisons and basic recommendations. Wellbeing audits produce strategic insights about organizational culture, leadership effectiveness, systemic issues, and governance-level recommendations that boards and executive teams can actually act on. The focus isn't just making people happier—it's understanding how wellbeing connects to organizational performance and what governance changes will drive both.</p>
+
+<p>Craig combines FRSPH Fellowship public health expertise with cross-sector board experience—he understands both wellbeing science and business reality. You get recommendations that are evidence-based and commercially realistic.</p>`
+  },
+  {
+    question: "What data sources do you analyze in a wellbeing audit?",
+    answer: `<p><strong>We work with whatever data you have</strong>—the more diverse the data sources, the richer the insights. A comprehensive wellbeing audit typically integrates: <strong>survey data</strong> (engagement surveys, pulse surveys, cultural assessments, wellbeing questionnaires); <strong>HR metrics</strong> (turnover rates, absence/sick leave patterns, recruitment success, retention data); <strong>performance data</strong> (individual and team performance, productivity metrics, project delivery); <strong>qualitative data</strong> (exit interviews, stay interviews, focus groups, open-ended survey responses); and <strong>organizational data</strong> (structure, policies, benefits, programs, recent changes).</p>
+
+<p><strong>The power comes from integration.</strong> Looking at one data source gives you a single perspective. Combining multiple sources reveals patterns: high absence in specific teams, performance declining before people leave, wellbeing issues concentrated in particular demographics or departments, cultural problems that surveys miss but exit interviews reveal. AI pattern recognition helps surface these connections—human expertise interprets what they mean and what to do about them.</p>
+
+<p><strong>We can also gather new data if needed.</strong> If your existing data has gaps or you want deeper insight into specific issues, Craig can design targeted assessments, conduct interviews, or facilitate focus groups. The approach is tailored to what you want to understand and what data you have available.</p>
+
+<p><strong>Data confidentiality is paramount.</strong> All data is handled with strict confidentiality protocols. Reports are appropriately anonymized. Craig is bound by professional codes of conduct from both FRSPH and FCMI. Your organizational data stays secure.</p>`
+  },
+  {
+    question: "How does the AI analysis work in a wellbeing audit?",
+    answer: `<p><strong>AI serves as a pattern recognition tool, not a replacement for human insight.</strong> Large language models and machine learning analyze text data (survey comments, exit interviews, focus group transcripts) to identify themes, sentiment patterns, and connections that would take humans months to find manually. AI can process thousands of survey responses, detect subtle language patterns, and surface relationships between different data sources.</p>
+
+<p><strong>Here's what AI does:</strong> identifies recurring themes and concerns across qualitative data; detects sentiment shifts over time or across departments; surfaces correlations between different data sources (e.g., teams with low psychological safety also show high turnover); finds outliers and anomalies that warrant deeper investigation; and processes unstructured data at scale to reveal patterns.</p>
+
+<p><strong>But AI doesn't understand organizational context—that's where Craig comes in.</strong> He interprets AI-surfaced patterns within your organizational reality, applies public health and wellbeing science to understand root causes, connects findings to business outcomes and strategic priorities, distinguishes genuine issues from statistical noise, and develops governance-level recommendations that are actionable within your context.</p>
+
+<p><strong>The human-AI combination is more powerful than either alone.</strong> AI spots patterns humans miss; humans provide context, judgment, and strategic thinking AI lacks. You get the speed and thoroughness of AI analysis with the wisdom and organizational understanding of an FRSPH Fellow who's operated at board level across multiple sectors.</p>`
+  },
+  {
+    question: "What size organization is a wellbeing audit suitable for?",
+    answer: `<p><strong>Wellbeing audits work for organizations of all sizes—from 50 employees to 5,000+.</strong> The approach scales depending on organizational complexity, data availability, and strategic priorities. What matters isn't size—it's commitment to understanding and improving organizational wellbeing as a strategic priority, not just a "nice to have."</p>
+
+<p><strong>Smaller organizations (50-500 employees)</strong> often get highly personalized insights. With fewer people, it's easier to identify specific teams, relationships, and cultural dynamics driving wellbeing patterns. Recommendations can be more targeted and implementation more nimble. The challenge is sometimes limited data—but qualitative methods (interviews, focus groups) can fill gaps.</p>
+
+<p><strong>Medium organizations (500-2,000 employees)</strong> typically have rich data and enough complexity for meaningful pattern analysis. Divisions, functions, and locations can be compared. Cultural differences between teams become visible. AI pattern recognition is particularly valuable here—spotting trends across multiple teams that would be impossible to see manually.</p>
+
+<p><strong>Large organizations (2,000+ employees)</strong> benefit from AI-enhanced analysis at scale. Pattern recognition across divisions, geographies, and functions reveals systemic issues, cultural variations, and leadership impact. The challenge is data integration—larger organizations often have data silos. Craig works with you to navigate this.</p>
+
+<p><strong>The key question isn't size—it's strategic intent.</strong> Are you genuinely interested in understanding organizational wellbeing to inform governance decisions? Or are you looking for a report to satisfy stakeholders? Wellbeing audits deliver value when organizations are ready to act on uncomfortable truths.</p>`
+  },
+  {
+    question: "What happens after the wellbeing audit is complete?",
+    answer: `<p><strong>You receive a comprehensive report and strategic recommendations</strong>—but the real value comes from how you use the insights. The typical post-audit process includes: <strong>executive presentation</strong> (board or leadership team briefing on findings and strategic recommendations); <strong>written report</strong> (comprehensive analysis, data visualizations, evidence-based recommendations); <strong>stakeholder communication plan</strong> (guidance on sharing findings with broader organization); and <strong>implementation roadmap</strong> (prioritized actions, governance changes, initiatives).</p>
+
+<p><strong>Implementation is up to you</strong>—some organizations take recommendations and run with them internally. Others engage Craig for ongoing advisory support to help navigate implementation, particularly if findings reveal complex cultural or governance challenges. Common post-audit engagements include: leadership coaching for senior team on wellbeing-focused leadership; board advisory on wellbeing governance and oversight; implementation support for cultural change initiatives; and follow-up assessment to measure progress.</p>
+
+<p><strong>The most impactful wellbeing audits lead to governance-level changes:</strong> board agenda time dedicated to wellbeing oversight; leadership accountability for wellbeing outcomes; policy and practice changes based on evidence; cultural shifts driven by leadership behavior change; and resource allocation aligned with wellbeing priorities.</p>
+
+<p><strong>Less impactful audits</strong> produce reports that sit on shelves. The difference is leadership commitment. If you're ready to act on what you learn—even if it's uncomfortable—wellbeing audits drive meaningful change. If you're just looking for reassurance or box-ticking, save your money.</p>`
+  },
+  {
+    question: "How much does an organizational wellbeing audit cost?",
+    answer: `<p><strong>Investment depends on organization size, data complexity, and audit scope.</strong> Following an initial consultation, Craig provides a clear proposal outlining approach, timeline, deliverables, and investment. Wellbeing audits are strategic investments—the cost of poor wellbeing (turnover, absence, low productivity, reputational damage) is far higher than the cost of understanding and addressing it.</p>
+
+<p><strong>Typical cost drivers include:</strong> organization size (employee numbers, locations, divisions); data complexity (number of sources, data quality, integration requirements); audit depth (quantitative only, or including qualitative methods like interviews/focus groups); reporting requirements (executive summary, comprehensive report, board presentations); and post-audit support (implementation advisory, stakeholder communication, follow-up measurement).</p>
+
+<p><strong>ROI typically comes from:</strong> reduced turnover (replacing senior leaders costs 6-12 months salary); reduced absence (absence costs UK organizations average £600+ per employee annually); improved productivity (wellbeing interventions show 10-20% productivity gains); better talent attraction and retention; and reduced organizational risk (wellbeing failures create reputational, legal, and operational risks).</p>
+
+<p><strong>Many organizations fund wellbeing audits from:</strong> learning and development budgets (executive team development); risk and compliance budgets (duty of care, health and safety); or strategic initiatives budgets (culture change, transformation programs). Some treat it as board advisory expense—which it is, when wellbeing connects to governance and strategic outcomes.</p>
+
+<p>Investment is discussed transparently during the initial consultation, with clear value proposition and expected return.</p>`
+  },
+  {
+    question: "What if the audit reveals uncomfortable truths about our organization?",
+    answer: `<p><strong>That's often where the greatest value lies.</strong> Wellbeing audits frequently surface issues that surveys miss—cultural dysfunction, leadership blind spots, systemic problems, toxic behaviors, structural inequities. These uncomfortable truths are what's actually driving turnover, absence, and underperformance. If you only wanted good news, you wouldn't need an audit.</p>
+
+<p><strong>Craig presents findings with board-level sensitivity</strong>—he understands governance dynamics and stakeholder complexity. Findings are framed around evidence, not blame. The focus is actionable insight, not judgment. He's navigated board-level difficult conversations across NHS, financial services, technology, and manufacturing—presenting uncomfortable truths is part of effective board advisory.</p>
+
+<p><strong>Organizations that embrace difficult truths make the biggest improvements.</strong> When boards and leadership teams genuinely want to understand what's happening (not just confirm what they hope is happening), wellbeing audits drive meaningful change. The organizations that get least value are those looking for validation rather than truth.</p>
+
+<p><strong>Common uncomfortable findings include:</strong> leadership behaviors undermining stated values; cultural issues concentrated in specific teams or divisions; systemic overwork and unrealistic expectations; wellbeing initiatives not addressing actual needs; policies that sound good but don't work in practice; and governance blind spots around wellbeing oversight.</p>
+
+<p><strong>The question to ask yourself:</strong> Are you genuinely ready to hear difficult truths and act on them? Or are you looking for a report that makes everything seem fine? If it's the former, a wellbeing audit delivers enormous value. If it's the latter, skip it.</p>`
+  },
+  {
+    question: "How is this different from HR consultancy wellbeing work?",
+    answer: `<p><strong>HR consultants typically focus on programs, policies, and interventions</strong>—employee assistance programs, mental health training, wellbeing benefits, engagement initiatives. These are important tactical elements, but they're not strategic. Craig focuses on wellbeing governance: connecting organizational wellbeing to performance, culture, and business outcomes at a level that matters for boards and executive teams.</p>
+
+<p><strong>The difference is perspective and depth.</strong> As an FRSPH Fellow, Craig brings public health expertise—understanding wellbeing as a population-level issue requiring systemic intervention, not just individual support. As someone with cross-sector board experience, he understands how wellbeing connects to governance, risk, strategy, and organizational performance. This combination is rare.</p>
+
+<p><strong>HR consultants ask: "What programs should we offer?"</strong> Craig asks: "How does organizational wellbeing connect to our strategic priorities? What governance changes would drive systematic improvement? What are we missing in our board-level oversight of wellbeing? How do leadership behaviors influence organizational wellbeing? Where are systemic issues that programs won't fix?"</p>
+
+<p><strong>The output is different too.</strong> HR consultancy typically produces recommendations for wellbeing programs and policies. Wellbeing audits produce strategic insights for boards and executive teams: governance-level recommendations, cultural change priorities, leadership development needs, systemic issues requiring structural change, and evidence-based prioritization of initiatives.</p>
+
+<p><strong>You might need both:</strong> HR consultancy to implement programs, Craig's wellbeing audit to provide strategic direction and governance oversight. They complement each other—but they're not the same.</p>`
+  },
+  {
+    question: "How long does an organizational wellbeing audit take?",
+    answer: `<p><strong>Typical timeline is 6-12 weeks from kickoff to final report</strong>, depending on organization size, data complexity, and audit scope. Rushed audits miss important patterns; overly lengthy audits lose momentum. The timeframe balances thoroughness with actionable delivery.</p>
+
+<p><strong>Typical audit phases include:</strong> <strong>Discovery and scoping</strong> (1-2 weeks): understand organizational context, define questions you want answered, identify data sources, agree approach and timeline. <strong>Data collection and integration</strong> (2-3 weeks): gather existing data (surveys, HR metrics, performance data), conduct any additional data collection (interviews, focus groups if needed), prepare data for analysis. <strong>Analysis and interpretation</strong> (2-4 weeks): AI-enhanced pattern recognition across data sources, expert interpretation within organizational context, development of findings and insights, identification of root causes and systemic issues. <strong>Recommendations and reporting</strong> (1-2 weeks): develop governance-level recommendations, create executive report and visualizations, prepare board/leadership presentation, finalize implementation roadmap.</p>
+
+<p><strong>Timeline flexibility depends on:</strong> data availability (ready to analyze vs. needs significant cleaning); organizational complexity (single site vs. multi-location, multi-division); qualitative data collection needs (desk-based analysis vs. requiring interviews/focus groups); and stakeholder engagement requirements (single executive briefing vs. multiple presentations).</p>
+
+<p><strong>The goal is meaningful insight delivered at a pace that allows thorough analysis</strong> without losing organizational attention. The initial consultation clarifies expected timeline for your specific situation.</p>`
+  }
+];
+---
+
+<Layout
+  title="Organizational Wellbeing Audit Services | Lighthouse Mentoring"
+  description="Organizational wellbeing audits with human-AI analysis. FRSPH Fellow providing strategic insights beyond traditional surveys. Board-level wellbeing governance."
+  keywords="organizational wellbeing audit, workplace wellbeing consultant, employee wellbeing assessment, wellbeing audit services, wellbeing strategy consultant"
+>
+  <!-- Hero Section -->
+  <section class="hero section-padding bg-primary text-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="inline-block bg-accent/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            FRSPH Fellow | AI-Enhanced Analysis
+          </div>
+          <h1 class="mb-6">
+            Understand Wellbeing Beyond the Survey
+          </h1>
+          <p class="text-gray-100 leading-relaxed mb-8">
+            Human-AI analysis that surfaces patterns traditional surveys miss. Strategic insights that connect organizational wellbeing to performance, governance, and culture.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <Button href="/contact" variant="secondary">
+              Discuss a Wellbeing Audit
+            </Button>
+            <Button href="#what-included" variant="ghost" class="text-white hover:text-gray-100">
+              Learn More
+            </Button>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <Picture
+            src={craigPortrait}
+            alt="Craig Fearn - Wellbeing Consultant"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
+            loading="eager"
+            fetchpriority="high"
+            quality={85}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section id="what-included" class="section-padding bg-eggshell">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What a Wellbeing Audit Delivers</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Strategic insights that connect wellbeing to performance and culture
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">AI-Powered Pattern Recognition</h3>
+          <p class="text-gray-700">AI-powered pattern recognition across multiple data sources</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Deep Analysis</h3>
+          <p class="text-gray-700">Deep analysis beyond traditional engagement scores</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Cultural Dynamics</h3>
+          <p class="text-gray-700">Cultural dynamics and wellbeing connections identified</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Leadership Assessment</h3>
+          <p class="text-gray-700">Leadership and management capability assessment</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Governance Evaluation</h3>
+          <p class="text-gray-700">Governance and wellbeing maturity evaluation</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Board-Level Recommendations</h3>
+          <p class="text-gray-700">Board-level strategic recommendations</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Actionable Roadmap</h3>
+          <p class="text-gray-700">Actionable improvement roadmap</p>
+        </div>
+
+        <div class="card p-6">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-h3 text-gray-900 mb-2">Executive Presentation</h3>
+          <p class="text-gray-700">Executive presentation of findings</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Wellbeing Audits Are Right For Your Organization If...</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          From board-level oversight to practical implementation
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Board Directors & CEOs</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want strategic wellbeing insights, not just scores</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need to understand wellbeing-performance connections</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're accountable for organizational health</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want governance-level wellbeing oversight</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">HR Directors & People Leaders</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Traditional surveys aren't giving you actionable insight</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need to make the business case for wellbeing investment</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to understand cultural wellbeing dynamics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're developing organizational wellbeing strategy</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Organizations Facing Challenges</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>High turnover or retention issues</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Low engagement or productivity concerns</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Cultural problems or leadership gaps</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Post-merger integration or transformation stress</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Forward-Thinking Organizations</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You see wellbeing as strategic advantage</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to benchmark and improve</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're building wellbeing governance frameworks</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want evidence-based wellbeing strategy</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">The Wellbeing Audit Process</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              1
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Discovery & Data Gathering</h3>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Initial consultation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Review existing data</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Stakeholder interviews</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Define audit scope</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              2
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">AI-Enhanced Analysis</h3>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Data integration</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>AI pattern recognition</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Human interpretation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Cultural mapping</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              3
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Insights & Recommendations</h3>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Strategic findings</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Board-level recommendations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Actionable roadmap</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Executive report</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="card p-8 h-full">
+            <div class="flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full font-bold mb-4">
+              4
+            </div>
+            <h3 class="text-h3 text-gray-900 mb-3">Presentation & Planning</h3>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Executive presentation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Board briefing</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Q&A and discussion</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Implementation planning</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 card p-8 bg-gray-50">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-3">What You Provide:</h4>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Existing wellbeing/engagement data</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Access to key stakeholders</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>HR metrics and documentation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Openness to challenging findings</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-3">What Craig Delivers:</h4>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Comprehensive audit report</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>AI-enhanced pattern analysis</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Strategic recommendations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Board-level presentation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Implementation roadmap</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Craig Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-5xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Why Craig for Wellbeing Audits?</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Unique combination: Human insight + AI analysis + board experience
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">FRSPH Fellow</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Fellowship-level expertise in public health</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Evidence-based wellbeing methodology</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Deep understanding of wellbeing science</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Strategic wellbeing governance knowledge</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Human + AI Analysis</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>AI pattern recognition across multiple sources</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Human interpretation brings context</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Surfaces invisible patterns</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Connects wellbeing to culture and performance</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Board-Level Perspective</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Extensive experience navigating organizational dynamics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Understands governance and strategic oversight</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Translates wellbeing into board language</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Connects wellbeing to business performance</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="text-h3 text-gray-900 mb-4">Strategic, Not Generic</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Not cookie-cutter recommendations</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Tailored to your organizational context</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Actionable roadmap, not theory</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Focus on governance and implementation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 card p-8 bg-eggshell">
+        <div class="text-center">
+          <h3 class="text-h3 text-gray-900 mb-4">Cross-Sector Wellbeing Expertise</h3>
+          <p class="text-gray-700">
+            Cross-sector experience from HSBC to Edrington UK to Brown-Forman. Pattern recognition across industries reveals universal wellbeing dynamics others miss.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expected Outcomes Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What You Can Expect</h2>
+        <p class="text-gray-600">Tangible outcomes from wellbeing audit engagement</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Clear Wellbeing Baseline</h3>
+              <p class="text-gray-700">Data-driven understanding of organizational wellbeing status</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Cultural Pattern Insights</h3>
+              <p class="text-gray-700">Identification of hidden wellbeing drivers and blockers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Actionable Roadmap</h3>
+              <p class="text-gray-700">Prioritized recommendations with clear implementation path</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Board-Ready Report</h3>
+              <p class="text-gray-700">Executive summary linking wellbeing to business performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Is This Right for You Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Is a Wellbeing Audit Right for You?</h2>
+        <p class="text-gray-600">This engagement is a good fit if...</p>
+      </div>
+
+      <div class="card p-8 max-w-3xl mx-auto">
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You need to understand organizational wellbeing beyond surface-level surveys</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You want insights that connect wellbeing to performance and culture</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You're open to AI-enhanced analysis combined with human expertise</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You value FRSPH Fellowship-level expertise in wellbeing governance</p>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <h4 class="font-semibold text-gray-900 mb-4">This might not be right if:</h4>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p>• You're looking for a basic employee survey (many providers offer this)</p>
+            <p>• You need immediate tactical fixes rather than strategic insights</p>
+            <p>• You're not ready to act on what the audit reveals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens Next Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What Happens Next</h2>
+        <p class="text-gray-600">Clear pathway from first contact to audit delivery</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Initial Discussion (Within 24 Hours)</h3>
+              <p class="text-gray-700">Understanding your organization, wellbeing concerns, and audit objectives</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Scoping Session (Week 1)</h3>
+              <p class="text-gray-700">Defining data sources, analysis approach, and deliverables. Clear proposal provided</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Data Collection & Analysis (Weeks 2-4)</h3>
+              <p class="text-gray-700">Human+AI analysis of multiple sources to surface patterns and insights</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              4
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Report Delivery (Week 5-6)</h3>
+              <p class="text-gray-700">Comprehensive report with board presentation and implementation roadmap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-gray-600 mb-4">All data handling is strictly confidential and GDPR-compliant.</p>
+        <Button href="/contact" variant="primary">Start the Conversation</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What Leaders Say</h2>
+      </div>
+
+      <div class="space-y-8">
+        {wellbeingTestimonials.map((testimonial) => (
+          <div class="card p-8 flex flex-col">
+            <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+              "{testimonial.excerpt}"
+            </p>
+            <div class="border-t border-gray-200 pt-4">
+              <p class="font-semibold text-gray-900">{testimonial.name}</p>
+              <p class="text-sm text-gray-600">
+                {testimonial.role}{testimonial.company ? `, ${testimonial.company}` : ''}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section with Schema Markup -->
+  <FAQAccordion faqs={wellbeingFAQs} pageTitle="Frequently Asked Questions" />
+
+  <!-- Final CTA Section -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container max-w-3xl text-center">
+      <h2 class="text-h2 mb-6">Understand Your Organization's Wellbeing</h2>
+      <p class="text-gray-100 leading-relaxed mb-8">
+        Most organizations measure wellbeing but don't truly understand it. Book a 45-minute consultation to discuss what you want to learn about your organization and explore whether a wellbeing audit is right for you.
+      </p>
+      <p class="text-gray-100 leading-relaxed mb-8">
+        No obligation. Just a strategic conversation about organizational wellbeing.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact" variant="secondary">
+          Discuss a Wellbeing Audit
+        </Button>
+        <Button href="mailto:craig.fearn@lighthousementoring.co.uk" variant="ghost" class="text-white hover:text-gray-100">
+          Email Craig
+        </Button>
+      </div>
+      <p class="text-sm text-gray-100 mt-8">
+        Confidential consultation. Clear proposal provided. Typical response: 24 hours.
+      </p>
+    </div>
+  </section>
+</Layout>

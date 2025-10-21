@@ -1,205 +1,721 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Button from '../../components/Button.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { Picture } from 'astro:assets';
+
+// Import image
+import iodConference83 from '../../images/iod-conference-83.jpg';
+
+// Import testimonials data
+import testimonialsData from '../../../testimonials-data.json';
+
+// Filter for board advisory testimonials (exclude homepage testimonials)
+const homepageNames = ['Jeremy Wrathall', 'Steve Hill', 'Richard Sharpe', 'Chris Saxby'];
+const boardTestimonials = testimonialsData
+  .filter(t => t.featured &&
+    (t.category.includes('board-advisory') || t.category.includes('iod-leadership')) &&
+    !homepageNames.includes(t.name))
+  .slice(0, 2);
+
+// Board Advisory FAQ Data - Optimized for AI Search
+const boardAdvisoryFAQs = [
+  {
+    question: "What does a board advisor do?",
+    answer: `<p>A board advisor provides strategic guidance and expert perspective on board-level challenges, governance, and decision-making. Unlike a Non-Executive Director (NED) who holds a formal position with fiduciary duties, a board advisor works in an advisory capacity to help boards be more effective.</p>
+
+<p>Board advisors typically support with: <strong>governance design and board effectiveness reviews</strong>, helping boards understand how well they're functioning and where improvements can be made; <strong>strategic decision support</strong> on complex or high-stakes issues where an experienced external perspective adds value; <strong>stakeholder relationship navigation</strong>, particularly when there's conflict or misalignment; and <strong>board dynamics assessment</strong>, addressing issues like dysfunction, poor meeting culture, or lack of psychological safety.</p>
+
+<p>The value comes from lived experience in the boardroom. Craig has 17 years of board-level experience across multiple sectors—NHS, technology, financial services, and manufacturing. This means board advisors don't just bring theory; they bring pattern recognition from navigating similar challenges across different contexts.</p>`
+  },
+  {
+    question: "How is a board advisor different from a non-executive director (NED)?",
+    answer: `<p><strong>The fundamental difference is accountability and formality.</strong> A Non-Executive Director holds a legal position on the board with fiduciary duties, governance responsibilities, and personal liability. They attend all board meetings, vote on decisions, and are accountable to shareholders or stakeholders. A board advisor, in contrast, provides strategic counsel without formal board membership or fiduciary responsibilities.</p>
+
+<p><strong>Engagement flexibility:</strong> NEDs typically serve fixed terms (often 3 years with renewal options) and have structured commitments. Board advisors can engage on specific projects, time-limited challenges, or ongoing advisory relationships tailored to the organization's needs—offering more flexibility.</p>
+
+<p><strong>Independence and objectivity:</strong> Because board advisors don't hold formal positions, they can sometimes provide more candid challenge without the political dynamics that can affect NED relationships. They're not navigating internal board politics in the same way.</p>
+
+<p><strong>Cost and commitment:</strong> NED appointments involve significant time commitments and ongoing fees. Board advisory can be scoped to specific challenges, making it more accessible for organizations not ready for or not needing a full NED appointment.</p>
+
+<p>Importantly, these roles can be complementary. Some organizations engage a board advisor before appointing NEDs, or use board advisory to address specific gaps the existing board doesn't cover.</p>`
+  },
+  {
+    question: "When should a company hire a board advisor?",
+    answer: `<p>Organizations typically engage board advisors when facing <strong>specific governance challenges that require experienced perspective</strong>. Common scenarios include: board dysfunction or conflict that's impacting decision-making; strategic uncertainty where the board needs support thinking through complex options; governance structure changes, such as moving from informal to formal governance or preparing for external investment; board effectiveness concerns, where meetings feel unproductive or directors aren't adding sufficient value; and stakeholder tension, particularly between founders, executives, investors, or other board members.</p>
+
+<p><strong>Early-stage and growth companies</strong> often benefit from board advisory before they're ready to appoint NEDs. When you're scaling rapidly and governance needs are evolving faster than your board composition can keep up, a board advisor can provide immediate support without the commitment of a permanent appointment.</p>
+
+<p><strong>Established organizations</strong> use board advisors when facing one-off challenges: major strategic decisions, leadership transitions, crisis response, or preparing for significant change (such as mergers, restructuring, or regulatory shifts).</p>
+
+<p>The question isn't about organization size—it's about the value of experienced guidance. If your board is facing challenges that could benefit from someone who's navigated similar situations, that's when board advisory makes sense. The discovery conversation with Craig will quickly clarify whether board advisory is the right intervention for your specific situation.</p>`
+  },
+  {
+    question: "What qualifications should a board advisor have?",
+    answer: `<p><strong>The most critical qualification is extensive board-level experience.</strong> Theory and credentials matter, but lived experience in boardrooms—actually sitting in the chair, making the calls, navigating the dynamics—is what creates real value. Look for advisors who've served on multiple boards across different contexts, not just managed organizations.</p>
+
+<p><strong>Professional credentials signal depth and commitment.</strong> Look for Fellows of professional bodies (such as FCMI - Chartered Management Institute or FRSPH - Royal Society for Public Health), which represent the highest level of professional achievement. Recognition within governance circles, such as being an IoD (Institute of Directors) Ambassador, indicates standing in the board advisory community.</p>
+
+<p><strong>Cross-sector experience provides pattern recognition.</strong> Someone who's only worked in one sector may miss insights that come from seeing how different industries approach similar challenges. Craig's experience spans NHS, technology, financial services, and manufacturing—this breadth creates unique perspective.</p>
+
+<p><strong>Specific expertise matters for specialized challenges.</strong> If you're addressing wellbeing governance, organizational transformation, or stakeholder conflict, look for advisors with proven experience in those areas. Craig combines governance expertise with Fellowship-level credentials in wellbeing and management—a rare combination.</p>
+
+<p><strong>References and track record are essential.</strong> Ask for examples of similar challenges they've navigated and outcomes they've helped achieve. Board advisory is intensely personal—chemistry and trust matter as much as credentials.</p>`
+  },
+  {
+    question: "How much does board advisory cost?",
+    answer: `<p><strong>Board advisory fees depend on scope, frequency, and complexity of the challenge.</strong> Following the initial discovery consultation, Craig provides a clear proposal outlining the investment required. Engagements can range from focused project work addressing specific governance challenges to ongoing advisory relationships providing sustained board support.</p>
+
+<p>Board advisory is a significant investment, but governance failures are far more costly. Poor board dynamics, strategic missteps, stakeholder conflict, and governance crises often cost organizations multiples of what effective advisory would have cost. The value calculation should focus on risk mitigation and improved decision quality, not just the advisory fee.</p>
+
+<p><strong>Typical engagement structures include:</strong> project-based work for specific challenges (board effectiveness reviews, governance design, crisis response); retained advisory for ongoing support (monthly or quarterly sessions); and intensive support during critical periods (leadership transitions, major strategic decisions, organizational change).</p>
+
+<p>Investment is discussed transparently during the discovery phase, ensuring alignment before any commitment.</p>`
+  },
+  {
+    question: "How is board advisory different from management consulting?",
+    answer: `<p><strong>Board advisory focuses specifically on governance, board dynamics, and director-level decision-making</strong>—it's about helping boards be more effective as governing bodies, not improving operational performance. Management consultants typically work with executive teams on operational strategy, process improvement, and organizational change. Board advisors work with directors on governance, strategic oversight, and board effectiveness.</p>
+
+<p><strong>The perspective is fundamentally different.</strong> Craig has sat in your chair as a board member and chair—he brings lived experience from the boardroom, not theory from the sidelines. This means understanding the political dynamics, the weight of fiduciary responsibility, the challenge of holding executives to account while maintaining productive relationships, and the reality of making decisions with imperfect information.</p>
+
+<p><strong>Board advisory addresses challenges like:</strong> board dysfunction or conflict; strategic decision-making and oversight; stakeholder relationship navigation; governance structure design; board effectiveness and dynamics; risk oversight frameworks; and director development. These are distinctly different from operational challenges that management consultants address.</p>
+
+<p>The right intervention depends on where the challenge sits. If it's about board performance, governance, or director-level challenges—that's board advisory territory.</p>`
+  },
+  {
+    question: "Do you attend board meetings?",
+    answer: `<p><strong>Board meeting attendance can be arranged when it adds value.</strong> Some engagements involve observation of board meetings to understand dynamics, assess effectiveness, and identify improvement opportunities. This is particularly valuable when addressing board dysfunction, meeting effectiveness concerns, or governance design challenges.</p>
+
+<p>Other engagements are purely advisory—regular strategic sessions outside formal board meetings where directors can explore challenges, test thinking, and gain external perspective without the constraints of formal board processes. This can create space for more open conversation.</p>
+
+<p><strong>The approach is tailored to your needs and the challenge being addressed.</strong> During the discovery phase, we discuss what level of board involvement makes sense. Some clients value an advisor who observes board dynamics firsthand. Others prefer advisory support that doesn't require meeting attendance.</p>
+
+<p>Where board meeting observation occurs, Craig attends as a non-voting advisor, providing perspective on meeting effectiveness, board dynamics, and governance practices. All observations remain confidential unless specifically agreed otherwise.</p>`
+  },
+  {
+    question: "What if the issues are confidential or politically sensitive?",
+    answer: `<p><strong>All board advisory work is strictly confidential.</strong> Craig is bound by professional codes of conduct from the Chartered Management Institute (FCMI), Royal Society for Public Health (FRSPH), and Institute of Directors. Discretion and trust are foundational to effective board advisory—without them, the work simply cannot succeed.</p>
+
+<p>Board challenges are often politically sensitive. Stakeholder conflicts, leadership concerns, governance tensions, and strategic disagreements require careful navigation. Craig has extensive experience working in these environments, understanding when to challenge, when to listen, and how to maintain relationships while addressing difficult issues.</p>
+
+<p><strong>Confidentiality protocols are established upfront:</strong> clear agreement on what can be shared and with whom; understanding of any reporting requirements; protocols for handling sensitive information; and boundaries around external disclosure. If the engagement involves multiple stakeholders with conflicting interests, we agree on how confidentiality will be managed.</p>
+
+<p>Your board challenges stay confidential. That's not negotiable—it's the foundation of trust that makes board advisory effective.</p>`
+  },
+  {
+    question: "How long do board advisory engagements typically last?",
+    answer: `<p><strong>Engagement duration depends on the challenge and objectives.</strong> Some board advisory work addresses specific issues and concludes when those are resolved—this might be 3-6 months for a board effectiveness review, governance structure redesign, or addressing a particular stakeholder challenge.</p>
+
+<p>Other engagements provide ongoing strategic support, with regular advisory sessions (monthly or quarterly) continuing as long as they deliver value. This is common for organizations navigating sustained growth, significant change, or complex strategic challenges where having experienced counsel available makes a material difference.</p>
+
+<p><strong>Common engagement patterns include:</strong> project-based (3-6 months) for specific governance challenges; transition support (6-12 months) during leadership changes or major organizational shifts; and retained advisory (ongoing) for strategic support and governance counsel.</p>
+
+<p><strong>We agree scope upfront and review regularly.</strong> If the engagement isn't delivering value, we discuss it openly. If objectives are achieved earlier than expected, we conclude. The focus is on outcomes, not artificial timelines or unnecessarily extended engagements.</p>
+
+<p>The discovery conversation will clarify likely engagement duration based on your specific situation.</p>`
+  },
+  {
+    question: "Can you help with board recruitment or succession planning?",
+    answer: `<p><strong>Yes, Craig provides guidance on board composition, skills matrices, NED recruitment strategy, and succession planning.</strong> This includes: assessing current board skills and identifying gaps; developing director role specifications; advising on recruitment process and candidate evaluation; supporting NED interviews and assessment; and planning board succession and knowledge transfer.</p>
+
+<p><strong>Craig doesn't recruit directors directly</strong>—that's the role of specialized search firms or recruitment consultants. However, he can guide the process, help evaluate candidates, advise on board composition strategy, and support the integration of new directors once appointed.</p>
+
+<p><strong>Board composition and succession work often reveals deeper governance questions:</strong> What skills does the board actually need? Are we recruiting for today's challenges or tomorrow's? How do we balance continuity with fresh perspective? What diversity (of thought, background, experience) will make the board more effective? These strategic questions require someone who understands boards from the inside—not just recruitment specialists.</p>
+
+<p>If board composition, recruitment, or succession planning is part of your governance challenge, Craig can provide experienced guidance on navigating these critical decisions.</p>`
+  }
+];
 ---
 
-<Layout title="Board Advisory Services">
-  <section class="relative section-padding px-4 overflow-hidden">
-    <!-- Hero Banner -->
-    <div class="absolute inset-0 z-0">
-      <img
-        src="/images/iod-conference-07.jpg"
-        alt="Board advisory setting"
-        class="w-full h-full object-cover opacity-20"
-      />
-      <div class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/90"></div>
-    </div>
-
-    <div class="container max-w-6xl mx-auto relative z-10">
-      <!-- Header -->
-      <div class="text-center mb-12">
-        <div class="inline-flex items-center gap-3 mb-6">
-          <img
-            src="/images/IoD-Ambassador-badge-web.png"
-            alt="IoD Ambassador"
-            class="h-16 w-auto"
-          />
-          <img
-            src="/images/RSPH-Fellow-Badge.jpg"
-            alt="FRSPH Badge"
-            class="h-16 w-auto"
-          />
-          <span class="text-2xl font-bold text-primary">Board Advisory</span>
-        </div>
-        <h1 class="text-h1 font-bold mb-4">
-          Board-Level <span class="text-primary">Wellbeing Governance</span>
-        </h1>
-        <p class="text-xl text-text-secondary max-w-3xl mx-auto">
-          Strategic wellbeing guidance from an IoD Ambassador with unique dual Fellow credentials
-        </p>
-      </div>
-
-      <!-- Service Overview -->
-      <div class="grid md:grid-cols-2 gap-12 mb-16">
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <h2 class="text-2xl font-bold mb-4">Strategic Advisory</h2>
-          <p class="text-text-secondary mb-6">
-            As an IoD Ambassador with FRSPH and FCMI credentials, I provide boards with the strategic wellbeing guidance needed to meet governance responsibilities and drive performance.
+<Layout
+  title="Board Advisory Services | Lighthouse Mentoring"
+  description="Board advisory from extensive board-level experience. IoD Ambassador offering governance consulting, board effectiveness, and strategic support. Cornwall & UK."
+  keywords="board advisory services UK, board governance consultant, board effectiveness, non-executive director advisor, board dynamics"
+>
+  <!-- Hero Section -->
+  <section class="hero section-padding bg-primary text-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h1 class="mb-6">
+            Board Advisory That Comes From The Boardroom
+          </h1>
+          <p class="text-gray-100 leading-relaxed mb-8">
+            Extensive experience navigating stakeholder conflict, strategic uncertainty, and governance challenges. Not theory from the sidelines—lived experience from chairing the meetings and making the calls that matter.
           </p>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-              </svg>
-              <span>Board-level wellbeing strategy development</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-              </svg>
-              <span>ESG and wellbeing governance frameworks</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-              </svg>
-              <span>Risk assessment and mitigation strategies</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-              </svg>
-              <span>Director liability and compliance guidance</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <h2 class="text-2xl font-bold mb-4">Board Responsibilities</h2>
-          <p class="text-text-secondary mb-6">
-            Directors have legal and fiduciary duties regarding employee wellbeing. Our advisory services ensure you meet these responsibilities while driving business performance.
-          </p>
-          <div class="space-y-4">
-            <div class="border-l-4 border-primary pl-4">
-              <h3 class="font-bold mb-1">Legal Compliance</h3>
-              <p class="text-small text-text-secondary">Health & Safety at Work Act requirements</p>
-            </div>
-            <div class="border-l-4 border-primary pl-4">
-              <h3 class="font-bold mb-1">Fiduciary Duty</h3>
-              <p class="text-small text-text-secondary">Protecting shareholder value through workforce health</p>
-            </div>
-            <div class="border-l-4 border-primary pl-4">
-              <h3 class="font-bold mb-1">ESG Reporting</h3>
-              <p class="text-small text-text-secondary">Meeting investor expectations on social metrics</p>
-            </div>
-            <div class="border-l-4 border-primary pl-4">
-              <h3 class="font-bold mb-1">Risk Management</h3>
-              <p class="text-small text-text-secondary">Identifying and mitigating wellbeing-related risks</p>
-            </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <Button href="/contact" variant="secondary">
+              Discuss Your Board Challenge
+            </Button>
+            <Button href="/services" variant="ghost" class="text-white hover:text-gray-100">
+              View All Services
+            </Button>
           </div>
         </div>
-      </div>
-
-      <!-- Service Approaches -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold text-center mb-8">Advisory Approaches</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary">
-            <h3 class="text-xl font-bold mb-3">Quarterly Advisory</h3>
-            <p class="text-lg font-semibold text-primary mb-4">Strategic partnership</p>
-            <ul class="space-y-2 text-small">
-              <li>• Quarterly board presentations</li>
-              <li>• Wellbeing KPI dashboard</li>
-              <li>• Risk assessment updates</li>
-              <li>• Compliance monitoring</li>
-              <li>• Email support</li>
-            </ul>
-            <div class="mt-6">
-              <Button href="/contact" size="small" variant="outline">
-                Discuss Requirements
-              </Button>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-secondary transform scale-105">
-            <div class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-bold inline-block mb-3">
-              MOST POPULAR
-            </div>
-            <h3 class="text-xl font-bold mb-3">Annual Retainer</h3>
-            <p class="text-lg font-semibold text-primary mb-4">Comprehensive governance</p>
-            <ul class="space-y-2 text-small">
-              <li>• Monthly board reports</li>
-              <li>• Quarterly presentations</li>
-              <li>• Annual strategy workshop</li>
-              <li>• Rapid response support</li>
-              <li>• Unlimited advisory calls</li>
-              <li>• Director training sessions</li>
-            </ul>
-            <div class="mt-6">
-              <Button href="/contact" size="small" variant="primary">
-                Schedule Consultation
-              </Button>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-accent">
-            <h3 class="text-xl font-bold mb-3">Non-Exec Director</h3>
-            <p class="text-lg font-semibold text-primary mb-4">Board integration</p>
-            <ul class="space-y-2 text-small">
-              <li>• Full NED responsibilities</li>
-              <li>• Board meeting attendance</li>
-              <li>• Committee participation</li>
-              <li>• Strategic oversight</li>
-              <li>• Stakeholder engagement</li>
-              <li>• Bespoke arrangement</li>
-            </ul>
-            <div class="mt-6">
-              <Button href="/contact" size="small" variant="outline">
-                Explore Options
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Credentials Section -->
-      <div class="bg-background-alt rounded-lg p-8 mb-16">
-        <h2 class="text-2xl font-bold text-center mb-6">The Value of Dual Fellow Governance</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="text-center">
-            <img src="/images/IoD-Ambassador-badge-web.png" alt="IoD Ambassador" class="h-20 mx-auto mb-3" />
-            <h3 class="font-bold mb-2">IoD Ambassador</h3>
-            <p class="text-small text-text-secondary">Direct access to IoD networks and best practices</p>
-          </div>
-          <div class="text-center">
-            <img src="/images/Global (1).png" alt="Global Badge" class="h-20 mx-auto mb-3" />
-            <h3 class="font-bold mb-2">Global Perspective</h3>
-            <p class="text-small text-text-secondary">International best practices and benchmarking</p>
-          </div>
-          <div class="text-center">
-            <img src="/images/iod-aspiring-badge.png" alt="Aspiring Badge" class="h-20 mx-auto mb-3" />
-            <h3 class="font-bold mb-2">Fellow Status</h3>
-            <p class="text-small text-text-secondary">FRSPH + FCMI credentials for elite expertise</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="text-center">
-        <h2 class="text-3xl font-bold mb-4">Strengthen Your Board's Wellbeing Governance</h2>
-        <p class="text-xl text-text-secondary mb-8">
-          Join forward-thinking boards prioritizing employee wellbeing as a strategic imperative
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/contact" size="large" variant="primary">
-            Schedule Board Consultation
-          </Button>
-          <Button href="/services/wellbeing-audit" size="large" variant="ghost">
-            Start with an Audit
-          </Button>
+        <div class="hidden lg:block">
+          <Picture
+            src={iodConference83}
+            alt="Craig Fearn at IoD Conference"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+            widths={[400, 600, 800, 1200, 1600]}
+            sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, (max-width: 1024px) 800px, (max-width: 1536px) 1200px, 1600px"
+            formats={['avif', 'webp']}
+            loading="eager"
+            fetchpriority="high"
+            quality={85}
+          />
         </div>
       </div>
     </div>
   </section>
-</Layout>
 
+  <!-- What's Included Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <h2 class="text-h2 text-gray-900 mb-8 text-center">What Board Advisory Includes</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Governance design and board effectiveness reviews</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Strategic decision support on complex challenges</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Stakeholder relationship navigation and conflict resolution</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Board dynamics assessment and dysfunction remediation</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Risk oversight and strategic risk management frameworks</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Board succession planning and NED recruitment guidance</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Board meeting observation and facilitation</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-gray-700">Director development and capability building</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <h2 class="text-h2 text-gray-900 mb-8 text-center">This Board Advisory Service Is For You If...</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-4">CEOs and Managing Directors</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're facing complex stakeholder dynamics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Your board meetings lack strategic focus</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need an experienced sounding board for critical decisions</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-4">Board Chairs</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're managing board dysfunction or conflict</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to improve board effectiveness</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need support with board composition changes</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-4">Non-Executive Directors</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're navigating challenging governance situations</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You want to strengthen your contribution</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're preparing for a chair role</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-4">Organizations</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're establishing a new board structure</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You need board effectiveness assessment</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>You're facing governance challenges or crises</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 max-w-2xl mx-auto">
+        <div class="card p-6 bg-accent/5 border-l-4 border-accent">
+          <h4 class="font-semibold text-gray-900 mb-3">Common Pain Points Addressed:</h4>
+          <ul class="space-y-3 text-gray-700 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Board meetings feel unproductive or unfocused</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Strategic decisions stall due to stakeholder conflict</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Governance structure doesn't match organizational needs</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Board lacks diversity of thought or experience</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Difficult conversations being avoided</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <h2 class="text-h2 text-gray-900 mb-8 text-center">The Board Advisory Process</h2>
+
+      <div class="space-y-8">
+        <div class="card p-8">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
+              1
+            </div>
+            <div class="flex-1">
+              <h3 class="text-h3 text-gray-900 mb-2">Discovery & Assessment</h3>
+              
+              <ul class="space-y-2 text-gray-700">
+                <li>• Initial consultation to understand challenges</li>
+                <li>• Review of governance documents and board papers</li>
+                <li>• Stakeholder interviews (if appropriate)</li>
+                <li>• Current state assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-8">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
+              2
+            </div>
+            <div class="flex-1">
+              <h3 class="text-h3 text-gray-900 mb-2">Strategy Development</h3>
+              
+              <ul class="space-y-2 text-gray-700">
+                <li>• Identify priority areas for improvement</li>
+                <li>• Develop tailored recommendations</li>
+                <li>• Present strategic options</li>
+                <li>• Agree engagement scope and timeline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-8">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
+              3
+            </div>
+            <div class="flex-1">
+              <h3 class="text-h3 text-gray-900 mb-2">Implementation Support</h3>
+              <p class="text-gray-600 text-sm mb-3">Ongoing</p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Regular advisory sessions</li>
+                <li>• Board meeting observation/facilitation</li>
+                <li>• Support with specific challenges as they arise</li>
+                <li>• Access for urgent strategic questions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-8">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
+              4
+            </div>
+            <div class="flex-1">
+              <h3 class="text-h3 text-gray-900 mb-2">Review & Refinement</h3>
+              <p class="text-gray-600 text-sm mb-3">Quarterly</p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Progress review against objectives</li>
+                <li>• Adjust approach based on outcomes</li>
+                <li>• Measure board effectiveness improvements</li>
+                <li>• Plan next phase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Craig Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <h2 class="text-h2 text-gray-900 mb-8 text-center">Why Craig for Board Advisory?</h2>
+
+      <div class="space-y-6 text-gray-700 leading-relaxed max-w-3xl mx-auto">
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">Extensive Board-Level Experience</h3>
+          <p>Experience across NHS, technology, financial services, and manufacturing. Both executive and non-executive roles. Led through governance challenges, stakeholder conflict, and organizational transformation.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">IoD Ambassador</h3>
+          <p>Recognized authority on board governance in the South West. Access to IoD governance frameworks and a network of directors navigating similar challenges.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">Fellowship-Level Credentials</h3>
+          <p>FCMI Fellow and FRSPH Fellow. Depth across governance, wellbeing, and organizational leadership—areas that matter for effective board advisory.</p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-h3 text-gray-900 mb-3">Cross-Sector Pattern Recognition</h3>
+          <p>Cross-sector experience from mining to banking, technology to healthcare. Pattern recognition across industries brings unique insights to your board challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expected Outcomes Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What You Can Expect</h2>
+        <p class="text-gray-600">Tangible outcomes from board advisory engagement</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Improved Board Effectiveness</h3>
+              <p class="text-gray-700">Better meeting dynamics, clearer decision-making, stronger governance practices</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Strategic Clarity</h3>
+              <p class="text-gray-700">Clearer strategic direction with better stakeholder alignment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Reduced Governance Risk</h3>
+              <p class="text-gray-700">Better risk oversight and compliance confidence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Enhanced Board Dynamics</h3>
+              <p class="text-gray-700">Better relationships, productive challenge, psychological safety</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Is This Right for You Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">Is Board Advisory Right for You?</h2>
+        <p class="text-gray-600">This engagement is a good fit if...</p>
+      </div>
+
+      <div class="card p-8 max-w-3xl mx-auto">
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You're facing a specific board challenge or governance issue that needs expert insight</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You want objective perspective from someone who's navigated similar challenges</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You're open to challenge and new perspectives on longstanding issues</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p class="text-gray-700">You value experience combined with Fellowship-level expertise</p>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <h4 class="font-semibold text-gray-900 mb-4">This might not be right if:</h4>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p>• You're looking for a rubber-stamp validation of existing decisions</p>
+            <p>• You need detailed compliance or legal expertise (I work with specialists for this)</p>
+            <p>• You're not ready for honest, sometimes uncomfortable conversations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens Next Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-h2 text-gray-900 mb-4">What Happens Next</h2>
+        <p class="text-gray-600">Clear pathway from first contact to engagement</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Initial Contact (Within 24 Hours)</h3>
+              <p class="text-gray-700">You'll receive a personal response to understand your situation and determine if I can help</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Discovery Conversation (45-60 Minutes)</h3>
+              <p class="text-gray-700">Confidential discussion about your board challenge, objectives, and what success looks like</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Proposal (Within 1 Week)</h3>
+              <p class="text-gray-700">Clear proposal outlining approach, timeline, investment, and expected outcomes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              4
+            </div>
+            <div>
+              <h3 class="text-h4 text-gray-900 mb-2">Engagement Begins (Week 3-4)</h3>
+              <p class="text-gray-700">Once aligned, we begin work with clear deliverables and regular check-ins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-gray-600 mb-4">No obligation. No pressure. Just a professional conversation about whether I can help.</p>
+        <Button href="/contact" variant="primary">Start the Conversation</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding bg-eggshell">
+    <div class="container max-w-4xl">
+      <h2 class="text-h2 text-gray-900 mb-12 text-center">What Directors Say</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        {boardTestimonials.map((testimonial) => (
+          <div class="card p-8 flex flex-col">
+            <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+              "{testimonial.excerpt}"
+            </p>
+            <div class="border-t border-gray-200 pt-4">
+              <p class="font-semibold text-gray-900">{testimonial.name}</p>
+              <p class="text-sm text-gray-600">
+                {testimonial.role}{testimonial.company ? `, ${testimonial.company}` : ''}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section with Schema Markup -->
+  <FAQAccordion faqs={boardAdvisoryFAQs} pageTitle="Frequently Asked Questions" />
+
+  <!-- Final CTA Section -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container max-w-3xl text-center">
+      <h2 class="text-h2 font-bold mb-6">Start With a Board Strategy Conversation</h2>
+      <p class="text-xl text-gray-100 mb-8 leading-relaxed">
+        Most board challenges don't need a lengthy diagnostic—they need an experienced perspective. Book a 45-minute consultation to discuss what you're navigating and explore whether Craig's board advisory approach is the right fit.
+      </p>
+      <p class="text-gray-100 mb-8">
+        No sales pitch. No pressure. Just strategic conversation with someone who's sat where you sit.
+      </p>
+      <Button href="/contact" size="large" variant="secondary">
+        Book a Board Advisory Consultation
+      </Button>
+      <p class="text-sm text-gray-200 mt-4">
+        All conversations are confidential. Initial consultations are exploratory—no obligation.
+      </p>
+    </div>
+  </section>
+</Layout>
