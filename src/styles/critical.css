@@ -369,20 +369,6 @@ a[href="/services"] {
   color: white;
 }
 
-/* Specific Tailwind gradient backgrounds for services page */
-.bg-gradient-to-br.from-slate-900.via-blue-900.to-indigo-900 {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3730a3 100%) !important;
-}
-
-.bg-gradient-to-br.from-blue-900.via-indigo-900.to-purple-900 {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%) !important;
-}
-
-/* Contact page gradient backgrounds */
-.bg-gradient-to-br.from-green-600.via-blue-700.to-indigo-800 {
-  background: linear-gradient(135deg, #059669 0%, #1d4ed8 50%, #3730a3 100%) !important;
-}
-
 .bg-gradient-to-br.from-white.to-slate-50 {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
 }
