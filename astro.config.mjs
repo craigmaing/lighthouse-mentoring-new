@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
+// Force rebuild: 2025-10-22 10:11 - Cache bust for category badge removal
 // https://astro.build/config
 export default defineConfig({
   site: 'https://lighthousementoring.co.uk',
