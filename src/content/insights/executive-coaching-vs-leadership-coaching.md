@@ -26,11 +26,11 @@ Here's how I break it down with clients:
 
 **The Real-World Application**
 
-I worked with a CFO at a FTSE 250 company last year who perfectly illustrated this. She was brilliant with numbers. Could read a balance sheet like most people read a menu. But when it came to leading her growing team through a major transformation? Different skillset entirely.
+Consider a CFO I worked with at a FTSE 250 company (details changed to protect confidentiality) who perfectly illustrated this. She was brilliant with numbers. Could read a balance sheet like most people read a menu. But when it came to leading her growing team through a major transformation? Different skillset entirely.
 
 We spent six months working together. Not on spreadsheets or financial models. On the human side of leadership—the kind of capabilities that separate effective executives from great ones. How to have difficult conversations. How to delegate without micromanaging. How to build trust when you're under pressure.
 
-Three months in, something shifted. Her team's engagement scores went up by 23%. Turnover dropped by 40%. The business performed better, beating quarterly targets for the first time in eight quarters.
+Three months in, something shifted. Her team's engagement scores improved significantly. Turnover dropped substantially. The business performed better, beating quarterly targets for the first time in eight quarters.
 
 But here's what's interesting—and this is what most people miss about executive coaching—the technical skills weren't the issue. They never are at board level or C-suite. It's everything else. The behavioral psychology. The organizational dynamics. The strategic thinking under pressure.
 
@@ -38,20 +38,20 @@ But here's what's interesting—and this is what most people miss about executiv
 
 The landscape has changed. What worked five years ago doesn't necessarily work today. And if you're still approaching executive coaching the way we did in 2019? You're probably leaving value on the table.
 
-The numbers back this up. Research from [Harvard Business Review](https://hbr.org/topic/coaching) (2021) and [McKinsey & Company](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights) shows that organisations investing strategically in executive coaching see measurable improvements in performance. Not vague "engagement" metrics. Real business outcomes:
+The numbers back this up. Research from [Harvard Business Review](https://hbr.org/topic/coaching) and [McKinsey & Company](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights) consistently shows that organisations investing strategically in executive coaching see measurable improvements in performance. Not vague "engagement" metrics. Real business outcomes including:
 
-- 5.7x average ROI on coaching investments
-- 38% improvement in decision-making quality
-- 26% increase in team productivity
-- 42% reduction in executive turnover
+- Substantial return on coaching investments (studies indicate returns of 5x or higher)
+- Significant improvements in decision-making quality
+- Measurable increases in team productivity
+- Notable reductions in executive turnover
 
 But—and this is essential—only when it's done right.
 
-Most organizations get this wrong. They treat it as an HR initiative instead of a strategic investment. They measure the wrong things. They focus on programs instead of culture. They hire consultants who've never sat in a board meeting or advised at C-suite level.
+Most organizations get this wrong. They treat it as an HR initiative instead of a strategic investment. They measure the wrong things. They focus on programs instead of culture. They hire consultants who've never advised boards or worked at C-suite level.
 
 ## The Practical Framework
 
-So how do you actually implement this? Let me share what I've learned from working with dozens of CEOs, CFOs, and board members across sectors including financial services (HSBC), premium spirits (Edrington UK, Brown-Forman), and global engineering (AECOM):
+So how do you actually implement this? Let me share what I've learned from advising dozens of CEOs, CFOs, and board members across sectors including financial services, premium spirits, and global engineering:
 
 **Start With Clarity**
 
@@ -72,7 +72,7 @@ As a **Fellow of the Chartered Management Institute (FCMI)** and **IoD Ambassado
 
 Real change takes time. I typically see meaningful transformation around the six-month mark. Sometimes faster. Sometimes slower. But anyone promising quick fixes is probably selling snake oil.
 
-This is why my approach combines [executive coaching](/services/executive-coaching) methodologies with [board-level advisory experience](/services/board-advisory)—because sustainable change requires both behavioural insight and strategic context.
+This is why my approach combines [executive coaching](/services/executive-coaching) methodologies with [board advisory experience](/services/board-advisory)—because sustainable change requires both behavioural insight and strategic context.
 
 ## Key Takeaways
 
